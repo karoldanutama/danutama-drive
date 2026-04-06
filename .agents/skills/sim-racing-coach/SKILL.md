@@ -60,13 +60,24 @@ node .agents/skills/sim-racing-coach/scripts/extract_race_data.js <filePath> <ca
 node .agents/skills/sim-racing-coach/scripts/extract_race_data.js <filePath> <carNumber>
 ```
 
-### 2. Filter clean laps
-Discard laps where:
-- `flag` is `FCY` or `SF`
-- `pit_time` is not null
-- First lap of each stint (out-lap)
+### 2. Filter dirty laps
+The script automatically discards:
+- Laps under FCY or SC (`flag` is `FCY` or `SF`)
+- Pit entry/exit laps (`pit_time` not null, or `CROSSING_FINISH_LINE_IN_PIT` = `B`)
+- Out-laps (first lap of each stint)
 
-### 3. Compute benchmarks
+### 3. IQR outlier filtering
+After the flag/pit filter, if **8 or more** clean laps remain, the script applies IQR filtering (1.5× multiplier):
+- Converts all clean lap times to seconds
+- Computes Q1 (25th percentile) and Q3 (75th percentile)
+- IQR = Q3 − Q1; bounds = `[Q1 − 1.5×IQR, Q3 + 1.5×IQR]`
+- Laps outside bounds are discarded
+
+If fewer than 8 clean laps exist, IQR is skipped (`iqr_applied: false`). This prevents over-filtering short stints.
+
+The output includes `iqr_applied`, `iqr_stats` (q1, q3, iqr, lower, upper in seconds), `clean_laps_pre_iqr`, and `clean_laps_post_iqr` for full transparency.
+
+### 4. Compute benchmarks
 - **Best lap**: minimum `time`
 - **Median lap**: middle value of sorted clean laps
 - **Average lap**: mean of clean lap times
