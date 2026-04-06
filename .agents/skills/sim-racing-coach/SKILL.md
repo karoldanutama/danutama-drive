@@ -150,8 +150,31 @@ Best lap:    2:21.015
 Median lap:  2:21.849
 Avg lap:     2:21.900
 Std dev:     0.38s
-Gap (best):  +16.959s  (+13.7%)
+Gap (median): +16.349s  (+13.1%)
+Gap (best):   +16.959s  (+13.7%)
 ```
+
+Median gap is the headline metric. Best lap gap is secondary. The median reflects repeatable race pace; the best lap reflects a single optimal lap which may not be representative.
+
+### Race context interpretation
+
+Apply this section when the user's sim data comes from **offline races**, not hotlap sessions. This changes how all metrics should be read.
+
+**Identifying race-driver data vs hotlap data:**
+- Best-to-median gap < 0.5s → race driver profile; median is a reliable pace indicator
+- Best-to-median gap > 1.0s → likely hotlap session; best lap is inflated, median is more honest
+- When in doubt, ask the user whether the data is from a race or a hotlap session before drawing conclusions
+
+**Consistency (std dev) interpretation in race context:**
+- < 0.4s → elite race consistency (pro-level repeatability)
+- 0.4–0.8s → solid race driver
+- 0.8–1.5s → intermediate; emotional swings or traffic affecting pace
+- > 1.5s → high variance; likely multi-driver race data, FCY periods, or significant errors
+
+Note: real-world race data (ELMS/WEC) naturally has higher std dev than sim due to traffic, safety cars, multi-driver stints, and tyre strategy. Do not penalise the user's sim std dev by comparing it directly to raw real-world std dev.
+
+**Hardware constraint adjustments:**
+If the user has known hardware limitations (e.g. brake force cap), flag this explicitly before stating the gap. Do not present the raw sim-vs-real gap as a direct skill comparison without noting the adjustment. Read `driver-profile.md` for the user's specific constraints and documented adjustment factors.
 
 ### Sector gap analysis
 State which sectors contribute the most to the gap. Do not diagnose inputs without telemetry data — note what additional data would be required.
