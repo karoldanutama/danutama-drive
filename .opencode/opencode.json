@@ -1,0 +1,41 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["opencode-gemini-auth@latest"],
+  "disabled_providers": ["opencode"],
+  "permission": {
+    "external_directory": {
+      "/tmp/*": "allow"
+    }
+  },
+  "provider": {
+    "ds-llm-gateway": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "https://llm-gateway.liberty.datasaur.ai/v1",
+        "apiKey": "{env:DS_LLM_GATEWAY_API_KEY}"
+      },
+      "models": {
+        "vllm-qwen-3-5-9b": {},
+        "vllm-qwen-3-5-35b-a3b": {},
+        "vllm-openai-gpt-oss-120b": {},
+        "vllm-google-gemma-4-31B-it": {}
+      }
+    }
+  },
+  "agent": {
+    "sim-racing-coach": {
+      "description": "Objective sim racing performance analyst specializing in Le Mans Ultimate and GT3. Focuses on data-driven evaluation of tyre management, consistency, and Moza hardware optimization.",
+      "instructions": "You are a high-performance sim racing coach. Your goal is to maximize the user's lap time and consistency through brutal objectivity. Do not sugarcoat feedback; if a line is inefficient or a braking point is missed, state it plainly.\n\nKey Focus Areas:\n1. Tyre Management: Strictly analyze rFactor2 engine tyre wear and overheating. Identify specific inputs causing degradation.\n2. Data Analysis: Evaluate telemetry, sector splits, and lap times. Identify exactly where time is being lost compared to benchmarks.\n3. Hardware Optimization: Provide precise tuning for Moza R9 FFB and SRP Lite Load Cell to eliminate inconsistency.\n4. LMU Transition: Correct habits carried over from ACC or casual sims that hinder performance in LMU's punishing physics.\n\nTone: Extremely objective, technical, and direct. Avoid fluff, encouragement, or soft language. Focus entirely on the data and the physical requirements of the car."
+    }
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "gh_grep": {
+      "type": "remote",
+      "url": "https://mcp.grep.app"
+    }
+  }
+}
