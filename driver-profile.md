@@ -7,6 +7,7 @@
 - March 2025: restarted seriously — purchased Playseat Challenge (previously desk clamp), began with Assetto Corsa Competizione
 - May 2025: switched to Le Mans Ultimate (LMU, rFactor2 engine)
 - April 2026: ~1 year into hardcore GT3 sim racing; Year 1 of LMU specifically
+- Sim racing is a hobby (not full-time): 40 hrs/week job, family, age 36
 
 Key distinction: not a beginner. 14 years of casual exposure built foundational car control intuition. The 2025 restart represents Year 1 of physics-accurate, race-focused sim practice — not Year 1 of sim racing overall.
 
@@ -35,11 +36,17 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 - Successfully unlearned ACC's 100% threshold braking habit. In ACC, braking 100% all the way to the apex is viable; in LMU's rFactor2 tyre model, this produces massive understeer and tyre degradation.
 - LMU requires progressive brake release and trail-braking — now internalized after ~1 year of race practice.
 - Tyre degradation analysis should always be interpreted in race stint context (multi-lap races), not isolated tyre tests.
-- Corvette Z06 GT3R shows highest std dev (0.52s) across tested cars — likely due to American weight distribution demanding heavier brake modulation that the 45kg cap constrains most severely.
+- Corvette Z06 GT3R often shows the highest variance in my hands (eg. ~0.5s std dev in Spa race stints) — likely due to American weight distribution demanding heavier brake modulation that the 45kg cap constrains most severely.
+
+## Car Traits (Spa, Race Context)
+
+- Porsche 911 GT3R: momentum-sensitive in traffic. Dirty air / off-line yields reduce front confidence and delay recommitment; small exit compromises can turn into an unrecoverable lap loss.
+- Ferrari 296 GT3: front-tyre temperature state is the main limiter. FL tends to run hotter than FR; once FL spikes (eg. 91C+ after Les Combes-Malmedy), the understeer debt can persist to Fagnes unless driving is reset to reduce scrub.
+- McLaren 720S GT3: tends to give a wider lap-to-lap confidence window (tighter spread) in Spa stint-1 race pace.
 
 ## Pace Reference — Spa-Franchorchamps (April 2026, 95% AI, Race Conditions)
 
-All data from offline races. Median is the reliable pace indicator; best-to-median gap is narrow (< 0.3s) confirming race-driver profile, not hotlapper.
+All data from offline races. Median is the reliable pace indicator; best-to-median gap is typically < 0.5s in clean runs. It can widen with traffic, mistakes, or unusual tyre warm-up conditions.
 
 | Car | Best | Median | Average | Std Dev | Clean Laps |
 |-----|------|--------|---------|---------|-----------|
@@ -48,6 +55,22 @@ All data from offline races. Median is the reliable pace indicator; best-to-medi
 | Ferrari 296 GT3 | 2:21.095 | 2:21.628 | 2:21.599 | 0.27s | 18 |
 | Aston Martin Vantage GT3 | 2:21.015 | 2:21.849 | 2:21.881 | 0.38s | 31 |
 | Corvette Z06 GT3R | 2:20.790 | 2:21.769 | 2:21.744 | 0.52s | 31 |
+
+Additional reference (same ELMS schedule, same setup/fuel/AI, tyre warmers OFF, started on a used quali set ~90%):
+
+| Car | Best | Median | Average | Std Dev | Clean Laps |
+|-----|------|--------|---------|---------|-----------|
+| Ferrari 296 GT3 | 2:20.743 | 2:21.221 | 2:21.276 | 0.34s | 17 |
+
+Note: warmers OFF changes the first laps materially (starting around 40C vs ~70C with warmers). It can reduce early over-driving/scrub and improve stint-wide race pace even if peak grip is slightly lower.
+
+Additional reference (McLaren 720S GT3, stint 1 only):
+
+| Car | Best | Median | Average | Std Dev | Clean Laps |
+|-----|------|--------|---------|---------|-----------|
+| McLaren 720S GT3 | 2:20.637 | 2:21.298 | 2:21.291 | 0.29s | 19 |
+
+Multi-stint note (911 GT3R, Spa): reusing tyres for stint 2 can shift median race pace by ~+1.25s/lap vs the new-tyre stint, amplified by multi-class traffic.
 
 **ELMS benchmark for reference** — Car #85 (Iron Dames, Porsche 911 GT3R) @ Spa 2025:
 - Best: 2:19.907 | Median: 2:21.738 | Average: 2:21.672 | Std dev: 1.03s (multi-driver, race conditions)
