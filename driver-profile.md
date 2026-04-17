@@ -6,10 +6,25 @@
 * On-off hobby until 2025 — approximately 14 years of accumulated wheel/pedal muscle memory
 * March 2025: restarted seriously — purchased Playseat Challenge (previously desk clamp), began with Assetto Corsa Competizione
 * May 2025: switched to Le Mans Ultimate (LMU, rFactor2 engine)
+* September 2025: LMU released LMP3 cars (first ELMS DLC). Attempted LMP3 which has no ABS — discovered that 45kg at 100% input caused immediate lockups. Recalibrated effective brake ceiling to ~70% of 45kg to manage lockup threshold. Returning to GT3 afterwards produced significantly improved trail-braking feel — foot had been reprogrammed to modulate within a narrower, more precise pressure window. Accidental but significant brake modulation training event.
 * April 2026: ~1 year into hardcore GT3 sim racing; Year 1 of LMU specifically
 * Sim racing is a hobby (not full-time): 40 hrs/week job, family, age 36
 
 Key distinction: not a beginner. 14 years of casual exposure built foundational car control intuition. The 2025 restart represents Year 1 of physics-accurate, race-focused sim practice — not Year 1 of sim racing overall.
+
+## Driver Development Timeline
+
+| Period | Event | Significance |
+| --- | --- | --- |
+| 2011–2024 | Casual sim racing, Logitech DFGT, F1/NFS series | Built foundational car control intuition over 14 years |
+| March 2025 | Restarted seriously on ACC, Playseat Challenge purchased | Year 1 of structured practice begins |
+| May 2025 | Switched from ACC to LMU (rFactor2 engine) | Fundamental braking technique reset — unlearned 100% threshold braking, began trail-braking development |
+| May–September 2025 | Imola as primary home circuit, ~5 months | Trail-braking foundation built; race pace methodology established; multi-car testing approach adopted |
+| September 2025 | LMP3 DLC released, attempted without ABS | Accidental brake modulation training — recalibrated foot from 45kg ceiling to ~30kg effective ceiling under lockup management; returning to GT3 produced measurably improved trail-braking precision |
+| Late 2025 | Expanded to Spa-Francorchamps | Momentum management, traffic reading, multi-class racing exposure |
+| Early 2026 | Sebring International Raceway | Bump absorption, left-right balance, cross-car consistency confirmed across 4 GT3 architectures within 0.277s |
+| April 2026 | Barcelona Circuit de Catalunya | FL thermal management under constraint, ABS settings impact confirmed via controlled race experiments, mixed weather endurance strategy development |
+| April 2026 | 3-hour solo mixed weather endurance race, Barcelona | First long-format endurance race attempt — stint structure, tyre allocation strategy, weather transition management |
 
 ## Methodology
 
@@ -42,6 +57,7 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 * Corvette Z06 GT3R often shows the highest variance in my hands (eg. ~0.5s std dev in Spa race stints) — likely due to American weight distribution demanding heavier brake modulation that the 45kg cap constrains most severely.
 * Tyre warmers are set OFF across all circuits for realism. New tyre starting temperature is ~23°C (ambient). Full operating window requires 4–5 laps, creating a meaningful pace cost on every tyre change.
 * Traffic in race conditions acts as a passive tyre cooling mechanism — forced lift/coast laps behind slower cars measurably reduce FL temperature and can delay or partially reset the thermal cliff. This effect is confirmed across multiple Barcelona stints.
+* LMP3 crossover effect (September 2025): brief LMP3 experience without ABS recalibrated brake modulation precision. The narrower lockup-free window in LMP3 trained finer pedal resolution that transferred directly to improved GT3 trail-braking release. Recognized in retrospect as one of the most significant single development events of Year 1.
 
 ## ABS Settings — Learnings
 
@@ -66,8 +82,29 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 ## Circuit Character Notes
 
 * **Sebring**: balanced left-right loading, bumpy surface acts as natural tyre temperature regulator. Long straights after sustained right-handers (Gendebien, Sunset) allow FL recovery. Ferrari FL melts at Gendebien/Sunset but straight provides sufficient cooling before next demand. Consistent pace achievable across multiple GT3 cars within ~0.3s of each other — circuit suits current driving style well.
-* **Barcelona**: relentless right-hand bias with minimal FL recovery between corners. T5 (Seat), Campsa, and T13-T15 final complex create continuous FL loading. Only genuine FL rest is T9 hairpin (left) and front straight — insufficient for meaningful thermal recovery. Circuit demands simultaneous restraint (mid-lap) and full commitment (T13-T15) creating split-personality requirement every lap. Overtaking extremely difficult — T1 is only realistic zone. Hotlap pace (1:42.4) to race median (~1:43.9) gap of ~1.3s is within normal GT3 range.
-* **Imola**: balanced circuit, tyre degradation significantly lower than Barcelona despite similar lap times. Double stint tyres viable with negligible pace loss. Left-right balance and corner duration profile suit the Ferrari well.
+* **Barcelona**: relentless right-hand bias with minimal FL recovery between corners. T5 (Seat), Campsa, and T13-T15 final complex create continuous FL loading. Only genuine FL rest is T9 hairpin (left) and front straight — insufficient for meaningful thermal recovery. Circuit demands simultaneous restraint (mid-lap) and full commitment (T13-T15) creating split-personality requirement every lap. Overtaking extremely difficult — T1 is only realistic zone. Hotlap pace (1:42.4) to race median (~1:43.9) gap of ~1.3s is within normal GT3 range. T7-T8 Wurth chicane requires exactly ~50% brake pressure — too much causes momentum loss/understeer, too little causes excessive rear unload. Inside kerbs at T7 cause immediate over-rotation. T8 exit requires weight fully transferred, steering neutral, and car settled before any throttle application — premature throttle is a guaranteed gravel visit.
+* **Imola**: balanced circuit, tyre degradation significantly lower than Barcelona despite similar lap times. Double stint tyres viable with negligible pace loss. Left-right balance and corner duration profile suit the Ferrari well. Home circuit — ~5 months of primary development here in 2025.
+
+## Driver Archetype (April 2026 Assessment)
+
+**Style:** Smooth progressive trail-braker. Not a late-braker — strength is in the brake release phase and weight transfer management rather than peak braking force. Consistent across multiple GT3 architectures (front, mid, rear engine) within 0.3s at familiar circuits.
+
+**Primary strengths:**
+- Tyre thermal management and degradation reading under race conditions
+- Pattern recognition at corner-specific level (Campsa as FL gauge, cliff lap identification)
+- Cross-car adaptability — 8+ GT3 cars driven competitively in Year 1
+- Race pace consistency over long stints, particularly in degrading conditions
+- Mixed conditions and weather transition awareness
+
+**Primary development areas:**
+- Hotlap extraction — race pace muscle memory occasionally carries unnecessary caution into fresh-tyre hotlap context (confirmed by Coach Dave S1 feedback at Barcelona)
+- S1 commitment on circuits where T1 braking reference is the primary time source
+
+**Real-world comparable drivers:** Carlos Sainz (race management, tyre reading, Ferrari affinity), Alain Prost (minimum necessary approach, patience before commitment), Nicklas Nielsen (endurance context, Ferrari GT3 thermal management specialist)
+
+**Natural circuit profile:** performs above archetype average at bump-sensitive, technically demanding circuits (Sebring, Imola). Performs at archetype level at thermally demanding right-biased circuits (Barcelona). Untested at high-speed commitment circuits (CTMP, Le Mans).
+
+**Archetype summary:** Built for endurance racing. Greatest strengths emerge in the second half of long stints when degradation separates drivers. Sprint racing and pure hotlap extraction remain the development frontier.
 
 ## Hotlap Leaderboard Reference (Coach Dave Delta, April 2026)
 
@@ -79,7 +116,18 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 | Mercedes AMG GT3 Evo | 1:43.305 | P28 | Top 10% | 310 |
 | Corvette Z06 GT3R | ~1:43.0+ | P10 | Top 8% | 132 |
 
-Note: Barcelona leaderboard is extremely compressed. P7–P100 on the Ferrari covered by ~2.1 seconds. Positional rank is less meaningful than percentile. Alien tier (P1–P6) separated by ~0.5s gap from the main cluster.
+Note: Barcelona leaderboard is extremely compressed. P7–P100 on the Ferrari covered by ~2.1 seconds. Positional rank is less meaningful than percentile. Alien tier (P1–P6) separated by ~0.5s gap from the main cluster. P8 reference: Jaroslav Honzik (real Clio Cup and KTM X-Bow GT driver) at 1:42.064.
+
+### Autodromo Enzo e Dino Ferrari (Imola)
+
+| Car | Best | Position | Percentile | Pool |
+| --- | --- | --- | --- | --- |
+| Ferrari 296 GT3 | 1:44.094 | P17 | Top 5% | 323 |
+| Porsche 911 GT3R | 1:44.381 | P43 | Top 7% | 625 |
+| Mercedes AMG GT3 Evo | 1:44.248 | P35 | Top 10% | 349 |
+| Ford Mustang GT3 | 1:44.218 | P20 | Top 10% | 203 |
+
+Note: all four cars within 0.287 seconds of each other. Porsche S1 top 2.5%, S2 top 1% — two thirds of the lap at alien-tier level.
 
 ### Sebring International Raceway
 
@@ -90,7 +138,7 @@ Note: Barcelona leaderboard is extremely compressed. P7–P100 on the Ferrari co
 | Porsche 911 GT3R | 2:02.104 | P28 | Top 5% | 783 |
 | Aston Martin Vantage GT3 | 2:02.327 | P13 | Top 5% | 269 |
 
-Note: all four cars within 0.277 seconds of each other. Sebring pace is highly consistent across different GT3 architectures — indicates circuit suits current driving style independent of car.
+Note: all four cars within 0.277 seconds of each other. Sebring pace is highly consistent across different GT3 architectures — circuit suits current driving style. Strong results partly reflect natural style-circuit fit; treat as ceiling reference rather than absolute benchmark.
 
 ## Pace Reference — Spa-Francorchamps (April 2026, 95% AI, Race Conditions)
 
@@ -132,7 +180,7 @@ All data from offline races. Warmers OFF. ABS 9 confirmed optimal setting.
 
 | Race | Car | Median (dry) | Cliff Lap | Notes |
 | --- | --- | --- | --- | --- |
-| Race 1 | Ferrari 296 GT3 | ~1:43.9 | Lap 17 | Rain from lap 20, DNF lap 30 (Sabadell kerb) |
+| Race 1 | Ferrari 296 GT3 | ~1:43.9 | Lap 17 | Rain from lap 20, lap 28 started to get damp and time dropping |
 | Race 2 | Ferrari 296 GT3 | ~1:43.9 | Lap 17 | Full dry, traffic cooldown laps 28–29, recovery to 1:43.9 laps 30–32 |
 | Race 3 | Ferrari 296 GT3 | ~1:44.3 | Lap 14 | ABS 8 test — higher variance, earlier cliff, spin at Wurth lap 25 |
 
@@ -140,4 +188,4 @@ Hotlap vs race pace gap: ~1.3s (1:42.434 hotlap vs ~1:43.9 race median) — with
 
 FL temperature profile: ~93°C at T4 entry early stint → ~90.5°C late stint (fuel burn effect). Cliff threshold approximately 91°C sustained.
 
-Active race management: 3-hour mixed weather endurance race in progress (solo). Stint 2 on wet tyres. Rain forecasted lap 53.
+Active race: 3-hour solo mixed weather endurance race in progress (April 2026). Stint 2 on wet tyres. Rain forecasted lap 53.
