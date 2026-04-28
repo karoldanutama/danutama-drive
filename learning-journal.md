@@ -71,19 +71,19 @@ Interpretation for adaptation:
 
 AMG stint (cleaned):
 
-- Average pace: ~2:21.54
+- Median pace: ~2:21.53
 - Best lap: 2:21.073
 - Consistency (std dev): ~0.28s
 
 296 reference (cleaned overall):
 
-- Average pace: ~2:21.31
+- Median pace: ~2:21.21
 - Best lap: 2:20.484
 - Consistency (std dev): ~0.49s
 
 Takeaway:
 
-- AMG is currently ~0.22s/lap slower on average vs 296 reference, but significantly more consistent in this run.
+- AMG is currently ~0.32s/lap slower on median vs 296 reference, but significantly more consistent in this run.
 - This validates the balanced AMG setup as race-usable now.
 
 ### What Changed in My Understanding Today
@@ -103,4 +103,4 @@ Takeaway:
    - Eau Rouge landing stability
    - Pouhon delta repeatability lap-to-lap
    - Exit traction at La Source / Bus Stop / Bruxelles
-4. Pace target: preserve metronome consistency and reduce average from ~2:21.5x toward ~2:21.2x.
+4. Pace target: preserve metronome consistency and reduce median from ~2:21.5x toward ~2:21.2x.
