@@ -104,3 +104,76 @@ Takeaway:
    - Pouhon delta repeatability lap-to-lap
    - Exit traction at La Source / Bus Stop / Bruxelles
 4. Pace target: preserve metronome consistency and reduce median from ~2:21.5x toward ~2:21.2x.
+
+## 2026-04-29
+
+### Session Context
+
+- Track: Spa-Francorchamps
+- Car: Mercedes AMG GT3 Evo
+- Starting point: continued saved race state into stint 2 with no tyre change
+- Goal: validate worn-tyre behavior and test in-stint balance tools under traffic variance
+
+### Stint 2 Conditions and Inputs
+
+- Tyres: no change from stint 1 (used set carried over)
+- Traffic: more sporadic vs stint 1
+- In-stint setup changes:
+  - Brake bias: 46 -> 45
+  - TC lateral/slip map: reduced from 5/6 range to 3
+
+Reason for changes:
+
+- Mid-corner rotation felt degraded on worn tyres, most severe at Stavelot 1 entry-to-apex phase.
+- Car felt reluctant to rotate; rearward BB and lower TC were used to recover yaw response.
+
+### Pace Outcome
+
+Stint 1 clean reference (same race):
+
+- Median: 2:21.527
+- Best: 2:21.073
+- Std dev: 0.280
+
+Stint 2 (no tyre change, cleaned):
+
+- Median: 2:22.919
+- Best: 2:22.193
+- Std dev: 0.585
+
+Delta (stint 2 vs stint 1):
+
+- Median loss: +1.392s/lap
+- Variance increase: std dev approximately doubled
+
+### Interpretation
+
+Primary finding:
+
+- Pace drop is consistent with expected used-tyre second-stint degradation, not a sudden setup failure.
+
+Secondary findings:
+
+- In-stint BB and TC changes likely improved rotation feel but could not offset baseline tyre grip loss.
+- TC reduction helped free rotation but likely increased instability risk on exits, contributing to higher variance.
+- Stavelot 1 was the clearest corner-level indicator of front-limited rotation on worn tyres.
+
+### Driver/Car Character Learning
+
+- AMG remains a "set then send" car: once platform is settled, throttle commitment is strong (No Name/Pouhon phase behavior).
+- Compared to Ferrari/Corvette, AMG rewards decisive power application more, but carries higher physical demand through steering torque and correction workload.
+- Practical race decision validated: AMG is excellent for learning platform commitment, while Porsche/Ferrari remain preferred race tools for lower fatigue cost.
+
+### Practical Rules Captured Today
+
+1. On worn tyres, diagnose the problem first:
+   - If exit traction is the issue, increase TC.
+   - If mid-corner rotation is the issue, reduce TC carefully and/or move BB rearward.
+2. For Stavelot 1 "won't turn" symptom, BB -1 is an effective first in-stint response.
+3. Keep TC adjustments incremental on worn tyres (one step at a time) to avoid trading push for snap/variance.
+
+### Next Test Plan
+
+1. Repeat same format with fresh tyres for stint 2 to isolate tyre-age effect.
+2. Keep balanced baseline fixed; test BB 46 vs 45 first before larger TC changes.
+3. Compare stint-2 median and sigma directly against this run to quantify pure tyre reset benefit.
