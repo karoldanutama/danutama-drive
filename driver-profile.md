@@ -25,6 +25,7 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 | Early 2026 | Sebring International Raceway | Bump absorption, left-right balance, cross-car consistency confirmed across 4 GT3 architectures within 0.277s |
 | April 2026 | Barcelona Circuit de Catalunya | FL thermal management under constraint, ABS settings impact confirmed via controlled race experiments, mixed weather endurance strategy development |
 | April 2026 | 3-hour solo mixed weather endurance race, Barcelona | First long-format endurance race attempt — stint structure, tyre allocation strategy, weather transition management |
+| April 2026 | Spa GT3 setup/style consolidation (AMG and Ferrari) | Identified phase-separated control model: entry rotation managed via BB/diff choices, planted rear demanded from apex onward; confirmed through race median/sigma patterns |
 
 ## Methodology
 
@@ -89,22 +90,33 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 
 **Style:** Smooth progressive trail-braker. Not a late-braker — strength is in the brake release phase and weight transfer management rather than peak braking force. Consistent across multiple GT3 architectures (front, mid, rear engine) within 0.3s at familiar circuits.
 
+**Control model (newly identified):** Rotation-led, phase-separated corner execution. Entry yaw is intentionally generated and managed during brake release (often with rearward BB and lower diff preload than baseline), then rear platform is stabilized from mid-corner to exit for early, decisive throttle commitment. Practical shorthand: "control rear drift on entry, demand planted rear from apex onward."
+
 **Primary strengths:**
 - Tyre thermal management and degradation reading under race conditions
 - Pattern recognition at corner-specific level (Campsa as FL gauge, cliff lap identification)
 - Cross-car adaptability — 8+ GT3 cars driven competitively in Year 1
 - Race pace consistency over long stints, particularly in degrading conditions
 - Mixed conditions and weather transition awareness
+- Setup-to-style translation: reliably identifies when baseline setups are too front-safe and re-centers balance through BB/diff changes without triggering instability
 
 **Primary development areas:**
 - Hotlap extraction — race pace muscle memory occasionally carries unnecessary caution into fresh-tyre hotlap context (confirmed by Coach Dave S1 feedback at Barcelona)
 - S1 commitment on circuits where T1 braking reference is the primary time source
+- Context maps under low grip: maintain same rotation model while preparing pre-defined safer BB/diff presets for cold, wet, and late-stint rear-limited phases
 
 **Real-world comparable drivers:** Carlos Sainz (race management, tyre reading, Ferrari affinity), Alain Prost (minimum necessary approach, patience before commitment), Nicklas Nielsen (endurance context, Ferrari GT3 thermal management specialist)
 
 **Natural circuit profile:** performs above archetype average at bump-sensitive, technically demanding circuits (Sebring, Imola). Performs at archetype level at thermally demanding right-biased circuits (Barcelona). Untested at high-speed commitment circuits (CTMP, Le Mans).
 
 **Archetype summary:** Built for endurance racing. Greatest strengths emerge in the second half of long stints when degradation separates drivers. Sprint racing and pure hotlap extraction remain the development frontier.
+
+### Setup Preference Signature (GT3, current)
+
+- Frequently runs more rearward brake bias than shared baselines (for example, 49 -> 46) to restore entry rotation authority.
+- Frequently lowers diff preload from conservative defaults (for example, 80 Nm -> 40 Nm) to improve mid-corner yaw response.
+- Uses these changes as entry-phase tools, while preserving planted rear behavior from apex to exit through input discipline.
+- Validates every change in race-stint metrics (median and sigma), not one-lap feel alone.
 
 ## Hotlap Leaderboard Reference (Coach Dave Delta, April 2026)
 
