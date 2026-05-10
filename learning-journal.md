@@ -177,3 +177,122 @@ Secondary findings:
 1. Repeat same format with fresh tyres for stint 2 to isolate tyre-age effect.
 2. Keep balanced baseline fixed; test BB 46 vs 45 first before larger TC changes.
 3. Compare stint-2 median and sigma directly against this run to quantify pure tyre reset benefit.
+
+## 2026-05-10
+
+### Session Context
+
+- Track: Circuit de Barcelona-Catalunya
+- Scope: Coach Dave hotlap leaderboards meta analysis (GT3 multi-car)
+- Cars analyzed: Ferrari 296, McLaren 720S, Aston Vantage, Lexus RCF, Corvette Z06 GT3R, Porsche 911 GT3R
+- Driver tag: `oldark.`
+- Goal: determine whether rank consistency with different lap times reflects driving inconsistency or leaderboard ecosystem effects
+
+### Data Snapshot Used
+
+- Ferrari 296 GT3: `1:42.434`, `P28/399`
+- McLaren 720S GT3: `1:43.206`, `P13/264`
+- Aston Vantage GT3: `1:43.083`, `P13/235`
+- Lexus RCF GT3: `1:42.819`, `P22/353`
+- Corvette Z06 GT3R: `1:42.788`, `P9/153`
+- Porsche 911 GT3R: `1:43.386`, `P44/553`
+
+### Meta Reading Table (Important, as of 2026-05-10)
+
+Important: this table reflects only the leaderboard snapshots available today in this journal session.
+
+| Car | Pool | My Time | Rank | Percentile | Gap to P1 | Gap to P10 | P10-P50 | P50-P99 | Pro Presence (Known Today) | Important Meta Read (Today) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| Ferrari 296 GT3 | 399 | 1:42.434 | P28 | Top 93.0% | +1.059s | +0.314s | 0.721s | 0.561s | Yes (`jardier` in top 10) | Meta-heavy board: high adoption + tight density + known high-level front pack. |
+| McLaren 720S GT3 | 264 | 1:43.206 | P13 | Top 95.1% | +1.331s | +0.054s | 1.044s | 0.815s | Yes (`jardier` in top 10) | Near pro-adjacent cutline; only hundredths needed for top-10. |
+| Aston Vantage GT3 | 235 | 1:43.083 | P13 | Top 94.5% | +1.500s | +0.312s | 1.205s | 0.961s | Not confirmed in this snapshot | Broad spread; good rank ROI with moderate pace gain. |
+| Lexus RCF GT3 | 353 | 1:42.819 | P22 | Top 93.8% | +1.120s | +0.333s | 0.708s | 0.606s | Not confirmed in this snapshot | Dense serious board; many optimized laps in upper-midfield. |
+| Corvette Z06 GT3R | 153 | 1:42.788 | P9 | Top 94.1% | +1.638s | -0.466s | 1.431s | 1.340s* | Not confirmed in this snapshot | Best pace-to-rank conversion; smaller pool with wider spread. |
+| Porsche 911 GT3R | 553 | 1:43.386 | P44 | Top 92.0% | +2.084s | +0.754s | 0.824s | 0.439s | Not confirmed in this snapshot | Deepest shark tank; largest pool and toughest top-10 access. |
+
+*Note: Corvette table in the source snapshot ends at P99 row display; `P50-P99` computed from the last available row in that snapshot.
+
+### Key Finding
+
+Consistent position band across cars is real. Absolute lap times vary, but relative competitiveness remains stable.
+
+- Percentile cluster across all six cars is approximately top `92%` to `95%`.
+- This supports a stable cross-car driver baseline at Barcelona despite different raw times.
+- Main variance source is leaderboard distribution and field quality, not major swings in core pace level.
+
+### Distribution and Compression Learning
+
+Two compression bands were kept for interpretation:
+
+- `P10-P50`: competitive-core density
+- `P50-P99`: long-tail/upper-mid spread
+
+Observed pattern:
+
+- Ferrari and Lexus show tighter competitive-core spacing (`P10-P50` around ~0.7s), indicating dense optimized pace clusters.
+- Porsche has the deepest participation pool and remains tightly packed in upper-midfield despite larger absolute gaps to P1/P10.
+- Corvette shows the widest spread profile among sampled boards, enabling better rank conversion for similar pace quality.
+- McLaren and Aston sit in a mixed profile: decent pool depth with broader spread than Ferrari/Lexus.
+
+Ferrari compression confirmation from current snapshot:
+
+- `P10 = 1:42.120`, `P99 = 1:43.402`, so `P10-P99 = 1.282s`.
+- Equivalent density from `P10` to `P99` is about `7.0 drivers per 100 ms` on average.
+- Local clustering can feel higher (roughly `8-9 drivers per 100 ms`) in specific pockets.
+
+### Pro-Presence and Field-Quality Adjustment
+
+Known real-driver presence changed interpretation of rank quality.
+
+- `jardier` (Jaroslav Honzik) appears in at least:
+  - McLaren leaderboard (`P9`, `1:43.103`)
+  - Ferrari leaderboard (`P6`, `1:41.913`)
+- This means top-10 thresholds in those boards are not purely community-amateur references.
+
+Implication:
+
+- McLaren `P13` at `1:43.206` is not just near top-10 numerically; it is near a pro-adjacent cutline.
+- Ferrari rank should be interpreted through field density plus top-end quality, not rank number alone.
+
+### Car-By-Car Meta Read (Barcelona)
+
+1. Ferrari 296 GT3
+   - High-adoption and high-density board behavior.
+   - Strong raw pace in this sample but rank is suppressed by crowding and mature setup meta.
+2. McLaren 720S GT3
+   - Very close to top-10 cutoff; high rank ROI per small time gain.
+   - Presence of Honzik in front pack raises top-10 quality threshold.
+3. Aston Vantage GT3
+   - Solid rank and broader spread than Ferrari/Lexus.
+   - Improvement path likely extraction/commitment rather than pure adaptation deficit.
+4. Lexus RCF GT3
+   - Strong absolute competitiveness with dense upper band.
+   - Requires clean execution to gain each position due to compact spacing.
+5. Corvette Z06 GT3R
+   - Best position conversion (`P9`) in sample.
+   - Smaller pool + wider spread creates favorable rank mechanics once inside top-10.
+6. Porsche 911 GT3R
+   - Largest pool and hardest ladder depth.
+   - Lower visible rank still maps to high percentile; interpreted as shark-tank effect rather than collapse.
+
+### What Changed in My Understanding Today
+
+1. Rank consistency across cars can coexist with larger raw lap-time variance when board distributions differ.
+2. Percentile is a more stable performance signal than position for cross-car comparison.
+3. Barcelona Ferrari board behaves like a meta-heavy environment: popular, dense, and quality-loaded.
+4. Pro-presence in top-10 materially changes how near-cutline results should be valued.
+5. A tenth of a second at Barcelona can carry large positional value in compressed bands.
+
+### Practical Rule Update
+
+- For cross-car self-evaluation, prioritize this order:
+  1. percentile,
+  2. gap to top-10,
+  3. compression context (`P10-P50`, `P50-P99`),
+  4. pro-presence signal,
+  5. raw rank number.
+
+### Next Analysis Step
+
+1. Build a quality-adjusted leaderboard score per car combining percentile, pool size, compression, and pro-presence.
+2. Add rank-gain-per-`0.10s` estimate around current rank for each car to optimize training ROI.
