@@ -296,3 +296,53 @@ Implication:
 
 1. Build a quality-adjusted leaderboard score per car combining percentile, pool size, compression, and pro-presence.
 2. Add rank-gain-per-`0.10s` estimate around current rank for each car to optimize training ROI.
+
+### Addendum: Spa Meta Finding (2026-05-10)
+
+Important: this addendum is based on the Spa leaderboard snapshots reviewed later on the same day.
+
+#### Spa Leaderboard Snapshot Used
+
+- Porsche 911 GT3R: `2:20.087`, `P40/853`
+- Ferrari 296 GT3: `2:19.812`, `P21/571`
+- Aston Vantage GT3: `2:19.901`, `P12/308`
+- Corvette Z06 GT3R: `2:19.581`, `P18/337`
+- Mercedes AMG GT3: `2:20.175`, `P35/645`
+
+#### Spa Meta Reading Table (Important, as of 2026-05-10)
+
+| Car | Pool | My Time | Rank | Percentile | Gap to P1 | Gap to P10 | P10-P50 | P50-P99 | Important Meta Read (Today) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Ferrari 296 GT3 | 571 | 2:19.812 | P21 | Top 96.5% | +2.095s | +0.338s | 0.774s | 0.515s | Deep and dense board; result is elite despite strong field depth. |
+| Aston Vantage GT3 | 308 | 2:19.901 | P12 | Top 96.4% | +1.232s | +0.043s | 1.282s | 1.140s | Highest short-term top-10 ROI; only hundredths needed. |
+| Porsche 911 GT3R | 853 | 2:20.087 | P40 | Top 95.4% | +1.986s | +1.085s | 1.221s | 0.644s | Largest shark tank; rank number looks lower but percentile remains very strong. |
+| Corvette Z06 GT3R | 337 | 2:19.581 | P18 | Top 95.0% | +2.184s | +0.459s | 1.577s | 0.875s | Wider spread gives decent position gain potential with moderate pace gain. |
+| Mercedes AMG GT3 | 645 | 2:20.175 | P35 | Top 94.7% | +2.370s | +0.716s | 0.987s | 0.521s | Large competitive field with tight lower top-100 clustering. |
+
+#### Interpretation Shift vs Barcelona
+
+Spa appears to fit the current driving archetype better in hotlap context:
+
+- Percentile band is tightly clustered around top `94.7%` to `96.5%` across five cars.
+- This suggests robust cross-car transfer at Spa even when raw rank differs by pool size.
+- Lower-looking ranks in Porsche/AMG are primarily field-depth effects, not a collapse in relative level.
+
+#### Technique Finding: Peak Brake Precision at Spa vs Barcelona
+
+Spa also requires non-peak braking in many corners, but recovery behavior differs by lap context.
+
+- Over-braking in flow corners such as Pouhon causes major local momentum loss, but part of the loss can be partially recovered later through line and commitment phases.
+- Over-braking in Barcelona final-sector corners (for example Sabadell/final complex entry) is less recoverable because exit speed is immediately monetized onto the straight.
+
+Operational takeaway:
+
+- Both tracks reward brake modulation and release timing.
+- Barcelona punishes small peak-brake errors more severely due to lower recovery opportunity and stronger exit-amplification.
+
+#### Corner-Specific Barcelona Reinforcement
+
+For Repsol, Seat, Wurth, and Campsa, rotation authority depends on precise peak and release timing.
+
+- Too much peak brake overloads front grip and suppresses rotation.
+- Too little peak brake fails to generate required yaw/load transfer.
+- Fast laps come from correct peak duration plus clean release handoff from braking to turning.
