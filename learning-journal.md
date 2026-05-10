@@ -346,3 +346,35 @@ For Repsol, Seat, Wurth, and Campsa, rotation authority depends on precise peak 
 - Too much peak brake overloads front grip and suppresses rotation.
 - Too little peak brake fails to generate required yaw/load transfer.
 - Fast laps come from correct peak duration plus clean release handoff from braking to turning.
+
+### Addendum: Sebring Meta Finding (2026-05-10)
+
+Important: this addendum is based on Sebring leaderboard snapshots reviewed on the same day.
+
+#### Sebring Leaderboard Snapshot Used
+
+- Ferrari 296 GT3: `2:02.050`, `P7/346`
+- Aston Vantage GT3: list shows `oldark.` at `P14` (`2:02.327`) while prior note mentioned `P13`
+- Lexus RCF GT3: `2:02.153`, `P17/387`
+- Porsche 911 GT3R: headline `2:02.104`, `P29/683`, with known tracker anomaly on displayed `P1-P3`
+- Mercedes AMG GT3: `2:02.318`, `P22/451`
+
+#### Sebring Meta Reading Table (Important, as of 2026-05-10)
+
+| Car | Pool | My Time | Rank Used | Percentile | Gap to P1 | Gap to P10 | P10-P50 | P50-P99 | Data Confidence | Important Meta Read (Today) |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| Ferrari 296 GT3 | 346 | 2:02.050 | P7 | Top 98.3% | +0.555s | -0.280s | 1.142s | 0.759s | High | Elite conversion; already inside top-10 with margin. |
+| Aston Vantage GT3 | 256 | 2:02.327 | P14 (list) | Top 95.3% | +1.638s | +0.374s | 1.187s | 1.169s | High | Broad spread board; high rank-jump potential per tenth. |
+| Lexus RCF GT3 | 387 | 2:02.153 | P17 | Top 95.9% | +0.803s | +0.208s | 0.789s | 0.779s | High | Dense but fair structure; near top-10 threshold. |
+| Porsche 911 GT3R | 683 | 2:02.104 (headline) / 2:02.153 (table) | Cleaned list (drop shown P1-P3) | ~Top 95.9%* | +0.508s (cleaned) | +0.077s (cleaned) | 0.658s (cleaned) | 0.779s (cleaned) | Medium (anomaly) | After removing bugged P1-P3, pace is top-10-adjacent in this snapshot. |
+| Mercedes AMG GT3 | 451 | 2:02.318 | P22 | Top 95.6% | +1.124s | +0.264s | 0.858s | 0.639s | High | Competitive core with moderate compression; steady gains possible. |
+
+*Percentile context uses the headline pool/rank reference; Porsche row is flagged due to tracker anomaly handling.
+
+#### Sebring Interpretation
+
+- Cross-car Sebring percentile band remains tightly high (approximately top `95.3%` to `98.3%`).
+- This reinforces Sebring as a strong style fit: technical load transfer, bump management, and rhythm continuity translate well.
+- Ferrari is currently the clearest performance anchor (high percentile and top-10 conversion).
+- Lexus and AMG are near-cutline boards where small gains can produce immediate rank movement.
+- Porsche requires anomaly-aware interpretation, but cleaned deltas still indicate strong competitiveness.
