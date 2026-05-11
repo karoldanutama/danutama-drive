@@ -378,3 +378,52 @@ Important: this addendum is based on Sebring leaderboard snapshots reviewed on t
 - Ferrari is currently the clearest performance anchor (high percentile and top-10 conversion).
 - Lexus and AMG are near-cutline boards where small gains can produce immediate rank movement.
 - Porsche requires anomaly-aware interpretation, but cleaned deltas still indicate strong competitiveness.
+
+## 2026-05-11
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Session window: yesterday to today, including a concentrated 2-hour multi-car hotlap block
+- Cars run in the same block: Ferrari 296 GT3, Corvette Z06 GT3R, Mercedes AMG GT3, Porsche 911 GT3R
+- Goal: validate whether return pace after long break aligns with current Spa/Sebring/Barcelona training transfer
+
+### Timeline Snapshot (Yesterday -> Today)
+
+- Ferrari progression sequence captured:
+  - `1:43.940` (55-lap session)
+  - `1:43.823` (short 4-lap return)
+  - `1:43.757` (same-day improvement)
+- Same-day multi-car bests:
+  - Ferrari 296 GT3: `1:43.757`
+  - Corvette Z06 GT3R: `1:44.044`
+  - Mercedes AMG GT3: `1:44.183`
+  - Porsche 911 GT3R: `1:44.294`
+
+### Imola Meta Reading Table (Important, as of 2026-05-11)
+
+| Car | Pool | My Time | Rank | Percentile | Gap to P1 | Gap to P10 | P10-P50 | P50-P99 | Important Meta Read (Today) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Ferrari 296 GT3 | 418 | 1:43.757 | P17 | Top 96.2% | +1.321s | +0.179s | 0.667s | 0.681s | Strongest result of the block; dense board and near top-10 threshold. |
+| Porsche 911 GT3R | 603 | 1:44.294 | P45 | Top 92.7% | +1.836s | +0.625s | 0.786s | 0.455s | Deep pool with tight lower top-100 compression; harder to gain rank quickly. |
+| Corvette Z06 GT3R | 187 | 1:44.044 | P17 | Top 91.4% | +1.450s | +0.358s | 1.357s | 1.770s | Wider spread profile; medium gain can produce larger position jumps. |
+| Mercedes AMG GT3 | 414 | 1:44.183 | P36 | Top 91.5% | +1.327s | +0.758s | 1.030s | 0.541s | Competitive board with meaningful top-10 gap; requires larger extraction step. |
+
+### Additional Ferrari Compression Confirmation (Imola)
+
+- `P3 = 1:43.100`, `P28 = 1:43.973` -> `0.873s` across 26 positions (25 gaps).
+- This is approximately `0.035s` per position in that upper cluster.
+- Interpretation: tiny execution changes can move multiple rank slots in one session.
+
+### What Changed in My Understanding Today
+
+1. Return pace at Imola after a long break remains highly competitive, confirming strong training transfer from Spa/Sebring/Barcelona.
+2. Ferrari continues to function as the highest-confidence benchmark car in dense, paid-platform leaderboard conditions.
+3. Imola remains a track-character fit: technical flow with recoverable chains, unlike Barcelona's higher error-propagation sequences.
+4. Cross-car spread in same-day testing is structured, not random, indicating stable adaptation and consistent technique baseline.
+
+### Practical Next Step
+
+1. Prioritize Ferrari for near-term rank conversion (`+0.179s` to top 10).
+2. Use Corvette as secondary ROI board for position gain efficiency.
+3. Treat Porsche and AMG as deeper extraction projects focused on sector-specific hotlap commitment.
