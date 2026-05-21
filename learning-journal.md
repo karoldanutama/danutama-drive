@@ -427,3 +427,100 @@ Important: this addendum is based on Sebring leaderboard snapshots reviewed on t
 1. Prioritize Ferrari for near-term rank conversion (`+0.179s` to top 10).
 2. Use Corvette as secondary ROI board for position gain efficiency.
 3. Treat Porsche and AMG as deeper extraction projects focused on sector-specific hotlap commitment.
+
+## 2026-05-21
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Race car: Ferrari 296 GT3
+- Hotlap car after race: Aston Martin Vantage GT3
+- Race format: full ELMS-style grid, damage ON, tyre warmers OFF, changing weather
+- Real-life constraint: race completed across multiple days due to full-time work; maximum 2 stints per day
+- Goal: validate endurance race execution, mixed-weather tyre strategy, and post-race hotlap transfer
+
+### Ferrari 296 GT3 Race Phase Summary
+
+The race should be interpreted by weather phase rather than as a single stint average.
+
+| Phase | Laps Used | Best | Median | Avg | Std Dev | Read |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Stint 1 dry early | 13 | 1:44.529 | 1:45.003 | 1:44.991 | 0.216s | Excellent dry race pace and consistency. |
+| Stint 1 drizzle transition | 4 | 1:45.283 | 1:46.092 | 1:46.126 | 0.626s | Grip loss begins, still controlled. |
+| Stint 2 dry/cooling before damp | 7 | 1:45.814 | 1:46.155 | 1:46.285 | 0.374s | Slower tyre/traffic phase, stable. |
+| Stint 2 damp transition | 8 | 1:47.975 | 1:49.692 | 1:49.478 | 1.065s | Transition phase, high uncertainty. |
+| Stint 3 full wet stabilized | 15 | 1:58.841 | 2:00.654 | 2:00.792 | 1.353s | Wet pace stabilized after adaptation. |
+| Stint 4 drying damp | 7 | 1:51.897 | 1:53.369 | 1:53.161 | 0.785s | Drying-line recovery phase. |
+| Stint 5 dry/cold recovery | 12 | 1:44.369 | 1:45.715 | 1:45.847 | 0.811s | Pace returned, but cold-tyre risk remained. |
+
+### ELMS Reference Context: Car 55 Spirit of Race Ferrari LMGT3
+
+Car `55` from `data/elms/2025/imola/23_Analysis_Race.csv` was used as a real-world race benchmark.
+
+| Driver | Best | Median | Avg | Std Dev | Theoretical |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| David PEREL | 1:44.066 | 1:44.704 | 1:44.737 | 0.500s | 1:43.927 |
+| Matthew GRIFFIN | 1:44.300 | 1:45.935 | 1:46.975 | 3.374s | 1:43.889 |
+| Duncan CAMERON | 1:46.472 | 1:48.102 | 1:48.535 | 1.814s | 1:46.099 |
+
+Comparison note:
+
+- My strongest dry race phase median: `1:45.003`
+- David Perel race median: `1:44.704`
+- Raw median gap: `+0.299s`
+- This is not a direct skill equivalence claim because sim conditions, hardware, and real-world race variables differ. It is a useful endurance-pace reference showing that the dry Ferrari race phase was close to a real ELMS Ferrari LMGT3 race median.
+
+### Weather Strategy Learning
+
+Key race decisions:
+
+- Stint 1 was short-stinted partly due to needing to save/pause the game, not because fuel required it. Full fuel could likely have reached roughly lap 28, but the stop occurred around lap 21.
+- Drizzle arrived later, so the early stop accidentally created strategic flexibility.
+- Stayed on dry tyres initially because AI also stayed out and the track was not yet wet enough to justify the crossover.
+- Switched to wets at lap 42; AI switched later around laps 46-48 and lost roughly `5-7s/lap` during the delay.
+- Finished 3 laps ahead of P2, mostly through better wet crossover timing and lower risk execution.
+
+Drying-track strategy:
+
+- Delayed switch from wets to mediums until lap 82 while AI began changing around laps 77-78.
+- Rationale: track was still too damp/cold, so wets could be abused until approaching their overheat threshold (~75C) while waiting for the dry line to open.
+- Early medium switch would likely have created 6-7 compromised laps on cold slicks and an incomplete dry line.
+- Delayed lap 82 switch compressed the slick transition cost to roughly 2 laps, despite a cold-tyre spin on the out phase.
+
+Core principle reinforced:
+
+- The correct crossover is not when a tyre is theoretically faster; it is when the whole system is ready: tyre, track surface, dry line, temperature, and race-risk profile.
+
+### Aston Vantage GT3 Imola Hotlap
+
+Post-race hotlap result:
+
+- Aston Martin Vantage GT3: `1:43.824`, `P6/213`
+- Percentile: top `97.7%`
+- Gap to P1: `+1.256s`
+- Gap to P3: `+0.650s`
+- Gap to P5: `+0.029s`
+- Gap to P10: `-0.182s` (inside top 10)
+
+Compression snapshot:
+
+- `P10 = 1:44.006`
+- `P50 = 1:45.531`
+- `P99 = 1:46.904`
+- `P10-P50 = 1.525s`
+- `P50-P99 = 1.373s`
+- `P10-P99 = 2.898s`
+
+Interpretation:
+
+- Aston board is much wider than Ferrari-style dense boards, so rank is easier to convert once pace is strong.
+- Result still matters because `P6/213` after a long mixed-weather race indicates excellent post-race adaptation and front-engine compatibility.
+- This weakens the hypothesis that Imola is generally limiting front-engine extraction. The issue appears more AMG-specific than front-engine-specific.
+
+### What Changed in My Understanding Today
+
+1. Ferrari race pace at Imola is close to a real ELMS Ferrari LMGT3 race reference in dry phase median, especially considering warmers OFF and mixed-weather conditions.
+2. Mixed-weather strategy remains a core strength: wet crossover timing and delayed slick crossover both produced race-winning margin.
+3. Distributed endurance execution is valid for current life constraints; repeated cold re-entry into race context is itself a useful skill.
+4. Aston result proves front-engine cars can be extracted well at Imola; AMG remains the specific translation problem.
+5. Imola continues to fit the driver archetype: technical flow, recoverable sequences, and high reward for rhythm plus strategic patience.
