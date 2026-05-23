@@ -689,7 +689,7 @@ Interpretation:
 
 - This is a consistent signature, not random preference. I usually move BB roughly `2-3%` rearward from Coach Dave aggressive qualifying setups.
 - The purpose is to unlock entry rotation during brake release, not to create instability for its own sake.
-- Going further rearward than that typically makes the car feel uneasy, which confirms that the target is controlled yaw generation, not rear looseness.
+- Moving back toward a more forward BB setting makes entry feel uneasy and uncomfortable, which confirms that the rearward shift is a corrective tool rather than a flirtation with rear looseness.
 - This also sharpens the platform-fit conclusion: the preferred car is one that rotates once BB is moved into this rearward window, then stays planted from apex onward. The bad-fit car is one that still feels inert after the BB correction.
 
 ### What Changed in My Understanding Today

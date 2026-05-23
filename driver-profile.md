@@ -118,7 +118,7 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 - Typical hotlap brake-bias ranges by car family in current LMU GT3 use: Ferrari around `47%`, McLaren around `44-45%`, AMG around `45%`, Aston Martin around `45-46%`, BMW around `45%`.
 - Frequently lowers diff preload from conservative defaults (for example, 80 Nm -> 40 Nm) to improve mid-corner yaw response.
 - Uses these changes as entry-phase tools, while preserving planted rear behavior from apex to exit through input discipline.
-- Practical brake-bias rule: usually moves `2-3%` rearward from Coach Dave aggressive qualifying baselines; beyond that the car begins to feel needlessly uneasy. This confirms the target is not instability for its own sake, but the minimum rearward shift required to unlock brake-release rotation.
+- Practical brake-bias rule: usually moves `2-3%` rearward from Coach Dave aggressive qualifying baselines because moving back toward the more forward baseline makes entry feel uneasy and uncomfortable. This confirms the target is not instability for its own sake, but the minimum rearward shift required to restore brake-release rotation and entry confidence.
 - Platform-fit implication: the preferred car is not simply one with a planted rear, but one that allows yaw generation on entry before delivering rear support from apex onward. Cars that remain inert in brake release even after the rearward BB shift become high-cost hotlap platforms.
 - Validates every change in race-stint metrics (median and sigma), not one-lap feel alone.
 
