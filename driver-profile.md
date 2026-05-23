@@ -103,6 +103,7 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 **Primary development areas:**
 - Hotlap extraction — race pace muscle memory occasionally carries unnecessary caution into fresh-tyre hotlap context (confirmed by Coach Dave S1 feedback at Barcelona)
 - S1 commitment on circuits where T1 braking reference is the primary time source
+- Heavy front-engine hotlap extraction, especially at Imola: the limiting issue is not planted rear in isolation, but cars that stay too front-safe and too slow to rotate through entry-to-mid phase even after brake bias is moved into the preferred rearward window
 - Context maps under low grip: maintain same rotation model while preparing pre-defined safer BB/diff presets for cold, wet, and late-stint rear-limited phases
 
 **Real-world comparable drivers:** Carlos Sainz (race management, tyre reading, Ferrari affinity), Alain Prost (minimum necessary approach, patience before commitment), Nicklas Nielsen (endurance context, Ferrari GT3 thermal management specialist)
@@ -114,8 +115,11 @@ Key distinction: not a beginner. 14 years of casual exposure built foundational 
 ### Setup Preference Signature (GT3, current)
 
 - Frequently runs more rearward brake bias than shared baselines (for example, 49 -> 46) to restore entry rotation authority.
+- Typical hotlap brake-bias ranges by car family in current LMU GT3 use: Ferrari around `47%`, McLaren around `44-45%`, AMG around `45%`, Aston Martin around `45-46%`, BMW around `45%`.
 - Frequently lowers diff preload from conservative defaults (for example, 80 Nm -> 40 Nm) to improve mid-corner yaw response.
 - Uses these changes as entry-phase tools, while preserving planted rear behavior from apex to exit through input discipline.
+- Practical brake-bias rule: usually moves `2-3%` rearward from Coach Dave aggressive qualifying baselines; beyond that the car begins to feel needlessly uneasy. This confirms the target is not instability for its own sake, but the minimum rearward shift required to unlock brake-release rotation.
+- Platform-fit implication: the preferred car is not simply one with a planted rear, but one that allows yaw generation on entry before delivering rear support from apex onward. Cars that remain inert in brake release even after the rearward BB shift become high-cost hotlap platforms.
 - Validates every change in race-stint metrics (median and sigma), not one-lap feel alone.
 
 ## Hotlap Leaderboard Reference (Coach Dave Delta, April 2026)

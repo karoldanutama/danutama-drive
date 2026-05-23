@@ -600,6 +600,7 @@ Corrected conclusion:
 
 - The real issue is not generic front-engine incompetence.
 - The real issue is heavier front-engine GT3 translation at Imola.
+- More specifically: the limiting pattern is not planted rear in isolation, but cars that stay too front-safe and too slow to rotate through entry-to-mid phase even after brake bias is moved rearward into the preferred window.
 - Aston remains important because it proves the original blanket theory was too crude.
 - But the broader sample shows the unresolved weakness is real in the heavier front-engine cars, especially through the middle phase of the lap.
 
@@ -615,6 +616,7 @@ Corrected conclusion:
    - Both launch the lap well enough.
    - Both lose too much time in sector 2.
    - Neither recovers enough in sector 3.
+   - Rear stability itself is not the problem; the problem is insufficient rotation authority before the rear support becomes useful.
 4. Separate rear-engine issue: Porsche 911 GT3R
    - Different problem profile from AMG/BMW.
    - Loses immediately in `S1`, then also fails to cash out `S3`.
@@ -673,6 +675,23 @@ Operational takeaway:
 - High-cost pace indicates a forced lap, narrower window, and weaker repeatability.
 - On this measure, McLaren is a natural Imola platform for me; AMG is a grind; BMW sits in between but still on the expensive side.
 
+### Brake Bias Signature Clarification
+
+Current hotlap BB ranges across the same Imola platform set:
+
+- Ferrari 296 GT3: around `47%`
+- McLaren 720S GT3: around `44-45%`
+- Mercedes AMG GT3 Evo: around `45%`
+- Aston Martin Vantage GT3: around `45-46%`
+- BMW M4 GT3: around `45%`
+
+Interpretation:
+
+- This is a consistent signature, not random preference. I usually move BB roughly `2-3%` rearward from Coach Dave aggressive qualifying setups.
+- The purpose is to unlock entry rotation during brake release, not to create instability for its own sake.
+- Going further rearward than that typically makes the car feel uneasy, which confirms that the target is controlled yaw generation, not rear looseness.
+- This also sharpens the platform-fit conclusion: the preferred car is one that rotates once BB is moved into this rearward window, then stays planted from apex onward. The bad-fit car is one that still feels inert after the BB correction.
+
 ### What Changed in My Understanding Today
 
 1. The May 21 Aston result did not solve the front-engine question; it only proved the question had been framed too simply.
@@ -683,6 +702,7 @@ Operational takeaway:
 6. My overlap-group percentile floor is strong enough to confirm real cross-car hotlap competence, not just isolated car spikes.
 7. Lap-count-to-PB is a useful secondary metric because it reveals whether pace was accessed naturally or dragged out through overpush.
 8. The heavier front-engine cars are not just slower for me at Imola; they are more expensive to extract.
+9. The better phrasing of the problem is now clear: I do not dislike planted rear cars in general; I dislike cars that lock the rear down before the car has finished rotating.
 
 ### Practical Rule Update
 
