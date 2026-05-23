@@ -524,3 +524,117 @@ Interpretation:
 3. Distributed endurance execution is valid for current life constraints; repeated cold re-entry into race context is itself a useful skill.
 4. Aston result proves front-engine cars can be extracted well at Imola; AMG remains the specific translation problem.
 5. Imola continues to fit the driver archetype: technical flow, recoverable sequences, and high reward for rhythm plus strategic patience.
+
+## 2026-05-23
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Scope: post-`2026-05-21` leaderboard re-evaluation using a broader GT3 sample
+- Cars analyzed: Ferrari 296 GT3, McLaren 720S GT3, Aston Martin Vantage GT3, Porsche 911 GT3R, Corvette Z06 GT3R, Mercedes AMG GT3 Evo, BMW M4 GT3
+- Driver tag: `oldark.`
+- Goal: replace the incomplete May 21 front-engine read with a full cross-car matrix and identify the real translation pattern
+
+### Data Hygiene Notes
+
+- Aston Martin board contains a garbage `0:55.930` entry and must be read as a cleaned board, not raw headline rank.
+- Multiple boards still contain old split-format anomalies (`30xxx / 37xxx / 36xxx` style sectors), so sector percentile tables are less trustworthy than direct window comparison and cross-car self-comparison.
+
+### Imola Multi-Car Matrix (Important, as of 2026-05-23)
+
+| Car | Pool | My Time | Rank Used | Percentile | Gap to P1 | Gap to P10 | Sector Split | Important Read (Today) |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- |
+| McLaren 720S GT3 | 310 | 1:43.597 | P6 | Top 98.1% | +1.163s | -0.118s | 21.524 / 33.882 / 48.191 | Best complete result in the sample; strong board, real top-10 margin, best total extraction. |
+| Ferrari 296 GT3 | 411 | 1:43.757 | P16 | Top 96.1% | +1.681s | +0.189s | 21.509 / 33.917 / 48.331 | Still the strongest dense-board benchmark; rank looks worse than the lap quality because the board is deeper and tighter. |
+| Aston Martin Vantage GT3 | 208 raw / 207 cleaned | 1:43.824 | Clean P6 | Top 97.1%* | +1.256s** | -0.182s | 21.453 / 33.930 / 48.441 | Strong result, but the board is dirty and softer than Ferrari/McLaren; good evidence of compatibility, not a universal front-engine solution. |
+| Corvette Z06 GT3R | 178 | 1:43.849 | P14 | Top 92.7% | +2.051s | +0.173s | 21.540 / 33.957 / 48.352 | One-lap pace is solid, but small-pool rank flatters the result compared with Ferrari/McLaren. |
+| Mercedes AMG GT3 Evo | 429 | 1:44.066 | P31 | Top 92.8% | +1.844s | +0.409s | 21.474 / 34.169 / 48.423 | Not an isolated AMG problem anymore; heavy front-engine mid-lap loss remains unresolved. |
+| BMW M4 GT3 | 528 | 1:44.084 | P32 | Top 93.9% | +1.490s | +0.259s | 21.575 / 34.035 / 48.474 | Same family problem as AMG: acceptable launch, then time lost through the middle and never recovered. |
+| Porsche 911 GT3R | 602 | 1:44.294 | P40 | Top 93.4% | +1.836s | +0.575s | 21.734 / 33.968 / 48.592 | Separate issue from the front-engine cars; weakest sector 1 and weakest sector 3 in the sample. |
+
+\* Aston percentile uses cleaned position logic after removing the garbage lap.
+
+\** Aston `P1` gap uses the real GT3 benchmark lap, not the garbage entry.
+
+### Cross-Car Sector Read
+
+Own lap splits from the seven-car sample:
+
+- Ferrari 296 GT3: `21.509 / 33.917 / 48.331`
+- McLaren 720S GT3: `21.524 / 33.882 / 48.191`
+- Aston Martin Vantage GT3: `21.453 / 33.930 / 48.441`
+- Corvette Z06 GT3R: `21.540 / 33.957 / 48.352`
+- Mercedes AMG GT3 Evo: `21.474 / 34.169 / 48.423`
+- BMW M4 GT3: `21.575 / 34.035 / 48.474`
+- Porsche 911 GT3R: `21.734 / 33.968 / 48.592`
+
+Sector spread inside the sample:
+
+- `S1` spread: `0.281s` (`21.453` Aston -> `21.734` Porsche)
+- `S2` spread: `0.287s` (`33.882` McLaren -> `34.169` AMG)
+- `S3` spread: `0.401s` (`48.191` McLaren -> `48.592` Porsche)
+
+Direct read:
+
+- Sector 3 remains the biggest shared weakness across the sample.
+- The Porsche is the clearest failure to finish the lap: worst `S1` and worst `S3`.
+- AMG and BMW do not fail in `S1`; both are still competitive there.
+- AMG and BMW lose their time primarily in `S2`, then fail to recover enough in `S3`.
+
+### Updated Reading
+
+The May 21 Aston-only interpretation was incomplete.
+
+Old reading:
+
+- Aston suggested the front-engine problem might be AMG-specific.
+
+Updated reading:
+
+- That was too optimistic.
+- Aston is the exception, not the general rule.
+- AMG `1:44.066` and BMW `1:44.084` are essentially the same result on serious boards.
+- That is not coincidence. That is a family-level pattern.
+
+Corrected conclusion:
+
+- The real issue is not generic front-engine incompetence.
+- The real issue is heavier front-engine GT3 translation at Imola.
+- Aston remains important because it proves the original blanket theory was too crude.
+- But the broader sample shows the unresolved weakness is real in the heavier front-engine cars, especially through the middle phase of the lap.
+
+### Car-Family Interpretation
+
+1. Mid-engine reference group: Ferrari, McLaren
+   - Still the cleanest proof of level.
+   - Fastest combined extraction and best total lap completion.
+2. Light/friendlier front-engine exception: Aston Martin
+   - Good compatibility.
+   - Useful proof that front-engine alone is not the problem.
+3. Heavy front-engine problem group: Mercedes AMG GT3 Evo, BMW M4 GT3
+   - Both launch the lap well enough.
+   - Both lose too much time in sector 2.
+   - Neither recovers enough in sector 3.
+4. Separate rear-engine issue: Porsche 911 GT3R
+   - Different problem profile from AMG/BMW.
+   - Loses immediately in `S1`, then also fails to cash out `S3`.
+
+### What Changed in My Understanding Today
+
+1. The May 21 Aston result did not solve the front-engine question; it only proved the question had been framed too simply.
+2. AMG is not an isolated translation problem at Imola; BMW reproduces the same heavier front-engine weakness.
+3. The main heavy front-engine issue is not first-corner bravery but mid-lap rotation/repositioning loss.
+4. Porsche remains a separate problem because its weakness starts earlier and ends worse.
+5. McLaren now stands as the strongest single hotlap proof of current Imola extraction, with Ferrari still the strongest dense-board benchmark.
+
+### Practical Rule Update
+
+- For Imola hotlap self-diagnosis, use this decision tree:
+  1. If `S1` is weak, suspect commitment/reference problem (most visible in Porsche).
+  2. If `S1` is fine but `S2` inflates, suspect heavy front-engine rotation/repositioning loss (AMG/BMW pattern).
+  3. If the lap is alive through `S2` but dies late, treat `S3` cash-out as the primary limiter (shared pattern across the whole sample).
+
+### Next Analysis Step
+
+1. Build a corner-phase map for heavy front-engine Imola loss, focusing on where AMG and BMW begin bleeding time versus Ferrari/McLaren.
+2. Separate the heavy front-engine problem into entry rotation loss vs direction-change repositioning loss vs final-sector exit caution.
