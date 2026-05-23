@@ -619,6 +619,60 @@ Corrected conclusion:
    - Different problem profile from AMG/BMW.
    - Loses immediately in `S1`, then also fails to cash out `S3`.
 
+### Overlap-Group Percentile Check
+
+Additional overlap sample reviewed across Vantage, AMG, and Ferrari leaderboards:
+
+| Player | Vantage Pct. | AMG Pct. | Ferrari Pct. | Avg Pct. |
+| --- | ---: | ---: | ---: | ---: |
+| theero_58565 | 95.8% | 94.4% | 99.8% | 96.7% |
+| oldark. | 97.7% | 92.1% | 96.6% | 95.5% |
+| aneck | 95.3% | 97.2% | 76.5% | 89.7% |
+| kaanuu46 | 56.8% | 97.0% | 99.5% | 84.4% |
+| logieuk | 87.8% | 77.9% | 77.7% | 81.1% |
+| sir_cedricar99 | 76.1% | 83.3% | 78.2% | 79.2% |
+| shorty_m. | 73.2% | 81.4% | 82.3% | 79.0% |
+
+Read:
+
+- My cross-car percentile in this overlap group is second-best by average, behind only `theero_58565`.
+- More important than average: the floor remains high. My weakest board in that sample is still `92.1%`.
+- Several other drivers show one strong board and one collapse. I do not.
+- This reinforces the earlier conclusion that cross-car one-lap transfer is real, not accidental.
+
+Reference quality note:
+
+- `theero_58565` is not anonymous leaderboard filler. SimGrid profile snapshot shows active organized racing with meaningful volume and race results.
+- That makes finishing behind him in overlap-average less concerning and makes the comparison itself more credible.
+
+### Convergence Cost Read
+
+The strongest additional insight from today is not just final lap time, but the cost required to produce it.
+
+McLaren 720S GT3 progression to `1:43.597`:
+
+- Stint 1 representative sequence: `1:47.888 -> 1:44.656 -> 1:43.879`
+- Stint 2 representative sequence: `1:43.976 / 1:43.984 / 1:43.904 / 1:43.597`
+- Practical read: the car converged quickly. Competitive pace was available almost immediately and the final PB arrived within roughly ten real hotlap attempts.
+
+Mercedes AMG GT3 Evo progression to `1:44.066`:
+
+- Session tracker blocks reviewed today: `20 / 5 / 15`, `17 / 5 / 12`, `20 / 4 / 16`
+- Interpreted total: roughly `57` laps, `14` valid, `43` invalid before reaching the PB.
+- Practical read: the lap exists, but the extraction cost is massive. The valid operating window is narrow and the car demands repeated overreach before the final number appears.
+
+BMW M4 GT3 progression to `1:44.084`:
+
+- Session tracker block reviewed today: `16 / 7 / 9`
+- Practical read: easier to access than AMG, but still much more expensive than McLaren. The lap comes with friction rather than fluency.
+
+Operational takeaway:
+
+- Final lap time alone is incomplete.
+- Low-cost pace indicates natural fit and accessible extraction.
+- High-cost pace indicates a forced lap, narrower window, and weaker repeatability.
+- On this measure, McLaren is a natural Imola platform for me; AMG is a grind; BMW sits in between but still on the expensive side.
+
 ### What Changed in My Understanding Today
 
 1. The May 21 Aston result did not solve the front-engine question; it only proved the question had been framed too simply.
@@ -626,6 +680,9 @@ Corrected conclusion:
 3. The main heavy front-engine issue is not first-corner bravery but mid-lap rotation/repositioning loss.
 4. Porsche remains a separate problem because its weakness starts earlier and ends worse.
 5. McLaren now stands as the strongest single hotlap proof of current Imola extraction, with Ferrari still the strongest dense-board benchmark.
+6. My overlap-group percentile floor is strong enough to confirm real cross-car hotlap competence, not just isolated car spikes.
+7. Lap-count-to-PB is a useful secondary metric because it reveals whether pace was accessed naturally or dragged out through overpush.
+8. The heavier front-engine cars are not just slower for me at Imola; they are more expensive to extract.
 
 ### Practical Rule Update
 
