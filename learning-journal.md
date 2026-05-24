@@ -850,6 +850,148 @@ The better framing is now:
 
 AMG is the worst car in the current Imola sample on the last two metrics.
 
+### BMW Race Follow-Up: Why the M4 Is Popular
+
+After the hotlap re-test, a BMW M4 GT3 race stint was run at Imola against `95%` AI with a full WEC-style grid:
+
+- `19` Hypercars
+- `18` LMGT3
+
+BMW race sample (laps `2-26`):
+
+- Best: `1:44.449`
+- Median: `1:44.985`
+- Avg: `1:45.339`
+- Std dev: `0.96s`
+
+Raw interpretation:
+
+- The raw average and sigma are inflated by traffic-contaminated laps (`1:46.526`, `1:48.489`, `1:47.390`, and other compromised laps in the second half of the stint).
+- The real pace signal is the opening clean band before repeated traffic distortion.
+
+BMW opening race window (laps `2-16`):
+
+- Best: `1:44.449`
+- Median: `1:44.835`
+- Avg: `1:44.759`
+
+Direct read:
+
+- The BMW immediately produced a repeatable `1:44.4-1:44.9` race band.
+- This is not one lucky lap. It is a stable operating window.
+- The car is easy to place in traffic, easy to recover after minor brake errors, and does not demand heroics to stay near the pace floor.
+
+This explains the popularity directly:
+
+- not because the car is magical,
+- but because it gives race pace cheaply.
+
+In this context, "cheaply" means:
+
+- wide operating window,
+- low correction cost,
+- easy pedal-led recovery,
+- repeatable low-`1:44s` without constant overreach.
+
+### Ferrari Comparison Correction: Traffic Difficulty Matters
+
+The first BMW-vs-Ferrari race comparison was incomplete because the traffic environment was not equivalent.
+
+Ferrari reference from `2026-05-21` dry-early phase:
+
+- Best: `1:44.529`
+- Median: `1:45.003`
+- Avg: `1:44.991`
+- Std dev: `0.216s`
+
+But the traffic context was harder:
+
+- Ferrari race: `24+` LMP2 + `13` LMGT3 (ELMS-style grid)
+- BMW race: `19` Hypercars + `18` LMGT3 (WEC-style grid)
+
+Practical implication:
+
+- The Ferrari run had materially more faster-class blue-flag interruption pressure.
+- That means the Ferrari median is likely slightly understated as a pure-car pace signal.
+- Therefore the honest conclusion is not "BMW beat Ferrari."
+
+Corrected conclusion:
+
+- BMW race pace is clearly real.
+- BMW race pace looks very accessible.
+- Ferrari has not been cleanly beaten because the race contexts were not equally difficult.
+- The strongest defensible claim is that BMW currently looks easier to race consistently, not definitively faster.
+
+### Tyre Degradation Read: Ferrari vs BMW
+
+Tyre degradation must be read in race-context windows, not from single-lap spikes.
+
+Important contamination limits:
+
+- Ferrari stint stayed dry only through lap `17`; drizzle began affecting the stint from lap `18` onward.
+- BMW stint was heavily affected by multiclass traffic; several slower laps are race-traffic events, not pure tyre decline.
+
+#### Ferrari dry-stint read
+
+Usable dry windows:
+
+- Opening dry window, laps `2-8`:
+  - Best: `1:44.529`
+  - Median: `1:44.865`
+- Mid dry window, laps `9-13`:
+  - Best: `1:44.967`
+  - Median: `1:45.074`
+- Late dry pre-drizzle window, laps `14-17`:
+  - Best: `1:45.003`
+  - Median: `1:45.213`
+
+Ferrari fade before weather interference:
+
+- Opening median -> late pre-drizzle median: `+0.348s`
+- Opening best -> late pre-drizzle best: `+0.474s`
+
+Read:
+
+- This is clear but mild dry-stint degradation.
+- There is no Barcelona-style cliff.
+- The car remains healthy through the dry phase, but the sharp edge fades gradually.
+
+#### BMW dry race-window read
+
+Cleanest usable race windows inside the traffic-heavy stint:
+
+- Opening clear window, laps `2-8`:
+  - Best: `1:44.449`
+  - Median: `1:44.537`
+- Recovered clear window, laps `12-16`:
+  - Best: `1:44.566`
+  - Median: `1:44.835`
+
+BMW fade across the clean windows:
+
+- Opening median -> recovered median: `+0.298s`
+- Opening best -> recovered best: `+0.117s`
+
+Read:
+
+- BMW also shows mild degradation, not a meaningful tyre cliff.
+- The car stays in the low-`1:44` to high-`1:44` band very easily.
+- Heavy traffic may understate true wear slightly because interrupted laps can also cool the tyres.
+
+#### Direct comparison
+
+Honest read:
+
+- Ferrari mild dry fade: about `+0.35s` on median before drizzle.
+- BMW mild clean-window fade: about `+0.30s` on median before traffic fully dominates the sample.
+
+Conclusion:
+
+- Both cars degrade lightly at Imola.
+- Neither car shows a serious tyre-management weakness in these samples.
+- The difference between Ferrari and BMW here is smaller in tyre wear than in driver workload.
+- BMW's current advantage is not clearly better tyre life; it is easier access to repeatable pace.
+
 ### What Changed in My Understanding Today
 
 1. The May 23 BMW conclusion was too harsh; the fresh BMW re-test shows fast reacquisition and real ceiling.
@@ -859,6 +1001,9 @@ AMG is the worst car in the current Imola sample on the last two metrics.
 5. McLaren remains the cleanest proof of natural Imola fit in both hotlap extraction and short opening-stint race pace.
 6. Ferrari remains a high-level benchmark, but the short race sample today did not beat the McLaren sample.
 7. The correct comparison between cars is no longer just best-lap delta; it must include convergence cost and window width.
+8. BMW now has race evidence behind the hotlap impression: the M4 is popular because it gives repeatable pace with low correction cost.
+9. Ferrari vs BMW race comparison must be traffic-adjusted; the Ferrari ELMS sample lived under heavier blue-flag load.
+10. Tyre degradation between Ferrari and BMW at Imola looks broadly similar; the meaningful difference is platform usability, not tyre collapse behavior.
 
 ### Practical Rule Update
 
@@ -866,8 +1011,10 @@ AMG is the worst car in the current Imola sample on the last two metrics.
   1. valid best lap,
   2. number of meaningful flyers needed to access it,
   3. how quickly the pace window can be re-entered after a reset or mistake.
+- For race-phase comparison across classes, add a fourth layer:
+  4. faster-class traffic density before treating median pace as directly comparable.
 
 ### Next Analysis Step
 
-1. Run a proper BMW race stint to see whether the easier hotlap correction logic survives tyre load and traffic.
+1. Run a cleaner matched-context Ferrari vs BMW race comparison with similar multiclass density before declaring a true race-pace winner.
 2. Build a corner-phase comparison for AMG vs BMW at Piratella, Acque Minerali, and the Rivazza complex to separate brake-limited loss from steering-overload loss.
