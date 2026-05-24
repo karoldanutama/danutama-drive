@@ -715,3 +715,159 @@ Interpretation:
 
 1. Build a corner-phase map for heavy front-engine Imola loss, focusing on where AMG and BMW begin bleeding time versus Ferrari/McLaren.
 2. Separate the heavy front-engine problem into entry rotation loss vs direction-change repositioning loss vs final-sector exit caution.
+
+## 2026-05-24
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Scope: correction pass on the May 23 hotlap interpretation using fresh BMW data plus short race-stint references
+- Cars reviewed today: BMW M4 GT3, Mercedes AMG GT3 Evo, McLaren 720S GT3, Ferrari 296 GT3
+- Goal: determine whether BMW really belongs with AMG in the same problem bucket, and separate raw lap delta from control-window quality
+
+### BMW Re-Test: Immediate Read
+
+Fresh BMW hotlap sequence posted today:
+
+- Prep / junk laps not useful for pace read: `1:54.346`, `1:59.165`
+- Usable attack laps: `1:44.604`, `1:48.584`, `1:44.635`, `1:43.972`
+
+Leaderboard result:
+
+- BMW M4 GT3: `1:43.972`, `P23/521`
+- Percentile: top `95.8%`
+- Gap to P1: `+1.378s`
+- Gap to P10: `+0.231s`
+- Gap to current top `2.5%` cut (`1:43.824`): `+0.148s`
+
+Important read:
+
+- This result is materially better than the earlier BMW interpretation suggested.
+- The car re-entered the pace window immediately after a reset (`1:44.604` in run 1, `1:44.635` in run 2).
+- The PB (`1:43.972`) arrived quickly, not after an AMG-style grind.
+- That means BMW is not an AMG-level hostile platform at Imola.
+
+### Correction to the May 23 Fit Map
+
+The earlier BMW wording was too crude.
+
+Old tendency:
+
+- BMW was grouped too closely with AMG as part of one heavy front-engine extraction problem.
+
+Corrected read:
+
+- AMG remains the real high-cost outlier.
+- BMW is more readable, more reacquirable, and more coachable than AMG.
+- BMW may still be underexplored, but the current data no longer supports calling it simply dull or fundamentally capped.
+- The honest label is: promising but not yet fully mapped.
+
+Operational update:
+
+- McLaren remains the lowest-cost natural fit.
+- Ferrari remains the strongest dense-board benchmark.
+- Aston remains cooperative with a strong ceiling.
+- BMW now moves out of the AMG bucket and into the "viable, underexplored" bucket.
+- AMG remains the expensive platform.
+
+### Why BMW Feels Different from AMG
+
+Subjective difference reported today is technically important.
+
+BMW:
+
+- Easy to trigger ABS, but the correction is obvious: reduce brake pressure and continue the trail phase.
+- Mistakes are legible through the pedal.
+- The car accepts a cleaner brake release and does not collapse the whole corner immediately.
+
+AMG:
+
+- Front axle feels loaded at first, then falls off abruptly when overloaded.
+- Late turn-in, too much brake, or too much steering can make the front go light and push.
+- The correction demand moves from the foot into the hands, which increases physical cost and confidence loss.
+
+Blunt distinction:
+
+- BMW punishes the pedal mistake in a readable way.
+- AMG punishes the whole corner in a narrower and more expensive way.
+
+### AMG Front-Axle Clarification
+
+The palms-sore feedback after the AMG sessions is useful, not random.
+
+What it likely indicates:
+
+- The AMG front axle is not simply weak.
+- It has a narrow peak: strong initial response, poor tolerance once overloaded.
+- When the missing yaw is forced with additional steering input, self-aligning torque drops and the wheel goes light as the front saturates.
+- Piratella exposes this especially hard because braking, turn-in timing, crest/unload, and front saturation stack together there.
+
+Practical implication:
+
+- AMG is not just slower by a few tenths.
+- It is more physically expensive because it asks for more hand input to recover rotation the platform did not give early enough.
+
+### Short Race-Sample Check: McLaren vs Ferrari
+
+Two short opening-stint references were compared today. These samples are too short for tyre-degradation conclusions, but they are valid for opening-window race pace.
+
+McLaren race sample (laps `2-8`, tyre warmers OFF, full ELMS grid):
+
+- Best: `1:44.503`
+- Median: `1:44.856`
+- Avg: `1:44.865`
+- Std dev: `0.28s`
+
+Ferrari strongest race sample (laps `2-10` from strongest first 10 laps):
+
+- Best: `1:44.529`
+- Median: `1:44.967`
+- Avg: `1:45.062`
+- Std dev: `0.50s`
+
+Read:
+
+- McLaren was slightly stronger on repeatable opening-stint pace (`~0.11s` better on median).
+- Best laps are effectively equal (`0.026s` difference).
+- McLaren opening window was cleaner and required less effort to access.
+- Ferrari sample remained strong, but this comparison does not support saying it clearly beat the McLaren in this short race window.
+
+### Core Interpretation Shift
+
+Today sharpened the real distinction between lap time and platform fit.
+
+- A `0.1-0.2s` raw lap gap is small.
+- A control-window gap is not small.
+- The hands and feet are detecting how much work the platform requires to generate the same lap, not just the final time.
+
+That is why Aston or BMW can feel much better than AMG even when the stopwatch gap is modest.
+
+The better framing is now:
+
+- raw lap time = output
+- convergence cost = access to output
+- control-window width = repeatability and confidence cost
+
+AMG is the worst car in the current Imola sample on the last two metrics.
+
+### What Changed in My Understanding Today
+
+1. The May 23 BMW conclusion was too harsh; the fresh BMW re-test shows fast reacquisition and real ceiling.
+2. BMW does not belong in the same severity bucket as AMG at Imola.
+3. BMW's failure mode is readable through the brake pedal and trail-brake correction, which makes it coachable.
+4. AMG's problem is not just pace loss but a narrow, peaky front axle that becomes physically expensive when overloaded.
+5. McLaren remains the cleanest proof of natural Imola fit in both hotlap extraction and short opening-stint race pace.
+6. Ferrari remains a high-level benchmark, but the short race sample today did not beat the McLaren sample.
+7. The correct comparison between cars is no longer just best-lap delta; it must include convergence cost and window width.
+
+### Practical Rule Update
+
+- For future Imola car classification, judge each platform on three layers:
+  1. valid best lap,
+  2. number of meaningful flyers needed to access it,
+  3. how quickly the pace window can be re-entered after a reset or mistake.
+
+### Next Analysis Step
+
+1. Run a proper BMW race stint to see whether the easier hotlap correction logic survives tyre load and traffic.
+2. Build a corner-phase comparison for AMG vs BMW at Piratella, Acque Minerali, and the Rivazza complex to separate brake-limited loss from steering-overload loss.
