@@ -1018,3 +1018,141 @@ Conclusion:
 
 1. Run a cleaner matched-context Ferrari vs BMW race comparison with similar multiclass density before declaring a true race-pace winner.
 2. Build a corner-phase comparison for AMG vs BMW at Piratella, Acque Minerali, and the Rivazza complex to separate brake-limited loss from steering-overload loss.
+
+## 2026-05-25
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Car focus: Lexus RCF GT3
+- Driver tag: `oldark.`
+- Goal: test whether Lexus is only generally competitive or actually capable of entering the dense top-end Imola cluster
+
+### Leaderboard Result
+
+Current Lexus Imola result:
+
+- Lexus RCF GT3: `1:43.468`, `P21/488`
+- Percentile: top `95.7%`
+- Top `5%` cutoff from the board: approximately `1:43.509`
+- Margin inside top `5%`: about `0.041s`
+
+Important board hygiene note:
+
+- The headline `P1` lap (`1:37.633`) is garbage and should not be used as a real benchmark.
+- Old split-format anomalies still exist on this board, so nearby-window comparison is more trustworthy than the raw top row.
+
+### Competitive-Zone Confirmation
+
+The main result today is not the absolute rank number. The main result is where the lap sits inside the board structure.
+
+Nearby competitive band:
+
+- `P13 = 1:43.100`
+- `P24 = 1:43.492`
+- Only `0.392s` covers twelve positions
+
+Direct read:
+
+- This is not an empty leaderboard region.
+- The Lexus lap sits inside a compressed, genuinely competitive cluster.
+- At this level, each few hundredths can move several positions.
+
+So the honest classification is:
+
+- highly competitive on this board,
+- not yet elite,
+- but clearly operating in the serious zone rather than the fringe.
+
+### Practice-Session Progression Read
+
+Useful progression snapshots posted today:
+
+- lap `15`: `1:44.005`
+- lap `17`: `1:44.007`
+- lap `18`: `1:43.799`
+- lap `19`: `1:43.719`
+- lap `45`: `1:43.584`
+- lap `46`: `1:43.468`
+
+Critical interpretation:
+
+- If the target had been raw lap time only, the session was already successful by roughly lap `7` when the Lexus first reached the `1:43.8` zone.
+- The long session length came from leaderboard optimization, not from basic platform discovery.
+
+This sharply separates the Lexus session from the AMG grind.
+
+Lexus grind:
+
+- pace arrived early,
+- the car was already working,
+- the later laps were spent refining within a compressed board.
+
+AMG grind:
+
+- pace was harder to access,
+- the platform itself resisted the preferred control loop,
+- the later laps were still partly about making the car obey.
+
+Blunt distinction:
+
+- Lexus = competitive grind
+- AMG = platform grind
+
+They can consume similar lap counts, but they are not the same problem.
+
+### Sector Read
+
+Current Lexus lap split:
+
+- `S1 = 21.492`
+- `S2 = 33.802`
+- `S3 = 48.174`
+
+Reference against the current `P10` Lexus lap (`1:42.927`, `21.411 / 33.771 / 47.745`):
+
+- `S1`: `+0.081s`
+- `S2`: `+0.031s`
+- `S3`: `+0.429s`
+
+The meaning is obvious:
+
+- Lexus pace is already competitive in sectors 1 and 2.
+- Sector 3 is the real leak.
+- This is not a general-lap weakness. It is a lap-completion weakness.
+
+### Ceiling vs Cost
+
+Today also changed the read relative to the McLaren.
+
+- The Lexus was already quicker than the previous McLaren benchmark even with a sub-optimal sector 3.
+- That means the Lexus ceiling is not hypothetical. It is already visible.
+
+Corrected platform read:
+
+- McLaren still looks lower-cost and easier to converge.
+- Lexus may carry the higher one-lap ceiling at Imola if sector 3 is cleaned up without damaging sectors 1 and 2.
+
+This is an important distinction:
+
+- McLaren = easier speed
+- Lexus = potentially bigger final reward
+
+### What Changed in My Understanding Today
+
+1. Lexus is not just another viable GT3 at Imola; it is a genuinely competitive board car in my hands.
+2. The Lexus session proves that similar lap-count grinds can come from completely different causes: board compression versus bad platform fit.
+3. Lexus pace arrived early, so the long session was not about unlocking the car; it was about optimizing rank.
+4. Sector 3 is the real limiter on the Lexus, not overall car pace.
+5. The Lexus may have a higher ultimate one-lap ceiling than McLaren at Imola, even if McLaren remains the easier car to exploit.
+6. Top `5%` on this Lexus board is real, but only just cleared; the result is strong, not dominant.
+
+### Practical Rule Update
+
+- When a car reaches target lap pace early but still takes many more laps to improve rank, classify the session as board-compression grind, not extraction failure.
+- For Lexus at Imola, treat sector 3 completion as the next priority before making broader car-fit conclusions.
+
+### Next Analysis Step
+
+1. Isolate the Lexus sector 3 loss corner-by-corner versus the McLaren and Ferrari references.
+2. Check whether sector 3 cleanup can be achieved without sacrificing the already-competitive sectors 1 and 2.
