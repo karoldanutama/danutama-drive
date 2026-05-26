@@ -1156,3 +1156,144 @@ This is an important distinction:
 
 1. Isolate the Lexus sector 3 loss corner-by-corner versus the McLaren and Ferrari references.
 2. Check whether sector 3 cleanup can be achieved without sacrificing the already-competitive sectors 1 and 2.
+
+## 2026-05-26
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Car focus: Ford Mustang GT3
+- Driver tag: `oldark.`
+- Goal: determine whether the Mustang behaves more like the expensive AMG-type front-engine problem or the more cooperative BMW/Lexus group
+
+### Leaderboard Result
+
+Current Mustang Imola result:
+
+- Ford Mustang GT3: `1:43.541`, `P17/315`
+- Percentile: top `94.6%`
+- Top `10%` cutoff: `1:43.885`
+- Top `5%` cutoff: `1:43.539`
+- Missed top `5%` by only `0.002s`
+
+Direct read:
+
+- The car is already well inside the competitive zone.
+- Missing top `5%` by `0.002s` is statistical noise, not a meaningful gap.
+- This is a serious result, not a novelty lap.
+
+### Board Compression Read
+
+The local window around the lap is tightly packed:
+
+- `P15 = 1:43.509`
+- `P16 = 1:43.534`
+- `P17 = 1:43.541`
+- `P18 = 1:43.542`
+- `P19 = 1:43.551`
+- `P20 = 1:43.568`
+
+Interpretation:
+
+- The Mustang lap sits inside a dense competitive band.
+- Multiple positions are covered by only a few hundredths.
+- This is already the part of the board where minor execution changes have large rank consequences.
+
+### Data Hygiene Note
+
+The stored sector split attached to the leaderboard PB is clearly broken:
+
+- `21.552 / 38.160 / 43.829`
+
+That is not a usable GT3 Imola split and should be ignored.
+
+Practical rule:
+
+- For this Mustang session, trust the lap time, rank band, and percentile.
+- Do not diagnose corner phases from the corrupted sector export.
+
+### Practice-Session Read
+
+Usable practice flyers posted today:
+
+- `1:44.836`
+- `1:44.376`
+- `1:44.613`
+- `1:43.786`
+- `1:44.189`
+- `1:43.788`
+- `1:46.184`
+- `1:43.541`
+
+Session numbers:
+
+- Best: `1:43.541`
+- Median: `1:44.283`
+- Avg: `1:44.414`
+
+Important progression read:
+
+- By lap `5`, the car had already produced `1:43.786`.
+- The pace returned later at `1:43.788` and then improved to `1:43.541`.
+- One miss (`1:46.184`) did not poison the rest of the session.
+
+This is the key signal:
+
+- the Mustang pace is reacquirable,
+- the window is wide enough,
+- and the PB did not require a platform-war session.
+
+### Platform Classification
+
+The Mustang now looks much closer to the BMW/Lexus side than to the AMG side.
+
+Meaning:
+
+- competitive pace exists almost immediately,
+- the car does not require long obedience work before the lap appears,
+- the remaining job is optimization, not survival.
+
+Blunt comparison:
+
+- AMG = hostile grind
+- Lexus = compressed-board grind
+- Mustang = quick-access competitive platform
+
+That is a completely different behavioral class from the AMG.
+
+### Updated Imola Fit Read
+
+Current one-lap Imola map after the latest sessions:
+
+1. McLaren 720S GT3
+   - Lowest-cost access to front-running pace.
+2. Ferrari 296 GT3
+   - Strongest dense-board benchmark.
+3. Lexus RCF GT3
+   - High ceiling, but more board-compression grind.
+4. Ford Mustang GT3
+   - Immediate competitiveness and good reacquisition; clearly viable.
+5. BMW M4 GT3
+   - Readable and coachable; race-friendly and now clearly separate from AMG.
+6. Mercedes AMG GT3 Evo
+   - Still the expensive outlier at Imola.
+
+This ordering is not absolute race truth. It is a current hotlap/platform-fit ordering based on pace access, window width, and cost.
+
+### What Changed in My Understanding Today
+
+1. The Mustang is not another heavy front-engine trap at Imola; it is immediately competitive.
+2. The front-engine problem at Imola is no longer usefully described as a blanket category.
+3. Mustang confirms that front-engine viability depends on whether the car enters the preferred control window quickly, not on engine location alone.
+4. The PB structure and the reacquisition behavior matter more than one bad lap in judging platform fit.
+5. Missing top `5%` by `0.002s` confirms the Mustang is already operating in the serious competitive band.
+
+### Practical Rule Update
+
+- For Imola front-engine classification, stop using weight distribution labels alone.
+- The first filter should be: does the car reach the preferred brake-release rotation window within the first few meaningful flyers?
+
+### Next Analysis Step
+
+1. Compare Mustang race behavior against BMW and Ferrari to see whether the easy hotlap access also survives stint context.
+2. Rebuild the heavy front-engine hypothesis using only the true outlier set rather than broad front-engine grouping.
