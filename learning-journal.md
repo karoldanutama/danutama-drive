@@ -1460,6 +1460,60 @@ Operational interpretation:
 - In AMG, losses often arrive as platform-response consequences that are harder to decode in real time.
 - That makes the car more tiring, more stressful, and more demotivating even when the final leaderboard result is still respectable.
 
+### Mustang Race-Stint Follow-Up
+
+The Mustang was then tested in an offline race at Imola against `95%` AI with a full WEC-style grid.
+
+Mustang race sample (laps `2-26`):
+
+- Best: `1:43.804`
+- Median: `1:45.097`
+- Avg: `1:45.956`
+
+Raw interpretation:
+
+- The full sample is too dirty to read as pure race pace.
+- Traffic/contact contamination hit laps `9`, `18`, `23`, `25`, and `26`.
+- Driver-overpush errors hit laps `6`, `7`, `10`, `11`, and `24`.
+- So the stint felt messy because it was messy; traffic was a real problem, but it was not the only problem.
+
+Cleaner usable race band:
+
+- Laps used: `2`, `3`, `4`, `5`, `8`, `12`, `13`, `14`, `15`, `16`, `17`, `19`, `20`, `21`, `22`
+- Best: `1:43.804`
+- Median: `1:44.850`
+- Avg: `1:44.729`
+
+Settled race window:
+
+- Laps used: `13`, `14`, `15`, `16`, `17`, `19`, `20`, `22`
+- Best: `1:44.612`
+- Median: `1:44.874`
+- Avg: `1:44.864`
+
+Direct read:
+
+- The Mustang clearly has real race pace, not just hotlap pace.
+- Once the stint stabilized, the car sat in a repeatable mid-`1:44` band.
+- There is no meaningful tyre-cliff signal here; the main distortions were mistakes and traffic, not tyre collapse.
+- The car remains competitive in race context, but it is easier to destabilize than BMW when overpushed through the chicanes.
+
+### Mustang vs BMW and Ferrari in Race Context
+
+Against the current Imola references:
+
+- BMW opening race window (`2-16`): best `1:44.449`, median `1:44.835`, avg `1:44.759`
+- Ferrari dry-early reference: best `1:44.529`, median `1:45.003`, avg `1:44.991`
+- Mustang usable race band: best `1:43.804`, median `1:44.850`, avg `1:44.729`
+
+Interpretation:
+
+- Mustang and BMW are basically in the same real race-pace band at Imola.
+- Mustang did not produce a clean median advantage over BMW; the two cars are effectively level on repeatable race pace here.
+- Mustang showed a stronger single-lap peak, but BMW still looks calmer and cheaper when the race gets messy.
+- Mustang looks slightly stronger than the current Ferrari dry-early median, but the Ferrari sample lived under harder ELMS-style faster-class traffic, so that is not clean proof of superiority.
+- The strongest defensible claim is that Mustang belongs in the same serious race-pace group as BMW and Ferrari, not that it has definitively beaten both.
+
 ### What Changed in My Understanding Today
 
 1. Mustang is now confirmed as a real top-`5%` Imola platform, not just a near-cutoff flirtation.
@@ -1469,6 +1523,9 @@ Operational interpretation:
 5. The AMG-vs-Mustang comparison corrected an earlier overstatement: relative to each leaderboard, my final competitive level is much closer than the raw lap-time gap suggests.
 6. The better description of AMG is no longer "far lower ceiling" but "similar percentile ceiling on a slower board, with much worse access cost."
 7. The deepest AMG problem at Imola is now clearer: not just pace access, but low error legibility and weak real-time interpretability.
+8. Mustang race testing confirms the car is not just hotlap-friendly; it carries real race pace in a repeatable mid-`1:44` band.
+9. Mustang appears to match BMW closely in race pace while remaining more punishable if I overpush the chicanes.
+10. The honest Mustang vs Ferrari race comparison remains traffic-adjusted; current data supports same-tier pace, not a clean superiority claim.
 
 ### Practical Rule Update
 
@@ -1476,8 +1533,10 @@ Operational interpretation:
 - The next useful question is where sector 3 is being wasted and whether that loss comes from caution, line shape, or throttle timing.
 - For difficult hotlap platforms, add a separate fit metric beyond raw pace and percentile: error legibility.
 - A car that gives unclear loss signals can still be competitively viable, but it will carry extra physical, psychological, and learning cost.
+- For Mustang in race trim, separate two failure types before judging the stint: traffic contamination versus self-inflicted chicane overpush.
 
 ### Next Analysis Step
 
 1. Compare AMG sector-3 loss corner-by-corner against Mustang, Ferrari, and McLaren references across Acque Minerali, Variante Alta, and the Rivazza complex.
 2. Separate AMG Imola evaluation into two layers: leaderboard-relative ceiling versus error-legibility / convergence cost.
+3. Run a cleaner matched-context Mustang vs BMW race comparison before declaring a true race-pace winner between those two cars.
