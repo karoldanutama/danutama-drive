@@ -1372,19 +1372,110 @@ Corrected practical label:
 
 - Mustang = quick-access competitive platform with a sector-3 completion leak
 
+### AMG Comparison Correction
+
+Later on the same day, the Mustang result was compared directly against a fresh AMG Imola leaderboard result:
+
+- Mercedes AMG GT3 Evo: `1:43.911`, `P27/435`
+- Percentile: top `93.8%`
+- Top `5%` cutoff: `1:43.888`
+- Miss to top `5%`: `0.023s`
+- Top `2.5%` cutoff: `1:43.493`
+- Gap to top `2.5%`: `0.418s`
+
+Direct comparison versus Mustang:
+
+- Mustang: `1:43.478`, `P15/313`, top `95.2%`
+- AMG: `1:43.911`, `P27/435`, top `93.8%`
+- Raw lap gap: `0.433s` in favor of Mustang
+
+Critical leaderboard-relative correction:
+
+- Mustang top-`2.5%` gap: `0.411s`
+- AMG top-`2.5%` gap: `0.418s`
+- Mustang top-`1%` gap: `0.694s`
+- AMG top-`1%` gap: `0.692s`
+
+Meaning:
+
+- Relative to each board, the final competitive level is almost the same.
+- The Mustang is not winning because I collapse in AMG relative to the field.
+- The cleaner interpretation is that the AMG board itself is slower by roughly the same amount as my lap delta.
+- Therefore the corrected statement is: the Mustang is faster at Imola, but the AMG is not a massive percentile collapse.
+
+### AMG vs Mustang Sector Read
+
+Best valid sectors:
+
+- Mustang: `21.599 / 33.888 / 47.991`
+- AMG: `21.590 / 33.850 / 48.471`
+
+Direct delta (AMG minus Mustang):
+
+- `S1`: `-0.009s`
+- `S2`: `-0.038s`
+- `S3`: `+0.480s`
+
+Interpretation:
+
+- AMG is no longer clearly losing the lap in the first half.
+- In this comparison, AMG is actually slightly better in sectors 1 and 2.
+- The whole difference appears in sector 3.
+- That means the new transferable-technique conclusion is stronger than expected: entry and early-mid phase discipline are now carrying over, but the AMG still fails to cash out the lap late.
+
+### Error-Legibility Finding
+
+The most important new subjective finding today is not raw pace. It is cockpit interpretability.
+
+AMG subjective pattern:
+
+- The car can produce a competitive final lap, but the source of time loss is often unclear while driving.
+- A bad lap can feel non-deterministic: the delta turns against me without an obvious local mistake I can name confidently.
+- This creates the feeling that the car is speaking, but in a language I do not parse cleanly.
+
+Working term:
+
+- AMG at Imola is a low-legibility platform.
+
+What that means in practice:
+
+- Mustang usually tells me exactly what I did wrong.
+- AMG often makes me investigate after the fact.
+- The stress cost comes not only from pace access, but from weak cause-and-effect clarity between input, platform response, and delta outcome.
+
+Rivazza 2 was the clearest example reported today:
+
+- delta was healthy on entry,
+- line and apex looked correct,
+- throttle pickup felt correct,
+- no visible rear escape occurred,
+- but the delta still flipped by roughly `0.10s` by exit,
+- with only a small kerb/platform shake as the possible clue.
+
+Operational interpretation:
+
+- In better-fit cars, errors are legible in driver-input terms.
+- In AMG, losses often arrive as platform-response consequences that are harder to decode in real time.
+- That makes the car more tiring, more stressful, and more demotivating even when the final leaderboard result is still respectable.
+
 ### What Changed in My Understanding Today
 
 1. Mustang is now confirmed as a real top-`5%` Imola platform, not just a near-cutoff flirtation.
 2. The small `0.063s` gain mattered because the local board is compressed; this was meaningful conversion, not cosmetic improvement.
 3. The car's remaining weakness is late-lap completion, not basic pace access.
 4. The Mustang continues to support the narrower interpretation that the true Imola outlier is AMG, not front-engine architecture in general.
+5. The AMG-vs-Mustang comparison corrected an earlier overstatement: relative to each leaderboard, my final competitive level is much closer than the raw lap-time gap suggests.
+6. The better description of AMG is no longer "far lower ceiling" but "similar percentile ceiling on a slower board, with much worse access cost."
+7. The deepest AMG problem at Imola is now clearer: not just pace access, but low error legibility and weak real-time interpretability.
 
 ### Practical Rule Update
 
 - For Mustang at Imola, stop spending attention on whether the car belongs in the viable group. It does.
 - The next useful question is where sector 3 is being wasted and whether that loss comes from caution, line shape, or throttle timing.
+- For difficult hotlap platforms, add a separate fit metric beyond raw pace and percentile: error legibility.
+- A car that gives unclear loss signals can still be competitively viable, but it will carry extra physical, psychological, and learning cost.
 
 ### Next Analysis Step
 
-1. Compare Mustang sector-3 behavior directly against Ferrari and McLaren reference laps.
-2. Check whether the Mustang keeps this low-cost pace access in race-stint median, not just in hotlap form.
+1. Compare AMG sector-3 loss corner-by-corner against Mustang, Ferrari, and McLaren references, especially the Rivazza complex.
+2. Separate AMG Imola evaluation into two layers: leaderboard-relative ceiling versus error-legibility / convergence cost.
