@@ -1421,6 +1421,8 @@ Interpretation:
 - AMG is no longer clearly losing the lap in the first half.
 - In this comparison, AMG is actually slightly better in sectors 1 and 2.
 - The whole difference appears in sector 3.
+- At Imola, sector 3 here means the run from just before Acque Minerali to the finish line.
+- In practical corner terms, that means Acque Minerali, Variante Alta, and the Rivazza complex are carrying the full late-lap tax.
 - That means the new transferable-technique conclusion is stronger than expected: entry and early-mid phase discipline are now carrying over, but the AMG still fails to cash out the lap late.
 
 ### Error-Legibility Finding
@@ -1477,5 +1479,5 @@ Operational interpretation:
 
 ### Next Analysis Step
 
-1. Compare AMG sector-3 loss corner-by-corner against Mustang, Ferrari, and McLaren references, especially the Rivazza complex.
+1. Compare AMG sector-3 loss corner-by-corner against Mustang, Ferrari, and McLaren references across Acque Minerali, Variante Alta, and the Rivazza complex.
 2. Separate AMG Imola evaluation into two layers: leaderboard-relative ceiling versus error-legibility / convergence cost.
