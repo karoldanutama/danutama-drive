@@ -1297,3 +1297,94 @@ This ordering is not absolute race truth. It is a current hotlap/platform-fit or
 
 1. Compare Mustang race behavior against BMW and Ferrari to see whether the easy hotlap access also survives stint context.
 2. Rebuild the heavy front-engine hypothesis using only the true outlier set rather than broad front-engine grouping.
+
+## 2026-05-27
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Car focus: Ford Mustang GT3
+- Driver tag: `oldark.`
+- Goal: verify whether the May 26 near-miss was real pace or just a cutoff tease, and check where the remaining loss sits
+
+### Updated Leaderboard Result
+
+Current Mustang Imola result:
+
+- Ford Mustang GT3: `1:43.478`, `P15/313`
+- Percentile: top `95.2%`
+- Top `5%` cutoff: `1:43.524`
+- Margin inside top `5%`: `0.046s`
+- Top `2.5%` cutoff: `1:43.067`
+- Gap to top `2.5%`: `0.411s`
+
+Direct read:
+
+- The May 26 top-`5%` miss is gone.
+- The car is now cleanly inside the target band, not hanging on the edge of it.
+- Only `0.063s` was gained versus the prior `1:43.541`, but that was enough to convert a near-miss into a proper top-`5%` result.
+
+### Valid Sector Read
+
+Updated Mustang lap split:
+
+- `S1 = 21.599`
+- `S2 = 33.888`
+- `S3 = 47.991`
+
+Practical read:
+
+- `S1` is already in the right competitive window.
+- `S2` is also good enough.
+- `S3` is still the weakest phase relative to the rest of the lap.
+
+Blunt conclusion:
+
+- This is not an entry problem.
+- This is not an AMG-style obedience problem.
+- The remaining time is in finishing the lap better.
+
+### Progression Confirmation
+
+Additional later-session competitive laps posted today:
+
+- `1:43.937`
+- `1:43.972`
+- `1:43.757`
+- `1:43.596`
+- `1:43.478`
+
+Read:
+
+- The pace remained reacquirable after the May 26 session instead of collapsing into random overpush.
+- The PB improved through normal refinement, not through a desperate hero lap.
+- That confirms the Mustang is a cooperative platform with a usable control window.
+
+### Updated Mustang Classification
+
+The classification from May 26 holds and is now stronger.
+
+- Mustang is not a heavy front-engine trap.
+- Mustang is not giving AMG signals.
+- Mustang is giving compressed-board competitive signals: pace is available, but the remaining gains are expensive because the board region is tight.
+
+Corrected practical label:
+
+- Mustang = quick-access competitive platform with a sector-3 completion leak
+
+### What Changed in My Understanding Today
+
+1. Mustang is now confirmed as a real top-`5%` Imola platform, not just a near-cutoff flirtation.
+2. The small `0.063s` gain mattered because the local board is compressed; this was meaningful conversion, not cosmetic improvement.
+3. The car's remaining weakness is late-lap completion, not basic pace access.
+4. The Mustang continues to support the narrower interpretation that the true Imola outlier is AMG, not front-engine architecture in general.
+
+### Practical Rule Update
+
+- For Mustang at Imola, stop spending attention on whether the car belongs in the viable group. It does.
+- The next useful question is where sector 3 is being wasted and whether that loss comes from caution, line shape, or throttle timing.
+
+### Next Analysis Step
+
+1. Compare Mustang sector-3 behavior directly against Ferrari and McLaren reference laps.
+2. Check whether the Mustang keeps this low-cost pace access in race-stint median, not just in hotlap form.
