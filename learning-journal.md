@@ -1540,3 +1540,160 @@ Interpretation:
 1. Compare AMG sector-3 loss corner-by-corner against Mustang, Ferrari, and McLaren references across Acque Minerali, Variante Alta, and the Rivazza complex.
 2. Separate AMG Imola evaluation into two layers: leaderboard-relative ceiling versus error-legibility / convergence cost.
 3. Run a cleaner matched-context Mustang vs BMW race comparison before declaring a true race-pace winner between those two cars.
+
+## 2026-05-30
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Scope: control-model clarification plus matched-context dry race comparison
+- Cars reviewed today: Mercedes AMG GT3 Evo, Ferrari 296 GT3, McLaren 720S GT3, BMW M4 GT3, Ford Mustang GT3
+- Goal: identify the real missing cue in the AMG, and compare Ferrari vs McLaren race pace using the last clean pre-backmarker window
+
+### Control-Model Clarification: The Missing AMG Cue
+
+Today clarified the exact entry cue my driving model depends on.
+
+Native rotation sequence:
+
+- release the brake until only a small residual pressure remains,
+- ask the car to begin rotating before needing much steering angle,
+- hold that small brake pressure for a brief moment while the rear starts to yaw,
+- if the rear begins rotating enough, release the brake quickly,
+- then let steering take over a car that is already entering.
+
+This is most obvious at:
+
+- Tamburello
+- Villeneuve
+- Piratella
+
+Critical subjective update:
+
+- A year ago, rear movement under braking felt dangerous.
+- Now, if the rear gives no small wiggle or rotation cue at all, the entry feels wrong and uncomfortable.
+
+This sharpened the real AMG problem:
+
+- even at very rearward hotlap brake bias (`44%`), the rear still feels planted and silent,
+- the expected entry-rotation cue never arrives,
+- so I wait for a cue that never comes,
+- that delay causes either late turn-in or overbraking,
+- and the corner is already compromised before steering has a fair chance to work.
+
+Important workaround discovery:
+
+- when I released the brake earlier in the AMG without waiting for the cue, the lap worked and produced the `1:43.911`,
+- but it felt wrong because it bypassed my normal feedback-based release timing.
+
+Corrected interpretation:
+
+- my native model is feedback-triggered release,
+- the AMG workaround is prediction-triggered release,
+- that is why the car can still be competitive while feeling alien and expensive.
+
+### Ferrari vs McLaren Race Comparison: Use Laps `2-20`
+
+Today also clarified the correct comparison window for the Ferrari and McLaren dry races.
+
+Reason for the cutoff:
+
+- from lap `21` onward, LMGT3 backmarker overlap began,
+- after that point, traffic timing and traffic location on the lap distort pace too heavily,
+- overlapping on a straight versus right before Variante Alta can easily swing `0.5-0.7s`.
+
+So the last mostly comparable dry-race window is:
+
+- laps `2-20`
+
+#### Ferrari 296 GT3 (`2-20`)
+
+Raw:
+
+- Best: `1:44.593`
+- Median: `1:45.073`
+- Avg: `1:45.731`
+
+Removing the obvious junk lap `17` (`1:53.269`):
+
+- Best: `1:44.593`
+- Median: `1:45.066`
+- Avg: `1:45.312`
+
+#### McLaren 720S GT3 (`2-20`)
+
+Raw:
+
+- Best: `1:44.533`
+- Median: `1:44.934`
+- Avg: `1:45.200`
+
+Removing the obvious junk lap `11` (`1:49.346`):
+
+- Best: `1:44.533`
+- Median: `1:44.933`
+- Avg: `1:44.970`
+
+Matched-window conclusion:
+
+- McLaren beat Ferrari by about `0.133s` on median in the clean-ish pre-backmarker window.
+- Best-lap difference was only `0.060s`, so the bigger separation is not peak pace but usable race-window pace.
+- That makes the McLaren the strongest current matched-context race sample at Imola.
+
+### Ferrari Late-Stint Traffic Clarification
+
+The Ferrari late phase (`21+`) was examined with replay context.
+
+Important traffic notes:
+
+- lap `21`: rhythm broken by traffic
+- lap `22`: Variante Alta queue and overlapping backmarkers
+- lap `23`: Tamburello snap while trying to regain pace after the traffic interruption
+- lap `24`: Piratella inside overlap plus LMP2 traffic
+- lap `27`: Rivazza inside overlap
+
+Operational read:
+
+- the late Ferrari phase is too traffic-poisoned to use as a clean tyre-only sample,
+- lap `23` was still a driver mistake, but best classified as traffic-triggered overpush rather than a standalone clean-air error,
+- laps `25-26` (`1:45.123`, `1:45.110`) prove the baseline pace was still there once the traffic released.
+
+Corrected Ferrari conclusion:
+
+- the full-dry Ferrari did not show a major late-stint tyre collapse,
+- the visible late drop was heavily inflated by traffic timing and rhythm disruption,
+- the true late dry fade is probably modest rather than catastrophic.
+
+### Updated Race-Pace Read
+
+Current Imola race evidence now points to three separate strengths:
+
+- McLaren = strongest matched clean race pace
+- BMW = calmest and cheapest repeatable race platform
+- Mustang = very close to BMW on race pace, but more punishable when overpushed through kerb-to-asphalt chicane transitions
+
+Ferrari remains competitive, but in current full-dry race evidence:
+
+- slower than McLaren in the comparable `2-20` window,
+- and more timing-sensitive to traffic interruption than the simpler raw pace tables first suggested.
+
+### What Changed in My Understanding Today
+
+1. The AMG problem is now much more precise: the missing piece is not rear grip in general, but the missing rear-rotation cue during brake release.
+2. My preferred entry model is not generic trail-braking; it is residual-brake yaw confirmation followed by a quick release handoff to steering.
+3. The AMG fast-lap workaround exists, but it requires prediction-triggered release rather than my native feedback-triggered release.
+4. Ferrari vs McLaren race pace should only be compared cleanly through laps `2-20`; after that, traffic timing makes the comparison too dirty.
+5. In that matched window, McLaren currently beats Ferrari by about `0.13s` on median.
+6. The Ferrari late-stint slowdown in the full-dry run was overstated by traffic timing and rhythm disruption.
+7. Traffic timing is now a distinct comparison layer, separate from traffic density and separate from raw pace.
+
+### Practical Rule Update
+
+- For AMG, do not keep waiting for the native rear-rotation cue if it is not coming; that delay is itself the mistake.
+- For race-stint comparison, separate traffic density from traffic timing and traffic location on the lap.
+- After obstructed laps, the next lap should be a rhythm-rebuild lap, not an immediate recovery lap.
+
+### Next Analysis Step
+
+1. Re-run BMW and Mustang in a strict laps-`2-20` comparable dry window if possible.
+2. Test whether the AMG prediction-triggered release model can be made repeatable without the same physical and psychological cost.
