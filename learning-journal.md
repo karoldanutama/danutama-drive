@@ -1697,3 +1697,136 @@ Ferrari remains competitive, but in current full-dry race evidence:
 
 1. Re-run BMW and Mustang in a strict laps-`2-20` comparable dry window if possible.
 2. Test whether the AMG prediction-triggered release model can be made repeatable without the same physical and psychological cost.
+
+## 2026-06-05
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Scope: cleanest Ferrari-vs-Mustang race comparison plus multiclass traffic-loss structure
+- Cars reviewed today: Ferrari 296 GT3, Ford Mustang GT3
+- Goal: compare peak clean race pace, understand Mustang tyre-carry cost, and classify the real cost of the Tosa traffic trap
+
+### Ferrari 296 GT3: Fastest-Ever Clean Race Pace
+
+Today produced the strongest Ferrari race-pace sample so far at Imola.
+
+Raw sample (`2-27`):
+
+- Best: `1:44.430`
+- Median: `1:45.118`
+- Avg: `1:46.427`
+
+The raw sample is too dirty because of:
+
+- lap `2` warm-up effect (`1:49.866`)
+- lap `23` junk traffic event (`2:06.174`)
+- several traffic-affected laps in the second half
+
+Best usable Ferrari race window:
+
+- laps `3-8`, `13-20`
+- Best: `1:44.430`
+- Median: `1:44.889`
+- Avg: `1:44.860`
+
+Conservative variant including lap `10` as still usable:
+
+- Median: `1:44.916`
+- Avg: `1:44.908`
+
+Direct read:
+
+- This is the strongest Ferrari race pace I have yet produced at Imola.
+- The car held a stable high-`1:44.8` to low-`1:44.9` clean band.
+- That is a serious race-pace result, not just a one-lap spike.
+
+### Mustang GT3: Stint 1 Pace vs Stint 2 Carried Tyres
+
+Fresh-tyre / first-stint race sample:
+
+- Best usable window: laps `2-8`, `10`, `12-18`, `21`, `23-26`
+- Best: `1:44.138`
+- Median: `1:44.639`
+- Avg: `1:44.696`
+
+Direct comparison versus Ferrari clean race window:
+
+- Ferrari median: `1:44.889`
+- Mustang median: `1:44.639`
+- Mustang advantage: about `0.250s`
+
+Best-lap comparison:
+
+- Ferrari best: `1:44.430`
+- Mustang best: `1:44.138`
+- Mustang advantage: `0.292s`
+
+Important conclusion:
+
+- In current clean race evidence, the Mustang still beats the Ferrari on both repeatable median pace and peak race lap.
+
+Stint 2 on the same tyres (no tyre change):
+
+- Ignoring the out-lap effects and the Variante Alta spin lap `52`
+- Best: `1:45.162`
+- Median: `1:45.620`
+- Avg: `1:45.647`
+
+Tyre-carry read:
+
+- Mustang stint-2 median loss versus the best stint-1 window: about `+0.98s`
+- That is a major drop, much worse than the light single-stint fade seen in Ferrari or BMW reference windows.
+- So the Mustang is very fast on the good tyre window, but much more vulnerable once the set is carried forward.
+
+### Tosa Traffic Trap: Sequence-Kill Loss
+
+Today also clarified one of the worst multiclass scenarios at Imola.
+
+Compression-trap structure:
+
+- just overlapped one LMGT3,
+- two more LMGT3 still ahead into Tosa,
+- three LMP2 behind closing fast,
+- braking point must move earlier for the GT3s ahead,
+- but braking early increases prototype threat from behind.
+
+This is not a normal local traffic loss.
+
+Correct interpretation:
+
+- a compromise at Tosa is not just a Tosa loss,
+- it poisons Tosa exit speed,
+- then hurts the run to Piratella,
+- then removes clean overlap chance before Acque Minerali,
+- then leaves Rivazza as the last desperate attack point.
+
+Working term:
+
+- sequence-kill traffic loss
+
+Practical magnitude:
+
+- one bad Tosa traffic concession can realistically become a `1.5-2.0s` chain loss across the whole Tosa -> Piratella -> Acque Minerali -> Rivazza sequence.
+
+That means some late-race lap losses are not corner-local mistakes or simple tyre fade.
+They are chain-propagation events.
+
+### What Changed in My Understanding Today
+
+1. My strongest-ever Ferrari Imola race pace now sits in a repeatable `1:44.89`-ish clean band, with a best of `1:44.430`.
+2. Even against that best Ferrari race sample, the Mustang still comes out faster on clean repeatable race pace by about `0.25s`.
+3. The Mustang's real weakness is not only chicane sensitivity; it is also severe pace loss once tyres are reused into a second stint.
+4. A bad multiclass event at Tosa should not be treated as a one-corner loss; it can kill the entire middle-to-final sector sequence.
+5. Some of the ugliest Imola race laps are better explained as sequence-kill traffic losses than as pure driver error or tyre collapse.
+
+### Practical Rule Update
+
+- For race comparisons, separate fresh-tyre peak pace from carried-tyre pace; some cars change category completely once stint 2 begins.
+- At Imola, flag Tosa traffic traps separately from generic traffic because the downstream cost is disproportionately large.
+- When Tosa is poisoned by multiclass compression, shift the target from pace to survival and sequence damage limitation.
+
+### Next Analysis Step
+
+1. Run a Ferrari second-stint carried-tyre sample at Imola for a direct tyre-carry comparison against the Mustang.
+2. Rebuild the current Imola race map using two axes instead of one: fresh-tyre race pace and carried-tyre race pace.
