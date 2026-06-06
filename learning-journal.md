@@ -1830,3 +1830,72 @@ They are chain-propagation events.
 
 1. Run a Ferrari second-stint carried-tyre sample at Imola for a direct tyre-carry comparison against the Mustang.
 2. Rebuild the current Imola race map using two axes instead of one: fresh-tyre race pace and carried-tyre race pace.
+
+## 2026-06-06
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Scope: correction of the Ferrari vs Mustang race comparison using the same grid structure
+- Cars reviewed today: Ferrari 296 GT3, Ford Mustang GT3
+- Goal: replace the old ELMS-vs-WEC mismatch with a direct same-setup full-stint comparison
+
+### Setup Correction
+
+The earlier June 5 Ferrari-vs-Mustang comparison was not fully clean because the race formats were different:
+
+- Ferrari sample: full ELMS-style grid (`21-22` LMP2, `11` LMP3, `13` LMGT3)
+- Mustang sample: full WEC-style grid (`18` Hypercars, `18` LMGT3)
+
+That meant the earlier conclusion overstated the Ferrari deficit.
+
+Today a Ferrari 296 GT3 run was completed on the same WEC-style race setup used for the Mustang reference.
+
+### Ferrari vs Mustang: Same-Setup Full-Stint Read
+
+Ferrari full WEC-style first stint (`2-27`):
+
+- Best: `1:44.370`
+- Median: `1:44.979`
+- Avg: `1:45.255`
+
+Mustang WEC-style first stint (`2-26`):
+
+- Best: `1:44.138`
+- Median: `1:44.921`
+- Avg: `1:45.067`
+
+Raw full-stint comparison:
+
+- Median gap to Mustang: `0.058s`
+- Average gap to Mustang: `0.188s`
+- Best-lap gap to Mustang: `0.232s`
+
+Single-worst-lap-cleaned check:
+
+- Ferrari without lap `23`: median `1:44.973`
+- Mustang without lap `22`: median `1:44.850`
+- Gap: `0.123s`
+
+Corrected conclusion:
+
+- Mustang still comes out ahead.
+- But the advantage is now small, not large.
+- The honest same-setup full-stint gap is roughly `0.06s` to `0.12s` on median, depending on how strictly the worst single-lap junk is removed.
+
+### What Changed in My Understanding Today
+
+1. The old June 5 Ferrari-vs-Mustang comparison was too harsh because it mixed ELMS and WEC traffic environments.
+2. On the same WEC-style race setup, Ferrari and Mustang are much closer than the earlier `0.25s` clean-window comparison suggested.
+3. Mustang still holds the edge, but only slightly on full-stint repeatable race pace.
+4. Ferrari and Mustang now belong even more clearly in the same real race-pace tier at Imola.
+
+### Practical Rule Update
+
+- Do not promote a cross-car race conclusion to "real" unless the grid structure and faster-class traffic model are matched.
+- Keep two separate Ferrari-vs-Mustang reads in mind: clean-window potential and same-setup full-stint race pace.
+
+### Next Analysis Step
+
+1. Revisit the current Imola race map with the corrected same-setup Ferrari result.
+2. Add a same-setup McLaren vs BMW vs Ferrari vs Mustang comparison if matching runs become available.
