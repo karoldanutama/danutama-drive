@@ -1895,6 +1895,31 @@ Corrected conclusion:
 - Do not promote a cross-car race conclusion to "real" unless the grid structure and faster-class traffic model are matched.
 - Keep two separate Ferrari-vs-Mustang reads in mind: clean-window potential and same-setup full-stint race pace.
 
+### Addendum: Stronger Field, Fewer Late Backmarkers
+
+Another important context correction emerged after the same-setup Ferrari rerun.
+
+ELMS-style Ferrari run:
+
+- AI strength: `95%`
+- Qualifying gap to the field: about `2.5s`
+
+WEC-style Ferrari run:
+
+- AI strength: `98%`
+- Qualifying gap to the field: about `1.3s`
+
+Interpretation:
+
+- In the ELMS run, being much faster than the LMGT3 field meant reaching backmarkers earlier and in greater volume.
+- In the WEC run, the stronger field stayed with me longer, so fewer backmarker interactions had accumulated by the late-stint phase.
+- That means the WEC Ferrari sample may have had faster individual traffic, but less total late-stint traffic poison.
+
+Corrected practical read:
+
+- stronger field can sometimes produce a cleaner stint if it delays the onset and volume of backmarker overlap,
+- so a higher AI percentage does not automatically mean dirtier lap-time context.
+
 ### Next Analysis Step
 
 1. Revisit the current Imola race map with the corrected same-setup Ferrari result.
