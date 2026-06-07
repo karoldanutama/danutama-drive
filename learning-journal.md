@@ -2090,6 +2090,112 @@ Meaning:
 
 - Ferrari's enduring-car advantage is strongest when the electronics are also moved into the more protective used-tyre window.
 
+### Continuation: Ferrari Stints 3 and 4
+
+The race was then continued with:
+
+- stint `3`: new tyres, but more sporadic traffic
+- stint `4`: no tyre change, only refuel to about `66%` because the race was ending
+- stints `3` and `4` were driven back-to-back, so fatigue became part of the read
+
+#### Stint 3: Tyre Reset and Pace Reactivation
+
+Raw stint `3` (`58-83`):
+
+- Best: `1:44.377`
+- Median: `1:45.171`
+- Avg: `1:45.678`
+
+Raw numbers are inflated by:
+
+- out-lap effect at `58`
+- major disruption/spin event at lap `65`
+- additional sporadic traffic laps
+
+Clean-ish stint-3 window:
+
+- Best: `1:44.377`
+- Median: `1:44.854`
+- Avg: `1:45.092`
+
+Late strong phase of stint `3`:
+
+- laps `71-83`
+- Median: `1:44.792`
+- Avg: `1:44.854`
+
+Important correction:
+
+- lap `62` (`1:44.377`) already proved the pace was there early in the stint
+- but the pace did not stay uninterrupted because laps `63-70` were broken by traffic and the lap `65` spin
+- so lap `62` is better read as pace proof, while lap `71` is the real pace stabilization point
+
+Lap `65` classification:
+
+- attempted LMGT3 overlap around Rivazza 1 from the outside,
+- LMGT3 defended inside,
+- Hypercar pressure existed from behind,
+- contact occurred and the Ferrari spun
+
+Best label:
+
+- high-risk overlap conflict under prototype pressure
+
+Most important positive:
+
+- after the spin, emotional recovery mode did not take over
+- the stint was rejoined cleanly enough that pace later stabilized again
+
+#### Stint 4: Used Tyres, Reduced Fuel, Still Stable
+
+Raw stint `4` (`86-101`):
+
+- Best: `1:44.938`
+- Median: `1:45.393`
+- Avg: `1:45.699`
+
+Removing the worst obvious outlier:
+
+- Median: `1:45.382`
+- Avg: `1:45.517`
+
+Clean-ish stint-4 window:
+
+- Best: `1:44.938`
+- Median: `1:45.336`
+- Avg: `1:45.319`
+
+Direct comparison versus stint `3` clean-ish pace:
+
+- stint `3` median: `1:44.854`
+- stint `4` median: `1:45.336`
+- carried-tyre loss: about `+0.482s`
+
+Interpretation:
+
+- the Ferrari slowed, but in a very normal and survivable way
+- this is a far smaller loss than the Mustang's carried-tyre second-stint drop
+- reduced fuel and tyre age partially offset each other, while fatigue likely added back some cost
+
+#### Training Value: Deliberate Tyre Constraint
+
+This was the first time only `2` tyre sets were used for a `3h` race despite having about `4.5` sets available.
+
+That means the session should be read not just as a race result, but as deliberate skill training in:
+
+- carried-tyre platform management
+- electronics adaptation
+- strategic tyre-use math
+- emotional containment after bad traffic events
+- maintaining pace after a stint has already been compromised
+
+Stint-4 strategic math:
+
+- if the used-tyre pace loss is about `+0.3s/lap` over `16` laps, that is roughly `4.8s`
+- if a tyre change costs about `12s`, staying out is still the correct strategic call
+
+So the Ferrari was not just surviving stint `4`; it was making the reduced-tyre strategy mathematically correct.
+
 ### Next Analysis Step
 
 1. Rebuild the current Imola race map using two separate rankings: fresh-tyre pace and carried-tyre pace.
