@@ -1924,3 +1924,112 @@ Corrected practical read:
 
 1. Revisit the current Imola race map with the corrected same-setup Ferrari result.
 2. Add a same-setup McLaren vs BMW vs Ferrari vs Mustang comparison if matching runs become available.
+
+## 2026-06-07
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Scope: continuation of the June 6 Ferrari vs Mustang race comparison
+- Cars reviewed today: Ferrari 296 GT3, Ford Mustang GT3
+- Goal: compare both cars specifically on carried tyres in stint 2 with no tyre change
+
+### Carried-Tyre Comparison: Ferrari vs Mustang
+
+The June 6 read established that on the same WEC-style race setup, the Mustang still held a small edge over Ferrari in full first-stint pace.
+
+Today extended that comparison into stint 2 with no tyre change.
+
+#### Ferrari 296 GT3 stint 2
+
+Raw stint 2:
+
+- Best: `1:45.045`
+- Median: `1:45.593`
+- Avg: `1:46.427`
+
+Removing the obvious spin/contact lap `42`:
+
+- Median: `1:45.575`
+- Avg: `1:45.741`
+
+Clean-ish carried-tyre window:
+
+- Best: `1:45.045`
+- Median: `1:45.460`
+- Avg: `1:45.545`
+
+#### Ford Mustang GT3 stint 2
+
+Raw stint 2:
+
+- Best: `1:45.162`
+- Median: `1:45.812`
+- Avg: `1:46.481`
+
+Removing the out-lap effect and the Variante Alta spin lap `52`:
+
+- Median: `1:45.723`
+- Avg: `1:46.075`
+
+Clean-ish carried-tyre window:
+
+- Best: `1:45.162`
+- Median: `1:45.717`
+- Avg: `1:46.043`
+
+### Interpretation
+
+Direct read:
+
+- On used tyres, the Ferrari is the more survivable platform.
+- Ferrari beats Mustang on best lap, median pace, and average pace in stint 2.
+- The clean-ish median gap is about `0.26s` in Ferrari's favor.
+- The clean-ish average gap is about `0.50s` in Ferrari's favor.
+
+This creates an important phase split:
+
+- fresh tyres / stint 1: Mustang has the higher race ceiling
+- used tyres / stint 2: Ferrari becomes the safer and more sustainable race platform
+
+Corrected model:
+
+- Mustang wins on fresh-tyre pace access and outright race speed
+- Ferrari wins once the tyres are carried and the margin for rear-transient mistakes gets smaller
+
+### Why The Order Flips
+
+The likely mechanism is not mysterious.
+
+Ferrari on used tyres:
+
+- still gives the familiar rotation model,
+- remains readable in the brake-release phase,
+- and lets the lap stay alive even when the peak edge has dulled.
+
+Mustang on used tyres:
+
+- loses more of its rear grip reserve,
+- becomes more punishable over kerb-to-asphalt transitions,
+- and charges a higher penalty for small chicane or transient mistakes.
+
+That means the Mustang's weakness is not only absolute degradation, but degradation plus sensitivity.
+
+### What Changed in My Understanding Today
+
+1. Ferrari and Mustang should not be ranked on one single Imola race axis.
+2. Mustang still leads on fresh-tyre race pace.
+3. Ferrari clearly leads on carried-tyre survivability.
+4. The phase of the stint changes which car is the better platform.
+5. What looked like a simple Ferrari-vs-Mustang pace question is really a two-phase platform question.
+
+### Practical Rule Update
+
+- For Imola race comparison, separate fresh-tyre pace from carried-tyre pace before declaring one car better overall.
+- Treat Mustang's second-stint behavior as a specific weakness to monitor whenever tyres are reused.
+- Treat Ferrari's used-tyre stability as a real strategic advantage, not just a consolation trait.
+
+### Next Analysis Step
+
+1. Rebuild the current Imola race map using two separate rankings: fresh-tyre pace and carried-tyre pace.
+2. Check whether McLaren behaves more like Ferrari or Mustang in a no-tyre-change second stint.
