@@ -2015,6 +2015,38 @@ Mustang on used tyres:
 
 That means the Mustang's weakness is not only absolute degradation, but degradation plus sensitivity.
 
+### Electronics Context On Used Tyres
+
+An important missing variable in the Ferrari used-tyre stints was the electronics change.
+
+For stints `2` and `4`, the Ferrari maps were adjusted to:
+
+- lateral TC: `5 -> 6`
+- longitudinal TC: `3 -> 4`
+
+Practical effect:
+
+- more confidence to pick up throttle earlier,
+- better rear trust in traction-sensitive exits,
+- less hesitation in the exact corners where a tired rear would otherwise make the car feel brittle.
+
+Most obvious examples:
+
+- Villeneuve exit
+- Piratella exit
+- Rivazza exit
+
+Corrected interpretation:
+
+- Ferrari's used-tyre advantage is real,
+- but it was not pure passive platform superiority alone,
+- it was Ferrari plus the correct degraded-tyre electronics support.
+
+That matters because it turns the result from a vague preference into an actionable rule:
+
+- the Ferrari remains highly survivable on old tyres,
+- and the right TC increase helps preserve that survivability by protecting throttle confidence.
+
 ### What Changed in My Understanding Today
 
 1. Ferrari and Mustang should not be ranked on one single Imola race axis.
@@ -2022,12 +2054,14 @@ That means the Mustang's weakness is not only absolute degradation, but degradat
 3. Ferrari clearly leads on carried-tyre survivability.
 4. The phase of the stint changes which car is the better platform.
 5. What looked like a simple Ferrari-vs-Mustang pace question is really a two-phase platform question.
+6. Part of Ferrari's used-tyre success came from good in-stint electronics adaptation, not tyre behavior alone.
 
 ### Practical Rule Update
 
 - For Imola race comparison, separate fresh-tyre pace from carried-tyre pace before declaring one car better overall.
 - Treat Mustang's second-stint behavior as a specific weakness to monitor whenever tyres are reused.
 - Treat Ferrari's used-tyre stability as a real strategic advantage, not just a consolation trait.
+- On the Ferrari, consider small TC increases as a valid used-tyre survival tool rather than a defeatist compromise.
 
 ### Addendum: Attacking Car vs Enduring Car
 
@@ -2053,6 +2087,8 @@ Meaning:
 
 - Mustang is the better platform when the tyre is alive and the goal is to cash out first-stint pace.
 - Ferrari is the better platform when the tyre is tired and the goal is to keep the stint alive without the platform turning brittle.
+
+- Ferrari's enduring-car advantage is strongest when the electronics are also moved into the more protective used-tyre window.
 
 ### Next Analysis Step
 
