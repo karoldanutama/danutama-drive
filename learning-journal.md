@@ -2029,6 +2029,31 @@ That means the Mustang's weakness is not only absolute degradation, but degradat
 - Treat Mustang's second-stint behavior as a specific weakness to monitor whenever tyres are reused.
 - Treat Ferrari's used-tyre stability as a real strategic advantage, not just a consolation trait.
 
+### Addendum: Attacking Car vs Enduring Car
+
+An additional clarification emerged from comparing the subjective feel of both cars across the two stints.
+
+Mustang on fresh tyres:
+
+- can reach `1:44.1x` race laps much more naturally,
+- gives a higher first-stint cashout,
+- and accesses its peak race speed without needing Ferrari-level overreach.
+
+Ferrari on fresh tyres:
+
+- can still produce serious race pace,
+- but the very fast laps feel more expensive and closer to quasi-quali effort even on race fuel.
+
+Corrected shorthand:
+
+- Mustang = attacking race car
+- Ferrari = enduring race car
+
+Meaning:
+
+- Mustang is the better platform when the tyre is alive and the goal is to cash out first-stint pace.
+- Ferrari is the better platform when the tyre is tired and the goal is to keep the stint alive without the platform turning brittle.
+
 ### Next Analysis Step
 
 1. Rebuild the current Imola race map using two separate rankings: fresh-tyre pace and carried-tyre pace.
