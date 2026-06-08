@@ -2200,3 +2200,123 @@ So the Ferrari was not just surviving stint `4`; it was making the reduced-tyre 
 
 1. Rebuild the current Imola race map using two separate rankings: fresh-tyre pace and carried-tyre pace.
 2. Check whether McLaren behaves more like Ferrari or Mustang in a no-tyre-change second stint.
+
+## 2026-06-08
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Scope: Mustang stint-2 reassessment after applying degraded-tyre setup corrections
+- Car focus: Ford Mustang GT3
+- Goal: determine why the second Mustang carried-tyre stint improved so much versus the earlier run
+
+### New Mustang Result: Better Second-Stint Pace
+
+The new Mustang run showed a large improvement in stint `2` pace retention.
+
+Fresh-tyre stint `1` (clean-ish):
+
+- Best: `1:44.348`
+- Median: `1:44.630`
+- Avg: `1:44.664`
+
+Used-tyre stint `2` (clean-ish):
+
+- Best: `1:44.632`
+- Median: `1:45.335`
+- Avg: `1:45.241`
+
+Compared with the earlier Mustang carried-tyre reference:
+
+- old clean-ish stint `2` median: `1:45.717`
+- new clean-ish stint `2` median: `1:45.335`
+- improvement: about `0.382s`
+
+Direct read:
+
+- the biggest gain was not on fresh tyres,
+- the biggest gain was learning how to keep the Mustang alive once the tyres were already used.
+
+### What Changed: BB and TC Corrections
+
+Two important changes were made for the Mustang used-tyre phase:
+
+- brake bias: `47 -> 46`
+- lateral TC: `5 -> 7`
+
+What the rearward BB did:
+
+- restored entry rotation,
+- reduced the aged-front reluctance,
+- and helped prevent the car from becoming too front-safe as the stint aged.
+
+What the higher lateral TC did:
+
+- increased rear confidence on loaded exits,
+- reduced hesitation in traction-sensitive sway/reload zones,
+- and made earlier throttle pickup safer at:
+  - Villeneuve exit
+  - Piratella exit
+  - Tamburello exit
+
+### Why Higher TC Made The Car Faster
+
+The important lesson is that higher TC did not make the car faster by magic.
+It made the car faster by improving confidence.
+
+In this case, lower TC may have been better on paper, but worse in practice because it caused:
+
+- more hesitation,
+- later throttle pickup,
+- less trust in the rear on reload,
+- and smaller exits.
+
+So the real chain was:
+
+- more support -> more trust -> earlier usable throttle -> faster exits -> better stint pace
+
+Corrected interpretation:
+
+- on aged Mustang tyres, the fastest map was not the least interventionist one,
+- it was the map that gave enough rear support to stop the driver from second-guessing the car.
+
+### Ferrari vs Mustang Used-Tyre Read: Updated
+
+This newer Mustang stint `2` changes the old Ferrari advantage story.
+
+Ferrari clean-ish carried-tyre median:
+
+- `1:45.460`
+
+New Mustang clean-ish carried-tyre median:
+
+- `1:45.335`
+
+Meaning:
+
+- Ferrari still looks like the more naturally survivable used-tyre platform.
+- But with the correct BB and TC corrections, the Mustang can now match that phase much more closely and may even edge it slightly on delivered pace.
+
+So the refined split is:
+
+- Ferrari = easier enduring platform
+- Mustang = no longer clearly worse on used-tyre pace once managed correctly
+
+### What Changed in My Understanding Today
+
+1. The biggest recent Mustang development was not fresh-tyre pace, but second-stint management.
+2. Rearward BB on worn tyres was a real entry-rotation fix, not just a feel preference.
+3. Higher lateral TC can be faster when the limiting factor is confidence rather than raw intervention cost.
+4. The Mustang's carried-tyre weakness is manageable if the platform is re-centered correctly.
+5. Ferrari still feels more naturally survivable, but the delivered pace gap on used tyres is now much smaller than before.
+
+### Practical Rule Update
+
+- On aged tyres, do not assume lower TC is always faster; first ask whether hesitation is the real limiter.
+- For front-engine cars on worn tyres, use BB and TC together: BB to restore entry rotation, TC to preserve exit trust.
+- Separate "natural survivability" from "delivered pace after adaptation" when judging old-tyre platforms.
+
+### Next Analysis Step
+
+1. Test whether the same BB/TC logic also improves the Mustang late in stint `1`, not just in stint `2`.
+2. Compare whether McLaren or BMW respond more like Ferrari or Mustang to this same worn-tyre support logic.
