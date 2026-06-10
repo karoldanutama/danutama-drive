@@ -1055,6 +1055,7 @@ Nearby competitive band:
 Direct read:
 
 - This is not an empty leaderboard region.
+
 - The Lexus lap sits inside a compressed, genuinely competitive cluster.
 - At this level, each few hundredths can move several positions.
 
@@ -2320,3 +2321,93 @@ So the refined split is:
 
 1. Test whether the same BB/TC logic also improves the Mustang late in stint `1`, not just in stint `2`.
 2. Compare whether McLaren or BMW respond more like Ferrari or Mustang to this same worn-tyre support logic.
+
+## 2026-06-10
+
+### Session Context
+
+- Track: Spa-Francorchamps
+- Cars reviewed: Ford Mustang LMGT3, Ferrari 296 LMGT3
+- Driver tag: `oldark.`
+- Goal: re-anchor current Spa fit against the latest leaderboard state and the current LMU BOP
+
+### Mustang Spa Read
+
+Current Mustang leaderboard result:
+
+- Ford Mustang LMGT3: `2:19.457`, `P23/592`
+- Percentile: top `96.1%`
+- Gap to top `5%`: about `0.150s`
+- Gap to top `10%`: about `0.544s`
+
+Sector read:
+
+- `S1 37.804` is strong
+- `S2 62.444` is the main leak
+- `S3 39.387` is strong again
+
+Direct read:
+
+- The Mustang is still a viable Spa platform.
+- The loss is concentrated in the middle sector, not in the opening or finishing segments.
+- This matches the earlier Spa note that the main work is in the loaded middle sequence after Kemmel, not at Blanchimont or the Bus Stop.
+
+### Ferrari Spa Read
+
+Current Ferrari leaderboard result:
+
+- Ferrari 296 LMGT3: `2:19.635`, `P23/592`
+- Percentile: top `96.1%`
+- Gap to top `5%`: about `0.150s`
+- Gap to top `10%`: about `0.544s`
+
+Sector read:
+
+- `S1 37.804` is strong
+- `S2 62.444` is strong
+- `S3 39.387` is the weak point in the final comparison
+
+Direct read:
+
+- Ferrari remains strong, but the Mustang currently has the edge.
+- The gap is not a collapse; it is a small same-tier separation.
+
+### Cross-Car Conclusion
+
+Current Spa conclusion:
+
+- Mustang is now the current Spa reference, not the old Ferrari hotlap.
+- Ferrari is still competitive, but the old Spa Ferrari benchmark is historical only.
+- The present gap is small enough to keep both cars in the same serious pace tier.
+
+### BOP Context
+
+Current Spa LMU BOP reinforces the shift:
+
+- Mustang LMGT3: `1475 kg`, `711 MJ`, `0.0%` power delta, rear wing range `0.0-7.0`
+- Ferrari 296 LMGT3: `1477 kg`, `672 MJ`, `0.0%` power delta, rear wing range `0.6-4.5`
+
+Interpretation:
+
+- The Mustang has a wider usable aero window and more energy allowance.
+- Power curve staging is flat for both cars at Spa (`Stage 1` and `Stage 2` both at `200 kph`, `0.0%` delta on Mustang).
+- This makes the Mustang the more adaptable current Spa package in my hands.
+
+### Practice Signal
+
+98% AI practice note:
+
+- Augusto Farfus in the BMW M4 GT3 was only `0.3s` behind in a practice session.
+
+Read:
+
+- That is a strong pro-adjacent signal.
+- It does not equal a direct leaderboard comparison, but it confirms the Mustang pace is real.
+
+### What Changed in My Understanding Today
+
+1. The Mustang is now my current Spa reference car.
+2. Ferrari used to be the Spa benchmark, but that comparison is historical now.
+3. The Mustang’s Spa weakness is mainly middle-sector completion, not entry or finish.
+4. Current BOP supports the Mustang as a strong, flexible Spa platform.
+5. The pro-pace reference against Farfus suggests the current Mustang pace is legitimately serious, not a board artifact.
