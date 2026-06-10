@@ -2411,3 +2411,45 @@ Read:
 3. The Mustang’s Spa weakness is mainly middle-sector completion, not entry or finish.
 4. Current BOP supports the Mustang as a strong, flexible Spa platform.
 5. The pro-pace reference against Farfus suggests the current Mustang pace is legitimately serious, not a board artifact.
+
+## 2026-06-10
+
+### BMW Spa Read
+
+Current BMW leaderboard result:
+
+- BMW M4 LMGT3: `2:19.745`, `P40/989`
+- Percentile: top `~95%`
+
+Sector read:
+
+- `S1 37.685` is excellent
+- `S2 62.930` is the main loss
+- `S3 39.130` is not the main problem
+
+Direct read:
+
+- The BMW is not failing outright; it is losing the lap in the middle.
+- That matches the feeling of the car wanting to go straight and resisting rotation.
+- The lap is there, but it needs a more committed entry and more brake-led rotation than the Mustang.
+
+### Baldwin Match
+
+James Baldwin’s BMW vs McLaren description matches my experience:
+
+- BMW = stable entry, understeery mid-corner, strong straight-line/high-speed/bump car
+- BMW needs harder entry and more trail-brake rotation
+- McLaren-style slow-in/rotate/coast is not the BMW’s natural solution
+
+Interpretation for my driving:
+
+- The BMW is not asking for patience in the middle of the corner.
+- It is asking for a harder attack on entry and a shorter coasting phase.
+- If I drive it like a mid-engine car, it will feel like it just wants to go straight.
+
+### What Changed in My Understanding Today
+
+1. BMW’s Spa weakness is rotation authority, not raw stability.
+2. My subjective complaint about understeer matches a real-driver description of the car.
+3. The BMW needs a more V-shaped entry than the Mustang.
+4. The car is viable, but it is a worse fit than Mustang for my current Spa style.
