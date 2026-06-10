@@ -2404,16 +2404,6 @@ Read:
 - That is a strong pro-adjacent signal.
 - It does not equal a direct leaderboard comparison, but it confirms the Mustang pace is real.
 
-### What Changed in My Understanding Today
-
-1. The Mustang is now my current Spa reference car.
-2. Ferrari used to be the Spa benchmark, but that comparison is historical now.
-3. The Mustang’s Spa weakness is mainly middle-sector completion, not entry or finish.
-4. Current BOP supports the Mustang as a strong, flexible Spa platform.
-5. The pro-pace reference against Farfus suggests the current Mustang pace is legitimately serious, not a board artifact.
-
-## 2026-06-10
-
 ### BMW Spa Read
 
 Current BMW leaderboard result:
@@ -2449,7 +2439,9 @@ Interpretation for my driving:
 
 ### What Changed in My Understanding Today
 
-1. BMW’s Spa weakness is rotation authority, not raw stability.
-2. My subjective complaint about understeer matches a real-driver description of the car.
-3. The BMW needs a more V-shaped entry than the Mustang.
-4. The car is viable, but it is a worse fit than Mustang for my current Spa style.
+1. The Mustang is now my current Spa reference car.
+2. Ferrari used to be the Spa benchmark, but that comparison is historical now.
+3. The Mustang’s Spa weakness is mainly middle-sector completion, not entry or finish.
+4. Current BOP supports the Mustang as a strong, flexible Spa platform.
+5. The pro-pace reference against Farfus suggests the current Mustang pace is legitimately serious, not a board artifact.
+6. BMW’s Spa weakness is rotation authority, not raw stability, and Baldwin’s explanation matches my own feel.
