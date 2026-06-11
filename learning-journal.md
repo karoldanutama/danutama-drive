@@ -2423,6 +2423,25 @@ Direct read:
 - That matches the feeling of the car wanting to go straight and resisting rotation.
 - The lap is there, but it needs a more committed entry and more brake-led rotation than the Mustang.
 
+### Aston Spa Read
+
+Current Aston leaderboard result:
+
+- Aston Martin Vantage GT3: `2:19.850`, `P17/343`
+- Percentile: top `~95%`
+
+Sector read:
+
+- `S1 37.887` is strong
+- `S2 62.969` is the main leak
+- `S3 38.994` is fine
+
+Direct read:
+
+- The Aston is genuinely competitive at Spa, but it is not the cleanest match for my current reference pace.
+- It sits between the Mustang and BMW on my feel: better than the BMW for certainty, less complete than the Mustang in sector 2.
+- It confirms the Spa picture is not just a single-car story.
+
 ### Baldwin Match
 
 James Baldwin’s BMW vs McLaren description matches my experience:
@@ -2445,3 +2464,4 @@ Interpretation for my driving:
 4. Current BOP supports the Mustang as a strong, flexible Spa platform.
 5. The pro-pace reference against Farfus suggests the current Mustang pace is legitimately serious, not a board artifact.
 6. BMW’s Spa weakness is rotation authority, not raw stability, and Baldwin’s explanation matches my own feel.
+7. Aston is competitive at Spa, but it still loses too much in the middle sector to displace the Mustang as my current reference.
