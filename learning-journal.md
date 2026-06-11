@@ -2342,9 +2342,9 @@ Current Mustang leaderboard result:
 
 Sector read:
 
-- `S1 37.804` is strong
-- `S2 62.444` is the main leak
-- `S3 39.387` is strong again
+- `S1 37.946` is near top-`5%` pace
+- `S2 62.473` is the main leak
+- `S3 39.038` is excellent
 
 Direct read:
 
