@@ -2500,3 +2500,62 @@ Direct read:
 2. The Mercedes is also viable at Spa and reads as a balanced top-`5%` car rather than a volatile one.
 3. Aston and Mercedes both support the idea that the current Spa picture is broader than a simple front-engine versus mid-engine split.
 4. The Mustang still holds as my current reference because it remains the cleanest complete match, especially through the middle of the lap.
+
+## 2026-06-12
+
+### Session Context
+
+- Track: Spa-Francorchamps
+- Car: Ferrari 296 GT3
+- Session type: race simulation against `98%` AI, full ELMS grid
+- Grid mix: `21` LMP2, `10` LMP3, `13` LMGT3
+- Driver tag: `oldark.`
+- Goal: re-check Ferrari Spa race pace in a full multiclass context
+
+### Main Result
+
+The surprising part today was not one single lap. It was how often sub-`2:21` pace kept appearing in a real race run.
+
+Current race sample:
+
+- Stint `1` best: `2:20.289`
+- Stint `1` median: `2:20.855`
+- Stint `2` best: `2:20.768`
+- Stint `2` median: `2:21.431`
+
+Important race context:
+
+- No tyre change between stints
+- No meaningful rest between stints apart from pitlane time and the stop-go penalty
+
+Direct read:
+
+- Ferrari Spa race pace is stronger than I had mentally updated for.
+- Sub-`2:21` is no longer a rare peak lap in race trim; it is part of the usable pace window.
+- The pace survived traffic, used tyres, and continuous physical carryover.
+
+### Comparison with the Previous Spa Ferrari Race
+
+April reference using the same race setup:
+
+- Tyres were changed between stint `1` and stint `2`
+- Stint `1` cleaned median: `2:21.221`
+- Stint `2` cleaned median: `2:21.197`
+
+Today:
+
+- Stint `1` median improved to `2:20.855`
+- Stint `2` median was `2:21.431` despite no tyre change and no real reset
+
+Interpretation:
+
+- Current stint `1` is clearly stronger than the April reference.
+- Current stint `2` is only slightly slower than the old tyre-changed reference, which is a very good sign.
+- That makes today more meaningful than the older race, not less.
+
+### What Changed in My Understanding Today
+
+1. Ferrari is not just my Spa hotlap car; it is now a real Spa race platform for me.
+2. My Ferrari Spa pace floor is stronger than I had assumed, because low-`2:21s` and sub-`2:21s` now appear repeatedly in race trim.
+3. The current pace is durable: it survived used tyres, multiclass traffic, and no proper recovery break between stints.
+4. The biggest surprise is not the best lap itself, but how normal that pace band has started to feel in the middle of a race run.
