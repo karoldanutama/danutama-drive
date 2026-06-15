@@ -2559,3 +2559,126 @@ Interpretation:
 2. My Ferrari Spa pace floor is stronger than I had assumed, because low-`2:21s` and sub-`2:21s` now appear repeatedly in race trim.
 3. The current pace is durable: it survived used tyres, multiclass traffic, and no proper recovery break between stints.
 4. The biggest surprise is not the best lap itself, but how normal that pace band has started to feel in the middle of a race run.
+
+## 2026-06-16
+
+### Session Context
+
+- Track: Spa-Francorchamps
+- Cars reviewed: Ferrari 296 GT3, Corvette Z06 GT3R, Mercedes-AMG GT3
+- Session type: race simulations against `98%` AI, full ELMS grid
+- Track temp: `21°C` (hotter than the June 12-13 `15°C` baseline)
+- Driver tag: `oldark.`
+- Goal: validate Ferrari race pace consistency, debut the Corvette in race trim, and confirm the AMG race-cost hypothesis
+
+### Ferrari 296 GT3: Pace Still Climbing
+
+Today's Ferrari result against the same race setup:
+
+- Best: `2:20.288`
+- Clean median (excluding LMP2 windows at laps `8-9`, `16-19`): `2:20.817`
+
+Comparison against the June 12 reference:
+
+- June 12 best: `2:20.289` — today's best is identical within `1 ms`
+- June 12 median: `2:20.855` — today's median is `0.038s` faster
+
+This happened on a `21°C` track vs the June 12 `15°C` baseline, with additional restraint because family was sleeping.
+
+Direct read:
+
+- The Ferrari Spa race ceiling is now locked in. Best laps across June 12 and today are essentially the same number.
+- The median continues to improve even on a hotter, grippier track.
+- Recovery after LMP2 windows was clean: laps `10` and `20` immediately after traffic were `2:20.536` and `2:20.594`.
+- Three data points now confirm the climb: April `2:21.221` → June 12 `2:20.855` → today `2:20.817`. Gain of `0.404s` from April.
+
+### Corvette Z06 GT3R: Fastest Spa Race Median Today
+
+The Corvette is mid-engine, not front-engine as I had briefly misremembered. First serious Corvette Spa race stint:
+
+- Best: `2:20.297`
+- Clean median (excluding same LMP2 windows): `2:20.697`
+
+Direct comparison against Ferrari today:
+
+- Corvette is `0.120s` faster on clean median
+- Best laps within `0.009s` of each other
+- Recovery after traffic was strong: `2:20.536` and `2:20.594`
+
+Direct read:
+
+- The Corvette just produced my fastest Spa race median of the day.
+- The mid-engine dance works in full race trim, not just in qualifying.
+- The Corvette now belongs as a real second Spa race platform alongside the Ferrari.
+
+### Mercedes-AMG GT3: The Race-Cost Hypothesis Confirmed
+
+The AMG was tested in the same race format. The result validated every concern from the last two months.
+
+Race stats:
+
+- Best: `2:20.856`
+- Clean median: `2:21.173`
+- Only `4/13` race laps were under `2:21.000`
+
+Comparison against Ferrari and Corvette today:
+
+- AMG best is `0.568s` slower than Ferrari best
+- AMG median is `0.356s` slower than Ferrari median, `0.476s` slower than Corvette median
+
+But the stopwatch gap is not the real story.
+
+Race-margin cost:
+
+- In Ferrari and Corvette, the gap to P2 AI was `12-14s` after `10` laps.
+- In the AMG, the gap was only `6-7s` by lap `9`.
+- That is a `0.5-0.7s` handicap per lap in net race advantage compounding over a stint.
+
+The chain that makes the AMG dangerous rather than just slower:
+
+1. Natural race pace is `0.26s/lap` slower than Ferrari
+2. AI starts pulling ahead — the gap shrinks from `12s` to `6s`
+3. I feel pressure to match pace
+4. Overpush narrows an already-narrow control window
+5. LMP2 traffic arrives at exactly the wrong moment
+6. The window collapses — crash or spin
+
+I stopped the AMG race at lap `9` because overpushing during the LMP2 catch-up window sent me off.
+
+### Spa S2: The Missing Sector
+
+During the AMG race, I noticed:
+
+- I never got a single purple sector in `S2`
+- The `98%` AI caught me by `0.1-0.2s` from No Name to Stavelot exit
+- This is the heart of the Les Combes → Pouhon → Fagnes → Stavelot chain
+
+The specific problem is clearer now:
+
+- Imola front-engine weakness is brake-phase (rotation married to deceleration)
+- Spa front-engine weakness is coast-phase (rotation demanded long after brake release)
+- Pouhon, Fagnes, and Stavelot are long-radius or flick corners where coasting kills the car
+- James Baldwin was right: no time for coasting in front-engine cars
+
+### Core Insight: Dance vs Brute Force
+
+The feel distinction between car families is now precise:
+
+- Ferrari and Corvette: I lead, the car follows, there is rhythm — a conversation
+- AMG at Spa `S2`: I command, the car must obey, there is no rhythm — a monologue
+
+The dance works because the car speaks back. Brute force works but is tiring, less repeatable, and feels unnatural to a rotation-led driver whose entire model depends on reading the car's response.
+
+### Hotter Track Confirmation
+
+Track `21°C` vs baseline `15°C` did not meaningfully hurt pace. Ferrari still improved its median. The Corvette produced its fastest race stint. This suggests my Spa pace is now robust across a usable temperature range, not fragile to small condition changes.
+
+### What Changed in My Understanding Today
+
+1. Ferrari Spa race pace is still climbing, not settling — the median improved again on a hotter track.
+2. The Corvette Z06 GT3R is not just a qualifying car; it is a real Spa race platform that was actually faster than the Ferrari today.
+3. The AMG race-cost hypothesis is no longer a theory: the car forces overpush, the overpush collides with traffic, and the stint ends in a crash.
+4. The AMG's real problem is not just raw pace — it is that the car demands `100%` effort for a result that Ferrari gives at `95%`.
+5. Baldwin's "no coasting" rule is correct and now confirmed by my own data: front-engine cars at Spa `S2` lose time the moment you wait for a rotation cue that never arrives.
+6. The car-family split is now best described as dance (Ferrari, Corvette) vs brute force (AMG at Spa), with Mustang/BMW/Aston sitting in between.
+7. Spa race pace is robust to track temperature variation within the `15-21°C` range.
