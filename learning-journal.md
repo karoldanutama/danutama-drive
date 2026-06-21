@@ -2682,3 +2682,95 @@ Track `21°C` vs baseline `15°C` did not meaningfully hurt pace. Ferrari still 
 5. Baldwin's "no coasting" rule is correct and now confirmed by my own data: front-engine cars at Spa `S2` lose time the moment you wait for a rotation cue that never arrives.
 6. The car-family split is now best described as dance (Ferrari, Corvette) vs brute force (AMG at Spa), with Mustang/BMW/Aston sitting in between.
 7. Spa race pace is robust to track temperature variation within the `15-21°C` range.
+
+## 2026-06-21
+
+### Session Context
+
+**Context:** Mercedes-AMG Motorsport Virtual Championship (AMG VC) Season 02 — LMU Path, Hot Lap qualification phase. Entered at wife's request (Mercedes-AMG fan). Target: Division 2 raffle slot.
+
+**Track:** Circuit de Spa-Francorchamps
+**Car:** Mercedes-AMG GT3 (LMGT3), fixed setup
+**Condition:** High grip, ~31°C track temp
+**Best lap:** 2:20.293 (improved from 2:20.436 previous session)
+**Lap count:** 21+ laps across sessions
+
+---
+
+### Setup Adaptation — Fixed Setup Constraints
+
+Default AMG VC fixed setup sat completely outside my natural operating window. Key compensations applied through in-race adjustable parameters only:
+
+| Parameter | Default | My Setting | Reason |
+|---|---|---|---|
+| Brake Bias | 50.5% | 46.5% | Unlock entry rotation — default produces chronic understeer |
+| Brake Pressure | ~95% | 92% | Manage front saturation with 45kg brake cap |
+| TC | 5 | 1 | Car completing corners properly now, TC intervention unnecessary |
+| TC Cut | 5 | 1 | Same as above |
+| TC Slip Angle | 5 | 2 | Reduce intrusion during rotation phase |
+| Wheel Range | 540° | 380° | Reduce physical lock requirement at Bruxelles, keep hands in control zone |
+
+**Diff preload** is fixed at 90Nm vs my usual 40Nm open setup preference. Compensated via steering lock reduction — snappier ratio means less hand travel needed to generate yaw that the locked diff refuses to provide naturally. Net effect: front axle does the rotation work that diff assistance would normally contribute.
+
+**Bruxelles specifically:** At 540° range, full lock entry required wrists near physical limit on Playseat Challenge against R9 FFB resistance. At 380°, same corner now sits at ~120-130° of hand travel. Combined with trail brake for yaw generation — car is pointed before max lock is needed.
+
+**Exit behaviour:** Smooth throttle application from mid-engine background transfers cleanly. AMG's planted rear, which costs rotation on entry, becomes cooperative under power. The same rear stability that frustrates entry phase rewards clean progressive throttle on exit.
+
+---
+
+### Technique Translation Notes
+
+The AMG inverts my natural technique loop almost entirely:
+
+- **Mid-engine default:** Load brake → weight transfers forward → rear lightens → car rotates → release → rear settles → throttle
+- **AMG reality:** Car doesn't rotate through brake release. Needs steering commitment first, then power to drive rear out. Front-heavy, stable platform by design.
+
+Every corner entry requires fighting muscle memory built across Ferrari, McLaren, Corvette sessions. Not a skill gap — a translation problem. Translation problems are harder because they live below conscious thought level.
+
+**Convergence cost:** High. Took many laps to find 0.143s improvement in final session. Consistent with AMG's pattern from Imola testing — narrow operating window means final tenths require disproportionate lap investment.
+
+**Current assessment:** 2:20.293 feels like extractable ceiling on this platform given constraints (45kg brake cap, fixed setup, 90Nm diff, Playseat Challenge geometry).
+
+---
+
+### Field Context — AMG VC LMU Leaderboard (Snapshot: June 19, 2026)
+
+**My position:** P25/49 valid entries — 2:20.436 at time of snapshot (since improved to 2:20.293, result pending update)
+
+**Field structure:**
+- Top 5 within 0.481s of each other (2:18.828–2:19.309) — elite cluster
+- P6–P24: 18 drivers in 1.072s window — densest zone, I sit at bottom edge
+- P36 cut (Division 1 boundary): 2:21.496 — 1.060s buffer below me
+- Division 2 raffle: comfortably within range
+
+**Confirmed esports professionals in field:**
+- **P1 Mikhail Statsenko** — Virtus.pro, Logitech G Challenge 2021 champion, SRO Esports Sprint EU 2023 runner-up, 40 SimGrid starts
+- **P3 Tobias Sievert** — 15 y/o esports driver for Referox/XClusive Esports, LFM Pro competitor, ONID ELMS participant
+- **P12 Christ Tiansen** — Indonesian competitive sim racer, Toyota Gazoo Racing GT Cup Indonesia, active SimGrid/Studio-397
+
+This is not a fan competition. Manufacturer-branded events attract professional and semi-professional esports drivers specifically. The 1.6s gap to P1 is a professional ceiling, not a training gap.
+
+**Strategic target:** Division 2 raffle. No attempt to chase Division 1 — fixed setup removes key compensatory levers, and sprint format (Race Days 2, 3, 6 are 2x20min) partially neutralises tyre management advantage.
+
+---
+
+### Sim Cafe Session — June 20, 2026
+
+**Venue:** Local sim racing cafe
+**Hardware:** Simagic Alpha Mini 9Nm, Simagic GT Neo wheel, SimJack pedals (70-80kg brake), triple monitor, solid rig
+**Duration:** ~1 hour
+**Best lap:** 2:20.8
+
+**Key finding:** Slower than home rig despite objectively superior hardware. Sub 2:21 achieved in under 1 hour on completely unfamiliar setup.
+
+**Interpretation:** Deep hardware-specific adaptation to home rig (R9 FFB character, 45kg brake calibration, Playseat geometry) means transplanting to better hardware produces a regression in the short term. Muscle memory is calibrated to constraints, not to ideal hardware. Estimate 3-4 additional hours to optimise to 2:19.8–2:20.1 range on cafe hardware — consistent with standard convergence curve extended 1.5x for unfamiliar platform.
+
+**Implication:** Transferable technique foundation is solid — the rapid sub-2:21 adaptation confirms this. Home rig ceiling is real and hardware-specific, not technique-limited.
+
+---
+
+### Hardware Notes
+
+Current rig: Moza R9, SRP Lite load cell (45kg cap), Playseat Challenge, Moza KS wheel (primary), ultrawide + secondary monitor. Air-conditioned room.
+
+Wheel collection: Moza KS, PXN GT One, DIY Arduino wheel (self-coded firmware, self-soldered, outsourced frame + 3D printed enclosures), second DIY (locally sourced), Moza ES with formula rim.
