@@ -2774,3 +2774,164 @@ This is not a fan competition. Manufacturer-branded events attract professional 
 Current rig: Moza R9, SRP Lite load cell (45kg cap), Playseat Challenge, Moza KS wheel (primary), ultrawide + secondary monitor. Air-conditioned room.
 
 Wheel collection: Moza KS, PXN GT One, DIY Arduino wheel (self-coded firmware, self-soldered, outsourced frame + 3D printed enclosures), second DIY (locally sourced), Moza ES with formula rim.
+
+## 2026-06-29
+
+**Context:** Mercedes-AMG Motorsport Virtual Championship (AMG VC) Season 02 — LMU Path, Hot Lap qualification phase. Continued practice despite "ceiling" assessment from June 21 session — driven by curiosity and educational purpose, not competitive necessity.
+
+**Track:** Circuit de Spa-Francorchamps
+**Car:** Mercedes-AMG GT3 (LMGT3), fixed setup
+**Condition:** 0% rain, 28°C ambient, 33°C track temp
+**Best lap:** 2:20.097 (improved from 2:20.294 — previous best)
+**Total lap count to date:** 85+ laps across all AMG sessions
+
+---
+
+### Leaderboard Status (June 29, 2026)
+
+**Position:** ~P57/127 valid entries (leaderboard delayed 1 day, actual position pending update)
+**Division 1 cut:** P36 — Mikołaj Komasa at 2:19.594
+**Buffer to Division 1:** +0.503s ✅ — safe, no hotlap anxiety required
+**Strategic status:** Stop hotlapping. Stay in raffle pool. Confirm Discord by August 1st at 04:59 AM WIB.
+
+**Field growth:** 127 valid entries (up from 95 nine days ago). Raffle pool now 91 drivers for 72 slots — approximately 78% draw probability per split. First time oversubscribed.
+
+**Indonesian standings:**
+
+| 🇮🇩 Rank | Global | Driver | Time |
+|---|---|---|---|
+| 1 | P6 | Christ Tiansen | 2:18.832 |
+| 2 | ~P57 | Karol Danutama | 2:20.097 |
+| 3 | P65 | Fathur Rahman | 2:20.533 |
+| 4 | P100 | Joshua Ivan Mulyono | 2:22.238 |
+| 5 | P104 | Ilham Al-Farisi | 2:22.623 |
+
+---
+
+### Key Discovery — No Name Corner: Gear Selection
+
+**The finding:** Staying in 3rd gear through No Name (and not downshifting to 2nd at Pouhon) unlocked 0.150s+ in SQ5 alone. Simple gear selection change produced disproportionate time gain.
+
+**Why it worked — the cascade mechanism:**
+
+Downshifting to 2nd at No Name triggered a six-step cascade:
+
+1. **RPM overshoot** — 6676 RPM vs reference 5657 RPM (+1019 RPM)
+2. **Engine braking excess** — higher RPM = more engine braking resistance on N/A engine
+3. **Diff amplification** — 90Nm locked diff transmits engine braking spike rigidly to both rear wheels with zero absorption
+4. **Brake compensation** — foot reacts to unexpected deceleration with excess pressure (49.15% vs reference 3.06%)
+5. **Entry speed loss** — combined deceleration scrubs 8 km/h (136 km/h vs reference 144 km/h)
+6. **Line compromise** — 15% excess steering angle, late apex, exit 6m behind reference
+
+**Staying in 3rd reversed the entire cascade simultaneously:**
+- RPM matched reference (5292 vs 5657 — close, not perfect)
+- Engine braking normalized
+- Diff undisturbed
+- Brake peak dropped to 26.75%
+- Entry speed maintained at 136 km/h
+- Steering angle reduced 15%
+- Exit moved 4m earlier vs previous lap
+
+**Telemetry confirmation (Coach Dave Delta+):**
+
+| Metric | Previous (2:20.294) | Today (2:20.097) | Reference |
+|---|---|---|---|
+| SQ5 delta | +0.225s | +0.075s | 0.000s |
+| Gear at No Name | 2nd | 3rd | 3rd |
+| RPM | 6676 | 5292 | 5657 |
+| Brake peak | 49.15% | 26.75% | 3.06% |
+| Entry speed | 135.2 km/h | 136.0 km/h | 144.0 km/h |
+| Steering vs ref | +13% | +15% | baseline |
+| Exit position | 6m after ref | 2m before ref | baseline |
+
+---
+
+### Root Cause Analysis — Why This Was Masked on Ferrari
+
+The lazy late downshift habit existed on Ferrari, McLaren, Corvette for months without consequence. Three simultaneous masking mechanisms:
+
+**Mask 1 — Low diff preload (40Nm vs AMG 90Nm):**
+Ferrari's diff partially slips internally to absorb the RPM overshoot torque spike. The spike is attenuated before reaching the contact patches. The cascade breaks at Step 2 — diff never amplifies it.
+
+**Mask 2 — Twin turbo lag:**
+Ferrari's twin turbo creates a brief window between clutch re-engagement and torque arrival. The drivetrain settles before boost builds. The AMG's N/A engine delivers torque instantly on clutch re-engagement — no settling window, no buffer.
+
+**Mask 3 — Mid-engine weight distribution:**
+Ferrari's balanced mass centroid means the rear doesn't lighten as dramatically under braking. More rear grip budget available. The diff spike is a smaller percentage of available traction and gets absorbed without overwhelming the contact patch.
+
+**All three masks simultaneously active on Ferrari = cascade never gets past Step 2.**
+
+**Implication for Ferrari pace:** The same lazy downshift habit is almost certainly present on Ferrari laps but invisible. Fixing downshift timing on Ferrari should unlock 0.2-0.3s that has been hidden by the car's forgiveness. CDA P24 (2:19.635) may not be the actual ceiling.
+
+---
+
+### Diff Preload vs Downshift — The Physics
+
+High diff preload amplifies every drivetrain input and transmits it directly to contact patches with no internal absorption. The relationship:
+
+- **Low preload (40Nm):** Diff slips partially under torque spike → energy absorbed internally → tyre sees attenuated impulse → chassis smooth
+- **High preload (90Nm):** Diff rigid under torque spike → full energy transmitted → both tyres see full simultaneous impulse → chassis reacts harshly
+
+Under lateral load (mid-corner), the tyre friction circle is already near capacity for cornering. Any additional longitudinal demand from a diff torque spike exceeds the available budget — either understeer or oversteer results depending on exact timing and load state.
+
+**The downshift timing principle:**
+Complete downshift while mostly straight (low lateral load) = full grip budget available to absorb longitudinal impulse = neutral chassis response.
+Complete downshift mid-corner (high lateral load) = minimal grip budget remaining = impulse exceeds budget = chassis disturbance.
+
+---
+
+### Technique Habit Discovered — Late Downshift Pattern
+
+Natural downshift timing derived from Ferrari/Corvette background: very late, close to apex, sometimes simultaneous with initial throttle application on exit.
+
+This habit was **functionally correct on turbocharged mid-engine cars** because:
+- Turbo lag buffered the exit torque spike
+- Low diff preload absorbed the entry/mid-corner spike
+- Mid-engine grip budget accommodated the residual disturbance
+
+The same habit is **actively harmful on the AMG** because all three buffers are absent.
+
+**Correction applied:** Stay in 3rd at No Name and Pouhon rather than downshifting to 2nd. Eliminates the problematic input entirely rather than attempting to retime it. Appropriate for current hardware and technique stage — Playseat Challenge geometry makes early heel-toe downshifts difficult to execute consistently.
+
+**Future work:** When returning to Ferrari, test early downshift timing (complete before lateral load builds) vs current late habit. Expected gain: 0.2-0.3s based on cascade analysis.
+
+---
+
+### Remaining Gap Analysis — No Name
+
+Current gap to reference at No Name:
+- Entry speed: 136 km/h vs reference 144 km/h — **8 km/h deficit**
+- Braking point: 7m earlier than reference
+- Gear: matched ✅
+- Brake pressure: normalized ✅
+
+**Next target:** Brake 3-4m later, carry 2-3 km/h more entry speed. Estimated gain: ~0.05-0.075s in SQ5.
+
+---
+
+### Broader Insight — Forgiving Cars Hide Technique Ceilings
+
+A forgiving car doesn't just help slow drivers go faster. It prevents fast drivers from discovering their technique ceiling.
+
+Ferrari's combination of low diff preload, turbo lag, and mid-engine balance was masking a fundamental downshift timing flaw for months. The flaw was invisible because the car absorbed every consequence before it produced feedback.
+
+The AMG removed all three masks simultaneously. Every imprecise downshift was immediately punished. The car was brutally honest where Ferrari was kindly dishonest.
+
+**The AMG VC was not just a competition. It was the most effective diagnostic tool I've used in 14 years of sim racing — applied involuntarily, at midnight, against Virtus.pro professionals, because my wife likes the logo.**
+
+---
+
+### Current Ceiling Assessment (Revised)
+
+Previous assessment (June 21): 2:20.294 felt like extractable ceiling.
+Revised assessment (June 29): **2:20.097 — new ceiling, but wall has moved.**
+
+The previous "ceiling" was the ceiling of the technique state at that time. The gear discovery moved the wall. Further walls likely exist — braking point at No Name, other corners with similar downshift cascade patterns not yet identified.
+
+**Estimated remaining time in lap:** 0.1-0.2s from braking point optimization at No Name and potential similar discoveries at other corners. Sub-2:20 not ruled out but requires dedicated analysis.
+
+---
+
+### Hardware Note
+
+45-lap hotlap session count now highest in visible AMG VC field (85+ total). Consistent with systematic methodology over raw pace extraction. The lap count reflects convergence investment not visible in the final time.
