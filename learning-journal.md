@@ -2935,3 +2935,125 @@ The previous "ceiling" was the ceiling of the technique state at that time. The 
 ### Hardware Note
 
 45-lap hotlap session count now highest in visible AMG VC field (85+ total). Consistent with systematic methodology over raw pace extraction. The lap count reflects convergence investment not visible in the final time.
+
+## 2026-07-02
+
+**Context:** Post-diagnostic validation phase. Following the June 29 gear cascade discovery (No Name, Pouhon), shifted from pure hotlap diagnostics to race-pace validation under sustained conditions. Goal: test whether fixes hold under fatigue, tyre wear, and repeated attempts rather than single flying laps.
+
+**AI Strength Note:** Sessions below run at **100% AI**, not the usual 95% AI standard used in prior journal entries (April Spa baselines, cross-car comparisons). Not directly comparable to earlier benchmarks without adjustment. Decision pending on whether 100% becomes new standard or reverts to 95% for continuity.
+
+---
+
+### AMG VC Leaderboard — Field Update (July 1 sync, N=144)
+
+**Position:** P53/144 — 2:20.022 (unchanged, holding steady)
+**Division 1 cut:** P36 — Marceau Williams 2:19.537
+**Buffer:** +0.485s ✅ — stable, no action required
+
+**Distribution re-test:** Ran bimodality check on updated field (N=144 vs N=139 nine days prior). Sarle's bimodality coefficient dropped to **0.431** (below 0.555 threshold) — the July 1 "M-shape" flattened into a right-skewed unimodal distribution as the remaining ~70 unposted registrants filled in the middle rather than adding a second discrete mode. **Correction to earlier hypothesis:** the apparent bimodality on the earlier snapshot was likely a timing/sampling artifact (competitive tier front-loads laps and finishes early; casual tier trickles in later), not evidence of two genuinely separate populations colliding.
+
+**What survived the correction:** the *median* itself. AMG VC median (2:20.7, ~P72) crossed against two independent global populations:
+- CDA AMG leaderboard: top 100 of ~700 = 2:20.8 → AMG VC median sits inside CDA's top 14%
+- TrackTitan AMG leaderboard: top 100 of 1374 (Jakub Sehy Sehnal) = 2:20.281 → AMG VC median sits just outside TrackTitan's top 100, roughly top 8-10%
+
+Conclusion: the *shape* argument for "two discrete tiers" is weaker than first thought, but the *median* argument for "this field is not a representative casual population" stands independently and is arguably the cleaner piece of evidence — it doesn't depend on curve-fitting or bin selection.
+
+**Direct research corroboration (unaffected by distribution correction):** confirmed competitive/professional backgrounds for drivers clustered specifically in the P37–P65 zone — ACC Italia M2 champion (Nevi), esports team CEO/Twitch streamer (Sicuro), Odyssey Racing League podium (Emre), active LMU championship leader (Ponchiardi), LUMH esports driver (Franchi), signed Ventauri LMU professional age 17 (Rafter), LFM Simverse Pro Series top-10 finishers (Schuardt P9, Naskidashvili P6), LMU Le Mans 6H race winner (Butzin), full-time Mercedes-AMG content creator/podcast co-host (Clarkson). National flag census: Italy (19 declared) and Germany (18 declared) are the largest contingents, both with median field position around P52–P58 — dense concentration in the competitive-to-semi-professional zone, not spread evenly across the field.
+
+**Indonesian contingent (10 total, 8 declared + 2 undeclared by research):**
+
+| Rank 🇮🇩 | Global | Driver | Time |
+|---|---|---|---|
+| 1 | P6 | Christ Tiansen | 2:18.832 |
+| 2 | P53 | Karol Danutama | 2:20.022 |
+| 3 | P68 | Fathur Rahman | 2:20.533 |
+| 4 | P89 | Fauzan Triyogi (undeclared flag) | 2:21.282 |
+| 5 | P107 | Leonaldo Ferdinand (undeclared flag) | 2:21.977 |
+| 6 | P115 | Joshua Ivan Mulyono | 2:22.238 |
+| 7 | P117 | Dandy Maulana | 2:22.296 |
+| 8 | P122 | Ilham Al-Farisi | 2:22.623 |
+| 9 | P139 | Johanes Isaac | 2:25.297 |
+| 10 | P144 | Teofilus Titan | 2:35.354 |
+
+Fathur Rahman confirmed as regional champion of PALU (Pejuang Lingkar Utara — Indonesian rFactor2 community nickname for the Nordschleife). All three fastest Indonesians (Tiansen, self, Fathur) have genuine competitive backgrounds — no purely casual entry near the top of the national contingent, mirroring the global pattern at national scale.
+
+**Field taxonomy (revised, evidence-based rather than distribution-shape-based):**
+- Platinum — professional esports, full-time or team-contracted (P1–~P20)
+- Gold     — semi-pro/league-competitive, 20-40hrs/week, team or league affiliation (~P20–P65)
+- *** self-assessed position: bottom of Gold, on Silver/Bronze resources ***
+- Silver   — serious community racers, no team infrastructure (~P65–P100)
+- Bronze/Am — casual, fan entries, low lap count (P100+)
+
+Cross-referenced against personal CDA position (P28/~700, top ~4%) and TrackTitan position (P60/1374, top ~4.4%) — two independent large-sample platforms agree closely on percentile, corroborating placement in Gold tier rather than platform-specific noise.
+
+---
+
+### Personal Context Note
+
+First-ever online, human-competitive leaderboard entered in sim racing. 18 months of prior practice (documented in this journal) was entirely against AI opponents with zero external validation. AMG VC hotlap qualification was the first real-world check against a live population — result landed inside Gold tier on first attempt.
+
+---
+
+### AMG vs Ferrari — Fixed Setup Practice Session Comparison
+
+**AMG quali-sim sessions (3 x 15min, attack laps only, cooldown laps excluded as intentional tyre-preservation, not mistakes):**
+
+n=8 clean attack laps across 3 sessions
+Mean: 2:20.499 | Best: 2:20.242 | Range: 0.885s | StdDev: 0.287
+
+**Ferrari quali-sim sessions (2 sessions, fixed setup, not attacking laps hard — casual effort):**
+
+n=3 clean attack laps
+Mean: 2:20.109 | Best: 2:20.032 | Range: 0.131s | StdDev: 0.069
+
+**Key finding — consistency gap dwarfs pace gap:**
+
+Mean pace delta: 0.389s (consistent with prior fixed-setup penalty estimates of 0.2-0.4s)
+**Variance delta: ~4x higher standard deviation on AMG (0.287 vs 0.069)**
+
+Ferrari's three attempts across two separate sessions landed within 0.131s of each other — near machine-repeatable. AMG's eight attempts spread across 0.885s despite no single lap being a clear mistake. This is the sharper and more actionable finding than the mean gap: the AMG's narrow operating window (documented extensively in prior entries — diff preload, downshift timing, brake trace sensitivity) doesn't just cost average pace, it makes outcome unpredictable on a lap-by-lap basis even under nominally consistent inputs.
+
+**Implication for Race Day 1 (45min, mandatory pit stop, ~18-20 laps):** consistency, not peak pace, is the leverage point remaining. A driver with AMG's variance profile racing 20 laps is more exposed to a bad-variance lap costing real positions than a driver with Ferrari-like repeatability running the same average pace.
+
+**Fuel-adjusted cross-car sanity check:** Ferrari race-sim lap (2:20.199, lap 2, ~79L fuel, used tyres, not attacking) essentially matched AMG's best deliberate qualifying attack lap of the day (2:20.242, ~20L fuel, dedicated push). Ferrari carrying ~4x fuel mass, on a lap not being pushed, still matched AMG's best effort. Confirms — via yet another independent method — that the AMG's technique/car mismatch cost is real and substantial, not an artifact of any single measurement approach.
+
+---
+
+### Race Simulation — 45min AMG, Mandatory Pit, No Tyre Change
+
+First full race-length simulation. Pit stop taken per regulation (Article 9.1) but tyres NOT changed — same physical set used for entire 45 minutes, allowing isolation of pure tyre-age effect independent of compound change.
+
+**Stint 1 (Laps 1–11, pre-pit):**
+Clean racing laps (2–10): mean 2:21.283, best 2:20.763 (lap 2), worst 2:22.300 (lap 10)
+Degradation: +1.537s over laps 2→10 (~0.192s/lap average), but lap-to-lap deltas noisy/non-monotonic (+0.322, +0.168, −0.114, +0.613, −0.334, −0.356, +1.236) — no clean tyre-cliff signature like the Ferrari FL thermal cliff documented in April testing. Looks more like the same lap-to-lap variance problem found in quali-sim sessions, layered on top of mild degradation, than a discrete cliff event.
+Track temp: 32.0°C → 33.3°C (+1.3°C)
+
+**Stint 2 (Laps 14–19, post-pit, same tyres):**
+Mean 2:21.960, best 2:21.705 (lap 15), worst 2:22.524 (lap 19)
+Track temp: 33.9°C → 35.0°C (+1.1°C)
+
+**Cross-stint finding:** Stint 2 mean is **0.677s slower** than Stint 1 mean, despite lighter fuel load in stint 2 (which should partially offset wear/temp effects in the opposite direction). This is a step-change between stints, not a continuation of the gradual within-stint degradation curve — suggests the pit stop itself (tyre cooldown while stationary) may cost more than the raw lap-count on the tyre would predict.
+
+**Open question flagged for further testing:** does a fresh tyre change at the mandatory stop recover most of the 0.677s step-change? If yes, the mandatory pit stop is a genuine strategic lever (worth taking tyres even though not required) rather than a pure compliance formality. Next race-sim session should test tyre-change-at-stop directly against this no-change baseline for a clean comparison.
+
+---
+
+### Ferrari Race Simulation — Abandoned After 2 Laps
+
+Lap 1: 2:23.278 (out-lap, 78.9L fuel)
+Lap 2: 2:20.199 (used tyres, 36.0°C track temp)
+
+Session voluntarily ended after 2 laps. Reason: stepping from AMG sessions directly into Ferrari made the contrast in required conscious effort immediately and viscerally obvious — Ferrari felt close to effortless by comparison, to the point that continuing felt pointless relative to returning to AMG work. Not a data point about lap time (though notably: 2:20.199 not-attacking beat 2:20.242 AMG-attacking, on ~4x the fuel load) — a data point about cognitive load accumulation. Confirms the earlier hypothesis directly: AMG requires active conscious override of instinct at every corner due to narrow operating window; Ferrari does not. The fear that AMG grinding would damage or overwrite Ferrari instinct was tested directly and disproven — instinct was fully intact and immediately available, no reacquisition period needed. What AMG work has evidently changed is the *sense* of what effortful driving costs, making the effortless car feel almost jarring by contrast.
+
+---
+
+### Summary — Where Things Stand
+
+- AMG VC qualifying locked at 2:20.022, buffer to Division 1 healthy (+0.485s) and stable across two leaderboard syncs
+- Distribution analysis corrected: bimodality was likely a snapshot-timing artifact, not a true two-population split — but median-based evidence for a competitive-skewed field stands independently and is stronger
+- Field research + national flag census provide direct, non-statistical corroboration of "Gold-tier-adjacent" field composition, unaffected by the distribution correction
+- Personal calibration cross-checked against two independent large-sample leaderboards (CDA, TrackTitan) — both agree on ~top 4% global percentile
+- AMG technique fixes (gear discipline, brake trace) hold up within 0.22s of hotlap PB under race-sim attack conditions — good sign for race day
+- **New priority target: reduce AMG lap-to-lap variance (currently ~4x Ferrari's), not chase further peak pace** — this is the more consequential lever for a 20-lap race than qualifying pace
+- Pit-stop-without-tyre-change costs ~0.677s per lap in the following stint — worth testing tyre change directly before Race Day 1
+- AI strength inconsistency (100% today vs 95% standard) flagged — needs resolution before further race-sim data is treated as comparable to historical baselines
