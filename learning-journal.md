@@ -3145,3 +3145,112 @@ Critical evidence:
 4. Rank slippage from P53 to P69 is expected field-growth dilution, not a decline. Time held constant while the field grew 25%.
 5. Indonesian #3 still stands, but the gap from P2 to P4 is narrow enough that this could shift with marginal improvement from any of the three nearest drivers.
 6. The 113-lap investment remains the highest in the visible top-100 — consistent with the Imola-era finding: lap-count-to-PB is a cost metric, not a pace metric.
+
+## 2026-07-10 (Addendum — Sebring)
+
+### Session Context
+
+- Track: Sebring International Raceway
+- Cars: Ferrari 296 GT3, BMW M4 GT3
+- Driver tag: `oldark.`
+- Scope: CDA leaderboard hotlap session — boredom-driven track switch after AMG VC lock-in
+- Goal: re-anchor Sebring pace after months away, and compare plateau position across two different population types
+
+### Ferrari 296 GT3
+
+Current leaderboard result:
+
+- Ferrari 296 GT3: `2:02.149`, **P13/233**
+- Percentile: top `5.6%`
+- Sectors: `45.775 / 32.687 / 43.687`
+- Top 5% cutoff: `2:02.137` — missed by `0.012s`
+- Gap to P1 (lwhitehead_, `2:00.208`): `+1.941s`
+- Gap to P10: `+0.109s`
+
+Comparison against May 10 peak:
+
+- May 10 peak: `2:02.050`, P7/346
+- Current: `2:02.149`, P13/233
+- Decay: `+0.099s`, rank dropped 6 places
+- Field compression: same pace now buys fewer positions
+
+### BMW M4 GT3
+
+Current leaderboard result:
+
+- BMW M4 GT3: `2:02.256`, **P13/404**
+- Percentile: top `3.2%`
+- Sectors: `45.911 / 32.528 / 43.817`
+- Top 5% cutoff: `2:02.505` — comfortably inside with `0.249s` buffer
+- Gap to P1 (seven070382, `2:00.683`): `+1.573s`
+- Gap to P10: `+0.158s`
+
+First Sebring entry on BMW. Immediate P13 on a deeper board (N=404) is the stronger percentile result of the two despite the slightly slower raw lap.
+
+### Sector Comparison
+
+| Sector | Ferrari | BMW | Delta | Winner |
+|---|---|---|---|---|
+| S1 | 45.775 | 45.911 | +0.136 | Ferrari |
+| S2 | 32.687 | 32.528 | **-0.159** | BMW |
+| S3 | 43.687 | 43.817 | +0.130 | Ferrari |
+
+BMW loses everywhere except S2 — and wins S2 decisively. S2 at Sebring is the technical middle sector (Hairpin through to Tower Turn), the exact zone where front-engine "heavy rotation" problems should theoretically be worst. Instead, BMW is `0.159s` faster through it. This continues the pattern from Imola (May/June): the front-engine problem is track-specific and car-specific, not universal. The BMW's strengths at Sebring — bump absorption, flow continuity — override the rotation penalty in the middle sector.
+
+### Distribution Analysis
+
+Both leaderboards share the same right-skewed lognormal shape seen in the AMG VC, but with different compression profiles:
+
+**Ferrari 296 GT3 (N=233):**
+
+| Bracket | Count | Pct | |
+|---|---|---|---|
+| 121.5–122.0 | 5 | 2.1% | |
+| **122.0–122.5** | **15** | **6.4%** | ← self |
+| 122.5–123.0 | 16 | 6.9% | |
+| 123.0–123.5 | 18 | 7.7% | |
+| 123.5–124.0 | 23 | 9.9% | ← mode |
+| 124.0–124.5 | 26 | 11.2% | ← mode |
+
+**BMW M4 GT3 (N=404):**
+
+| Bracket | Count | Pct | |
+|---|---|---|---|
+| 121.5–122.0 | 3 | 0.7% | |
+| **122.0–122.5** | **13** | **3.2%** | ← self |
+| 122.5–123.0 | 34 | 8.4% | |
+| 123.0–123.5 | 37 | 9.2% | |
+| 123.5–124.0 | 49 | 12.1% | ← mode |
+| 124.0–124.5 | 43 | 10.6% | |
+
+### Meta vs Popular: The New Distinction
+
+The session revealed a previously unnamed distinction between two leaderboard forces:
+
+- **Meta car** → attracts the performance-chaser minority. Small pool, sharp front pack. Ferrari at Sebring: N=233 but P10 at `2:02.040`, top 5% cut at `2:02.137`.
+- **Popular car** → attracts the masses. Large pool, blunt front pack. BMW at Sebring: N=404 but P10 at `2:02.098`, top 5% cut at `2:02.505`.
+
+The Ferrari board is a knife. The BMW board is a hammer. Same driver, similar raw times (`2:02.149` vs `2:02.256`), but the Ferrari `5.6%` percentile is stingier than the BMW `3.2%` because the Ferrari front pack is competing — not just participating.
+
+Concrete proof: `2:02.500` on BMW is solidly inside top 5%. The same time on Ferrari lands around P18–20 — roughly top 8%. The meta car tax is `0.368s` at the top 5% cutoff.
+
+### Plateau Position Across Populations
+
+The session also crystallized an earlier insight through direct comparison:
+
+- On **CDA** (Ferrari and BMW): I sit at the **front edge** of the competitive plateau. Only 12-13 drivers ahead, then 200-400 behind.
+- On **AMG VC**: I sit at the **back edge** of the same plateau. 68 drivers ahead in a field of 180 self-selected competitors.
+
+This is not a contradiction. CDA inflates the percentile because the denominator includes casuals. AMG VC deflates it because the denominator is 180 people who all submitted qualifying laps for a manufacturer championship. The two numbers measure different things: percentile vs. a general population versus percentile vs. a self-selected competitive population. The AMG VC number is the harder truth.
+
+The image: same driver, same hands — different reference groups produce different numbers from the same underlying pace.
+
+### What Changed in My Understanding Today
+
+1. Meta and popular are distinct forces, not synonyms. A car can be one, both, or neither in a given leaderboard.
+2. The Ferrari Sebring board is meta-sharp: smaller pool, harder front pack, less forgiving at the margins.
+3. The BMW Sebring board is popular-broad: larger pool, softer top end, easier percentile conversion.
+4. Sebring S2 continues to challenge the blanket "front-engine = rotation problem" hypothesis. BMW won S2 by 0.159s through the most technical section of the lap.
+5. My CDA plateau position (front edge) vs AMG VC plateau position (back edge) is explained entirely by population selection, not by skill variance between the two sessions.
+6. The "same time, different percentile" pattern (Ferrari faster but lower percentile, BMW slower but higher percentile) is the meta-tax effect — previously unnamed, now identified.
+7. The Barcelona-era insight about Ferrari's "high adoption + tight density" profile generalizes beyond Barcelona and beyond Imola. It's a structural property of the car across tracks.
