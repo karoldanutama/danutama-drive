@@ -3057,3 +3057,91 @@ Session voluntarily ended after 2 laps. Reason: stepping from AMG sessions direc
 - **New priority target: reduce AMG lap-to-lap variance (currently ~4x Ferrari's), not chase further peak pace** — this is the more consequential lever for a 20-lap race than qualifying pace
 - Pit-stop-without-tyre-change costs ~0.677s per lap in the following stint — worth testing tyre change directly before Race Day 1
 - AI strength inconsistency (100% today vs 95% standard) flagged — needs resolution before further race-sim data is treated as comparable to historical baselines
+
+## 2026-07-10
+
+### Session Context
+
+- Track: Spa-Francorchamps
+- Car: Mercedes-AMG GT3 (LMGT3), fixed setup (AMG VC)
+- Scope: final leaderboard snapshot (qualification closed)
+- Goal: place final result in field context and validate the competitive-field hypothesis
+
+### Leaderboard Snapshot (July 10, 2026 — Final)
+
+- Position: **P69/180** — down from P53 as field grew from 144 to 180 entries
+- Best lap: `2:20.022` (unchanged since June 29 gear discovery)
+- Lap count: **113** — highest in visible top-100
+- Division 1 cut: `2:19.305` (Marceau Williams) — hardened `0.232s` from July 2 snapshot
+- Buffer to D1: `+0.717s` — comfortable, no action required
+
+### Distribution Analysis
+
+Bracket count (0.5s granularity, N=180):
+
+| Bracket | Count | Pct |
+|---|---|---|
+| 2:18.0–2:18.4 | 1 | 0.6% |
+| 2:18.5–2:18.9 | 21 | 11.7% |
+| 2:19.0–2:19.4 | 20 | 11.1% |
+| 2:19.5–2:19.9 | 23 | 12.8% |
+| **2:20.0–2:20.4** | **27** | **15.0%** ← self |
+| 2:20.5–2:20.9 | 17 | 9.4% |
+| 2:21.0–2:21.4 | 19 | 10.6% |
+| 2:21.5–2:21.9 | 12 | 6.7% |
+| 2:22.0–2:22.4 | 14 | 7.8% |
+| 2:22.5–2:22.9 | 5 | 2.8% |
+| 2:23.0–2:23.4 | 7 | 3.9% |
+| 2:23.5–2:23.9 | 4 | 2.2% |
+| 2:24.0–2:24.4 | 2 | 1.1% |
+| 2:25.0–2:25.4 | 4 | 2.2% |
+| 2:25.5+ | 3 | 1.7% |
+
+**Shape characteristic:** right-skewed unimodal — not Gaussian, not bimodal. Classic Pareto-like / lognormal competitive leaderboard signature.
+
+- **Left side:** compressed hard against an asymptotic performance wall. Only 1 driver in `2:18.0–2:18.4`, then 21 immediately appear in `2:18.5–2:18.9`. This is the "elite compression zone" — where each hundredth costs exponentially more.
+- **Mode/plateau:** `2:18.5` through `2:20.4` holds **92 of 180 drivers (51%)**. The serious competitive band.
+- **Right side:** long sparse tail to `2:35`. No hard floor — casual entries drop in wherever.
+- **Self-position:** P69, dead center of the modal bracket (`2:20.0–2:20.4`), sitting at the back edge of the competitive plateau.
+
+### Competitive-Field Hypothesis: Confirmed
+
+The July 2 bimodality correction was about whether two separate populations were colliding. The July 10 data provides the cleanest possible answer: **one distribution, three zones.** The bimodality was a snapshot-timing artifact. The corrected conclusion — "the field is skewed competitive, not two-tier" — is actually strengthened by the full dataset.
+
+Critical evidence:
+
+1. The **mode** at `2:20.0–2:20.4` maps to ~top 4% on both CDA and TrackTitan. A genuinely casual population would have its mode much further right (~2:22–2:24).
+2. The **left tail** is compressed against a hard performance ceiling, not a gradual taper. Signature of a field where the slowest entrants are still trying — no gentle slope of casual effort.
+3. The **right tail** is sparse and stretched, not a second mode. Casual drivers exist but they are the minority distributed across a wide range, not a distinct population cluster.
+
+**Conclusion:** this is a self-selected, manufacturer-branded competitive field. The median driver here would be top ~10–14% on a public leaderboard. The July 2 finding stands unchallenged — the AMG VC is not a representative sample of the general LMU player base.
+
+### Indonesian Standings (Final, 14 of 180)
+
+| 🇮🇩 Rank | Global | Driver | Time |
+|---|---|---|---|
+| 1 | P9 | Christ Tiansen | 2:18.832 |
+| 2 | P57 | Ahmad Jusmin | 2:19.763 |
+| **3** | **P69** | **Karol Danutama** | **2:20.022** |
+| 4 | P74 | Rafi Rahadyan | 2:20.109 |
+| 5 | P81 | Andhito Rayhan | 2:20.264 |
+| 6 | P95 | Fathur Rahman | 2:20.533 |
+| 7 | P102 | Muhammad Raziq Aqilla | 2:20.766 |
+| 8 | P121 | Fauzan Triyogi | 2:21.282 |
+| 9 | P140 | Leonaldo Ferdinand | 2:21.977 |
+| 10 | P149 | Joshua Ivan Mulyono | 2:22.238 |
+| 11 | P150 | Ilham Al-Farisi | 2:22.266 |
+| 12 | P152 | Dandy Maulana | 2:22.296 |
+| 13 | P176 | Johanes Isaac | 2:25.297 |
+| 14 | P180 | Teofilus Titan | 2:35.354 |
+
+**Read:** Christ Tiansen is a full tier ahead — 1.19s gap, in the `2:18.8` band where only 10 drivers live. Gap to P2 (Jusmin) is `0.259s` — contestable. P3 position on the national board is solid but not secure without improvement. Three new Indonesian entries since July 2 (Jusmin, Rahadyan, Rayhan) shifted the national ranking.
+
+### What Changed in My Understanding Today
+
+1. The final AMG VC field (N=180) is unequivocally a competitive-skewed population, not a casual one. The distribution shape itself is the proof.
+2. The July 2 bimodality correction is vindicated: one right-skewed unimodal distribution with three functional zones, not two colliding populations.
+3. The modal bracket (2:20.0–2:20.4) holds 27 drivers — the densest competitive cluster in the entire field. Sitting inside it is itself a signal.
+4. Rank slippage from P53 to P69 is expected field-growth dilution, not a decline. Time held constant while the field grew 25%.
+5. Indonesian #3 still stands, but the gap from P2 to P4 is narrow enough that this could shift with marginal improvement from any of the three nearest drivers.
+6. The 113-lap investment remains the highest in the visible top-100 — consistent with the Imola-era finding: lap-count-to-PB is a cost metric, not a pace metric.
