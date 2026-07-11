@@ -3167,7 +3167,12 @@ Current leaderboard result:
 - Gap to P1 (lwhitehead_, `2:00.208`): `+1.941s`
 - Gap to P10: `+0.109s`
 
-**Correction — not a decay, a leaderboard reset:** the earlier `2:02.050` (P7/346) was clocked on March 9, pre-LMU v1.3 patch. Coach Dave reset the Sebring leaderboard post-patch. The current `2:02.149` exists on a different board under potentially different car behavior — the two laps are not directly comparable.
+**Correction — not a decay, a leaderboard reset:** the earlier `2:02.050` (P7/346) was clocked on March 9, pre-LMU v1.3 patch. Coach Dave reset the Sebring leaderboard post-patch. Research into the v1.3 notes confirms multiple changes affecting Sebring GT3 lap times:
+
+- Ferrari 296 at Sebring: **-15kg** weight penalty (v1.3.0.0) — favorable, should make the car faster
+- Global: real road grip profiles changed (v1.3.0.0), default grip increased (v1.3.0.0), curb grip reviewed (v1.3.0.0), track RRBIN surface profiles updated (v1.3.0.0)
+- Global: ride height/BoP weight interaction fixed (v1.3.2.0), tyre thermal temperatures revised (v1.3.3), GT3 BOP rebalanced across all tracks (v1.3.3), fuel consumption revised (v1.3.3)
+- CDA setups updated (v1.3.2.0, v1.3.3)
 
 Sector comparison against the archived pre-reset lap:
 
@@ -3178,7 +3183,7 @@ Sector comparison against the archived pre-reset lap:
 | S3 | 43.658 | 43.687 | +0.029 |
 | **Total** | **2:02.050** | **2:02.149** | **+0.099** |
 
-S1 is identical, S3 is close. The loss is concentrated in S2. Whether this is a patch effect, technique drift, or normal session variance is unknown — attributing it to physics without checking what v1.3 actually changed is speculation. The only solid conclusion: the two laps sit on different leaderboard populations and cannot be compared as a single trend line.
+S1 is identical, S3 is close. The `0.068s` loss is in S2 — but the Ferrari is 15kg *lighter* now, so the direction makes the physics explanation harder, not easier. The net effect of multiple simultaneous changes (weight, grip, surface, tyres, BOP) is ambiguous. The only solid conclusion: cross-version comparison is invalid, and the two laps sit on different populations.
 
 ### BMW M4 GT3
 
@@ -3260,4 +3265,4 @@ The image: same driver, same hands — different reference groups produce differ
 5. My CDA plateau position (front edge) vs AMG VC plateau position (back edge) is explained entirely by population selection, not by skill variance between the two sessions.
 6. The "same time, different percentile" pattern (Ferrari faster but lower percentile, BMW slower but higher percentile) is the meta-tax effect — previously unnamed, now identified.
 7. The Barcelona-era insight about Ferrari's "high adoption + tight density" profile generalizes beyond Barcelona and beyond Imola. It's a structural property of the car across tracks.
-8. The apparent Ferrari Sebring "drop" (2:02.050 → 2:02.149) coincides with a leaderboard reset after LMU v1.3. The two laps are on different boards and not directly comparable as a trend. S1 was identical, S3 was close — all loss in S2, cause unknown.
+8. The apparent Ferrari Sebring "drop" (2:02.050 → 2:02.149) coincides with a leaderboard reset after LMU v1.3. Patch notes confirm multiple physics-relevant changes (track grip, surface, tyre thermals, GT3 BOP, curb grip, -15kg Ferrari weight). S1 identical, S3 close — all loss in S2, but the direction of the physics changes (lighter car) doesn't explain the loss cleanly. Cross-version comparison invalid.
