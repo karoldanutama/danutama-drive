@@ -3234,27 +3234,91 @@ Both leaderboards share the same right-skewed lognormal shape seen in the AMG VC
 | 123.5–124.0 | 49 | 12.1% | ← mode |
 | 124.0–124.5 | 43 | 10.6% | |
 
+### TrackTitan Cross-Platform Verification
+
+The same laps were also submitted to TrackTitan (username: `crazy.youngster`):
+
+**BMW M4 GT3 — TrackTitan:**
+- P46/1,139 — top 4.0% raw
+- P1: `2:00.683` (identical to CDA's P1 — same driver)
+
+**Ferrari 296 GT3 — TrackTitan:**
+- P11/~527 — top 2.1% raw
+- P1: `2:01.314` (1.106s slower than CDA P1)
+
+TrackTitan's pools are 2-3x larger than CDA's, but the extra entries are concentrated in the tail. TT's Ferrari P1 is 1.1s slower than CDA's — TT's Ferrari front pack hasn't fully re-populated after the v1.3 leaderboard reset.
+
+### Methodology: The 105% Rule
+
+**This entry marks the adoption of a new analysis standard.** From this point forward, all leaderboard percentiles are reported against the 105%-qualified pool, not the raw entry count.
+
+Rationale: real motorsport uses the 105% rule (Formula 1, WEC, ELMS) to distinguish *competitors* from *entries*. A driver who posts a lap slower than 105% of P1 would not qualify for a race. At the current skill level, the tail is noise — comparing against someone who installed the game, did one lap, and quit is not meaningful. The meaningful pool is the people who can actually drive the car within a qualifying window.
+
+The 105% cut is computed as `P1_lap_time × 1.05`. Every entry above this threshold is a "competitor"; everything below is excluded from the denominator. This produces a cleaner, more honest percentile grounded in the same standard used in real competition.
+
+### Cross-Platform 105%-Qualified Comparison
+
+| | Ferrari 296 | BMW M4 GT3 |
+|---|---|---|
+| **CDA** | | |
+| P1 | 2:00.208 | 2:00.683 |
+| 105% cut | 2:06.218 | 2:06.717 |
+| Qualified pool | ~163 of 233 | ~309 of 404 |
+| My position | P13 | P13 |
+| **≤105% percentile** | **top 8.0%** | **top 4.2%** |
+| **TrackTitan** | | |
+| P1 | 2:01.314 | 2:00.683 |
+| 105% cut | 2:07.380 | 2:06.717 |
+| Qualified pool | 427 of ~527 | 915 of 1,139 |
+| My position | P11 | P46 |
+| **≤105% percentile** | **top 2.6%** | **top 5.0%** |
+
+### Why the 105% Filter Matters
+
+Before filtering, Ferrari percentiles ranged from 2.1% to 5.6% — a 3.5pp spread. BMW ranged from 3.2% to 4.0% — a 0.8pp spread. After filtering:
+
+- **BMW:** CDA (4.2%) and TrackTitan (5.0%) converge to within 0.8pp. Two independent platforms, two different populations, two different filtering rules — same answer. This is the strongest validation possible: the pace is real, not a board artifact.
+
+- **Ferrari:** CDA (8.0%) and TrackTitan (2.6%) diverge to a 5.4pp spread. The CDA Ferrari board is unusually sharp (P1 at `2:00.208` — aliens), raising the 105% bar and cutting harder. The TT Ferrari board is softer post-reset (P1 at `2:01.314` — 1.1s slower), lowering the bar and inflating the percentile. The truth is probably between them, but the gap is too wide to trust without a third reference.
+
+### BMW as the Calibration Anchor
+
+BMW is the cleanest cross-platform benchmark because:
+1. Both platforms agree on P1 (`2:00.683` on CD**A** ← identical driver, `seven070382`)
+2. The 105% cuts are nearly identical (`2:06.717`), so filtering doesn't distort the denominator
+3. TrackTitan adds ~700 casuals below the cut, while CDA keeps the pool tight — but filtering removes them from both
+4. Two independent platforms converge to the same ~top 5% answer
+
+Ferrari is currently the weakest benchmark post-reset because the 1.1s P1 gap between platforms cascades through every percentile calculation.
+
 ### Meta vs Popular: The New Distinction
 
-The session revealed a previously unnamed distinction between two leaderboard forces:
+Same driver, same track, identical P13 rank — but different percentile stories:
 
-- **Meta car** → attracts the performance-chaser minority. Small pool, sharp front pack. Ferrari at Sebring: N=233 but P10 at `2:02.040`, top 5% cut at `2:02.137`.
-- **Popular car** → attracts the masses. Large pool, blunt front pack. BMW at Sebring: N=404 but P10 at `2:02.098`, top 5% cut at `2:02.505`.
-
-The Ferrari board is a knife. The BMW board is a hammer. Same driver, similar raw times (`2:02.149` vs `2:02.256`), but the Ferrari `5.6%` percentile is stingier than the BMW `3.2%` because the Ferrari front pack is competing — not just participating.
+- **Meta car** (Ferrari): attracts the performance-chaser minority. Small pool (N=233), sharp front pack (P1 `2:00.208`), tighter tail (no entry worse than ~`2:10`). Everyone who submits is trying.
+- **Popular car** (BMW): attracts the masses. Large pool (N=404 CDA, 1,139 TrackTitan), softer top end (P1 `2:00.683` — same driver would be only P2+ on Ferrari), long casual tail (`4:01` on TrackTitan).
 
 Concrete proof: `2:02.500` on BMW is solidly inside top 5%. The same time on Ferrari lands around P18–20 — roughly top 8%. The meta car tax is `0.368s` at the top 5% cutoff.
 
 ### Plateau Position Across Populations
 
-The session also crystallized an earlier insight through direct comparison:
+The session crystallized an earlier insight through direct comparison:
 
-- On **CDA** (Ferrari and BMW): I sit at the **front edge** of the competitive plateau. Only 12-13 drivers ahead, then 200-400 behind.
-- On **AMG VC**: I sit at the **back edge** of the same plateau. 68 drivers ahead in a field of 180 self-selected competitors.
+- On **CDA** (Ferrari and BMW): I sit at the **front edge** of the competitive plateau. Only 12-13 qualified competitors ahead.
+- On **AMG VC**: I sit at the **back edge** of the same plateau. 68 qualified competitors ahead in a self-selected championship field.
 
-This is not a contradiction. CDA inflates the percentile because the denominator includes casuals. AMG VC deflates it because the denominator is 180 people who all submitted qualifying laps for a manufacturer championship. The two numbers measure different things: percentile vs. a general population versus percentile vs. a self-selected competitive population. The AMG VC number is the harder truth.
+This is not a contradiction. CDA inflates the raw percentile because the denominator includes casuals — which is why the 105% cut is now mandatory. AMG VC deflates it because the denominator is 180 people who all submitted qualifying laps. Same driver, same hands — different reference groups produce different numbers from the same underlying pace. The 105% filter closes the gap by removing non-competitors from both.
 
-The image: same driver, same hands — different reference groups produce different numbers from the same underlying pace.
+### Practical Rule Update (Major)
+
+From this entry forward, all leaderboard evaluation uses the 105%-qualified pool as the primary metric:
+
+1. **Compute P1 * 1.05** — establish the qualifying threshold.
+2. **Count qualified entries** — this is the real denominator.
+3. **Compute percentile against qualified pool only.**
+4. **Cross-validate against a second platform when available.**
+
+The raw "top X%" number against all entries is no longer considered a meaningful performance signal. It measures mixture ratio of competitors and tourists, not driving quality. The 105%-qualified percentile measures actual competitive standing.
 
 ### What Changed in My Understanding Today
 
@@ -3263,6 +3327,7 @@ The image: same driver, same hands — different reference groups produce differ
 3. The BMW Sebring board is popular-broad: larger pool, softer top end, easier percentile conversion.
 4. Sebring S2 continues to challenge the blanket "front-engine = rotation problem" hypothesis. BMW won S2 by 0.159s through the most technical section of the lap.
 5. My CDA plateau position (front edge) vs AMG VC plateau position (back edge) is explained entirely by population selection, not by skill variance between the two sessions.
-6. The "same time, different percentile" pattern (Ferrari faster but lower percentile, BMW slower but higher percentile) is the meta-tax effect — previously unnamed, now identified.
+6. The "same time, different percentile" pattern (Ferrari faster but lower percentile, BMW slower but higher percentile) is the meta-tax effect.
 7. The Barcelona-era insight about Ferrari's "high adoption + tight density" profile generalizes beyond Barcelona and beyond Imola. It's a structural property of the car across tracks.
-8. The apparent Ferrari Sebring "drop" (2:02.050 → 2:02.149) coincides with a leaderboard reset after LMU v1.3. Patch notes confirm multiple physics-relevant changes (track grip, surface, tyre thermals, GT3 BOP, curb grip, -15kg Ferrari weight). S1 identical, S3 close — all loss in S2, but the direction of the physics changes (lighter car) doesn't explain the loss cleanly. Cross-version comparison invalid.
+8. The apparent Ferrari Sebring "drop" (2:02.050 → 2:02.149) coincides with a leaderboard reset after LMU v1.3. Multiple physics-relevant changes confirmed. S1 identical, S3 close — all loss in S2 but the -15kg weight change makes the direction ambiguous. Cross-version comparison invalid.
+9. **The 105%-qualified percentile is now the standard metric.** Raw percentile against all entries mixes competitors with tourists and is not a meaningful performance signal at the current skill level. BMW proves the approach works: CDA and TrackTitan converge to the same answer (~top 4-5%) after filtering, confirming the pace is real, not noise.
