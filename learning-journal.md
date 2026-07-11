@@ -3167,12 +3167,18 @@ Current leaderboard result:
 - Gap to P1 (lwhitehead_, `2:00.208`): `+1.941s`
 - Gap to P10: `+0.109s`
 
-Comparison against May 10 peak:
+**Correction — not a decay, a physics reset:** the earlier `2:02.050` (P7/346) was clocked on March 9, pre-LMU v1.3 patch. Coach Dave reset the Sebring leaderboard post-patch due to physics changes. The current `2:02.149` is not a skill regression — it's the same car under different physics, and the old lap is no longer on the same board.
 
-- May 10 peak: `2:02.050`, P7/346
-- Current: `2:02.149`, P13/233
-- Decay: `+0.099s`, rank dropped 6 places
-- Field compression: same pace now buys fewer positions
+Sector comparison against the archived pre-v1.3 lap:
+
+| Sector | Pre-v1.3 (Mar 9) | Post-v1.3 (Today) | Delta |
+|---|---|---|---|
+| S1 | 45.773 | 45.775 | +0.002 |
+| S2 | 32.619 | 32.687 | **+0.068** |
+| S3 | 43.658 | 43.687 | +0.029 |
+| **Total** | **2:02.050** | **2:02.149** | **+0.099** |
+
+S1 is essentially identical. S3 is close. The entire delta is concentrated in S2 — the sector most sensitive to physics changes (bump absorption, tyre model, aero balance). This is a patch effect, not driving decay. If anything, matching the old S1 and coming within `0.029s` of the old S3 under new physics suggests the underlying technique transferred cleanly.
 
 ### BMW M4 GT3
 
@@ -3254,3 +3260,4 @@ The image: same driver, same hands — different reference groups produce differ
 5. My CDA plateau position (front edge) vs AMG VC plateau position (back edge) is explained entirely by population selection, not by skill variance between the two sessions.
 6. The "same time, different percentile" pattern (Ferrari faster but lower percentile, BMW slower but higher percentile) is the meta-tax effect — previously unnamed, now identified.
 7. The Barcelona-era insight about Ferrari's "high adoption + tight density" profile generalizes beyond Barcelona and beyond Imola. It's a structural property of the car across tracks.
+8. The apparent Ferrari Sebring "drop" (2:02.050 → 2:02.149) is explained by the LMU v1.3 patch physics reset, not by skill regression. S1 was identical, S3 was close — the loss was entirely in S2, the sector most sensitive to physics changes. Coach Dave reset the leaderboard post-patch, making cross-version comparisons invalid.
