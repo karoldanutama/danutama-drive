@@ -3331,3 +3331,106 @@ The raw "top X%" number against all entries is no longer considered a meaningful
 7. The Barcelona-era insight about Ferrari's "high adoption + tight density" profile generalizes beyond Barcelona and beyond Imola. It's a structural property of the car across tracks.
 8. The apparent Ferrari Sebring "drop" (2:02.050 → 2:02.149) coincides with a leaderboard reset after LMU v1.3. Multiple physics-relevant changes confirmed. S1 identical, S3 close — all loss in S2 but the -15kg weight change makes the direction ambiguous. Cross-version comparison invalid.
 9. **The 105%-qualified percentile is now the standard metric.** Raw percentile against all entries mixes competitors with tourists and is not a meaningful performance signal at the current skill level. BMW proves the approach works: CDA and TrackTitan converge to the same answer (~top 4-5%) after filtering, confirming the pace is real, not noise.
+
+## 2026-07-12
+
+### Session Context
+
+- Track: Sebring International Raceway
+- Cars: Ferrari 296 GT3, Mercedes-AMG GT3
+- Session type: concentrated ~1hr practice block on each car
+- Driver tag: `oldark.`
+- Goal: push Ferrari beyond the Jul 10 benchmark, then test the archnemesis (AMG) on the same track immediately after
+
+### Ferrari 296 GT3 — Updated Result
+
+One hour of concentrated practice produced a breakthrough:
+
+- Ferrari 296 GT3: `2:01.927`, **P7/219** — up from P13
+- Sectors: `45.780 / 32.625 / 43.522`
+- Gain vs Jul 10: **-0.222s** (from `2:02.149`)
+- 105% cut: `2:06.218`, qualified pool ~153 of 219
+- **≤105% percentile: top 4.6%** (was 8.0% on Jul 10)
+
+Sector delta vs Jul 10:
+
+| Sector | Jul 10 | Jul 12 | Delta |
+|---|---|---|---|
+| S1 | 45.775 | 45.780 | +0.005 |
+| S2 | 32.687 | 32.625 | **-0.062** |
+| S3 | 43.687 | 43.522 | **-0.165** |
+| **Total** | **2:02.149** | **2:01.927** | **-0.222** |
+
+The `0.165s` S3 gain is 74% of the total lap improvement. This lap is now faster than the archived pre-v1.3 March lap (`2:02.050`), and the S3 delta flipped from `+0.029` slower to `-0.136` faster. S3 went from a relative weakness to a strength in two days.
+
+**Why S3 improved:** Gendebien and Sunset Bend are long, loaded, constant-radius sweepers. The Ferrari's rotation model — brake once, rear lightens and rotates at entry, then steer and squeeze — maps perfectly onto these corners. On Jul 10, the S3 was simply under-driven. One session of committing to the entry rotation unlocked `0.165s` because the car does the work once you trust it.
+
+### Mercedes-AMG GT3 — The Archnemesis Test
+
+Immediately after the Ferrari session, jumped into the AMG on the same track:
+
+- Mercedes-AMG GT3: `2:02.038`, **P8/237**
+- Sectors: `45.729 / 32.571 / 43.738`
+- 105% cut: `2:06.393`, qualified pool ~161 of 237
+- **≤105% percentile: top 5.0%**
+
+First-ever Sebring entry on AMG and it lands P8 — only `0.111s` behind the Ferrari PB set minutes earlier. At Imola in May, the AMG was a `0.309s` deficit to Ferrari and ranked P31. At Sebring, same driver, same day, it's in the same competitive bracket.
+
+### Three-Car Sebring Comparison (CDA, Jul 12)
+
+| Car | Time | S1 | S2 | S3 | Rank | ≤105% |
+|---|---|---|---|---|---|---|
+| Ferrari 296 | 2:01.927 | 45.780 | 32.625 | 43.522 | P7/219 | 4.6% |
+| AMG GT3 | 2:02.038 | **45.729** | 32.571 | 43.738 | P8/237 | 5.0% |
+| BMW M4 (Jul 10) | 2:02.256 | 45.911 | **32.528** | 43.817 | P13/404 | 4.2% |
+
+Each car wins a different sector: Ferrari S3, AMG S1, BMW S2. Total spread: **0.329s** across three cars. No car is clearly faster — they all arrive at the same lap through different mechanisms.
+
+The updated Ferrari CDA (4.6%) now sits between the BMW CDA (4.2%) and BMW TrackTitan (5.0%). The cross-platform Ferrari gap collapsed from 5.4pp on Jul 10 to a projected ~2.0pp (assuming similar TT movement). The post-reset divergence is resolving.
+
+### Why the AMG Works at Sebring
+
+Three track-specific mechanisms explain why Sebring neutralizes the AMG's weaknesses:
+
+**1. Bumps force early braking, which removes the entry rotation decision point.**
+
+The AMG's core weakness is rotation through brake release — it won't give the rear-wiggle confirmation cue that the native driving model depends on. At Imola and Spa, smooth surfaces allow deep trail-braking into corners, waiting for a rotation signal that never arrives. At Sebring, the bumps won't let you trail-brake that deep anyway. You brake earlier, settle the car, turn in. By the time the missing rotation cue would normally be the problem, the track has already forced you past that phase. The track removes the decision point the AMG punishes.
+
+**2. The peaky front axle never gets compound-loaded.**
+
+At Imola, Piratella stacks braking + turn-in timing + crest/unload + front saturation all at once — exactly the recipe for the AMG's narrow front-axle peak to fall off a cliff. Sebring's corners don't compound those demands. They are bumpy and technical, but the load transitions are flatter and the crests aren't dramatic. The front axle stays in its window because the window never gets pushed from multiple directions simultaneously.
+
+**3. Exit traction rewards what the AMG does best.**
+
+The same planted rear that refuses to rotate on entry becomes cooperative under power. Sebring has long acceleration zones out of T1, Hairpin, and Tower Turn where the AMG's rear stability allows earlier, harder throttle application. At Spa and Imola, the exits are either too short or too tightly linked to the preceding rotation phase to cash out this advantage. Sebring separates entry from exit cleanly enough that the AMG's natural strength actually pays.
+
+### The Rotation Model Tax in S3
+
+The S3 deficit between Ferrari and the front-engine cars is now explained by a specific mechanism:
+
+- **Ferrari** at Gendebien and Sunset Bend: brake once, turn in, rear lightens and rotates, settle, steer and squeeze. The corner *is* the rotation phase. One invoice, paid at entry.
+
+- **AMG/BMW** at the same corners: the car won't rotate naturally. Driver must brush the brake mid-corner to artificially induce the yaw the Ferrari gives for free at entry. This is the prediction-triggered intervention — same pattern as the AMG Spa No Name fix — not a feedback-triggered release. It works, but it costs time and adds variance: `+0.216s` (AMG), `+0.295s` (BMW) through S3 alone.
+
+The Ferrari S3 gain (`-0.165s`) between Jul 10 and Jul 12 wasn't "driving faster" — it was driving the corners the way the car wants to be driven, without fighting it. The AMG/BMW S3 deficit isn't about lack of pace. It's about paying for every degree of rotation that Ferrari invoices only once at entry.
+
+### The Front-Engine Problem: Track-Specific, Not Universal
+
+The Imola-era conclusion was that "heavy front-engine cars are expensive to extract." Sebring refines this:
+
+- At Imola, S2 is the front-engine killer — Piratella and Acque Minerali stack crest/stunload/brake-phase demands that the rotation model needs but the car won't give.
+- At Sebring, S2 is where BMW *wins* — bumps, Tower Turn, technical sweepers reward bump absorption and platform stability, not rotation authority.
+- "S2 weakness" was never about sector numbering. It was about whether the sector contains rotation-married, crest-stacked, brake-release-dependent corners. Sebring S2 doesn't.
+
+The refined rule: the front-engine problem is a *corner type* problem, not a *sector label* or *car label* problem. The AMG is hostile when the corner asks for brake-release rotation on a smooth crest. It's cooperative when the corner asks for bump management and exit traction. Same car, same driver — the track decides which personality the car shows.
+
+### What Changed in My Understanding Today
+
+1. Ferrari Sebring S3 is now a strength (43.522), not a weakness. One session of commitment unlocked 0.165s because the rotation model fits Gendebien/Sunset perfectly.
+2. The AMG is not a universal problem platform. At Sebring it was P8, 0.111s behind Ferrari — same competitive bracket, not a grind. The track alters the car's personality.
+3. Three independent mechanisms explain AMG compatibility at Sebring: bump-forced early braking removes the decision point, flatter load transitions keep the front axle in its window, and long exit zones monetize the AMG's rear stability.
+4. The rotation model tax in S3 is now precisely identified: Ferrari pays once at entry for rotation; AMG/BMW pay per corner through mid-corner brake-brushing. The tax is `+0.2-0.3s` through S3 alone.
+5. Each car wins a different sector at Sebring — Ferrari S3, AMG S1, BMW S2. No platform is dominant; they all arrive at the same lap by different routes.
+6. The front-engine problem is a corner-type problem, not a sector-label or car-label problem. The AMG fails at Piratella-type corners (brake-release rotation on smooth crests) and succeeds at Sebring-type corners (bump management, separated entry/exit phases).
+7. The Ferrari cross-platform percentile gap collapsed from 5.4pp to ~2pp in two days. The post-reset divergence is a settling artifact, not a structural discrepancy.
+8. BMW S2 dominance at Sebring is not a fluke — the bumps and flow of T3–T7 are the exact terrain where a planted, bump-eating front-engine platform is the fastest tool, not the slowest one.
