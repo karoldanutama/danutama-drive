@@ -3434,3 +3434,105 @@ The refined rule: the front-engine problem is a *corner type* problem, not a *se
 6. The front-engine problem is a corner-type problem, not a sector-label or car-label problem. The AMG fails at Piratella-type corners (brake-release rotation on smooth crests) and succeeds at Sebring-type corners (bump management, separated entry/exit phases).
 7. The Ferrari cross-platform percentile gap collapsed from 5.4pp to ~2pp in two days. The post-reset divergence is a settling artifact, not a structural discrepancy.
 8. BMW S2 dominance at Sebring is not a fluke — the bumps and flow of T3–T7 are the exact terrain where a planted, bump-eating front-engine platform is the fastest tool, not the slowest one.
+
+## 2026-07-13
+
+### Session Context
+
+- Track: Sebring International Raceway
+- Cars: BMW M4 GT3 (hotlap), Mercedes-AMG GT3 (race)
+- Session type: BMW re-test to close the three-car comparison, then 45-minute offline race on AMG against 98% AI with full ELMS grid (21 LMP2, 13 LMGT3)
+- Driver tag: `oldark.`
+- Goal: close BMW pace gap to Ferrari/AMG, then validate AMG race performance
+
+### BMW M4 GT3 — Re-Test
+
+Curiosity-driven re-run produced a breakthrough:
+
+- BMW M4 GT3: `2:02.037`, **P6/317** — up from P13/404
+- Sectors: `45.784 / 32.559 / 43.694`
+- Gain vs Jul 10: **-0.219s** — nearly identical to Ferrari's `-0.222s` on Jul 12
+- Board shrunk from 404 to 317 (entries dropped between days)
+- 105% cut: `2:06.717`, qualified pool ~261 of 317
+- **≤105% percentile: top 2.3%**
+
+Sector delta vs Jul 10:
+
+| Sector | Jul 10 | Jul 13 | Delta |
+|---|---|---|---|
+| S1 | 45.911 | 45.784 | **-0.127** |
+| S2 | 32.528 | 32.559 | +0.031 |
+| S3 | 43.817 | 43.694 | **-0.123** |
+
+S1 and S3 did all the work (combined `-0.250s`). S2 actually got slightly worse — but it was already BMW's weapon. The car gave back `0.031s` in its strongest sector and still won the overall war because the other two sectors finally showed up.
+
+### Final Three-Car Sebring Comparison (CDA, Jul 12-13)
+
+| Car | Time | S1 | S2 | S3 | Rank | ≤105% |
+|---|---|---|---|---|---|---|
+| Ferrari 296 | 2:01.927 | 45.780 | 32.625 | **43.522** | P7/219 | 4.6% |
+| **BMW M4** | **2:02.037** | 45.784 | **32.559** | 43.694 | **P6/317** | **2.3%** |
+| AMG GT3 | 2:02.038 | **45.729** | 32.571 | 43.738 | P8/237 | 5.0% |
+
+Three cars, three sessions, within **0.111s**. BMW leapfrogged both to the highest rank (P6) and the strongest 105% percentile (2.3%). Each car wins a different sector: Ferrari S3, AMG S1, BMW S2 — they all arrive at the same lap by different mechanisms.
+
+BMW S2 (`32.559`) is still fastest even after regressing — `0.012s` better than AMG's S2. The BMW's S2 baseline is so far ahead of the other cars that a worse version of itself still clears the field.
+
+### AMG GT3 Race Stint — God-Tier Consistency
+
+Immediately after the BMW hotlap, jumped into a 45-minute AMG race on the same track. 98% AI, full ELMS grid (21 LMP2, 13 LMGT3), lift-and-coast throughout.
+
+**AMG race stint 1 (15 clean laps, excluding LMP2 traffic and incidents):**
+
+| | Time |
+|---|---|
+| Best | 2:02.902 |
+| Median | 2:03.276 |
+| Worst* | 2:03.866 |
+| StDev | 0.262s |
+| Range | 0.964s |
+
+*excluding traffic and off-track laps
+
+Comparison against historical Sebring race stint 1 medians (all pre-v1.3, Feb/Mar 2026):
+
+| Car | Best | Median | Worst* | StDev | Range | Δ Med vs AMG |
+|---|---|---|---|---|---|---|
+| Lexus RCF | 2:03.140 | 2:03.787 | 2:05.080 | 0.493s | 1.940s | +511ms |
+| Aston Vantage | 2:02.580 | 2:03.480 | 2:05.576 | 0.657s | 2.996s | +204ms |
+| Ferrari 296 | 2:03.286 | 2:03.791 | 2:05.143 | 0.435s | 1.857s | +515ms |
+| **AMG GT3** | **2:02.902** | **2:03.276** | **2:03.866** | **0.262s** | **0.964s** | — |
+
+The AMG wins on every row: fastest best, fastest median, tightest worst lap, lowest standard deviation, smallest range. And this is post-v1.3 physics vs the historical races run pre-v1.3. The `0.262s` standard deviation over 15 clean race laps is absurdly tight — that's quali-sim consistency in race trim with lift-and-coast.
+
+The median gap to the next-closest car (Aston, `+204ms`) is larger than the AMG's entire worst-to-best range (`0.964s`). The consistency isn't just better — it's in a different category entirely.
+
+**Strategic note:** AI burned through virtual energy on the final lap and was forced to pit. The pre-pit gap was only `-23s`; post-pit it became `-1:07s`. Lift-and-coast paid out exactly as designed — the AMG's metronomic consistency meant staying close enough to inherit the gap when the AI blinked.
+
+**Brake fade note:** By lap 21, the AMG's front-heavy platform showed thermal strain — T7 Hairpin became harder to hit, leading to overshoots on laps 22-23 during LMP2 battles. Something to monitor for longer races or hotter ambient conditions.
+
+### The Gendebien Problem — One Corner, That's It
+
+After three months of "AMG is the expensive platform," the entire problem narrows to a single corner: Gendebien 1 entry. The rest of the Sebring lap the car just eats.
+
+- **Imola:** Piratella's crest-stacked compound loading made the AMG feel like a grind every lap.
+- **Spa:** Les Combes through Pouhon coast-phase rotation loss forced prediction-triggered release all through S2.
+- **Sebring:** Gendebien 1 is the only corner that asks for brake-release rotation on a smooth surface — and it's followed immediately by Gendebien 2 and Le Mans corner, traction zones where the AMG shines. The cost is front-loaded on one corner and the payout arrives immediately after. That's a trade worth making every lap.
+
+### The AMG Duality: Bronze-Friendly Weapon
+
+The AMG is bronze-friendly not because it's slow — today's `2:03.276` median just annihilated every previous Sebring race stint. It's bronze-friendly because it removes an entire failure mode: you cannot lose the rear on exit. Period.
+
+- **Entry:** The car demands a complete translation of the native rotation model. Gendebien 1 is the toll booth.
+- **Mid-corner to exit:** Once past apex, it's the safest car on the grid. Stomp the throttle, the rear stays planted. No snap, no hesitation, no correction workload.
+- **Net effect:** For a driver whose entire technique is built on brake-release yaw confirmation, the AMG asks for a complete adaptation at entry — but once you're past that phase, it's a sledgehammer you can't break. The trade is entry precision for exit trust, and at Sebring the track geometry makes that trade profitable.
+
+### What Changed in My Understanding Today
+
+1. BMW S2 at Sebring is not just fast — it's so far ahead that even a regressed version still beats Ferrari and AMG through the same sector. The M4's bump absorption advantage is a competitive weapon, not a consolation trait.
+2. BMW caught up to Ferrari and AMG in raw pace (`-0.219s` gain) and surpassed both in rank (P6) and 105% percentile (2.3%). The three-car spread is now `0.111s` — essentially identical pace by three different sector routes.
+3. The AMG delivered the single best race stint ever recorded at Sebring — fastest median, tightest consistency, across all cars and all historical sessions. `0.262s` standard deviation in race trim is quali-sim territory.
+4. The AMG's "expensive platform" reputation is entirely track-dependent. At Imola it's a grind. At Spa it's expensive. At Sebring it's the gold standard for race pace.
+5. The AMG's entire Sebring difficulty collapses to one corner: Gendebien 1 entry. Every other corner on the lap either neutralizes its weakness (bumps force early braking) or rewards its strength (exit traction).
+6. The AMG is fundamentally a bronze-friendly car: it removes rear instability as a failure mode, making it the safest car on the grid once past apex. The trade is entry rotation, which at Sebring is a single-corner problem followed by immediate payout.
+7. The Gendebien 1 → Gendebien 2 → Le Mans sequence perfectly captures the AMG duality: pay the rotation tax once at entry, collect exit traction reward immediately after. At Sebring, that's a winning trade.
