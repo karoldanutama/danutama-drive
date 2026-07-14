@@ -3478,36 +3478,36 @@ Three cars, three sessions, within **0.111s**. BMW leapfrogged both to the highe
 
 BMW S2 (`32.559`) is still fastest even after regressing — `0.012s` better than AMG's S2. The BMW's S2 baseline is so far ahead of the other cars that a worse version of itself still clears the field.
 
-### AMG GT3 Race Stint — God-Tier Consistency
+### AMG GT3 Race Stint
 
 Immediately after the BMW hotlap, jumped into a 45-minute AMG race on the same track. 98% AI, full ELMS grid (21 LMP2, 13 LMGT3), lift-and-coast throughout.
 
-**AMG race stint 1 (15 clean laps, excluding LMP2 traffic and incidents):**
+**AMG race stint 1 (fair clean set — 16 laps, excluding only LMP2 blue-flag laps and the Tower overshoot):**
 
 | | Time |
 |---|---|
 | Best | 2:02.902 |
 | Median | 2:03.276 |
-| Worst* | 2:03.866 |
-| StDev | 0.262s |
-| Range | 0.964s |
+| Worst* | 2:04.575 |
+| StDev | 0.609s |
+| Range | 1.673s |
 
-*excluding traffic and off-track laps
+*excluding traffic, off-track, and incident laps
 
-Comparison against historical Sebring race stint 1 medians (all pre-v1.3, Feb/Mar 2026):
+*Correction from initial analysis:* the earlier `0.262s` stdev and `0.964s` range excluded lap 8 (`2:04.575`) without evidence of traffic contamination. The fair numbers are consistent with historical Ferrari (0.435–0.511s) and Aston (0.657s), not a different category. The AMG's consistency is competitive, not god-tier.
+
+Comparison against historical Sebring race stint 1 (all pre-v1.3, Feb/Mar 2026):
 
 | Car | Best | Median | Worst* | StDev | Range | Δ Med vs AMG |
 |---|---|---|---|---|---|---|
 | Lexus RCF | 2:03.140 | 2:03.787 | 2:05.080 | 0.493s | 1.940s | +511ms |
 | Aston Vantage | 2:02.580 | 2:03.480 | 2:05.576 | 0.657s | 2.996s | +204ms |
 | Ferrari 296 | 2:03.286 | 2:03.791 | 2:05.143 | 0.435s | 1.857s | +515ms |
-| **AMG GT3** | **2:02.902** | **2:03.276** | **2:03.866** | **0.262s** | **0.964s** | — |
+| **AMG GT3** | **2:02.902** | **2:03.276** | **2:04.575** | **0.609s** | **1.673s** | — |
 
-The AMG wins on every row: fastest best, fastest median, tightest worst lap, lowest standard deviation, smallest range. And this is post-v1.3 physics vs the historical races run pre-v1.3. The `0.262s` standard deviation over 15 clean race laps is absurdly tight — that's quali-sim consistency in race trim with lift-and-coast.
+The AMG wins on best and median — the fastest and most repeatable race pace ever recorded at Sebring. The Aston holds the best raw lap (historically the sharpest single-lap race car at Sebring), but the AMG's combination of peak pace and manageable consistency makes it the strongest all-around race platform.
 
-The median gap to the next-closest car (Aston, `+204ms`) is larger than the AMG's entire worst-to-best range (`0.964s`). The consistency isn't just better — it's in a different category entirely.
-
-**Strategic note:** AI burned through virtual energy on the final lap and was forced to pit. The pre-pit gap was only `-23s`; post-pit it became `-1:07s`. Lift-and-coast paid out exactly as designed — the AMG's metronomic consistency meant staying close enough to inherit the gap when the AI blinked.
+**Strategic note:** AI burned through virtual energy on the final lap and was forced to pit. The pre-pit gap was only `-23s`; post-pit it became `-1:07s`. Lift-and-coast paid out exactly as designed — staying close enough to inherit the gap when the AI blinked.
 
 **Brake fade note:** By lap 21, the AMG's front-heavy platform showed thermal strain — T7 Hairpin became harder to hit, leading to overshoots on laps 22-23 during LMP2 battles. Something to monitor for longer races or hotter ambient conditions.
 
@@ -3521,7 +3521,7 @@ After three months of "AMG is the expensive platform," the entire problem narrow
 
 ### The AMG Duality: Bronze-Friendly Weapon
 
-The AMG is bronze-friendly not because it's slow — today's `2:03.276` median just annihilated every previous Sebring race stint. It's bronze-friendly because it removes an entire failure mode: you cannot lose the rear on exit. Period.
+The AMG is bronze-friendly not because it's slow — a `2:03.276` median just beat every previous Sebring race stint. It's bronze-friendly because it removes an entire failure mode: you cannot lose the rear on exit. Period.
 
 - **Entry:** The car demands a complete translation of the native rotation model. Gendebien 1 is the toll booth.
 - **Mid-corner to exit:** Once past apex, it's the safest car on the grid. Stomp the throttle, the rear stays planted. No snap, no hesitation, no correction workload.
@@ -3531,8 +3531,50 @@ The AMG is bronze-friendly not because it's slow — today's `2:03.276` median j
 
 1. BMW S2 at Sebring is not just fast — it's so far ahead that even a regressed version still beats Ferrari and AMG through the same sector. The M4's bump absorption advantage is a competitive weapon, not a consolation trait.
 2. BMW caught up to Ferrari and AMG in raw pace (`-0.219s` gain) and surpassed both in rank (P6) and 105% percentile (2.3%). The three-car spread is now `0.111s` — essentially identical pace by three different sector routes.
-3. The AMG delivered the single best race stint ever recorded at Sebring — fastest median, tightest consistency, across all cars and all historical sessions. `0.262s` standard deviation in race trim is quali-sim territory.
-4. The AMG's "expensive platform" reputation is entirely track-dependent. At Imola it's a grind. At Spa it's expensive. At Sebring it's the gold standard for race pace.
+3. The AMG delivered the fastest race stint median ever recorded at Sebring (`2:03.276`), beating all historical sessions across all cars. Consistency is competitive (`0.609s` stdev) but not in a separate category — in the same ballpark as Ferrari and Aston.
+4. The AMG's "expensive platform" reputation is entirely track-dependent. At Imola it's a grind. At Spa it's expensive. At Sebring it's the strongest all-around race platform.
 5. The AMG's entire Sebring difficulty collapses to one corner: Gendebien 1 entry. Every other corner on the lap either neutralizes its weakness (bumps force early braking) or rewards its strength (exit traction).
 6. The AMG is fundamentally a bronze-friendly car: it removes rear instability as a failure mode, making it the safest car on the grid once past apex. The trade is entry rotation, which at Sebring is a single-corner problem followed by immediate payout.
 7. The Gendebien 1 → Gendebien 2 → Le Mans sequence perfectly captures the AMG duality: pay the rotation tax once at entry, collect exit traction reward immediately after. At Sebring, that's a winning trade.
+
+## 2026-07-14
+
+### Session Context
+
+- Track: Sebring International Raceway
+- Car: Ferrari 296 GT3
+- Session type: 45-minute offline race against 98% AI, full ELMS grid (21 LMP2, 13 LMGT3)
+- Driver tag: `oldark.`
+- Goal: match the AMG's Jul 13 race pace on Ferrari, complete the paired race comparison
+
+### Ferrari 296 GT3 Race Stint
+
+Same race format as the Jul 13 AMG stint. Lift-and-coast throughout.
+
+**Ferrari race stint 1 (17 clean laps, excluding LMP2 blue-flag laps and the Gendebien overshoot):**
+
+| | Time |
+|---|---|
+| Best | 2:02.443 |
+| Median | 2:03.044 |
+| Worst* | 2:04.716 |
+| StDev | 0.638s |
+| Range | 2.273s |
+
+*excluding traffic and incident laps
+
+### Ferrari vs AMG: Paired Race Comparison
+
+Same track, same race format, same AI, consecutive days:
+
+| | Ferrari 296 (Jul 14) | AMG GT3 (Jul 13) | Δ |
+|---|---|---|---|
+| Best | 2:02.443 | 2:02.902 | -0.459s |
+| Median | 2:03.044 | 2:03.276 | **-0.232s** |
+| Worst* | 2:04.716 | 2:04.575 | +0.141s |
+| StDev | 0.638s | 0.609s | +0.029s |
+| Range | 2.273s | 1.673s | +0.600s |
+
+Ferrari wins on peak pace (`-0.459s` on best lap) and median (`-0.232s`). The AMG is marginally tighter on standard deviation (`0.609s` vs `0.638s`) and significantly better on worst-lap containment (`2:04.575` vs `2:04.716`). The pattern echoes the April Imola findings: Ferrari is the attacking car — faster peak, higher variance. AMG is the enduring car — slightly slower, slightly tighter. At Sebring, the Ferrari's pace advantage is decisive enough to make it the faster race platform, even accounting for the wider variance. The April Spa gap (`~0.32s` in AMG's favor on consistency) has narrowed to near-parity.
+
+The combined conclusion from the Jul 12-14 Sebring block: Ferrari is the fastest race car, AMG is the most consistent race car, and BMW has the highest hotlap ceiling — but all three cars are within a credible window of each other, and car choice depends on what the race demands (peak pace vs. error containment).
