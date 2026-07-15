@@ -3578,3 +3578,80 @@ Same track, same race format, same AI, consecutive days:
 Ferrari wins on peak pace (`-0.459s` on best lap) and median (`-0.232s`). The AMG is marginally tighter on standard deviation (`0.609s` vs `0.638s`) and significantly better on worst-lap containment (`2:04.575` vs `2:04.716`). The pattern echoes the April Imola findings: Ferrari is the attacking car — faster peak, higher variance. AMG is the enduring car — slightly slower, slightly tighter. At Sebring, the Ferrari's pace advantage is decisive enough to make it the faster race platform, even accounting for the wider variance. The April Spa gap (`~0.32s` in AMG's favor on consistency) has narrowed to near-parity.
 
 The combined conclusion from the Jul 12-14 Sebring block: Ferrari is the fastest race car, AMG is the most consistent race car, and BMW has the highest hotlap ceiling — but all three cars are within a credible window of each other, and car choice depends on what the race demands (peak pace vs. error containment).
+
+## 2026-07-15
+
+### Session Context
+
+- Track: Sebring International Raceway
+- Car: Porsche 911 GT3R
+- Session type: 1.5-hour concentrated hotlap session, 87 laps across 24 stints
+- Driver tag: `oldark.`
+- Goal: complete the four-car Sebring hotlap sweep and test the Imola whipping boy on a different track
+
+### Porsche 911 GT3R — Result
+
+- Porsche 911 GT3R: `2:01.866`, **P13/383**
+- Sectors: `45.641 / 32.614 / 43.611`
+- 105% cut: `2:06.768`, qualified pool ~262 of 383
+- **≤105% percentile: top 5.0%**
+
+The Imola P40 (worst S1, worst S3) just posted the fastest lap of the entire Sebring block across four platforms. The car that couldn't launch or finish a lap at Imola now wins S1 by `0.088s` over the nearest competitor.
+
+### Updated Four-Car Sebring Comparison (CDA, Jul 12-15)
+
+| Car | Time | S1 | S2 | S3 | Rank | Δ to best |
+|---|---|---|---|---|---|---|
+| **Porsche 911** | **2:01.866** | **45.641** | 32.614 | 43.611 | P13/383 | — |
+| Ferrari 296 | 2:01.927 | 45.780 | 32.625 | **43.522** | P7/219 | +0.061s |
+| BMW M4 | 2:02.037 | 45.784 | **32.559** | 43.694 | P6/317 | +0.171s |
+| AMG GT3 | 2:02.038 | 45.729 | 32.571 | 43.738 | P8/237 | +0.172s |
+
+Four cars, four sessions, within **0.172s**. The Porsche doesn't win any single sector outright — Ferrari has S3, BMW has S2 — but it's second-best in all three. No weakness. The zero-compromise car at Sebring. The rear-engine platform thrives where the front-engine cars struggle: it rotates *into* the bumps, not against them.
+
+### Convergence Analysis: Refinement, Not Grind
+
+Session progression across 24 stints:
+
+| Milestone | Stint | Time |
+|---|---|---|
+| First competitive pace | Stint 1 | 2:02.432 |
+| Broke into 2:02.0xx | Stint 3 | 2:02.094 |
+| Exceeded AMG's best | Stint 7 | 2:02.094 |
+| Hit 2:01.9xx | Stint 17 | 2:01.959 |
+| Regressed | Stints 22-23 | — |
+| Final PB | Stint 24 | 2:01.866 |
+
+The Porsche gave competitive pace immediately — `2:02.432` on stint 1 was already faster than the AMG's best. But the ceiling required 87 laps across 24 separate pit cycles. Each stint reset costs time to find the window again, and the final hundredths didn't appear until the car's rotation model became muscle memory.
+
+Compare convergence patterns at Sebring:
+
+| Car | Early pace (<10 laps) | Final PB | Laps to PB | Session cost |
+|---|---|---|---|---|
+| Porsche 911 | 2:02.432 | 2:01.866 | 87 | High (refinement) |
+| Ferrari 296 | 2:02.149 | 2:01.927 | ~30 over 2 days | Low |
+| BMW M4 | 2:02.256 | 2:02.037 | ~30 over 2 days | Low |
+| AMG GT3 | 2:02.038 | 2:02.038 | Session unknown | Unknown |
+
+The Porsche is not the AMG. The AMG at Imola was grind — 57 laps for a mediocre P31. The Porsche at Sebring is refinement — 87 laps for the fastest lap of the week. Same lap count, opposite quality of result. The Porsche gives the pace window almost immediately (stint 1) but demands patience to extract the final 0.566s.
+
+### The Imola Reversal
+
+At Imola in May, the Porsche was P40 with the worst S1 (`21.734`) and worst S3 (`48.592`) in a seven-car sample. It was dismissed as "separate rear-engine issue — loses immediately in S1, then fails to cash out S3."
+
+At Sebring, the same car wins S1 (`45.641`, `+0.088s` over AMG), is P2 in S3 (`43.611`), and posts the fastest overall lap. The rear-engine rotation that kills it at Piratella makes it fast at Sebring from lap 1. At Imola, the crest-stacked corners demand rotation the rear-engine car over-delivers — the tail steps out, the driver catches it, the lap dies. At Sebring, the bumps want the car to rotate, and the rear-engine platform gives exactly what the track asks for.
+
+### What This Says About the Driver
+
+Four cars, four winners, all within 0.172s. The truth was never car-limited — the three months of "AMG is the expensive platform" and "heavy front-engine translation problems" and "rotation model mismatch" were identifying *cost*, not *capability*. The question was never "which car can I drive?" It was always "which car costs less to drive — physically, mentally, lap-count-wise?"
+
+The Porsche proved it: a car that was dead last at Imola in May just posted the fastest lap across four platforms at Sebring. Not because the car changed. Because the driver learned enough about his own rotation model, between Imola and now, to extract pace from any platform on any track. The remaining variable is cost — and cost varies by track, not by car.
+
+### What Changed in My Understanding Today
+
+1. The Porsche 911 GT3R at Sebring is not an Imola whale — it's the fastest GT3 platform I've driven on this track, winning S1 and posting the overall best lap.
+2. The Imola P40 result was a track-fit problem, not a car problem. Same car, different track, opposite result.
+3. The Porsche's convergence pattern is refinement (87 laps for a winning result), not grind (57 laps for a mediocre result like the AMG at Imola). Same lap count, opposite relationship with the car.
+4. "Car A is bad" is a fundamentally incomplete statement. Every conclusion from the Imola era needs the suffix "...at Imola." Every car works somewhere. The driver's job is to find where.
+5. Four cars, four different sector winners, all within 0.172s — the driver is not car-limited. The three months of analysis identified cost, not capability.
+6. The rear-engine platform's rotation model is exactly what Sebring's bumps want — the car rotates *into* the surface, not against it. At Imola, Piratella over-rotates it. Track decides the personality.
