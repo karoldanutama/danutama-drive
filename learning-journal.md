@@ -3655,3 +3655,66 @@ The Porsche proved it: a car that was dead last at Imola in May just posted the 
 4. "Car A is bad" is a fundamentally incomplete statement. Every conclusion from the Imola era needs the suffix "...at Imola." Every car works somewhere. The driver's job is to find where.
 5. Four cars, four different sector winners, all within 0.172s — the driver is not car-limited. The three months of analysis identified cost, not capability.
 6. The rear-engine platform's rotation model is exactly what Sebring's bumps want — the car rotates *into* the surface, not against it. At Imola, Piratella over-rotates it. Track decides the personality.
+
+## 2026-07-18
+
+### Session Context
+
+- Track: Sebring International Raceway
+- Car: Porsche 911 GT3R
+- Session type: 45-minute offline race against 98% AI, full ELMS grid (21 LMP2, 13 LMGT3)
+- Driver tag: `oldark.`
+- Goal: complete the four-car Sebring race comparison, test whether the hotlap pace translates to race conditions
+
+### Porsche 911 GT3R Race Stint
+
+Same race format as the Jul 13 (AMG), Jul 14 (Ferrari) sessions. Lift-and-coast throughout. Session ended prematurely on lap 23 after clipping Sunset corner, breaking the front-right suspension.
+
+**Porsche race stint 1 (15 clean laps, excluding blue flags and broken suspension):**
+
+| | Time |
+|---|---|
+| Best | 2:02.635 |
+| Median | 2:03.035 |
+| Worst* | 2:04.583 |
+| StDev | 0.456s |
+| Range | 1.948s |
+
+*excluding traffic, incident, and broken suspension laps
+
+### Three-Car Race Comparison (Sebring, Jul 13-18)
+
+Same track, same race format, same AI:
+
+| | Porsche 911 | Ferrari 296 | AMG GT3 |
+|---|---|---|---|
+| Best | 2:02.635 | 2:02.443 | 2:02.902 |
+| Median | **2:03.035** | 2:03.044 | 2:03.276 |
+| Worst* | 2:04.583 | 2:04.716 | 2:04.575 |
+| StDev | **0.456s** | 0.638s | 0.609s |
+| Range | 1.948s | 2.273s | 1.673s |
+
+The Porsche wins on median (by `-0.009s` over Ferrari) and consistency (`0.456s` — the tightest of all three cars). Ferrari has the best raw lap. AMG has the best worst-lap containment. Each car wins a different metric — no platform is dominant across all categories.
+
+Hotlap-to-race conversion:
+
+| | Hotlap PB | Race Best | Race Median | Best Δ | Median Δ |
+|---|---|---|---|---|---|
+| Ferrari | 2:01.927 | 2:02.443 | 2:03.044 | +0.516s | +1.117s |
+| Porsche | 2:01.866 | 2:02.635 | 2:03.035 | +0.769s | +1.169s |
+| AMG | 2:02.038 | 2:02.902 | 2:03.276 | +0.864s | +1.238s |
+
+Ferrari carries hotlap pace into race trim most efficiently on both best and median delta.
+
+### Why the Porsche Is Popular in Endurance
+
+The `0.456s` standard deviation explains the 911's endurance reputation. That's quali-sim consistency in race trim — set cruise control and the car just repeats. The rear-engine platform rewards discipline: mid-corner rotation feels satisfying through the apex, the rear squats under power on exit, and the lap times stay in a tight band. But push past the edge once — the Sunset corner clip on lap 21 — and the pendulum swings hard. Broken suspension, three hobbled laps, session over.
+
+The AMG is safer but slower — `0.609s` stdev, `2:03.276` median. The Ferrari is faster but looser — `0.638s` stdev, `2:03.044` median. The Porsche threads the needle: fastest repeatable pace, tightest consistency, but charges interest on mistakes. Metronomic until it's not, with a repair bill when you forget.
+
+### What Changed in My Understanding Today
+
+1. The Porsche 911 GT3R delivered the fastest median AND tightest consistency across all three Sebring race comparisons. The hotlap ceiling translated cleanly to race conditions.
+2. The Porsche's endurance character is now explained: `0.456s` stdev means metronomic repeatability, but the rear-engine pendulum means mistakes are proportionally expensive. The car rewards discipline and punishes overreach.
+3. No single car dominates across all race metrics — Ferrari wins peak pace, Porsche wins consistency and median, AMG wins worst-lap containment. Car choice depends on race demand.
+4. The Sunset corner suspension break is the same rear-engine pendulum that makes Piratella hostile at Imola — the rotation that helps in flow corners becomes a weapon against you when you exceed the window.
