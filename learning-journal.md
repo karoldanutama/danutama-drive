@@ -3718,3 +3718,118 @@ The AMG is safer but slower — `0.609s` stdev, `2:03.276` median. The Ferrari i
 2. The Porsche's endurance character is now explained: `0.456s` stdev means metronomic repeatability, but the rear-engine pendulum means mistakes are proportionally expensive. The car rewards discipline and punishes overreach.
 3. No single car dominates across all race metrics — Ferrari wins peak pace, Porsche wins consistency and median, AMG wins worst-lap containment. Car choice depends on race demand.
 4. The Sunset corner suspension break is the same rear-engine pendulum that makes Piratella hostile at Imola — the rotation that helps in flow corners becomes a weapon against you when you exceed the window.
+
+## 2026-07-19
+
+### Session Context
+
+- Track: Silverstone — two layouts exist
+  - **ELMS:** old layout, start/finish before Copse (S1 = start→Copse, S2 = Maggotts/Becketts/Chapel, S3 = Stowe→finish)
+  - **WEC:** new layout, start/finish on Hamilton Straight (S1 = Hamilton Straight→Copse/Maggotts, S2 = Becketts/Chapel/Hangar, S3 = Stowe→finish)
+- Cars: Ferrari 296 GT3 (both layouts), Mercedes-AMG GT3 (ELMS)
+- Driver tag: `oldark.`
+- Last visit: December 2025
+- Goal: explore new track, cross-check Ferrari vs AMG on ELMS layout, and see whether 7 months of training transferred
+
+### Historical Context
+
+Last Silverstone visits (December 2025):
+- Ferrari 296 GT3 ELMS: `2:00.866`
+- Mercedes-AMG GT3 ELMS: `2:01.835`
+
+Today's results after 7 months with no Silverstone practice:
+- Ferrari 296 GT3 ELMS: `2:00.698` (−0.168s, 22 laps)
+- Ferrari 296 GT3 WEC: `2:00.357` (7 laps)
+- Mercedes-AMG GT3 ELMS: `2:00.659` (−1.176s, 69 laps)
+
+### Silverstone ELMS — Ferrari 296 GT3
+
+- **Ferrari 296 GT3:** `2:00.698`, **P20/135** (raw) / P19/134 cleaned (excluding bugged `subaris` 1:11.165)
+- P1 (real): `lwhitehead_` `1:57.668` (CDA)
+- Sectors: `29.147 / 35.018 / 56.533`
+- Gap to P1: `+3.030s`
+- 105% cut: `2:03.551` — estimated qualified pool ~85-90
+
+Raw percentile: ~14.8% (between 10th and 20th percentile). Weakest result of the three — likely first-session exploration rather than an optimized benchmark.
+
+### Silverstone WEC — Ferrari 296 GT3
+
+- **Ferrari 296 GT3:** `2:00.357`, **P13/196**
+- P1: `lwhitehead_` `1:57.875` (CDA)
+- Sectors: `35.512 / 49.824 / 35.021`
+- Gap to P1: `+2.482s`
+
+| Percentile | Time |
+|---|---|
+| 1% | 1:59.627 |
+| 5% | 2:00.283 |
+| 10% | 2:00.881 |
+| 50% | 2:04.438 |
+
+Raw percentile: ~6.6% (between 5th and 10th). Strongest result of the day — just 0.074s from top 5%. Achieved in only 7 laps after the ELMS session.
+
+Note: sector times differ between layouts because sectors are divided differently. Total lap time should converge for the same driven line — the 0.341s gap between WEC and ELMS Ferrari laps is session variance, not a layout artifact. But the start/finish position matters psychologically: WEC layout starts at ~260 km/h on Hamilton Straight with a free straight to settle, while ELMS starts approaching Copse braking zone immediately.
+
+### Silverstone ELMS — Mercedes-AMG GT3
+
+- **AMG GT3:** `2:00.659`, **P6/81**
+- P1: `lwhitehead_` `1:58.033` (CDA)
+- Sectors: `29.180 / 34.883 / 56.596`
+- Gap to P1: `+2.626s`
+
+| Percentile | Time |
+|---|---|
+| 1% | 1:59.669 |
+| 5% | 2:00.504 |
+| 10% | 2:01.311 |
+| 50% | 2:03.515 |
+
+Raw percentile: ~7.4% (between 5th and 10th). Pool is small (81 entries) — one of the thinnest boards observed — so percentile interpretation carries lower confidence. Direct Ferrari-vs-AMG comparison is valid regardless.
+
+**Convergence cost:** 69 laps to produce `2:00.659` vs 22 laps for Ferrari's `2:00.698`. The AMG beat Ferrari by 0.039s — a margin smaller than statistical noise — at a 3:1 lap-count ratio. Same Imola-era pattern: the lap exists, but the platform demands disproportionate investment to access it.
+
+The AMG session was driven by curiosity: can the AMG beat the 296 at Silverstone? Answer: technically yes, but at unsustainable cost. A projected 2:00.3xx felt achievable with more grinding but was abandoned in favor of the WEC layout Ferrari session (which produced a better result in 7 laps anyway).
+
+### Ferrari vs AMG Direct Comparison (ELMS)
+
+| Car | Time | S1 | S2 | S3 | Gap |
+|---|---|---|---|---|---|
+| AMG GT3 | 2:00.659 | 29.180 | **34.883** | 56.596 | — |
+| Ferrari 296 | 2:00.698 | **29.147** | 35.018 | **56.533** | +0.039s |
+
+- S1: Ferrari +0.033s
+- S2: **AMG +0.135s** (decisive)
+- S3: Ferrari +0.063s
+
+AMG wins the middle sector by a commanding margin and posts the faster lap despite losing both S1 and S3. S2 at Silverstone ELMS contains Maggotts/Becketts/Chapel — high-speed direction changes with minimal braking. This is flow-corner terrain where the AMG's planted rear and stability under load pays out: the front-engine platform commits through flow without asking for brake-release yaw — it just holds its line and goes.
+
+This continues the Sebring Jul 12 finding: the AMG problem is a **corner-type problem** (brake-release rotation on smooth crests), not a universal platform flaw. Silverstone S2 is flow-and-commit terrain — exactly where the AMG's design is an asset, not a liability.
+
+### Transfer Validation
+
+7 months of zero Silverstone practice. The gain from December 2025:
+- Ferrari: −0.168s (from `2:00.866`)
+- AMG: −1.176s (from `2:01.835`)
+
+The Ferrari delta is pure general development — everything learned at Imola, Spa, and Sebring between April and July transferred without track-specific practice. The AMG delta is even larger because the December 2025 AMG lap predated the entire journal's technique evolution (rotation model, downshift timing, diff preload understanding, prediction-triggered release workaround).
+
+### Physical Cost of Silverstone
+
+Silverstone causes sustained isometric load against the FFB motor with minimal recovery windows. Maggotts/Becketts/Chapel is a continuous ~15-second load cycle — pinned sideways under alternating direction with no straight long enough to fully release tension. The load cell means braking foot pushes against fixed resistance lap after lap with no float.
+
+Result: arms sore from steering torque, throttle and braking foot sore from sustained pedal pressure. 69 AMG laps compounded the cost because the AMG demands additional hand input to compensate for missing rotation cues. Somatic fatigue — body soreness and sleepiness — was the reason Silverstone was abandoned in December 2025 in favor of Sebring. Today confirmed the same pattern.
+
+Silverstone is not a slow track — it's an expensive track, and the currency is your body.
+
+### What Changed in My Understanding Today
+
+1. Silverstone is a new track in the journal — no prior baseline exists.
+2. 7 months of training transferred cleanly: Ferrari improved 0.168s without a single lap of Silverstone practice in between.
+3. The AMG is faster than Ferrari at Silverstone ELMS (by 0.039s), with the margin coming entirely from S2 flow-corner stability. This continues the pattern that the AMG is not universally hostile — only on corner types that demand brake-release rotation.
+4. Silverstone S2 is the AMG's best sector — consistent with the finding that high-speed direction changes without heavy braking zones favor the front-engine planted-rear architecture.
+5. The ELMS layout pools are thin (81-135 entries), suggesting WEC-layout leaderboards are preferred for robust percentile analysis.
+6. The AMG convergence tax reappeared at Silverstone: 69 laps for a result Ferrari gave in 22. Same pattern as Imola, now replicated on a fourth track.
+7. Silverstone is a physically expensive track due to sustained isometric load with few recovery windows. The AMG's additional hand-input cost makes it even more punishing.
+8. The December 2025 abandonment of Silverstone was not a pace decision — it was a sustainability decision. The journal's entire trajectory (Spa → Imola → Sebring) was shaped by which tracks allowed training volume without wrecking the body.
+9. Even without gravity, sustained FFB tension + load cell pressure + no float windows = real physical fatigue. Sim rig soreness is a legitimate training constraint, not just discomfort.
+4. The Sunset corner suspension break is the same rear-engine pendulum that makes Piratella hostile at Imola — the rotation that helps in flow corners becomes a weapon against you when you exceed the window.
