@@ -3838,10 +3838,13 @@ Silverstone is not a slow track — it's an expensive track, and the currency is
 ### Session Context
 
 - Track: Silverstone (ELMS layout)
-- Car: Ferrari 296 GT3
+- Same-day sessions:
+  - Ferrari 296 GT3: `16 / 6 / 10`, best `2:00.216`
+  - Mercedes-AMG GT3 Evo session 1: `18 / 3 / 15`, best `2:00.660`
+  - Mercedes-AMG GT3 Evo session 2: `15 / 4 / 11`, best `2:00.532`
+  - Porsche 911 GT3R: `46 / 15 / 31`, best `2:00.446`
 - Driver tag: `oldark.`
-- Session: 16 laps across 4 stints (5 / 7 / 1 / 3)
-- Goal: build on the Jul 19 baseline with cleaner execution
+- Goal: continue Jul 19 Silverstone work and test whether pace survives repeated same-day platform jumps with rest breaks in between
 
 ### Progression
 
@@ -3876,7 +3879,86 @@ S3 is 95% of the entire improvement. The Ferrari's rotation model activated in S
 
 ### Transfer Validation — Part 2
 
-The opening flyer of the session (`2:00.812`, stint 1) was already 0.054s faster than the December 2025 PB (`2:00.866`), which required grinding to reach. The first flying lap of a fresh session cleared a 7-month-old benchmark. The journal's cumulative effect — everything from Imola, Spa, Sebring, the AMG VC diagnostic — transferred without a single Silverstone practice lap in between. The Ferrari just gave the pace from the moment the session started.
+The opening flyer of the session (`2:00.812`, stint 1) was already 0.054s faster than the December 2025 PB (`2:00.866`), which required grinding to reach. The first flying lap of a fresh session cleared a 7-month-old benchmark. Strictly speaking, there was one isolated Ferrari return on `2026-01-12` (`2:01.280`), so Jul 19-20 should be read as the first sustained return since December rather than the literal first visit. That correction does not change the main point: the journal's cumulative effect — everything from Imola, Spa, Sebring, and the AMG VC diagnostic — transferred cleanly back to Silverstone.
+
+### Same-Day Platform Switch Test
+
+Jul 20 functioned as a controlled platform-switch experiment:
+
+1. Ferrari first at noon
+2. about 30 minutes rest, then straight into AMG
+3. longer break, then back to AMG
+4. about 3 hours away plus a nap, then straight into Porsche
+
+Same-day Silverstone ELMS bests:
+
+| Car | Session Totals (Total / Valid / Invalid) | Best |
+|---|---:|---:|
+| Ferrari 296 GT3 | `16 / 6 / 10` | **2:00.216** |
+| Porsche 911 GT3R | `46 / 15 / 31` | **2:00.446** |
+| Mercedes-AMG GT3 Evo | `33 / 7 / 26` | **2:00.532** |
+
+Spread from fastest to slowest across the three main platforms: only `0.316s`.
+
+This is the real revelation of the last two days: Silverstone still feels physically expensive, but the old idea that it is a core weak circuit is no longer supported by the stopwatch. The pace now transfers across multiple architectures on the same day, even with long interruptions.
+
+### AMG Follow-Up
+
+AMG session 1 immediately after Ferrari:
+
+- Session totals: `18 / 3 / 15`
+- Best: `2:00.660`
+- Read: survival problem rather than fluent progression. Too many one-lap aborts from spins/flat-spotted tyres and immediate pit returns.
+
+AMG session 2 after a longer break:
+
+- Session totals: `15 / 4 / 11`
+- Best: `2:00.532`
+- Stint progression: `2:01.260` → `2:00.677` → `2:00.532`
+
+Important read:
+
+- sub-`2:01` is now a real AMG Silverstone baseline
+- but the valid-rate remains terrible (`21.2%` across both AMG sessions)
+- the car can reach the number, but it still does not give the number cheaply
+
+This confirms a sharper distinction:
+
+- Ferrari baseline arrives
+- AMG baseline is extracted
+
+The gap between Ferrari and AMG on delivered best lap (`0.316s`) is small. The gap in cost of residency inside the pace window is large.
+
+### Porsche Return Shock
+
+After about 3 hours away from the rig, a nap, and a straight jump into a fourth platform, the Porsche produced:
+
+- Session totals: `46 / 15 / 31`
+- Best: `2:00.446`, **P9/131**
+- Sectors: `29.045 / 35.032 / 56.369`
+
+Historical Porsche Silverstone ELMS PB from 2025:
+
+- `2:01.347`
+
+Improvement:
+
+- `−0.901s`
+
+The strongest signal was not the final lap, but the early re-entry pace:
+
+- Stint 2 already produced `2:01.178`
+
+In 2025, `2:01.3xx` Porsche was a peak event that did not reliably repeat. On Jul 20, `2:01.178` became opening-price pace and the session later reached `2:00.446`.
+
+This means last year's Porsche ceiling became this year's warm-up band.
+
+An additional consistency surprise:
+
+- Porsche hotlap valid-rate in Dec 2025: `104 / 34 / 70` = `32.7%`
+- Porsche Jul 20 valid-rate: `46 / 15 / 31` = `32.6%`
+
+So the Porsche did not become easier. The chaos rate stayed the same. The ceiling moved by almost a full second. That points to driver development much more than track familiarity or patch effect.
 
 ### Pool Decay Note
 
@@ -3886,4 +3968,9 @@ The board shrank from 135 (Jul 19) to 132 (Jul 20) — 3 entries dropped between
 
 1. The Ferrari took only one session of familiarization before delivering serious pace. Day 2 improvement was large (−0.482s) and concentrated in S3 — the corner type that rewards the native rotation model.
 2. The opening flyer beating a 7-month-old PB confirms that the transfer from other tracks is genuine, not session-specific luck.
-3. The ELMS board is not just small — it's actively decaying. 132 entries and shrinking reinforces that this layout is a graveyard.
+3. Jul 20 is better read as one continuous same-day platform-switch experiment than as separate isolated sessions. Ferrari, AMG, and Porsche all landed inside a `0.316s` window despite rest breaks, fatigue, and even a nap.
+4. Silverstone still carries a real physical toll, but the stopwatch no longer supports calling it a weak circuit. The old subjective read survives; the old performance read does not.
+5. The AMG now has a real sub-`2:01` baseline at Silverstone, but it still demands pit-reset-heavy grind to stay there. Ferrari remains the cheapest resident of the pace window.
+6. The Porsche result is one of the strongest transfer proofs in the whole journal: after a long break and same-day car swapping, it still produced `2:00.446`, almost a full second faster than the 2025 PB.
+7. The Porsche valid-rate staying almost identical to 2025 while the lap time improved by `0.901s` proves the platform did not become easier; the driver became faster.
+8. The ELMS board is not just small — it's actively decaying. 132 entries and shrinking reinforces that this layout is a graveyard.
