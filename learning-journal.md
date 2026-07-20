@@ -3724,7 +3724,7 @@ The AMG is safer but slower — `0.609s` stdev, `2:03.276` median. The Ferrari i
 ### Session Context
 
 - Track: Silverstone — two layouts exist
-  - **ELMS:** old layout, start/finish before Copse (S1 = start→Copse, S2 = Maggotts/Becketts/Chapel, S3 = Stowe→finish)
+  - **ELMS:** old layout, start/finish before Copse (S1 = start→Copse→Maggotts/Becketts/Chapel, S2 = Hangar→Stowe→Vale→Club, S3 = Hamilton Straight→Abbey→Village→Wellington→Brooklands→Luffield)
   - **WEC:** new layout, start/finish on Hamilton Straight (S1 = Hamilton Straight→Copse/Maggotts, S2 = Becketts/Chapel/Hangar, S3 = Stowe→finish)
 - Cars: Ferrari 296 GT3 (both layouts), Mercedes-AMG GT3 (ELMS)
 - Driver tag: `oldark.`
@@ -3801,9 +3801,9 @@ The AMG session was driven by curiosity: can the AMG beat the 296 at Silverstone
 - S2: **AMG +0.135s** (decisive)
 - S3: Ferrari +0.063s
 
-AMG wins the middle sector by a commanding margin and posts the faster lap despite losing both S1 and S3. S2 at Silverstone ELMS contains Maggotts/Becketts/Chapel — high-speed direction changes with minimal braking. This is flow-corner terrain where the AMG's planted rear and stability under load pays out: the front-engine platform commits through flow without asking for brake-release yaw — it just holds its line and goes.
+AMG wins the middle sector by a commanding margin and posts the faster lap despite losing both S1 and S3. S2 at Silverstone ELMS contains Hangar Straight → Stowe → Vale → Club — loaded sweepers and traction zones where the AMG's planted rear allows early, committed throttle application on exit. This is the same mechanism observed at Sebring: once past the rotation phase, the AMG's rear stability becomes a weapon rather than a liability.
 
-This continues the Sebring Jul 12 finding: the AMG problem is a **corner-type problem** (brake-release rotation on smooth crests), not a universal platform flaw. Silverstone S2 is flow-and-commit terrain — exactly where the AMG's design is an asset, not a liability.
+This continues the Sebring Jul 12 finding: the AMG problem is a **corner-type problem** (brake-release rotation on smooth crests), not a universal platform flaw. Silverstone S2 rewards exit traction — exactly where the AMG's design is an asset, not a liability.
 
 ### Transfer Validation
 
@@ -3826,10 +3826,64 @@ Silverstone is not a slow track — it's an expensive track, and the currency is
 1. Silverstone is a new track in the journal — no prior baseline exists.
 2. 7 months of training transferred cleanly: Ferrari improved 0.168s without a single lap of Silverstone practice in between.
 3. The AMG is faster than Ferrari at Silverstone ELMS (by 0.039s), with the margin coming entirely from S2 flow-corner stability. This continues the pattern that the AMG is not universally hostile — only on corner types that demand brake-release rotation.
-4. Silverstone S2 is the AMG's best sector — consistent with the finding that high-speed direction changes without heavy braking zones favor the front-engine planted-rear architecture.
+4. Silverstone S2 (Hangar/Stowe/Vale/Club) is the AMG's best sector — consistent with the finding that loaded sweepers with strong exit traction zones favor the front-engine planted-rear architecture.
 5. The ELMS layout pools are thin (81-135 entries), suggesting WEC-layout leaderboards are preferred for robust percentile analysis.
 6. The AMG convergence tax reappeared at Silverstone: 69 laps for a result Ferrari gave in 22. Same pattern as Imola, now replicated on a fourth track.
 7. Silverstone is a physically expensive track due to sustained isometric load with few recovery windows. The AMG's additional hand-input cost makes it even more punishing.
 8. The December 2025 abandonment of Silverstone was not a pace decision — it was a sustainability decision. The journal's entire trajectory (Spa → Imola → Sebring) was shaped by which tracks allowed training volume without wrecking the body.
 9. Even without gravity, sustained FFB tension + load cell pressure + no float windows = real physical fatigue. Sim rig soreness is a legitimate training constraint, not just discomfort.
-4. The Sunset corner suspension break is the same rear-engine pendulum that makes Piratella hostile at Imola — the rotation that helps in flow corners becomes a weapon against you when you exceed the window.
+
+## 2026-07-20
+
+### Session Context
+
+- Track: Silverstone (ELMS layout)
+- Car: Ferrari 296 GT3
+- Driver tag: `oldark.`
+- Session: 16 laps across 4 stints (5 / 7 / 1 / 3)
+- Goal: build on the Jul 19 baseline with cleaner execution
+
+### Progression
+
+| Stint | Laps | Best |
+|---|---|---|
+| Stint 1 | 5 | 2:00.812 |
+| Stint 2 | 7 | 2:00.557 |
+| Stint 3 | 1 | — |
+| Stint 4 | 3 | **2:00.216** |
+
+Clean descending staircase: `2:00.812` → `2:00.557` → `2:00.216`. No regression between stints. The Ferrari was teachable from lap 1.
+
+### Leaderboard Result
+
+- **Ferrari 296 GT3:** `2:00.216`, **P12/132** (P11 cleaned, excluding bugged `subaris` 1:11.165)
+- P1 (real): `lwhitehead_` `1:57.668` (CDA)
+- Sectors: `29.110 / 35.032 / 56.074`
+- Gap to P1: `+2.548s`
+
+### Day-over-Day Delta
+
+| | Jul 19 | Jul 20 | Delta |
+|---|---|---|---|
+| Time | 2:00.698 | 2:00.216 | **−0.482s** |
+| Rank | P20 | **P12** | +8 |
+| S1 | 29.147 | 29.110 | −0.037 |
+| S2 | 35.018 | 35.032 | +0.014 |
+| S3 | 56.533 | 56.074 | **−0.459** |
+| Laps | 22 | 16 | — |
+
+S3 is 95% of the entire improvement. The Ferrari's rotation model activated in S3 — the Abbey/Village/Wellington/Brooklands/Luffield sequence. The car pays the rotation invoice once at entry and the driver cashes out through the exit phase. S1 ticked up slightly, S2 bled a negligible 0.014s.
+
+### Transfer Validation — Part 2
+
+The opening flyer of the session (`2:00.812`, stint 1) was already 0.054s faster than the December 2025 PB (`2:00.866`), which required grinding to reach. The first flying lap of a fresh session cleared a 7-month-old benchmark. The journal's cumulative effect — everything from Imola, Spa, Sebring, the AMG VC diagnostic — transferred without a single Silverstone practice lap in between. The Ferrari just gave the pace from the moment the session started.
+
+### Pool Decay Note
+
+The board shrank from 135 (Jul 19) to 132 (Jul 20) — 3 entries dropped between days. Consistent with a board where submissions are sparse and entries can expire. Further evidence that the ELMS layout is not actively maintained by the community.
+
+### What Changed in My Understanding Today
+
+1. The Ferrari took only one session of familiarization before delivering serious pace. Day 2 improvement was large (−0.482s) and concentrated in S3 — the corner type that rewards the native rotation model.
+2. The opening flyer beating a 7-month-old PB confirms that the transfer from other tracks is genuine, not session-specific luck.
+3. The ELMS board is not just small — it's actively decaying. 132 entries and shrinking reinforces that this layout is a graveyard.
