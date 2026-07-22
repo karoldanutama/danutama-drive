@@ -3974,3 +3974,93 @@ The board shrank from 135 (Jul 19) to 132 (Jul 20) — 3 entries dropped between
 6. The Porsche result is one of the strongest transfer proofs in the whole journal: after a long break and same-day car swapping, it still produced `2:00.446`, almost a full second faster than the 2025 PB.
 7. The Porsche valid-rate staying almost identical to 2025 while the lap time improved by `0.901s` proves the platform did not become easier; the driver became faster.
 8. The ELMS board is not just small — it's actively decaying. 132 entries and shrinking reinforces that this layout is a graveyard.
+
+## 2026-07-22
+
+### Session Context
+
+- Track: Silverstone (ELMS layout)
+- Car: Porsche 911 GT3R
+- Session type: 45-minute offline race simulation against `98%` AI
+- Grid: full ELMS field (`LMP2`, `LMP3`, `LMGT3`)
+- Driver tag: `oldark.`
+- Goal: test whether the Jul 20 Porsche hotlap breakthrough translates into real race pace, and compare against the 2025 Porsche Silverstone race baseline
+
+### Race Stint Read
+
+Lap sample:
+
+- Out-lap: `2:12.578`
+- Early clean pace repeatedly appeared in the low-`2:01s` to low-`2:02s`
+- Major contamination points:
+  - laps `7-9`: LMP2 blue-flag sequence
+  - laps `16-17`: more LMP2 blue-flag interruption
+  - lap `19`: LMP2 crashes at Maggotts blocked the track
+
+#### Clean-ish race window
+
+Using laps `2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 18, 20, 21, 22`:
+
+- Best: `2:01.482`
+- Median: `2:02.061`
+- Avg: `2:02.227`
+
+Direct read:
+
+- The Porsche translated hotlap pace into race trim cleanly.
+- The car was immediately race-usable; lap `2` was already `2:01.482`.
+- Once settled, the stint repeatedly returned to a low-`2:02` operating window.
+
+### Comparison With 2025 Porsche Silverstone Race Pace
+
+Reference 2025 Porsche race sample (same track, older physics/BOP generation):
+
+- Best clean race lap: `2:02.298`
+- Clean-ish median: approximately `2:03.2x`
+
+2026 delta:
+
+- Best-lap gain: about `−0.816s`
+- Median gain: about `−1.1s`
+
+This is far too large to explain by patch effect alone. The changelog can justify leaderboard reset and some absolute movement, but not a full-second race-median jump on its own. The dominant variable is driver development.
+
+### Late-Stint Read: Tyres, Traffic, or Body?
+
+Subjectively, the Porsche felt like Silverstone tyre degradation started leaning on the car around lap `15`. But the objective late-stint sample is contaminated by three overlapping factors:
+
+1. multiclass traffic and blue flags,
+2. the lap-`19` LMP2 crash blockage,
+3. driver fatigue.
+
+Most important subjective note:
+
+- from about lap `18` onward, full-body fatigue was obvious and sweating increased significantly.
+
+Correct interpretation:
+
+- tyre-age onset is plausible,
+- but this stint does **not** isolate tyre degradation cleanly,
+- so the late-stint slowdown should be classified as a whole-system phase (traffic + body + possible tyre fade), not as pure tyre evidence.
+
+### Porsche Race Character at Silverstone
+
+What the stint reinforced:
+
+- Porsche is hard to tame at Silverstone,
+- but once inside the window it gives a special kind of comfort and stability,
+- race pace and subjective ease are unusually strong while the tyres are alive.
+
+This sharpens the Porsche read relative to AMG and Ferrari:
+
+- Ferrari gives pace cheapest,
+- AMG makes pace expensive to access,
+- Porsche is hard to unlock, but once unlocked it gives a very stable and confidence-rich race window.
+
+### What Changed in My Understanding Today
+
+1. The Jul 20 Porsche hotlap result was real; the pace converted into race trim immediately.
+2. Silverstone Porsche race pace improved by roughly a full second on median versus the 2025 baseline, which strongly supports genuine driver growth rather than patch-only explanation.
+3. The Porsche's race comfort at Silverstone is exceptional once the car is inside its window; subjective stability and repeatability are a major strength.
+4. The late-stint slowdown in this run cannot be cleanly assigned to tyre degradation because traffic, blocked track, and driver fatigue all overlapped.
+5. Silverstone remains physically expensive enough that fatigue itself is now a meaningful analytical variable, not just background discomfort.
