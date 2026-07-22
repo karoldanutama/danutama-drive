@@ -4057,6 +4057,52 @@ This sharpens the Porsche read relative to AMG and Ferrari:
 - AMG makes pace expensive to access,
 - Porsche is hard to unlock, but once unlocked it gives a very stable and confidence-rich race window.
 
+### Additional Silverstone Technique Learning
+
+The strongest additional learning from the Silverstone block is not car-specific setup, but a cleaner control model for the circuit itself.
+
+1. Load-cell foot-force ceiling increased: `45 kg -> 55 kg`
+   - Old mapping: `45 kg` foot force = `100%` brake input.
+   - New mapping: `55 kg` foot force = `100%` brake input.
+   - This gives more modulation headroom near the top of the brake trace and reduces accidental brake spikes.
+   - The result is cleaner platform preparation instead of over-braking and compensating with rushed steering.
+
+2. Stop being heroic into Maggotts/Becketts/Chapel
+   - Old instinct: late brake, throw the car quickly, protect entry speed.
+   - New solution: brake earlier, arrive organized, hold the apex sequence, and launch out.
+
+   This matters because Silverstone punishes ego-braking more than it rewards it. The complex is not won by one brave input; it is won by not poisoning the next several seconds of the lap.
+
+3. Once the rear is settled, commit harder
+   - Earlier braking and cleaner platform preparation create a more stable rear.
+   - That stability then supports much stronger throttle commitment through and out of the sequence.
+
+4. Do not over-downshift
+   - A major hidden habit carried over from older driving patterns was dropping too far down the box because lower RPM sounded and felt sluggish.
+   - The real correction learned from the AMG VC work is that lower gear only helps if it does not disturb the platform first.
+
+   Silverstone example:
+   - accidental 2nd-gear downshift into Chapel immediately flipped the delta from green to about `+0.2s` red on exit,
+   - proving that extra RPM and engine urgency can be fake speed if they cost minimum speed, platform calm, and throttle confidence.
+
+5. The Maggotts fear was backwards
+   - The old fear was entering Maggotts too slow, which encouraged late braking and fast hands.
+   - That created rear grip loss, messy Becketts entry, and sometimes a spin.
+   - The better solution turned out to be earlier braking, earlier throttle, apex ownership, and letting power plant the rear.
+
+   The sequence repair is:
+   - organize Maggotts,
+   - shape Becketts,
+   - place Chapel,
+   - catapult onto Hangar.
+
+This is why Silverstone now reads as a deeply technical track rather than just a bravery circuit. It rewards:
+
+- platform preparation,
+- apex ownership,
+- downshift discipline,
+- and commitment only after settlement.
+
 ### What Changed in My Understanding Today
 
 1. The Jul 20 Porsche hotlap result was real; the pace converted into race trim immediately.
@@ -4064,3 +4110,6 @@ This sharpens the Porsche read relative to AMG and Ferrari:
 3. The Porsche's race comfort at Silverstone is exceptional once the car is inside its window; subjective stability and repeatability are a major strength.
 4. The late-stint slowdown in this run cannot be cleanly assigned to tyre degradation because traffic, blocked track, and driver fatigue all overlapped.
 5. Silverstone remains physically expensive enough that fatigue itself is now a meaningful analytical variable, not just background discomfort.
+6. The biggest Silverstone-specific driving upgrade is conceptual: stop treating the fast complexes as hero-corner opportunities and start treating them as platform-sequence problems.
+7. The AMG VC downshift lesson generalized beyond Spa: over-downshifting is not aggressive driving, it is often hidden sabotage.
+8. The old Silverstone weakness was partly technical misunderstanding, not just lack of track time or physical discomfort.
