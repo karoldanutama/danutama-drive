@@ -4113,3 +4113,269 @@ This is why Silverstone now reads as a deeply technical track rather than just a
 6. The biggest Silverstone-specific driving upgrade is conceptual: stop treating the fast complexes as hero-corner opportunities and start treating them as platform-sequence problems.
 7. The AMG VC downshift lesson generalized beyond Spa: over-downshifting is not aggressive driving, it is often hidden sabotage.
 8. The old Silverstone weakness was partly technical misunderstanding, not just lack of track time or physical discomfort.
+
+## 2026-07-23
+
+### Session Context
+
+- Track: Silverstone (ELMS layout)
+- Car: Ferrari 296 GT3
+- Session type: 45-minute offline race simulation against `98%` AI
+- Grid: full ELMS field (`LMP2`, `LMP3`, `LMGT3`)
+- Driver tag: `oldark.`
+- Goal: re-run the same race format used on Jul 22 with the Porsche and test whether the Ferrari still carries the best overall Silverstone race package
+
+### Race Stint Read
+
+Lap sample:
+
+- Out-lap: `2:11.804`
+- Major contamination points:
+  - laps `9-11`: LMP2 blue flags
+  - laps `16-18`: more LMP2 blue flags
+  - lap `23`: LMP2 blue flags plus catching LMGT3 backmarkers
+
+#### Clean-ish race window
+
+Using laps `2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15, 19, 20, 21, 22`:
+
+- Best: `2:00.922`
+- Median: `2:01.524`
+- Avg: `2:01.541`
+
+Direct read:
+
+- The Ferrari immediately produced serious race pace; lap `3` was already `2:00.922`.
+- Laps `3-8` sat in a very strong low-`2:01.0-2:01.2` band.
+- After traffic disruptions, the car repeatedly returned to low-`2:01.5-2:01.7` pace.
+
+### Comparison With 2025 Ferrari Silverstone Race Pace
+
+Reference 2025 Ferrari race sample:
+
+- Best clean race lap: `2:02.105`
+- Clean-ish median: approximately `2:02.6x`
+
+2026 delta:
+
+- Best-lap gain: about `−1.183s`
+- Median gain: about `−1.1s`
+
+Another clean calibration point:
+
+- 2025 Ferrari Silverstone qualifying peak: `2:00.866`
+- 2026 Ferrari Silverstone race best: `2:00.922`
+
+Meaning:
+
+- current race pace is essentially sitting on top of last year's qualifying ceiling,
+- which strongly rejects the old assumption that Silverstone Ferrari pace would inevitably collapse mid-stint from tyre abuse.
+
+### Ferrari vs Porsche (Silverstone Race Trim)
+
+Using the Jul 22 Porsche clean-ish race window:
+
+| | Ferrari 296 | Porsche 911 | Delta |
+|---|---:|---:|---:|
+| Best | 2:00.922 | 2:01.482 | **−0.560s** |
+| Median | 2:01.524 | 2:02.061 | **−0.537s** |
+| Avg | 2:01.541 | 2:02.227 | **−0.686s** |
+
+This is important because the Porsche felt exceptional on Jul 22. Despite that, the Ferrari still comes out clearly faster in race trim here while remaining easier to access than AMG.
+
+### Tyre Behavior Re-Read
+
+An old prejudice going into Silverstone was that the Ferrari would struggle badly from mid-stint onward because it would overheat and eat the tyres. The Jul 23 race and the tyre screenshot argue against that old read.
+
+Observed tyre temperatures at the end of the Ferrari run:
+
+- FL `84C`
+- FR `74C`
+- RL `84C`
+- RR `77C`
+
+For comparison, the Jul 22 Porsche tyre snapshot showed:
+
+- FL `86C`
+- FR `78C`
+- RL `90C`
+- RR `83C`
+
+Ambient/track conditions were close enough to compare meaningfully:
+
+- Ferrari: `20C` ambient / `28C` track
+- Porsche: `23C` ambient / `31C` track
+
+Interpretation:
+
+- the Porsche session was slightly warmer,
+- but the shape of the tyre distribution still matters,
+- and the Porsche loaded the outside rear much harder than the Ferrari did.
+
+Important correction:
+
+- the hottest Porsche tyre was **rear-left**, not rear-right.
+
+That makes physical sense at clockwise Silverstone: the long fast right-handers load the left-side tyres, and the Porsche's rear-engine platform concentrates more of that work into the loaded rear tyre once the car is leaned on.
+
+Corrected Ferrari conclusion:
+
+- the old Ferrari Silverstone tyre-fear was probably exaggerated by the old driving model,
+- not just by the car itself.
+
+The current technique package:
+
+- more load-cell headroom,
+- less heroic late-braking,
+- cleaner apex ownership,
+- less over-downshifting,
+- more commitment after settlement,
+
+appears to have turned the Ferrari from a tyre-hostile Silverstone car into a very balanced race platform.
+
+### Physical Cost Note
+
+The physical demand remained consistent with Jul 22:
+
+- sweating,
+- sore right leg,
+- sore left upper arm.
+
+So the Silverstone pace story changed dramatically over the last year, but the bodily tax did not. The track is still physically expensive even when the numbers are now strong.
+
+### What Changed in My Understanding Today
+
+1. The Ferrari is currently the fastest Silverstone race platform in my hands, not just the cheapest one.
+2. The old belief that Ferrari would inevitably overheat its tyres mid-stint at Silverstone is now much weaker; the current race and tyre data do not support that prejudice strongly.
+3. Current Ferrari Silverstone race pace is essentially equal to last year's Ferrari qualifying peak, which is one of the clearest markers of overall development in this whole journal.
+4. The Porsche's excellent Jul 22 comfort and stability remain real, but the Ferrari still beats it clearly on delivered race pace.
+5. Silverstone still charges a heavy physical toll, but it is now a strong circuit rather than a weak one by the stopwatch.
+
+## 2026-07-26
+
+### Session Context
+
+- Track: Autódromo José Carlos Pace (Interlagos)
+- Car: Ferrari 296 GT3 2023
+- Driver tag: `oldark.`
+- Session type: practice hotlap, 7 stints
+- Last visit: January 26, 2026 (~6 months absence)
+- Goal: test cross-track transfer after Silverstone/Sebring/Spa block, and validate whether the Ferrari can immediately clear the old Interlagos PB
+
+### Session Summary
+
+Overall session:
+
+- Laps (all / valid / invalid): `29 / 17 / 12`
+- Average: `1:36.513`
+- Best: **`1:34.942`**
+- Valid rate: `58.6%`
+
+Stint progression:
+
+| Stint | Laps | Best |
+| --- | ---: | ---: |
+| Stint 3 | 4 | 1:36.813 |
+| Stint 4 | 7 | 1:35.249 |
+| Stint 5 | 7 | 1:35.072 |
+| Stint 6 | 3 | 1:35.287 |
+| Stint 7 | 6 | **1:34.942** |
+
+Direct read:
+
+- The session produced a clean staircase from `1:36.8` down to `1:34.9`.
+- The final breakthrough came in Stint 7, after a new setup baseline was established in Stint 5.
+- The 1.871 s progression within one session shows the ceiling was not yet mapped, not that the driver was out of shape.
+
+### Setup IQ Intervention (Stint 5)
+
+The starting point was the Coach Dave aggressive qualifying setup, which included a very high diff preload (`110 Nm`). Mid-session, Coach Dave Setup IQ suggested two changes:
+
+| Parameter | Before | After | Reason |
+| --- | --- | --- | --- |
+| Diff preload | `110 Nm` | `50 Nm` | Reduce locked-diff amplification of drivetrain inputs; restore rear compliance and rotation |
+| Brake bias | `~49%` | `50.5%` | Move forward to give front axle authority under Interlagos's heavy braking zones |
+
+The diff preload change was not contradictory — it moved the car back toward my preferred low-preload Ferrari baseline. The surprise was that I had already beaten the 6-month-old PB while still on the aggressive `110 Nm` setup. That means the raw driver level had risen underneath the setup; lowering preload just made the car easier to extract.
+
+The truly counter-intuitive change was brake bias. I had generalized rearward BB as the rotation solution, but Interlagos wanted the opposite.
+
+The effect was immediate. After Stint 5 the car became more predictable under braking, more willing to rotate without requiring rear yaw confirmation, and easier to place through the infield.
+
+### Leaderboard Result
+
+- **Ferrari 296 GT3:** `1:34.942`, **P10/236**
+- Gap to P1 (`shoyopride`, `1:33.872`): `+1.070s`
+- Gap to P2–P5 cluster: `+0.248s` to `+0.270s`
+- Gap to P9 (`vvaco`, `1:34.920`): `+0.022s`
+- Gap to P11 (`macko0624`, `1:34.948`): `−0.006s`
+- CDA percentile: between top `2.5%` (`1:34.865`) and top `5%` (`1:35.008`)
+
+Field context:
+
+- P1 sits in a separate `1:33.8` band; the realistic front pack is P2–P5 at `1:34.67–1:34.69`.
+- The local window around P10 is compressed: P9–P11 are separated by only `0.028s`.
+
+### Sector Breakdown
+
+Own sectors: `25.375 / 47.829 / 21.738`
+
+| Sector | Time | CDA 5% cutoff | CDA 2.5% cutoff | Relative read |
+| --- | ---: | ---: | ---: | --- |
+| S1 | 25.375 | 25.424 | 25.374 | Strongest sector; just outside top 2.5% |
+| S2 | 47.829 | 47.845 | 47.670 | Weakest sector; just inside top 5% |
+| S3 | 21.738 | 21.702 | 21.678 | Solid; inside top 5%, near top 10% edge |
+
+Versus the realistic front pack (P2–P5):
+
+| vs | S1 delta | S2 delta | S3 delta | Total delta |
+| --- | ---: | ---: | ---: | ---: |
+| P2 ramster42 | +0.118 | +0.095 | +0.057 | +0.270 |
+| P3 .sebastyx | +0.035 | +0.205 | +0.029 | +0.269 |
+| P4 ._gargamel._ | −0.168 | +0.303 | +0.133 | +0.268 |
+| P5 baen_10 | +0.005 | +0.254 | −0.011 | +0.248 |
+
+Read:
+
+- S1 is competitive against everyone except P2.
+- S2 is the variable sector; sometimes close, sometimes 0.2–0.3 s off.
+- S3 is generally competitive but not a strength.
+- The infield (S2) is the remaining ceiling.
+
+### Historical Context
+
+Previous Interlagos PBs:
+
+- All-car PB: `1:35.260` (Ford Mustang GT3, Jan 26, 2026)
+- Previous Ferrari PB: `1:35.438` (Dec 23, 2025)
+
+Today's result:
+
+- Beat the old all-car PB by `0.318 s`.
+- Beat the old Ferrari PB by `0.496 s`.
+- Did it in 29 laps after 6 months away from the track.
+
+### What Changed in My Understanding Today
+
+1. Cross-track transfer is now a reliable pattern: months away from Interlagos, and the first serious session clears the old benchmark.
+2. The aggressive qualifying setup's `110 Nm` diff preload was hiding driver-level gains. I beat the old PB despite that preload, not because of it. Moving to `50 Nm` aligned with my preferred low-preload baseline and made the car easier to extract.
+3. The general rearward-BB rule is not universal. Interlagos's heavy braking zones want a more forward bias to keep the rear planted under braking and let the front axle drive rotation.
+4. Low diff preload is not just a Ferrari preference; it is a forgiveness tool that absorbs drivetrain impulses and makes the rear more compliant.
+5. The Ferrari 296 GT3 remains the strongest dense-board benchmark car in my hands, even at a track where the Mustang previously held the outright PB.
+6. The gap to the realistic front pack (~0.25 s to P2–P5) is much smaller than the gap to P1 (1.07 s). shoyopride's `1:33.872` may be an outlier alien lap; P2–P5 should be the near-term target.
+7. At this level, hundredths move multiple positions. P9–P11 are separated by less than 0.03 s.
+8. S2 (the infield) is the only sector still leaving meaningful time on the table relative to the front pack.
+
+### Practical Rule Update
+
+- For Interlagos Ferrari baseline, use `50 Nm` diff preload and `50.5%` brake bias as the starting point.
+- Stop assuming rearward BB is always the rotation solution. On tracks with heavy braking zones and traction-limited exits, a forward bias can be faster.
+- Diff preload is a damping/forgiveness tool, not a "more is better" parameter. When the car feels locked-in and unwilling to rotate on power, reduce preload first.
+- For compressed elite windows, treat rank as a hundredths game rather than a tenths game.
+
+### Next Analysis Step
+
+1. Lock in the Stint 5 setup as the Interlagos Ferrari baseline.
+2. Use Delta+ to identify which corners in S2 are bleeding time versus the P2–P5 front pack.
+3. Test the same setup logic on the Mustang and Lexus at Interlagos; both could potentially dip into the `1:34.6–1:34.7` range.
+4. Ignore the gap to P1 for now; chase the ~0.25 s gap to P2–P5.
