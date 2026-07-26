@@ -4331,7 +4331,30 @@ The board has `236` total entries. The 105% cutoff sits between the 70th percent
 | Position | P10 / 236 | P10 / ~174 |
 | Percentile | **~top 4.2%** | **~top 5.7%** |
 
-The raw percentile was slightly inflated by the board's tail. The 105%-qualified correction is modest (~1.5 percentage points), but it is the more honest competitive signal. The key context does not change: P2–P5 remain the realistic target at ~0.25 s ahead, and P9–P11 are within hundredths.
+The raw percentile was slightly inflated by the board's tail. The 105%-qualified correction is modest (~1.5 percentage points), but it is the more honest competitive signal.
+
+### TrackTitan Cross-Platform Verification
+
+Same lap submitted to TrackTitan:
+
+| Metric | Value |
+|---|---|
+| Position | **P21 / 545** |
+| Raw percentile | **~top 3.8%** |
+| Entry at ~105% cutoff (`1:38.5x`) | **P397** |
+| Estimated qualified pool | **~397 / 545** |
+| 105%-qualified percentile | **~top 5.3%** |
+
+Cross-platform summary:
+
+| Platform | Raw pct. | 105%-qualified pct. |
+|---|---|---|
+| CDA | ~4.2% | **~5.7%** |
+| TrackTitan | ~3.8% | **~5.3%** |
+
+After filtering, both platforms converge to **~top 5.5%**. The raw percentiles diverge because TrackTitan has a much longer casual tail, but the 105% cutoff removes that distortion. P397 on TrackTitan sitting almost exactly at the `1:38.566` threshold confirms the CDA standing is real, not a board artifact.
+
+The key context does not change: P2–P5 remain the realistic target at ~0.25 s ahead, and P9–P11 are within hundredths.
 
 ### Sector Breakdown
 
