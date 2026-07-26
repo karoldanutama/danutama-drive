@@ -4316,6 +4316,23 @@ Field context:
 - P1 sits in a separate `1:33.8` band; the realistic front pack is P2–P5 at `1:34.67–1:34.69`.
 - The local window around P10 is compressed: P9–P11 are separated by only `0.028s`.
 
+### 105%-Qualified Analysis
+
+Applying the 105% rule adopted on 2026-07-10:
+
+- **P1 time:** `1:33.872` = `93.872 s`
+- **105% threshold:** `93.872 × 1.05` = `98.566 s` = **`1:38.566`**
+- **My lap as % of P1:** `94.942 / 93.872` = **101.14%** — comfortably inside the qualifying window
+
+The board has `236` total entries. The 105% cutoff sits between the 70th percentile (`1:38.342`) and the 80th percentile (`1:38.992`), which means roughly **26–27% of entries are excluded** and the qualified pool is approximately **172–175 entries**.
+
+| Metric | Raw | 105%-qualified |
+|---|---|---|
+| Position | P10 / 236 | P10 / ~174 |
+| Percentile | **~top 4.2%** | **~top 5.7%** |
+
+The raw percentile was slightly inflated by the board's tail. The 105%-qualified correction is modest (~1.5 percentage points), but it is the more honest competitive signal. The key context does not change: P2–P5 remain the realistic target at ~0.25 s ahead, and P9–P11 are within hundredths.
+
 ### Sector Breakdown
 
 Own sectors: `25.375 / 47.829 / 21.738`
