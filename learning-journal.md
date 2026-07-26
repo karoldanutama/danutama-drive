@@ -4255,12 +4255,13 @@ So the Silverstone pace story changed dramatically over the last year, but the b
 
 ### Session Context
 
-- Track: Autódromo José Carlos Pace (Interlagos)
-- Car: Ferrari 296 GT3 2023
+- Tracks: Autódromo José Carlos Pace (Interlagos), Silverstone (ELMS layout)
+- Cars: Ferrari 296 GT3 2023, Mercedes-AMG GT3 Evo
 - Driver tag: `oldark.`
-- Session type: practice hotlap, 7 stints
-- Last visit: January 26, 2026 (~6 months absence)
-- Goal: test cross-track transfer after Silverstone/Sebring/Spa block, and validate whether the Ferrari can immediately clear the old Interlagos PB
+- Session type: practice hotlap
+- Goal: gauge current driver condition (Interlagos) and assess AMG Virtual Championship Division 2 fixed-setup readiness (Silverstone)
+
+Interlagos last visit: January 26, 2026 (~6 months absence). Silverstone last visit: July 20, 2026 (6 days ago).
 
 ### Session Summary
 
@@ -4395,6 +4396,85 @@ Today's result:
 - Beat the old Ferrari PB by `0.496 s`.
 - Did it in 29 laps after 6 months away from the track.
 
+### Silverstone Fixed-Setup Diagnostic (AMG VC Div 2 Prep)
+
+After Interlagos, I switched to Silverstone to test the AMG Virtual Championship fixed-setup package. Div 2 schedule is Spa, Silverstone, Imola, all with fixed setup.
+
+#### AMG GT3 — Open vs Fixed Setup
+
+Open setup practice (July 20):
+
+| Stint | Laps | Best |
+| --- | ---: | ---: |
+| Stint 1 | 5 | 2:01.260 |
+| Stint 2 | 2 | — |
+| Stint 3 | 4 | 2:00.677 |
+| Stint 4 | 4 | **2:00.532** |
+
+Fixed setup practice (July 26):
+
+| Lap | Time | Note |
+| --- | ---: | --- |
+| 1 | 2:06.867 | Relearning fixed package |
+| 2 | 2:02.276 | Window appearing |
+| 3 | 2:01.617 | Best fixed lap |
+| 4 | 2:02.245 | Regression |
+| 5 | 2:01.617 | Repeated best |
+| 6 | 2:02.245 | Repeated regression |
+| 7 | 0:16.521 | Returned to pits |
+
+Fixed-setup settings used:
+
+- Brake bias: `44.5%`
+- TC / TC Cut / TC Slip Angle: `1 / 1 / 1`
+- Wheel range: default (reduced range induced understeer)
+
+Penalty: **+1.085 s** vs open-setup PB (`2:00.532 → 2:01.617`).
+
+#### Ferrari 296 GT3 — Open vs Fixed Setup
+
+Open setup practice (July 20):
+
+| Stint | Laps | Best |
+| --- | ---: | ---: |
+| Stint 1 | 5 | 2:00.812 |
+| Stint 2 | 7 | 2:00.557 |
+| Stint 3 | 1 | — |
+| Stint 4 | 3 | **2:00.216** |
+
+Fixed setup practice (July 26):
+
+| Lap | Time | Note |
+| --- | ---: | --- |
+| 1 | 2:14.557 | Relearning fixed package |
+| 2 | 2:01.900 | Window appearing |
+| 3 | 2:12.079 | Variance |
+| 4 | 2:05.948 | Variance |
+| 5 | 2:01.518 | Converging |
+| 6 | 2:00.953 | Best fixed lap |
+| 7 | 0:20.777 | Returned to pits |
+
+Penalty: **+0.737 s** vs open-setup PB (`2:00.216 → 2:00.953`).
+
+#### Cross-Car Fixed-Setup Comparison
+
+| Car | Open PB | Fixed best | Fixed penalty |
+|---|---|---:|---:|
+| Ferrari 296 GT3 | 2:00.216 | 2:00.953 | **+0.737 s** |
+| Mercedes-AMG GT3 | 2:00.532 | 2:01.617 | **+1.085 s** |
+
+Read:
+
+- Ferrari pays a manageable fixed-setup tax and converges within 6 laps.
+- AMG pays a much larger tax and does not converge cleanly — the fixed window is narrower and less repeatable.
+- The difference is not driver condition; it is platform cost under fixed rules.
+
+#### AMG VC Implication
+
+Interlagos proved driver condition is high. Silverstone fixed setup revealed the AMG-specific barrier: the default fixed package has a locked rear and high diff preload that fight my native rotation model. In-race adjustments can compensate partially, but the control window is smaller than with open setup.
+
+The Div 2 goal is not to match open-setup PBs. It is to find a repeatable fixed-setup band and avoid mistakes across 20-minute races.
+
 ### What Changed in My Understanding Today
 
 1. Cross-track transfer is now a reliable pattern: months away from Interlagos, and the first serious session clears the old benchmark.
@@ -4405,6 +4485,9 @@ Today's result:
 6. The gap to the realistic front pack (~0.25 s to P2–P5) is much smaller than the gap to P1 (1.07 s). shoyopride's `1:33.872` may be an outlier alien lap; P2–P5 should be the near-term target.
 7. At this level, hundredths move multiple positions. P9–P11 are separated by less than 0.03 s.
 8. S2 (the infield) is the only sector still leaving meaningful time on the table relative to the front pack.
+9. Interlagos proved driver condition is high; Silverstone fixed setup proved the AMG VC barrier is platform-specific, not condition-specific.
+10. Ferrari suffers less under fixed setup than AMG. The AMG fixed-setup penalty at Silverstone is roughly **0.35 s larger** than the Ferrari penalty.
+11. For Div 2, the AMG target is not the open-setup PB. It is a repeatable fixed-setup band roughly `0.8–1.0 s` slower than the open PB.
 
 ### Practical Rule Update
 
@@ -4412,10 +4495,13 @@ Today's result:
 - Stop assuming rearward BB is always the rotation solution. On tracks with heavy braking zones and traction-limited exits, a forward bias can be faster.
 - Diff preload is a damping/forgiveness tool, not a "more is better" parameter. When the car feels locked-in and unwilling to rotate on power, reduce preload first.
 - For compressed elite windows, treat rank as a hundredths game rather than a tenths game.
+- For AMG VC fixed setup, do not chase open-setup PBs. Set a fixed-setup ceiling target and prioritize repeatable laps inside a safe band.
+- If reducing wheel range induces understeer, keep the default range and compensate with BB or driving style instead.
 
 ### Next Analysis Step
 
 1. Lock in the Stint 5 setup as the Interlagos Ferrari baseline.
 2. Use Delta+ to identify which corners in S2 are bleeding time versus the P2–P5 front pack.
 3. Test the same setup logic on the Mustang and Lexus at Interlagos; both could potentially dip into the `1:34.6–1:34.7` range.
-4. Ignore the gap to P1 for now; chase the ~0.25 s gap to P2–P5.
+4. For AMG VC Div 2, run structured fixed-setup sessions at Spa, Silverstone, and Imola. Target repeatable race bands before chasing hotlap PBs.
+5. For Silverstone fixed AMG, test slightly higher TC / TC Slip (e.g. `2 / 2`) and slightly more forward BB (e.g. `45.0%`) to widen the control window.
