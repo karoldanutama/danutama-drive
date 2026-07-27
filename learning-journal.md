@@ -4255,13 +4255,12 @@ So the Silverstone pace story changed dramatically over the last year, but the b
 
 ### Session Context
 
-- Tracks: Autódromo José Carlos Pace (Interlagos), Silverstone (ELMS layout)
-- Cars: Ferrari 296 GT3 2023, Mercedes-AMG GT3 Evo
+- Track: Autódromo José Carlos Pace (Interlagos)
+- Car: Ferrari 296 GT3 2023
 - Driver tag: `oldark.`
-- Session type: practice hotlap
-- Goal: gauge current driver condition (Interlagos) and assess AMG Virtual Championship Division 2 fixed-setup readiness (Silverstone)
-
-Interlagos last visit: January 26, 2026 (~6 months absence). Silverstone last visit: July 20, 2026 (6 days ago).
+- Session type: practice hotlap, 7 stints
+- Last visit: January 26, 2026 (~6 months absence)
+- Goal: test cross-track transfer after Silverstone/Sebring/Spa block, and validate whether the Ferrari can immediately clear the old Interlagos PB
 
 ### Session Summary
 
@@ -4396,11 +4395,44 @@ Today's result:
 - Beat the old Ferrari PB by `0.496 s`.
 - Did it in 29 laps after 6 months away from the track.
 
-### Silverstone Fixed-Setup Diagnostic (AMG VC Div 2 Prep)
+### What Changed in My Understanding Today
 
-After Interlagos, I switched to Silverstone to test the AMG Virtual Championship fixed-setup package. Div 2 schedule is Spa, Silverstone, Imola, all with fixed setup.
+1. Cross-track transfer is now a reliable pattern: months away from Interlagos, and the first serious session clears the old benchmark.
+2. The aggressive qualifying setup's `110 Nm` diff preload was hiding driver-level gains. I beat the old PB despite that preload, not because of it. Moving to `50 Nm` aligned with my preferred low-preload baseline and made the car easier to extract.
+3. The general rearward-BB rule is not universal. Interlagos's heavy braking zones want a more forward bias to keep the rear planted under braking and let the front axle drive rotation.
+4. Low diff preload is not just a Ferrari preference; it is a forgiveness tool that absorbs drivetrain impulses and makes the rear more compliant.
+5. The Ferrari 296 GT3 remains the strongest dense-board benchmark car in my hands, even at a track where the Mustang previously held the outright PB.
+6. The gap to the realistic front pack (~0.25 s to P2–P5) is much smaller than the gap to P1 (1.07 s). shoyopride's `1:33.872` may be an outlier alien lap; P2–P5 should be the near-term target.
+7. At this level, hundredths move multiple positions. P9–P11 are separated by less than 0.03 s.
+8. S2 (the infield) is the only sector still leaving meaningful time on the table relative to the front pack.
 
-#### AMG GT3 — Open vs Fixed Setup
+### Practical Rule Update
+
+- For Interlagos Ferrari baseline, use `50 Nm` diff preload and `50.5%` brake bias as the starting point.
+- Stop assuming rearward BB is always the rotation solution. On tracks with heavy braking zones and traction-limited exits, a forward bias can be faster.
+- Diff preload is a damping/forgiveness tool, not a "more is better" parameter. When the car feels locked-in and unwilling to rotate on power, reduce preload first.
+- For compressed elite windows, treat rank as a hundredths game rather than a tenths game.
+
+### Next Analysis Step
+
+1. Lock in the Stint 5 setup as the Interlagos Ferrari baseline.
+2. Use Delta+ to identify which corners in S2 are bleeding time versus the P2–P5 front pack.
+3. Test the same setup logic on the Mustang and Lexus at Interlagos; both could potentially dip into the `1:34.6–1:34.7` range.
+4. Ignore the gap to P1 for now; chase the ~0.25 s gap to P2–P5.
+
+## 2026-07-27
+
+### Session Context
+
+- Track: Silverstone (ELMS layout)
+- Cars: Mercedes-AMG GT3 Evo, Ferrari 296 GT3
+- Session type: AMG Virtual Championship Division 2 fixed-setup preparation
+- Driver tag: `oldark.`
+- Goal: assess open-vs-fixed-setup penalty for AMG VC, and compare against Ferrari as a reference
+
+AMG VC Div 2 schedule: Spa, Silverstone, Imola — all with fixed setup. Silverstone was chosen because the open-setup AMG baseline was established on July 20.
+
+### AMG GT3 — Open vs Fixed Setup
 
 Open setup practice (July 20):
 
@@ -4411,7 +4443,7 @@ Open setup practice (July 20):
 | Stint 3 | 4 | 2:00.677 |
 | Stint 4 | 4 | **2:00.532** |
 
-Fixed setup practice (July 26):
+Fixed setup practice (July 27):
 
 | Lap | Time | Note |
 | --- | ---: | --- |
@@ -4431,7 +4463,7 @@ Fixed-setup settings used:
 
 Penalty: **+1.085 s** vs open-setup PB (`2:00.532 → 2:01.617`).
 
-#### Ferrari 296 GT3 — Open vs Fixed Setup
+### Ferrari 296 GT3 — Open vs Fixed Setup
 
 Open setup practice (July 20):
 
@@ -4442,7 +4474,7 @@ Open setup practice (July 20):
 | Stint 3 | 1 | — |
 | Stint 4 | 3 | **2:00.216** |
 
-Fixed setup practice (July 26):
+Fixed setup practice (July 27):
 
 | Lap | Time | Note |
 | --- | ---: | --- |
@@ -4456,7 +4488,7 @@ Fixed setup practice (July 26):
 
 Penalty: **+0.737 s** vs open-setup PB (`2:00.216 → 2:00.953`).
 
-#### Cross-Car Fixed-Setup Comparison
+### Cross-Car Fixed-Setup Comparison
 
 | Car | Open PB | Fixed best | Fixed penalty |
 |---|---|---:|---:|
@@ -4469,13 +4501,13 @@ Read:
 - AMG pays a much larger tax and does not converge cleanly — the fixed window is narrower and less repeatable.
 - The difference is not driver condition; it is platform cost under fixed rules.
 
-#### AMG VC Implication
+### AMG VC Implication
 
-Interlagos proved driver condition is high. Silverstone fixed setup revealed the AMG-specific barrier: the default fixed package has a locked rear and high diff preload that fight my native rotation model. In-race adjustments can compensate partially, but the control window is smaller than with open setup.
+The default AMG fixed package has a locked rear and high diff preload that fight my native rotation model. In-race adjustments can compensate partially, but the control window is smaller than with open setup.
 
 The Div 2 goal is not to match open-setup PBs. It is to find a repeatable fixed-setup band and avoid mistakes across 20-minute races.
 
-#### AMG GT3 — 30-Minute Fixed-Setup Race Simulation (Silverstone)
+### AMG GT3 — 30-Minute Fixed-Setup Race Simulation (Silverstone)
 
 Later the same day, a 30-minute race simulation was run against `98%` AI with the AMG fixed setup. LMP2 and LMP3 classes were accidentally enabled, creating extra traffic, but the race pace signal is still readable.
 
@@ -4533,34 +4565,22 @@ Read:
 
 ### What Changed in My Understanding Today
 
-1. Cross-track transfer is now a reliable pattern: months away from Interlagos, and the first serious session clears the old benchmark.
-2. The aggressive qualifying setup's `110 Nm` diff preload was hiding driver-level gains. I beat the old PB despite that preload, not because of it. Moving to `50 Nm` aligned with my preferred low-preload baseline and made the car easier to extract.
-3. The general rearward-BB rule is not universal. Interlagos's heavy braking zones want a more forward bias to keep the rear planted under braking and let the front axle drive rotation.
-4. Low diff preload is not just a Ferrari preference; it is a forgiveness tool that absorbs drivetrain impulses and makes the rear more compliant.
-5. The Ferrari 296 GT3 remains the strongest dense-board benchmark car in my hands, even at a track where the Mustang previously held the outright PB.
-6. The gap to the realistic front pack (~0.25 s to P2–P5) is much smaller than the gap to P1 (1.07 s). shoyopride's `1:33.872` may be an outlier alien lap; P2–P5 should be the near-term target.
-7. At this level, hundredths move multiple positions. P9–P11 are separated by less than 0.03 s.
-8. S2 (the infield) is the only sector still leaving meaningful time on the table relative to the front pack.
-9. Interlagos proved driver condition is high; Silverstone fixed setup proved the AMG VC barrier is platform-specific, not condition-specific.
-10. Ferrari suffers less under fixed setup than AMG. The AMG fixed-setup penalty at Silverstone is roughly **0.35 s larger** than the Ferrari penalty.
-11. For Div 2, the AMG target is not the open-setup PB. It is a repeatable fixed-setup band roughly `0.8–1.0 s` slower than the open PB.
-12. The 30-minute race sim corrected the fixed-AMG read: the car is not inconsistent or crash-prone. It ran a tight `2:02.4–2:03.0` band for 15 laps. The fixed AMG is raceable at Silverstone; it is just capped lower than the open setup.
-13. Race trim conversion from fixed AMG hotlap to race median is less than `1.0 s`. That is acceptable for Div 2.
+1. Interlagos proved driver condition is high; Silverstone fixed setup proved the AMG VC barrier is platform-specific, not condition-specific.
+2. Ferrari suffers less under fixed setup than AMG. The AMG fixed-setup penalty at Silverstone is roughly **0.35 s larger** than the Ferrari penalty.
+3. The default AMG fixed setup's locked rear and high diff preload fight my native rotation model. In-race adjustments can compensate only partially.
+4. For Div 2, the AMG target is not the open-setup PB. It is a repeatable fixed-setup band roughly `0.8–1.0 s` slower than the open PB.
+5. The 30-minute race sim corrected the fixed-AMG read: the car is not inconsistent or crash-prone. It ran a tight `2:02.4–2:03.0` band for 15 laps. The fixed AMG is raceable at Silverstone; it is just capped lower than the open setup.
+6. Race trim conversion from fixed AMG hotlap to race median is less than `1.0 s`. That is acceptable for Div 2.
+7. Reducing wheel range induced understeer on this fixed package, so default range is required and compensation must come from BB or driving style instead.
 
 ### Practical Rule Update
 
-- For Interlagos Ferrari baseline, use `50 Nm` diff preload and `50.5%` brake bias as the starting point.
-- Stop assuming rearward BB is always the rotation solution. On tracks with heavy braking zones and traction-limited exits, a forward bias can be faster.
-- Diff preload is a damping/forgiveness tool, not a "more is better" parameter. When the car feels locked-in and unwilling to rotate on power, reduce preload first.
-- For compressed elite windows, treat rank as a hundredths game rather than a tenths game.
 - For AMG VC fixed setup, do not chase open-setup PBs. Set a fixed-setup ceiling target and prioritize repeatable laps inside a safe band.
-- If reducing wheel range induces understeer, keep the default range and compensate with BB or driving style instead.
+- For Silverstone fixed AMG, the current settings (BB `44.5%`, TC `1/1/1`, default wheel range) produce a usable race band. Only adjust them if a clearer improvement appears in a head-to-head test.
+- Keep default wheel range if reducing it induces understeer; compensate with BB or technique instead.
 
 ### Next Analysis Step
 
-1. Lock in the Stint 5 setup as the Interlagos Ferrari baseline.
-2. Use Delta+ to identify which corners in S2 are bleeding time versus the P2–P5 front pack.
-3. Test the same setup logic on the Mustang and Lexus at Interlagos; both could potentially dip into the `1:34.6–1:34.7` range.
-4. For AMG VC Div 2, the Silverstone race sim confirmed a repeatable `2:02.7` median is achievable. The priority is now mistake avoidance and blue-flag discipline, not finding more raw pace.
-5. Run similar fixed-setup race sims at Spa and Imola to confirm whether the same raceability holds on those tracks.
-6. For Silverstone fixed AMG, the current settings (BB `44.5%`, TC `1/1/1`, default wheel range) produce a usable race band. Only adjust them if a clearer improvement appears in a head-to-head test.
+1. Run similar fixed-setup race sims at Spa and Imola to confirm whether the same raceability holds on those tracks.
+2. For AMG VC Div 2, the Silverstone race sim confirmed a repeatable `2:02.7` median is achievable. The priority is now mistake avoidance and blue-flag discipline, not finding more raw pace.
+3. Test whether slightly higher TC / TC Slip (e.g. `2 / 2`) or slightly more forward BB (e.g. `45.0%`) tightens the race band, but only if the current window starts feeling unstable.
