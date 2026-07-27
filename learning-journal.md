@@ -4475,6 +4475,62 @@ Interlagos proved driver condition is high. Silverstone fixed setup revealed the
 
 The Div 2 goal is not to match open-setup PBs. It is to find a repeatable fixed-setup band and avoid mistakes across 20-minute races.
 
+#### AMG GT3 — 30-Minute Fixed-Setup Race Simulation (Silverstone)
+
+Later the same day, a 30-minute race simulation was run against `98%` AI with the AMG fixed setup. LMP2 and LMP3 classes were accidentally enabled, creating extra traffic, but the race pace signal is still readable.
+
+| Lap | Time | Remark |
+| --- | ---: | --- |
+| 1 | 2:13.289 | Out lap |
+| 2 | 2:02.721 | |
+| 3 | 2:02.691 | Corrected from tracking error |
+| 4 | 2:02.557 | |
+| 5 | 2:02.645 | |
+| 6 | 2:02.476 | **Best** |
+| 7 | 2:02.693 | LMP2 Blue Flags |
+| 8 | 2:05.059 | LMP2 Blue Flags |
+| 9 | 2:02.501 | |
+| 10 | 2:02.950 | |
+| 11 | 2:03.876 | |
+| 12 | 2:02.876 | |
+| 13 | 2:03.519 | LMP2 Blue Flags |
+| 14 | 2:02.633 | LMP2 Blue Flags |
+| 15 | 2:02.904 | |
+
+Clean race window (excluding out lap and blue-flag laps 7, 8, 13, 14):
+
+| Metric | Time |
+|---|---|
+| Laps counted | 10 |
+| Best | **2:02.476** |
+| Median | **2:02.706** |
+| Average | **2:02.320** |
+| Range | 1.400 s |
+
+All racing laps (2–15):
+
+| Metric | Time |
+|---|---|
+| Laps counted | 14 |
+| Best | **2:02.476** |
+| Median | **2:02.707** |
+| Average | **2:02.813** |
+
+Race conversion from fixed hotlap:
+
+| Metric | Fixed hotlap | Fixed race | Cost |
+|---|---|---:|---:|
+| Best | 2:01.617 | 2:02.476 | **+0.859 s** |
+| Median | — | 2:02.707 | — |
+
+Read:
+
+- The race sim changed the fixed-AMG picture significantly. Without the tracking error, lap 3 was a normal `2:02.691`, and the entire race sat in a tight `2:02.4–2:03.0` band.
+- Less than `1.0 s` from fixed hotlap to race median is strong conversion.
+- The AMG fixed setup is not broken in race trim — it is capped lower than open setup, but the race window is accessible and repeatable.
+- Blue flags cost roughly `0.2–0.4 s` per lap, which is normal.
+- Lap 11 (`2:03.876`) was the only real outlier in clean air, and still only `1.4 s` off the best.
+
 ### What Changed in My Understanding Today
 
 1. Cross-track transfer is now a reliable pattern: months away from Interlagos, and the first serious session clears the old benchmark.
@@ -4488,6 +4544,8 @@ The Div 2 goal is not to match open-setup PBs. It is to find a repeatable fixed-
 9. Interlagos proved driver condition is high; Silverstone fixed setup proved the AMG VC barrier is platform-specific, not condition-specific.
 10. Ferrari suffers less under fixed setup than AMG. The AMG fixed-setup penalty at Silverstone is roughly **0.35 s larger** than the Ferrari penalty.
 11. For Div 2, the AMG target is not the open-setup PB. It is a repeatable fixed-setup band roughly `0.8–1.0 s` slower than the open PB.
+12. The 30-minute race sim corrected the fixed-AMG read: the car is not inconsistent or crash-prone. It ran a tight `2:02.4–2:03.0` band for 15 laps. The fixed AMG is raceable at Silverstone; it is just capped lower than the open setup.
+13. Race trim conversion from fixed AMG hotlap to race median is less than `1.0 s`. That is acceptable for Div 2.
 
 ### Practical Rule Update
 
@@ -4503,5 +4561,6 @@ The Div 2 goal is not to match open-setup PBs. It is to find a repeatable fixed-
 1. Lock in the Stint 5 setup as the Interlagos Ferrari baseline.
 2. Use Delta+ to identify which corners in S2 are bleeding time versus the P2–P5 front pack.
 3. Test the same setup logic on the Mustang and Lexus at Interlagos; both could potentially dip into the `1:34.6–1:34.7` range.
-4. For AMG VC Div 2, run structured fixed-setup sessions at Spa, Silverstone, and Imola. Target repeatable race bands before chasing hotlap PBs.
-5. For Silverstone fixed AMG, test slightly higher TC / TC Slip (e.g. `2 / 2`) and slightly more forward BB (e.g. `45.0%`) to widen the control window.
+4. For AMG VC Div 2, the Silverstone race sim confirmed a repeatable `2:02.7` median is achievable. The priority is now mistake avoidance and blue-flag discipline, not finding more raw pace.
+5. Run similar fixed-setup race sims at Spa and Imola to confirm whether the same raceability holds on those tracks.
+6. For Silverstone fixed AMG, the current settings (BB `44.5%`, TC `1/1/1`, default wheel range) produce a usable race band. Only adjust them if a clearer improvement appears in a head-to-head test.
