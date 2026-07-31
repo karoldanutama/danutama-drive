@@ -4675,3 +4675,89 @@ The Interlagos post‑patch percentiles should be treated as soft until the boar
 1. Re‑run Silverstone and Imola AMG fixed‑setup sessions post‑patch to establish new baselines.
 2. Wait for post‑patch leaderboards to stabilize before drawing conclusions from Interlagos percentiles.
 3. If the AMG VC Div 2 uses the v1.4 patch, the Spa preparation window is wider than expected.
+
+## 2026-07-31
+
+### Session Context
+
+- Track: Daytona International Speedway Road Course
+- Car: Ferrari 296 GT3 2023
+- Driver tag: `oldark.`
+- Session type: practice hotlap, 7 sessions across 3 days
+- First visit: never driven Daytona in any sim before
+- Goal: explore the track and test learning rate on completely unfamiliar circuit
+
+### Session Progression
+
+| Session | Date | Laps (all / valid / invalid) | Best |
+|---|---|---|---|
+| Stint 1 | Jul 29 a.m. | 62 / 21 / 41 | 1:46.860 |
+| Stint 2 | Jul 29 p.m. | 56 / 22 / 34 | 1:46.795 |
+| Stint 3 | Jul 29 evening | 43 / 16 / 27 | 1:46.889 |
+| Stint 4 | Jul 30 | 61 / 27 / 34 | 1:46.709 |
+| Stint 5 | Jul 30 | 17 / 7 / 10 | 1:46.690 |
+| Stint 6 | Jul 30 | 40 / 19 / 21 | 1:46.860 |
+| Stint 7 | Jul 31 | 35 / 16 / 19 | **1:46.521** |
+
+Total: `314 / 128 / 186` laps. Valid rate: ~41%.
+
+The progression is a clean learning curve — `1:46.889` down to `1:46.521` across two days, with the biggest single‑day gain of `0.169 s` on Jul 31. The regressions between stints are normal for an unfamiliar track.
+
+### Leaderboard Result
+
+- **Ferrari 296 GT3:** `1:46.521`, **P8/116**
+- P1: `cuzz.y` (`1:46.116`)
+- Gap to P1: `+0.405 s`
+- Gap to P7 (`glider22`): `+0.019 s`
+- Gap to P9 (`gabs_gg`): `−0.001 s`
+- Pool: 116 entries (board is small — new DLC track, post‑v1.4 reset)
+
+### Sector Breakdown
+
+Own sectors: `27.164 / 47.113 / 32.244`
+
+| Sector | Time | CDA 5% | CDA 10% | Read |
+|---|---|---|---|---|
+| S1 (oval T1 → dogleg) | 27.164 | 27.131 | 27.184 | Competitive; inside top 10% |
+| S2 (dogleg → before bus stop) | 47.113 | 47.171 | 47.304 | **Strongest sector — inside top 5%** |
+| S3 (bus stop → finish) | 32.244 | 32.129 | 32.197 | **Weakest sector — outside top 10%** |
+
+S2 is the infield technical section: the dogleg kink on the oval into the technical flow corners. This is the same corner type that works at Sebring (S2 bump/flow dominance) and Interlagos (infield). The rotation‑led technique maps cleanly onto this sequence.
+
+S3 is the bus stop chicane and the banking exit run to the finish line. This is where time is being left.
+
+### Downshift Timing Discovery — Bus Stop
+
+The jump from `1:46.69` to `1:46.521` came from a specific technique correction at the bus stop.
+
+The old pattern: downshift aggressively to 3rd gear before the bus stop entry. This bled speed through engine braking, making the car feel safe. But the cost was excessive deceleration, a compromised minimum speed, and a weaker exit.
+
+The correction: downshift to 3rd only after speed has already been bled away through braking. Let the brakes do the slowing; let the gearbox serve the exit.
+
+This is the same pattern documented at Spa No Name (June 29) and Silverstone Chapel (July 22):
+
+| Session | Corner | Habit | Cost | Fix |
+|---|---|---|---|---|
+| Spa No Name | No Name | Downshift to 2nd | +0.225 s lost (SQ5) | Stay in 3rd |
+| Silverstone | Chapel | Accidental 2nd‑gear downshift | +0.2 s red delta | Stay in higher gear |
+| **Daytona** | **Bus stop** | **Downshift to 3rd before entry** | **~0.17 s (whole lap)** | **Downshift only after speed bleeds** |
+
+The habit is still active. At Daytona, I still had to consciously tell myself not to downshift prematurely. It is not automated yet. But the pattern is now clear: three tracks, three corners, same root cause — using engine braking as a substitute for braking confidence.
+
+### What Changed in My Understanding Today
+
+1. Daytona is a strong fit — P8 on a new track within two days of first seeing it. The S2 infield rewards the rotation‑led style just as Sebring and Interlagos do.
+2. The premature downshift habit is not a one‑track anomaly. It repeats on any corner where the entry asks for clean speed maintenance rather than brute deceleration.
+3. The habit is still conscious, not automatic. Catching it requires active mental overhead.
+4. Bus stop is the primary remaining S3 ceiling. Once downshift timing is locked in, the next priority is braking precision and throttle commitment onto the banking.
+
+### Practical Rule Update
+
+- Premature downshifts are a general technique flaw, not a per‑corner quirk. The fix is universal: downshift only when the car has already lost enough speed that the RPM spike will not disturb the platform.
+- Engine braking is not a braking tool. It is a consequence of gear selection, and using it to slow the car hides weak braking and costs entry speed.
+
+### Next Analysis Step
+
+1. Automate the bus stop downshift timing so it no longer requires conscious self‑talk.
+2. Isolate the remaining S3 loss — after downshift timing, what is still costing time at bus stop entry and banking exit?
+3. Monitor whether the premature‑downshift habit appears on new tracks before letting it cost lap time.
