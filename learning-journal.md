@@ -4584,3 +4584,94 @@ Read:
 1. Run similar fixed-setup race sims at Spa and Imola to confirm whether the same raceability holds on those tracks.
 2. For AMG VC Div 2, the Silverstone race sim confirmed a repeatable `2:02.7` median is achievable. The priority is now mistake avoidance and blue-flag discipline, not finding more raw pace.
 3. Test whether slightly higher TC / TC Slip (e.g. `2 / 2`) or slightly more forward BB (e.g. `45.0%`) tightens the race band, but only if the current window starts feeling unstable.
+
+## 2026-07-29
+
+### Session Context
+
+- Track: Autódromo José Carlos Pace (Interlagos), Circuit de Spa-Francorchamps
+- Cars: Ferrari 296 GT3 2023, Mercedes-AMG GT3 Evo 2025
+- Driver tag: `oldark.`
+- Session type: first practice sessions after LMU v1.4 patch (released 2026-07-28)
+- Goal: assess post‑patch pace and re‑validate AMG VC Div 2 preparation
+
+LMU v1.4 introduced updated gear ratios for the AMG GT3 and Ferrari 296 GT3, a brake thermal physics overhaul, updated CDA setups, and tyre damping changes. All previous journal baselines are pre‑v1.4.
+
+### Interlagos Post-Patch
+
+Two short sessions at Interlagos as a post‑patch calibration check.
+
+Ferrari 296 GT3:
+
+- Total: `25 / 14 / 11`
+- Best: `1:34.723` — top 2.5% on CDA
+
+Mercedes-AMG GT3:
+
+- Total: `17 / 7 / 10`
+- Best: `1:34.727` — **top 1%** on CDA
+
+The AMG matched the Ferrari within `0.004 s` and landed top 1%. However, both boards are likely soft post‑patch (CDA resets leaderboards after major updates). The raw lap time gains (`1:34.942 → 1:34.723`, −0.219 s on Ferrari) are real. The percentiles are probably transient.
+
+### Spa Francorchamps — AMG Fixed Setup
+
+The more meaningful post‑patch test. The June AMG VC Spa leaderboard was a known quantity (180 entries, competitive field), so fixed‑setup improvements are directly comparable to a pre‑patch baseline.
+
+AMG fixed setup practice (High Grip track condition):
+
+| Lap | Time | Read |
+| --- | ---: | --- |
+| 1 | 2:37.189 | Out lap |
+| 2 | 2:20.918 | Immediate sub‑2:21 |
+| 3 | 2:20.864 | Converging |
+| 4 | 2:19.996 | Broke 2:20 |
+| 5 | 2:19.841 | Staying in the window |
+| 6 | 1:55.383 | Invalid |
+| 12 | 2:35.609 | Cooldown / reset |
+| 13 | **2:19.705** | **New PB** |
+| 14 | 1:35.027 | Invalid |
+
+Session totals: `24 / 7 / 17`, plus a second short session of `5 / 2 / 3`.
+
+AMG open setup practice (Saturated Grip track condition):
+
+- Second session: `5 / 2 / 3`
+- Best: `2:19.489`
+
+### Context vs AMG VC Qualifying
+
+| Session | Setup | Condition | Best |
+|---|---|---|---|
+| AMG VC qualifying (Jun 29) | Fixed | Standard | **2:20.022** (113 laps) |
+| Today | Fixed | High Grip | **2:19.705** (9 valid push laps) |
+| Today | Open | Saturated Grip | **2:19.489** |
+
+The fixed‑setup gap: pre‑patch `2:20.022` after 113 laps → post‑patch `2:19.705` in 9 valid laps. That is **−0.317 s** with dramatically less convergence cost.
+
+If the June AMG VC leaderboard were the benchmark, `2:19.705` would have sat around P15–P20 out of 180 — comfortably inside the Division 1 cut. For Div 2, it is front‑pack pace.
+
+Both sessions used the same in‑race compensations as the July 27 Silverstone session (BB `44.5%`, TC `1/1/1`, default wheel range).
+
+### Interpretation
+
+The v1.4 changes appear to move the AMG closer to my operating window. The updated gear ratios and brake thermal overhaul likely reduce the AMG's "expensive platform" tax — the car is converging faster and producing pace with less grind. At Spa specifically, this is the best AMG fixed‑setup result in the journal by a clear margin.
+
+The Interlagos post‑patch percentiles should be treated as soft until the boards re‑fill. The Spa results are the stronger signal because the pre‑patch AMG VC Spa baseline was well‑characterized.
+
+### What Changed in My Understanding Today
+
+1. LMU v1.4 moves the AMG toward my operating window. The fixed‑setup tax is smaller post‑patch.
+2. The Spa fixed AMG progression was a clean convergence, not a grind — breaking 2:20 on lap 4 and holding it. This is a totally different AMG experience than the 113‑lap June qualifying grind.
+3. The AMG is no longer the "expensive platform" it was pre‑patch. The gear ratio update and brake thermal changes may have widened its control window.
+4. Post‑patch leaderboards are soft; raw lap time deltas are the honest metric for now. Percentiles will correct as the boards fill.
+
+### Practical Rule Update
+
+- All pre‑v1.4 AMG baselines are historical. New post‑patch baselines must be established for Spa, Silverstone, and Imola.
+- For AMG VC Div 2, the post‑patch Spa fixed‑setup target is `2:19.7–2:20.0` rather than the pre‑patch `2:20.0–2:20.5`.
+
+### Next Analysis Step
+
+1. Re‑run Silverstone and Imola AMG fixed‑setup sessions post‑patch to establish new baselines.
+2. Wait for post‑patch leaderboards to stabilize before drawing conclusions from Interlagos percentiles.
+3. If the AMG VC Div 2 uses the v1.4 patch, the Spa preparation window is wider than expected.
