@@ -4831,3 +4831,52 @@ Exactly the same profile as the Ferrari: S2 is a weapon (inside top 2.5%), S3 is
 3. The Ferrari‑vs‑Porsche comparison pattern from Sebring (Ferrari slightly faster, Porsche slightly more accessible) repeats at Daytona.
 4. The S2‑weapon / S3‑leak profile is not car‑specific at Daytona — it is a track signature that both cars share.
 5. The Porsche's valid rate (48%) is higher than the Ferrari's early Daytona sessions (~35% in the first stints), suggesting the car is more readable even on a brand‑new track.
+
+### Afternoon Session — Three‑Car Daytona Sweep
+
+Two more sessions closed out the same day: a Porsche follow‑up and a first AMG stint.
+
+Porsche 911 GT3R (afternoon):
+
+- Laps (all / valid / invalid): `24 / 13 / 11`
+- Best: **`1:46.472`** — improved from morning's `1:46.535`
+
+| Session | Best | S1 | S2 | S3 |
+|---|---|---|---|---|
+| Morning | 1:46.535 | 27.106 | 47.078 | 32.351 |
+| Afternoon | 1:46.472 | 27.065 | 47.012 | 32.395 |
+| Delta | **−0.063** | −0.041 | −0.066 | +0.044 |
+
+Porsche improvement came from S1 and S2 tightening further into elite territory. S3 got slightly worse — the bus stop is still the job.
+
+Mercedes-AMG GT3 Evo (first Daytona session):
+
+- Laps (all / valid / invalid): `19 / 10 / 9`
+- Best: **`1:46.786`**
+- Rank: **P4 / 108** — small board
+
+### Three‑Car Daytona Comparison
+
+| Car | Best | Rank | Pool | S1 | S2 | S3 |
+|---|---|---|---|---|---|---|
+| **Porsche 911 GT3R** | **1:46.472** | P16 / 257 | Large | 27.065 | **47.012** | 32.395 |
+| Ferrari 296 GT3 | 1:46.521 | P8 / 116 | Medium | 27.164 | 47.113 | **32.244** |
+| Mercedes-AMG GT3 | 1:46.786 | P4 / 108 | Small | **27.157** | 47.120 | 32.509 |
+
+Spread across all three: **0.314 s**. Each car wins a different sector.
+
+### What This Tells Me
+
+1. **The Porsche is the fastest Daytona platform.** One morning session + one afternoon session, 45 total laps, and it has beaten the Ferrari that took 314 laps. This is now the second track (after Sebring) where the Porsche has been outright fastest.
+
+2. **The S2‑weapon / S3‑leak profile is a Daytona track signature, not a car trait.** All three cars share the exact same shape — strong infield, weak bus stop + banking exit. The track, not the car, decides this shape.
+
+3. **The AMG is in the same competitive tier but lagging.** P4 on a small board is good, but `0.314 s` behind the Porsche matters at a track this short. The AMG's S3 (`32.509`) is the worst of the three — the bus stop does not favor the AMG's planted‑rear architecture.
+
+4. **Board size inflates percentile on the smaller boards.** Porsche P16/257 is the most credible rank. Ferrari (116 entries) and AMG (108 entries) are small, new‑DLC boards where raw rank looks better than it is.
+
+5. **The bus stop is the remaining ceiling for every car.** S3 is the worst sector on all three platforms. This is a technique or line problem, not a car problem. The downshift‑timing fix from the Ferrari session should transfer.
+
+### Updated Day‑2 Conclusion
+
+Porsche > Ferrari > AMG at Daytona, all within 0.314 s. The Porsche is the surprise — what was a P40 whipping boy at Imola in May is the outright fastest car at a brand‑new track in August. The AMG is competitive but still pays a small tax relative to the mid‑ and rear‑engine alternatives. The S3 bus‑stop / banking‑exit bottleneck is the shared remaining gain.
