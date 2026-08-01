@@ -4761,3 +4761,73 @@ The habit is still active. At Daytona, I still had to consciously tell myself no
 1. Automate the bus stop downshift timing so it no longer requires conscious self‑talk.
 2. Isolate the remaining S3 loss — after downshift timing, what is still costing time at bus stop entry and banking exit?
 3. Monitor whether the premature‑downshift habit appears on new tracks before letting it cost lap time.
+
+## 2026-08-01
+
+### Session Context
+
+- Track: Daytona International Speedway Road Course
+- Car: Porsche 911 GT3R 2024
+- Driver tag: `oldark.`
+- Session type: single practice hotlap stint — curiosity test
+- Goal: see whether the Porsche matches the Ferrari Daytona pace immediately, or reproduces its Imola‑style translation problem
+
+### Session Summary
+
+- Laps (all / valid / invalid): `21 / 10 / 11`
+- Average: `1:48.922`
+- Best: **`1:46.535`**
+
+One session, 21 laps. No prior Porsche laps at Daytona.
+
+### Leaderboard Result
+
+- **Porsche 911 GT3R:** `1:46.535`, **P19/251**
+- P1: `slayerpower` (`1:45.836`)
+- Gap to P1: `+0.699 s`
+- Gap to top 5% cut (`1:46.385`): `+0.150 s`
+- Pool: 251 entries (more than 2× the Ferrari Daytona board)
+
+### Ferrari vs Porsche at Daytona
+
+| | Ferrari 296 GT3 | Porsche 911 GT3R |
+|---|---|---|
+| Best | 1:46.521 | 1:46.535 |
+| Delta | — | **+0.014 s** |
+| Time on track | 7 sessions, 314 laps | **1 session, 21 laps** |
+| Rank | P8 / 116 | P19 / 251 |
+| S1 | 27.164 | 27.106 |
+| S2 | 47.113 | **47.078** |
+| S3 | 32.244 | 32.351 |
+
+The Porsche matched the Ferrari within `0.014 s` on raw lap time — and arrived there in **21 laps** instead of 314. The Ferrari required days of discovery; the Porsche gave its pace almost immediately.
+
+### Sector Read — Porsche
+
+Own sectors: `27.106 / 47.078 / 32.351`
+
+| Sector | Time | vs 2.5% | vs 5% | vs 10% | Strength |
+|---|---|---|---|---|---|
+| S1 | 27.106 | +0.118 | +0.066 | just inside | ~top 10% |
+| S2 | 47.078 | **at cutoff** | −0.046 | — | **~top 2.5%** |
+| S3 | 32.351 | +0.334 | +0.198 | +0.106 | outside top 10% |
+
+Exactly the same profile as the Ferrari: S2 is a weapon (inside top 2.5%), S3 is the leak. Porsche S2 is even stronger relative to its own board, and S1 is more competitive than Ferrari's S1.
+
+### What This Tells Me
+
+1. **The Porsche is a natural Daytona fit.** The rear‑engine rotation model rewards the infield flow, same as at Sebring where the Porsche was the fastest four‑car platform. This is the third track (after Sebring and Daytona) where the Porsche has been immediately competitive.
+
+2. **The Imola Porsche was a track‑specific problem, not a car problem.** In May the Porsche was P40 at Imola with the worst S1 and worst S3. At Sebring it was P1 across four platforms. At Daytona it equals the Ferrari on first contact. The car has not changed — the tracks have, and the driver has.
+
+3. **The downshift‑timing discovery should transfer.** Bus stop is still the S3 leak, and the Porsche will likely benefit from the same "downshift only after speed bleeds" fix that unlocked `1:46.5` on Ferrari.
+
+4. **The Porsche board is larger but the pace is equally credible.** P19/251 on Porsche puts a bigger pool around the same lap time, making the percentile slightly softer than the Ferrari P8/116, but the raw pace is the same.
+
+### What Changed in My Understanding Today
+
+1. The Porsche at Daytona is not a translation problem. It was immediately competitive.
+2. The Imola Porsche result was a track‑fit problem, not a car‑personality problem. Every car works somewhere.
+3. The Ferrari‑vs‑Porsche comparison pattern from Sebring (Ferrari slightly faster, Porsche slightly more accessible) repeats at Daytona.
+4. The S2‑weapon / S3‑leak profile is not car‑specific at Daytona — it is a track signature that both cars share.
+5. The Porsche's valid rate (48%) is higher than the Ferrari's early Daytona sessions (~35% in the first stints), suggesting the car is more readable even on a brand‑new track.
