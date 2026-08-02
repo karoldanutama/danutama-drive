@@ -4880,3 +4880,64 @@ Spread across all three: **0.314 s**. Each car wins a different sector.
 ### Updated Day‑2 Conclusion
 
 Porsche > Ferrari > AMG at Daytona, all within 0.314 s. The Porsche is the surprise — what was a P40 whipping boy at Imola in May is the outright fastest car at a brand‑new track in August. The AMG is competitive but still pays a small tax relative to the mid‑ and rear‑engine alternatives. The S3 bus‑stop / banking‑exit bottleneck is the shared remaining gain.
+
+## 2026-08-02
+
+### Session Context
+
+- Track: Daytona International Speedway Road Course
+- Car: Ferrari 296 GT3 2023
+- Driver tag: `oldark.`
+- Session type: single practice hotlap stint — sharpening the Ferrari PB
+- Goal: tighten the Ferrari at Daytona and find the next increment
+
+### Session Summary
+
+- Laps (all / valid / invalid): `22 / 14 / 8`
+- Average: `1:47.969`
+- Best: **`1:46.419`**
+
+### Leaderboard Result
+
+- **Ferrari 296 GT3:** `1:46.419`, **P9/160**
+- P1: `lwhitehead_` (`1:45.558`)
+- Gap to P1: `+0.861 s`
+- Top 5% cut: `1:46.417` — missed by **0.002 s**
+- Board: 160 entries (up from 116 on Jul 31)
+
+### Session‑Over‑Session Delta
+
+| Metric | Jul 31 | Aug 2 | Delta |
+|---|---|---|---|
+| Best | 1:46.521 | **1:46.419** | **−0.102 s** |
+| Rank | P8 / 116 | P9 / 160 | Board +44 |
+| S1 | 27.164 | 27.092 | **−0.072** |
+| S2 | 47.113 | 47.115 | +0.002 |
+| S3 | 32.244 | **32.212** | −0.032 |
+
+Almost all the gain came from a cleaner S1 — `−0.072 s`. S2 was essentially flat. S3 improved marginally by `+0.032 s`. The bus stop is still the bottleneck.
+
+### Updated Three‑Car Daytona Order
+
+| Car | Best | Session count | Rank |
+|---|---|---|---|
+| **Ferrari 296 GT3** | **1:46.419** | 8 sessions, 336 laps | P9 / 160 |
+| Porsche 911 GT3R | 1:46.472 | 2 sessions, 45 laps | P16 / 257 |
+| Mercedes-AMG GT3 | 1:46.786 | 1 session, 19 laps | P4 / 108 |
+
+The Ferrari reclaimed the top spot by `0.053 s`. After 336 laps, it has squeezed ahead of a Porsche that only needed 45. The gap is small and the Ferrari's ceiling may not be far above this, but it is now the fastest platform.
+
+### The Bus Stop Remains
+
+S3 improved by `3 hundredths` across the entire Daytona block (Jul 31 → Aug 2). That is not nothing, but it is not a breakthrough. The bus stop chicane + banking exit is still the primary ceiling for the Ferrari and for every other car.
+
+### What Changed in My Understanding Today
+
+1. The Ferrari ceiling is approaching. Progress is now in hundredths across S1 and S3, with S2 largely locked in.
+2. The top 5% cut was missed by `0.002 s` — that is statistical noise. The Ferrari is at the top‑5% threshold on an honest 160‑entry board.
+3. The Porsche is still the higher‑ceiling alternative — two sessions, 45 laps, within `0.05 s`. More Porsche laps would likely produce the faster lap.
+
+### Next Analysis Step
+
+1. The bus stop remains the shared bottleneck. A dedicated bus stop technique session (braking point, downshift timing, line) is the next lever for all three cars.
+2. If the Daytona exploration is complete, return to AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
