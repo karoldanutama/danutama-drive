@@ -5084,6 +5084,38 @@ The bus stop at Daytona is a high‑risk traffic point in multiclass racing — 
 
 One contact from behind can damage the diffuser and splitter, costing `2+ s per lap` for the rest of the stint. Conceding `1.0 s` to traffic once is cheaper than the risk. The same logic as Imola Tosa: treat the corner as a traffic‑survival decision, not a pace decision.
 
+### Porsche 911 GT3R Evening Hotlap
+
+Returned to the Porsche for a short evening session to test whether the bus stop technique transfers and whether the car still has headroom.
+
+Two short stints:
+
+- Session 1: `6 / 3 / 3`, best `1:46.702`
+- Session 2: `11 / 4 / 7`, best **`1:46.295`**, P13/324
+
+Session 2 progression:
+
+| Lap | Time |
+| --- | ---: |
+| 5 | 2:10.154 (warmup) |
+| 6 | 1:48.331 |
+| 7 | 1:46.516 |
+| 8 | 1:46.380 |
+| 9 | **1:46.295** |
+| 10 | 1:46.481 |
+| 11 | pit |
+
+Five real flyers. By lap 7 the car was already at `1:46.516` — `2.0 s` of convergence in two flying laps. The Porsche equalled the Ferrari PB within `0.001 s` with roughly one‑sixth the total laps.
+
+### Entry‑Exit Asymmetry — Ferrari vs Porsche at Daytona
+
+The subjective difference between the two cars became very clear after back‑to‑back sessions:
+
+- **Ferrari:** collects fast — rear rotates through brake release (native model), but is loose on exit. Throttle application at T1, the horseshoes, and the infield outlets must be careful. The car gives rotation cheaply at entry and charges for it on exit.
+- **Porsche:** pays at entry, collects on exit. The rear squats under power. Throttle can be applied harder, earlier, with far less worry of the rear stepping out. Braver throttle commitment produces faster exits.
+
+The exit‑dominant nature of Daytona (long banking, exit‑amplified speed) rewards the Porsche's exit stability more than it punishes its entry translation cost. The same pattern was documented at Sebring: exit‑dominant layouts favor rear‑heavy platforms. At Daytona, the Porsche reaches `1:46.3` in 3 sessions while the Ferrari took 9 — not because the driver is faster in the Porsche, but because the car's natural strength aligns with what the track pays for.
+
 ### What Changed in My Understanding Today
 
 1. The bus stop bottleneck is responsive to technique, not just car or setup. Two days of focused attention on a single corner produced measurable S2 and S3 gains.
@@ -5092,14 +5124,18 @@ One contact from behind can damage the diffuser and splitter, costing `2+ s per 
 4. 57 laps for `0.125 s` is the cost of extraction at this level. That is not a grind — it is the nature of operating near the competitive ceiling.
 5. The bus stop is a high‑risk traffic point in multiclass racing, similar to Imola Tosa. At Daytona, rear impacts from LMP2 can destroy the diffuser and splitter, costing `2+ s per lap`. Conceding the racing line to let faster‑class traffic through is the correct survival strategy.
 6. With normal AI aggression and defensive bus stop positioning, the race sim was clean and consistent. Best race lap (`1:46.958`) came late in the stint — no tyre degradation cliff.
+7. The Porsche is the egal‑fastest Daytona car — not the slowest. Three sessions, 62 laps, matched the Ferrari PB (`1:46.295` vs `1:46.294`, `+0.001 s`) on a fraction of the track time. The Porsche's ceiling is almost certainly higher.
+8. The Ferrari‑vs‑Porsche trade at Daytona is the same as Sebring: Ferrari wins on entry rotation, Porsche wins on exit traction. Daytona's banking amplifies exit speed, making the Porsche's natural strength more valuable than the Ferrari's.
 
 ### Practical Rule Update
 
 - At the bus stop: aggressive downshift to 4th, patient downshift to 3rd, throttle‑manage the exit until the rear is settled, then slingshot.
 - The downshift is a rotation tool when used aggressively at entry and a stability tool when delayed at exit. Use it intentionally at both ends of the corner.
+- At Daytona exit‑dominant corners (T1, horseshoes, infield outlets), the Porsche allows braver throttle application than the Ferrari. The Ferrari's rear‑rotation strength comes with an exit traction cost. The Porsche inverts that trade.
 
 ### Next Analysis Step
 
 1. Lock in the bus stop technique across all three Daytona cars (Ferrari, Porsche, AMG). The pattern should transfer.
 2. For multiclass racing at Daytona, treat the bus stop as a survival corner when faster‑class traffic is present — concede the line, brake early, stay inside.
-3. The Ferrari Daytona ceiling is approaching. Prioritize the AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
+3. The Porsche is likely the fastest Daytona platform. A dedicated Porsche session would probably produce `1:46.0` within 30–40 more laps.
+4. The Ferrari Daytona ceiling is approaching. Prioritize the AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
