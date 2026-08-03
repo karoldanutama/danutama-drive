@@ -5011,12 +5011,87 @@ The pattern has evolved from avoidance ("do not downshift prematurely") to activ
 
 50+ laps of grinding were required to lock in this one corner's technique. The `−0.066 s` S3 gain and `−0.078 s` S2 gain say it paid.
 
+### Race Simulation — 31 Laps, 98% AI (Normal Aggression)
+
+The first two race sims (13 and 9 laps) were abandoned because 98% AI aggression was too high. The bus stop is a dangerous traffic point — LMP2 cars hit from behind, damaging the diffuser and splitter, killing aero and top speed. LMP2 also squeezed me onto the banking inside line when being lapped. Lowering AI aggression to normal fixed both issues, but a defensive approach at the bus stop was still required.
+
+Race sim with normal AI aggression:
+
+| Lap | Time | Remark |
+| --- | ---: | --- |
+| 1 | 2:01.170 | Out lap |
+| 2 | 1:47.825 | |
+| 3 | 1:47.736 | |
+| 4 | 1:47.352 | |
+| 5 | 1:50.140 | Anomaly |
+| 6 | 1:47.357 | |
+| 7 | 1:47.483 | |
+| 8 | 1:47.595 | |
+| 9 | 1:47.475 | |
+| 10 | 1:48.144 | LMP2 Blue Flag |
+| 11 | 1:47.673 | LMP2 Blue Flag |
+| 12 | 1:49.207 | LMP2 Blue Flag |
+| 13 | 1:47.421 | |
+| 14 | 1:48.407 | |
+| 15 | 1:47.365 | |
+| 16 | 1:47.501 | |
+| 17 | 1:47.522 | |
+| 18 | 1:47.897 | |
+| 19 | 1:48.336 | LMP2 Blue Flag |
+| 20 | 1:48.479 | LMP2 Blue Flag |
+| 21 | 1:47.083 | LMP2 Blue Flag |
+| 22 | 1:48.410 | LMP2 Blue Flag |
+| 23 | 1:48.079 | LMP2 Blue Flag |
+| 24 | 1:47.335 | |
+| 25 | 1:47.836 | |
+| 26 | 1:48.071 | LMP2 Blue Flag |
+| 27 | 1:47.215 | |
+| 28 | 1:46.958 | **Best race lap** |
+| 29 | 1:47.180 | |
+| 30 | 2:00.874 | In lap |
+
+Clean race window (excluding out lap, anomaly laps 5 and 30, and blue‑flag laps 10, 11, 12, 19, 20, 21, 22, 23, 26):
+
+| Metric | Time |
+|---|---|
+| Laps counted | 18 |
+| Best | **1:46.958** |
+| Median | **1:47.479** |
+| Average | **1:47.526** |
+| Range | 1.449 s |
+
+Race conversion from hotlap:
+
+| Metric | Hotlap | Race | Cost |
+|---|---|---|---|
+| Best | 1:46.294 | 1:46.958 | **+0.664 s** |
+| Median | — | 1:47.479 | **+1.185 s** |
+
+Read:
+
+- The bus stop technique survived race conditions. Lap 28 (`1:46.958`) was the best race lap and came late in the stint — no obvious tyre degradation.
+- Laps 27–29 (`1:47.215 → 1:46.958 → 1:47.180`) was the strongest sequence, confirming the bus stop technique was locked in.
+- Blue‑flag laps cost `0.3–1.0 s`, with lap 21 (`1:47.083`) being surprisingly competitive in traffic.
+- Under `0.7 s` from hotlap best to race best is a strong conversion.
+
+### Racecraft at the Bus Stop
+
+The bus stop at Daytona is a high‑risk traffic point in multiclass racing — the same category as Tosa at Imola (Jul 5, "sequence‑kill traffic loss"). Cars behind arrive at full speed into a slow chicane. Even with normal AI aggression, I adopted a defensive approach:
+
+- **Stay inside, away from the racing line.**
+- **Brake early and let LMP2 pass.**
+- **Do not contest the corner when faster‑class traffic is present.**
+
+One contact from behind can damage the diffuser and splitter, costing `2+ s per lap` for the rest of the stint. Conceding `1.0 s` to traffic once is cheaper than the risk. The same logic as Imola Tosa: treat the corner as a traffic‑survival decision, not a pace decision.
+
 ### What Changed in My Understanding Today
 
 1. The bus stop bottleneck is responsive to technique, not just car or setup. Two days of focused attention on a single corner produced measurable S2 and S3 gains.
 2. The premature‑downshift pattern is now in its fourth documented form. The habit is shifting from "avoid" to "use intentionally" — selecting gears as rotation tools rather than as speed‑bleed crutches.
 3. The Ferrari Daytona ceiling is not flat. Three consecutive sessions have produced gains: −0.102, −0.125, and the total is now −0.501 s from the first serious PB.
 4. 57 laps for `0.125 s` is the cost of extraction at this level. That is not a grind — it is the nature of operating near the competitive ceiling.
+5. The bus stop is a high‑risk traffic point in multiclass racing, similar to Imola Tosa. At Daytona, rear impacts from LMP2 can destroy the diffuser and splitter, costing `2+ s per lap`. Conceding the racing line to let faster‑class traffic through is the correct survival strategy.
+6. With normal AI aggression and defensive bus stop positioning, the race sim was clean and consistent. Best race lap (`1:46.958`) came late in the stint — no tyre degradation cliff.
 
 ### Practical Rule Update
 
@@ -5026,4 +5101,5 @@ The pattern has evolved from avoidance ("do not downshift prematurely") to activ
 ### Next Analysis Step
 
 1. Lock in the bus stop technique across all three Daytona cars (Ferrari, Porsche, AMG). The pattern should transfer.
-2. The Ferrari Daytona ceiling is approaching. Prioritize the AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
+2. For multiclass racing at Daytona, treat the bus stop as a survival corner when faster‑class traffic is present — concede the line, brake early, stay inside.
+3. The Ferrari Daytona ceiling is approaching. Prioritize the AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
