@@ -4941,3 +4941,89 @@ S3 improved by `3 hundredths` across the entire Daytona block (Jul 31 → Aug 2)
 
 1. The bus stop remains the shared bottleneck. A dedicated bus stop technique session (braking point, downshift timing, line) is the next lever for all three cars.
 2. If the Daytona exploration is complete, return to AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
+
+## 2026-08-03
+
+### Session Context
+
+- Track: Daytona International Speedway Road Course
+- Car: Ferrari 296 GT3 2023
+- Driver tag: `oldark.`
+- Session type: dedicated technique grinding — bus stop downshift refinement
+- Goal: move the S3 bus stop bottleneck
+
+### Session Summary
+
+- Laps (all / valid / invalid): `57 / 34 / 23`
+- Average: `1:47.899`
+- Best: **`1:46.294`**
+
+### Leaderboard Result
+
+- **Ferrari 296 GT3:** `1:46.294`, **P8/174**
+- P1: `lwhitehead_` (`1:45.558`)
+- Gap to P1: `+0.736 s`
+- Top 5% cut: `1:46.311` — inside by **+0.017 s** (confirmed)
+- Board: 174 entries
+
+### Session‑Over‑Session Delta
+
+| Metric | Aug 2 | Aug 3 | Delta |
+|---|---|---|---|
+| Best | 1:46.419 | **1:46.294** | **−0.125 s** |
+| Rank | P9 / 160 | P8 / 174 | Board +14 |
+| S1 | 27.092 | 27.111 | +0.019 |
+| S2 | 47.115 | **47.037** | **−0.078** |
+| S3 | 32.212 | **32.146** | **−0.066** |
+
+For the first time in the Daytona block, S2 and S3 both improved meaningfully on the same day. S1 held steady. The `−0.144 s` combined S2+S3 gain was the largest single‑day improvement since the downshift discovery on Jul 31.
+
+### Full Daytona Ferrari Progression
+
+| Date | Best | Gain (cumulative) | Notes |
+|---|---|---|---|
+| Jul 29 | 1:46.795 | — | First sessions, learning the track |
+| Jul 31 | 1:46.521 | −0.274 | Bus stop downshift discovery |
+| Aug 2 | 1:46.419 | −0.376 | S1‑driven gain |
+| Aug 3 | **1:46.294** | **−0.501** | S2+S3 breakthrough |
+
+Half a second found across 9 sessions and ~393 laps.
+
+### Bus Stop Technique — Downshift Timing Refinement
+
+The Jul 31 discovery was to stop selecting 3rd gear before the bus stop entry, letting speed bleed through braking first. Today's session built on that with a more precise version:
+
+1. **Aggressive downshift to 4th** entering the bus stop — helps rotate the car into the chicane.
+2. **Hold the downshift to 3rd** until the car is already settled and the speed is low enough that the RPM spike will not disturb the platform.
+3. **In 3rd gear, manage the throttle** — do not immediately stomp. Let the rear settle.
+4. **Once the rear is settled and the car is straight, slingshot** out onto the banking.
+
+This is the fourth documented occurrence of the premature‑downshift pattern:
+
+| Session | Corner | Discovery |
+|---|---|---|
+| Spa No Name (Jun 29) | No Name | Stay in 3rd — 2nd kills entry speed |
+| Silverstone (Jul 22) | Chapel | Accidental downshift flips delta red |
+| Daytona (Jul 31) | Bus stop | Downshift only after speed bleeds |
+| **Daytona (Aug 3)** | **Bus stop** | **Aggressive to 4th, patient to 3rd, throttle‑manage exit** |
+
+The pattern has evolved from avoidance ("do not downshift prematurely") to active management ("downshift aggressively to one gear, then wait for the exit gear"). The downshift is now being used as a rotation tool — 4th to help turn the car, 3rd only when the exit demands it.
+
+50+ laps of grinding were required to lock in this one corner's technique. The `−0.066 s` S3 gain and `−0.078 s` S2 gain say it paid.
+
+### What Changed in My Understanding Today
+
+1. The bus stop bottleneck is responsive to technique, not just car or setup. Two days of focused attention on a single corner produced measurable S2 and S3 gains.
+2. The premature‑downshift pattern is now in its fourth documented form. The habit is shifting from "avoid" to "use intentionally" — selecting gears as rotation tools rather than as speed‑bleed crutches.
+3. The Ferrari Daytona ceiling is not flat. Three consecutive sessions have produced gains: −0.102, −0.125, and the total is now −0.501 s from the first serious PB.
+4. 57 laps for `0.125 s` is the cost of extraction at this level. That is not a grind — it is the nature of operating near the competitive ceiling.
+
+### Practical Rule Update
+
+- At the bus stop: aggressive downshift to 4th, patient downshift to 3rd, throttle‑manage the exit until the rear is settled, then slingshot.
+- The downshift is a rotation tool when used aggressively at entry and a stability tool when delayed at exit. Use it intentionally at both ends of the corner.
+
+### Next Analysis Step
+
+1. Lock in the bus stop technique across all three Daytona cars (Ferrari, Porsche, AMG). The pattern should transfer.
+2. The Ferrari Daytona ceiling is approaching. Prioritize the AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
