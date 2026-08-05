@@ -5147,61 +5147,113 @@ The exit‑dominant nature of Daytona (long banking, exit‑amplified speed) rew
 - Track: Bahrain International Circuit — Outer Circuit
 - Car: Porsche 911 GT3R
 - Format: LMU Daily Races (online, human competitors) — Bronze 3 Driver Rating / Bronze 1 Safety Rating entering today
-- Driver tag: `oldark.` (carried over from offline/hotlap identity; first online races under this profile)
-- Session type: 2 Daily Races, first-ever human-competitive online sessions after 10 prior online races this week
+- Driver tag: `oldark.` (carried over from offline/hotlap identity; first online races logged under this profile)
+- Session type: 2 Daily Races, first-ever human-competitive online sessions logged in this journal, following 10 prior online races earlier this week (2 wins, 2 poles, 2 FL, 2 DNFs from contact)
 - Goal: establish a baseline read on online racecraft, no-fault contact dynamics, and whether offline pace/technique transfers to human traffic
 
 ### Context Shift: New Domain
 
-Every entry above this one is offline, AI-opponent data (95–100% AI). Today is the first entry in this journal built entirely from human-competitive racing. The two domains are not directly comparable — AI is repeatable and fault-deterministic; online racing runs on a no-fault contact model where both parties lose Safety Rating regardless of blame. Treat this as a new axis of development, parallel to but separate from the hotlap/race-pace ladder documented above.
+Every entry above this one is offline, AI-opponent data (95–100% AI). Today is the first entry built entirely from human-competitive racing. The two domains are not directly comparable — AI is repeatable and fault-deterministic; online racing runs on a no-fault contact model where both parties lose Safety Rating regardless of blame. Treat this as a new axis of development, parallel to but separate from the hotlap/race-pace ladder documented above.
 
-### Race 1 Result — P1 (Win)
+---
 
-Qualified P2, `-0.3s` to I Gunsai (pole, fastest lap of the split). Held race pace rather than attacking; the gap closed naturally through S1 as tyres/fuel settled — Gunsai spun in the Esses under no direct pressure beyond a closing delta on the timing tower.
+### Race 1 — P1 (Win), Split 4/8
 
-Lap time trend: `1:20.383` (L1, standing start) → settled into a `1:13.5–1:14.9` band from L2. Two self-inflicted Esses errors on L5–L6 (~0.8–2.3s), immediately followed by the three fastest laps of the race (L7–L9). Fastest lap of the entire race (`1:13.510`) came on L16, deep into a comfortable but still-live gap. Same signature as the Barcelona/Spa/Sebring endurance profile documented above: pace holds or improves late rather than degrading — now confirmed under human race conditions, not just AI stint length.
+Qualified P2, `-0.3s` to I Gunsai (pole, fastest lap of the split, 0.1s quicker than my own best). Chose to hold pace rather than force an attack — had already made peace with a non-P1 result before the race even started.
 
-### Race 2 Result — P3
+**Lap-by-lap highlights:**
 
-Deliberate pit start (SR-preservation strategy after Race 1 contact). Recovered from P15 (Lap 1 traffic) to P3 through four legitimate outbraking passes (Ulloa, Johannes, Garcia, Soderstrom — the last one around the outside after a defended inside line) plus inherited positions from field attrition.
+- **Lap 1, Turn 1:** contact from M Patel at the exact moment of the standing start. Absorbed it without losing net position — emerged still ahead of Gunsai into P1.
+- **Lap 2, Final Turn:** Gunsai passed back legitimately (straight-line speed advantage of his car/tow). Conceded without contest rather than defending a battle already lost. A few laps later he spun anyway — the position cost nothing in the end.
+- **S1, mid-race:** closed the gap to Gunsai naturally through S1 without attacking — just running consistent pace. Gunsai spun in the Esses under that closing pressure alone, no overtake attempt made.
+- **Laps 5–6:** two self-inflicted mistakes in the Esses (~0.8–2.3s combined cost). Same corner claimed Gunsai's spin on the same lap (L6) — confirms the Esses is a genuinely difficult section claiming the fastest driver in the field, not just a personal weak point.
+- **Laps 7–9:** three fastest sustained laps of the race immediately following the Esses errors (1:13.883, 1:13.798, 1:13.902) — no bleed-over from the mistakes, clean recovery.
+- **Lap 13:** had to pass a blackmarker mid-lap, cost a tenth or two, gap still grew.
+- **Lap 16:** fastest lap of the entire race (1:13.510), with the gap already comfortable — pace held/improved under zero pressure, consistent with the endurance-driver profile documented throughout this journal.
+- **Lap 17 (final):** finished 9.9s clear of Gunsai.
 
-Lap time trend: `1:29.889` (L1, pit-start traffic) → settled `1:13.4–1:16.3`. Fastest laps of the race on L14–L15 (`1:13.446`, `1:13.356`) — again late-race, under active position pressure. Consistency (%) held in the same tight band as the offline Barcelona/Spa data (~2.5%), suggesting the tyre-management and pace-discipline habits built across 18 months of offline practice transfer cleanly into online racing, independent of the contact/traffic layer on top.
+**Result:** Win, from genuine on-pace racing rather than an inherited walkover — Gunsai gave the position away through his own error, not through being out-driven in a straight fight. Worth noting for calibration: the actual passing/pressure game against him remains untested, since this was a program-held pace win, not a forced move.
 
-### The Divebomb Test — Correction
+---
 
-Race 2, Lap 5, Final Turn: passed F Florez on the inside after he braked ~20m earlier than my normal reference point. Initial read (own brake point/pressure unchanged, position established on his rear axle pre-braking-zone) classified this as a clean out-brake, consistent with the low-diff-preload / feedback-triggered technique model documented throughout this journal.
+### Race 2 — P3, Split 3/8 (Official Result: P3 of 20)
 
-Replay review corrected this: Florez had to **abort his own turn-in** when he registered me on the inside. That is the actual signature of a divebomb — not brake distance, not which side of the track, but whether the defending driver had time to plan around the overlap before committing to a line. A "normal" brake point can still produce a late, forced reaction if the closing speed and timing don't give the other driver enough warning.
+Qualified P7 (moved into the tougher Split 3 after Race 1's promotion). Deliberately started from the pit lane — SR-preservation strategy after the T1 contact in Race 1, with the explicit goal of a clean race over a fast one.
 
-**Correction to standing model:** the divebomb/clean-pass distinction used in this journal for car/technique diagnosis (rotation cues, brake-release timing, platform response) is driver-vs-car. The divebomb test is driver-vs-driver and needs its own criterion: *did the defender have to react, or did they have full information before committing?* This is now the standing definition for online overtake classification, separate from the technique vocabulary used for hotlap/car-fit analysis above.
+**Lap-by-lap highlights:**
+
+- **Lap 1:** dropped to P15 in pit-start traffic, as expected.
+- **Lap 2, T1:** E Ulloa and M Jones took each other out (Ulloa overshooting the corner) — first inherited gain.
+- **Lap 2, T4:** clean outbrake pass on Ulloa from the inside — established position, normal brake point, no forced reaction from the defender.
+- **Lap 3, T4:** clean outbrake pass on C Johannes, who'd had a bad exit from T3.
+- **Lap 3, Esses:** E Hakkinen lost grip — gained to P12.
+- **Lap 3, Esses exit:** A Almeida and J Thomas collided and both spun. Suddenly found myself behind Gunsai again — third encounter with him in as many races.
+- **Lap 3, Final Turn:** attempted to overtake Gunsai from the inside; he had better grip and held the position.
+- **Lap 3, start/finish straight:** ran 3-wide with Gunsai and S MuMala. Correctly assessed I wouldn't win that fight on raw straight-line speed and backed off rather than forcing it.
+- **Lap 4, T1:** contact with Gunsai, who then tagged MuMala (MuMala out). First time I was part of a contact chain rather than a bystander to someone else's error.
+- **Lap 4, T2:** M Jones spun independently — moved to P8.
+- **Lap 4, Final Turn:** went for the apex against Gunsai again; he spun. Replay review suggested the light touch earlier may have actually kept him straighter rather than caused this spin — an honest, if unprovable, piece of self-assessment.
+- **Lap 5, Final Turn:** passed F Florez, who braked ~20m earlier than my own normal reference point. Initially read as a clean out-brake (own brake point/pressure unchanged, position already established pre-braking-zone) — but replay review showed Florez had to **abort his own turn-in** when he registered me on the inside. Corrected classification: this was closer to a divebomb than a clean pass, because the defender was forced into a reaction rather than given time to plan around the overlap. Owed him an apology on this basis.
+- **Lap 7:** running P6, 6.1s behind B Garcia.
+- **Lap 10:** "D P" spun unforced, moved to P5.
+- **Lap 12, T4:** clean outbrake pass on B Garcia from the inside. 3.5s behind Soderstrom.
+- **Lap 16, Final Turn:** Soderstrom defended the inside; passed him around the **outside** on braking — the most technically demanding overtake of the race.
+- **Lap 17 (final):** finished 0.4s behind O'Conner (P2), 1.1s ahead of Soderstrom (P4).
+
+**Official race summary (post-race):**
+
+- Finished 3rd of 20, Best Lap 1:13.445, Positions Gained +2, 17 laps
+- Driver Rank: Bronze 3 — driven by finishing 3rd/20, beating 10 higher-DR drivers, losing to zero lower-DR drivers (all High impact); qualifying 5th/20, beating 9 higher-DR drivers in quali
+- Safety Rank: Bronze 1 — 7 clean qualifying laps and 12 clean race laps (both High impact), only 4 invalid laps (Low impact, almost certainly track-limits rather than contact)
+
+**Key correction from official data:** despite the T1 contact with Gunsai and the Florez pass feeling divebomb-adjacent on replay, **zero contact was flagged** in the official breakdown. This separates two distinct questions that had been conflated during the race: whether a pass violates the game's no-fault contact detection, and whether it meets a personal etiquette standard for how much reaction time the defender was given. The Florez pass may not register as an infraction — no physical contact occurred, he simply yielded room — but the *judgment* that it crossed into divebomb territory still stands on its own terms, independent of what the sim penalizes.
+
+---
 
 ### Recurring Opponent: I Gunsai
 
-Fastest single-lap driver in the split (pole, fastest lap, both races) — but three separate spins across three races now, twice at the same corner (the Esses), always when I am closing the gap from behind rather than already alongside. Contact/error rate in his favor is negative relative to mine despite superior outright pace. Practical takeaway, consistent with the "own race program" principle that shows up throughout the offline endurance entries above (Barcelona 3h solo race, Ferrari tyre-carry strategy, etc.): holding pace rather than forcing a move against a faster-but-less-composed opponent has produced the better outcome twice running.
+Fastest single-lap driver encountered across both races — pole and fastest lap in Race 1, quali pace to match. Three separate spins now across three total races, twice at the same corner (the Esses), and notably always when I am closing the gap from behind rather than already alongside or attacking directly. Race 2 added a new wrinkle: actual wheel-to-wheel contact with him at T1, plus a possible stabilizing (rather than destabilizing) touch at the Final Turn on the same lap.
+
+Pattern holding after three races: his risk management under pressure, not his raw pace, is the differentiator. Holding pace rather than forcing a move against him has produced the better outcome every time so far (n=3).
 
 ### Car Perception Correction: Porsche 911 GT3R
 
-Assumed the Porsche was a weaker/avoided online pick based on informal Bronze-split car distribution (heavy BMW/McLaren/Ferrari visibility). This is inconsistent with this journal's own multi-track offline data — the Porsche has been the fastest or co-fastest platform at Sebring (P1 across a four-car sweep, Jul 15) and Daytona (fastest, matched or slightly ahead of Ferrari, Aug 1–3), and is independently described by the community as the benchmark, most forgiving LMGT3 car. The "feels safe" instinct that led to picking it for SR-first online racing was correctly calibrated, not a compromise — it's the same conclusion the offline pace data already supported.
+Assumed the Porsche was a weaker/avoided online pick based on informal Bronze-split car distribution (heavy BMW/McLaren/Ferrari visibility in these two races). This contradicts this journal's own multi-track offline leaderboard data — the Porsche has been the fastest or co-fastest platform at Sebring (P1 across a four-car sweep) and Daytona (matched or slightly ahead of Ferrari), and is independently regarded as the class benchmark: forgiving, strong traction on exit. The "feels safe" pick for SR-first online racing was correctly calibrated, not a compromise.
+
+### Etiquette Habits (New — Online-Specific)
+
+Adopted this week, reinforced across today's two races:
+
+- Single-button wheel-bound macro ("go left"/"go right") before overtakes, functioning as a genuine turn signal — no hands-off-wheel or eyes-off-track cost since it's bound to the steering wheel rather than typed.
+- "Thank you" after clean/uncontested passes or blue-flag compliance.
+- Apology reserved specifically for passes that forced the defender into a reaction they didn't have time to plan for (Florez case) — **not** for merely taking a legal inside line with a genuine pace advantage. Earlier instinct to apologize for any inside-line pass was miscalibrated; corrected this week by separating "inside line" (neutral) from "divebomb" (defender forced to abort) as the actual dividing test.
 
 ### Badge Milestone
 
-Achieved Trusted Driver badge (rolling 10-race contact-ratio window) this week, following two early SR-costing incidents (Curva Grande wall, Roggia suspension damage). Confirms the pit-start-when-needed / signal-before-overtake / SR-first approach is functioning as the game's own matchmaking system intends — a fast (within ~2 weeks) correction from two contact incidents to a top-tier conduct badge.
+Achieved Trusted Driver badge (rolling 10-race contact-ratio window) this week, following two early SR-costing incidents (Curva Grande wall contact, Roggia suspension damage from unrelated contact). Fast correction — roughly two weeks from two contact incidents to a top-tier conduct badge — confirms the pit-start-when-needed / signal-before-overtake / SR-first approach is functioning as the game's own matchmaking system intends.
+
+### The Endurance Parallel
+
+Both races today reinforced a connection to this journal's offline endurance findings: Race 2 in particular — pit start, methodical climb through 17 positions, finishing ahead of cars that eliminated themselves or each other — is functionally a compressed version of the same "still running when others aren't" principle documented across the Barcelona 3-hour solo endurance race and the multi-stint Ferrari/Mustang tyre-carry comparisons above. The skill being rewarded (patience, consistency, not being the variance) is the same; only the timescale changed.
 
 ### What Changed in My Understanding Today
 
-1. The offline pace-discipline and endurance-profile findings documented throughout this journal (late-stint pace holding/improving, smooth progressive trail-braking, tyre-conscious race management) transfer directly to human-competitive online racing — today's fastest laps in both races came late under real position pressure, not early on fresh tyres.
-2. The divebomb/clean-pass distinction needs a separate criterion from the car-technique vocabulary used elsewhere in this journal. Car-fit analysis (AMG rotation cues, Ferrari brake-release model, etc.) is about whether *I* have time and information to execute; online overtake ethics is about whether the *defender* has time and information to react. Same word, different test.
-3. Perception of car "meta" in an unranked Bronze split is unreliable — informal car-distribution observation contradicted this journal's own hard leaderboard data on the Porsche across three tracks (Sebring, Daytona, and now implicitly Bahrain).
-4. No-fault contact scoring means the AI-vs-human distinction is not just about opponent unpredictability — it changes the correct strategic response entirely. Pit-starts and pace-holding (rather than pace-forcing) are the online equivalent of the "own race program" discipline already documented in the Barcelona/Imola endurance entries.
+1. The offline pace-discipline and endurance-profile findings documented throughout this journal transfer directly to human-competitive racing — today's fastest laps in both races came late, under real position pressure, not early on fresh tyres (Race 1 L16, Race 2 L14–15).
+2. The divebomb/clean-pass distinction needs a separate criterion from the car-technique vocabulary used elsewhere in this journal. Car-fit analysis (AMG rotation cues, Ferrari brake-release model) is about whether *I* have the information and platform response needed; online overtake ethics is about whether the *defender* had the information and time to react. The game's contact detection and personal etiquette judgment can diverge — Florez confirmed both: no flagged incident, but still an owed apology.
+3. Perception of car "meta" in an unranked Bronze split is unreliable — informal car-distribution observation in these two races contradicted this journal's own hard leaderboard data on the Porsche.
+4. No-fault contact scoring changes the correct strategic response entirely, not just the risk calculus. Pit-starts and pace-holding (rather than pace-forcing) are the online equivalent of the "own race program" discipline already documented in the Barcelona/Imola endurance entries.
+5. A driver can be officially clean (12/12 relevant laps, zero contact flagged) while still having made one questionable move by personal standard. Both records are worth keeping separately.
 
 ### Practical Rule Update
 
-- For online overtake self-assessment: classify as clean only if the defending driver had the overlap in view *before* committing to their line. If they had to abort, it's a divebomb regardless of brake point/pressure discipline.
+- For online overtake self-assessment: classify as clean only if the defending driver had the overlap in view *before* committing to their line. If they had to abort, it's a divebomb regardless of brake point/pressure discipline or whether the game flags it.
 - Do not infer car viability from informal lobby car distribution. Cross-check against this journal's own leaderboard data before adjusting car choice.
-- Against a known faster-but-inconsistent opponent (see Gunsai), default to pace-holding over forcing; the sample size (3/3 races) now supports this as a deliberate strategy, not just caution.
+- Against a known faster-but-inconsistent opponent (Gunsai, n=3), default to pace-holding over forcing.
+- Track official race-summary contact flags going forward as a separate data column from personal replay-review judgment calls — they are measuring different things.
 
 ### Next Analysis Step
 
-1. Track whether the Esses corner is claiming spins track-wide (a corner-difficulty signal) or specifically opponents I'm pressuring (a psychological/pressure signal) — currently ambiguous with n=2.
-2. Begin logging online race data (lap times, incidents, SR/DR delta) with the same rigor as the offline hotlap/race entries above, so online progress becomes comparable over time rather than anecdotal.
-3. Consider whether the bus-stop-style "concede the corner to faster/riskier traffic" principle from the Daytona multiclass entries (Aug 3) has a direct online analog for no-fault contact avoidance in dense Bronze-split traffic.
+1. Track whether the Esses corner is claiming spins track-wide (a corner-difficulty signal) or specifically opponents I'm pressuring (a psychological/pressure signal) — currently ambiguous with n=2 (Gunsai spun there in both Race 1 and an earlier session).
+2. Begin logging online race data (lap times, incidents, SR/DR delta, official contact flags) with the same rigor as the offline hotlap/race entries above, so online progress becomes comparable over time rather than anecdotal.
+3. Consider whether the Daytona-style "concede the corner to faster/riskier traffic" principle has a direct online analog for no-fault contact avoidance in dense Bronze-split traffic — Race 2's 3-wide concession to Gunsai/MuMala on the straight may already be an instance of this without having been labeled as such.
+4. Gunsai rematch data point still open: whether his pattern (spinning under pressure rather than in clean air) generalizes beyond the Esses specifically.
