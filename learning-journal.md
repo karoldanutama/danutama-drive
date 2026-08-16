@@ -5139,3 +5139,137 @@ The exit‑dominant nature of Daytona (long banking, exit‑amplified speed) rew
 2. For multiclass racing at Daytona, treat the bus stop as a survival corner when faster‑class traffic is present — concede the line, brake early, stay inside.
 3. The Porsche is likely the fastest Daytona platform. A dedicated Porsche session would probably produce `1:46.0` within 30–40 more laps.
 4. The Ferrari Daytona ceiling is approaching. Prioritize the AMG VC Div 2 preparation at Spa, Silverstone, and Imola.
+
+## 2026-08-16
+
+### Session Context
+
+- Track: WeatherTech Raceway Laguna Seca
+- Car: Ferrari 296 GT3 2023
+- Driver tag: `oldark.`
+- Session type: first visit, three hotlap blocks across August 15-16
+- Goal: learn a completely unfamiliar circuit, establish the Ferrari baseline, and measure early leaderboard competitiveness
+
+### Three-Session Progression
+
+| Session | Laps (all / valid / invalid) | Average | Best | Valid rate |
+|---|---:|---:|---:|---:|
+| Aug 15, 6:57 AM | `71 / 18 / 53` | `1:27.192` | `1:23.413` | 25.4% |
+| Aug 15, 8:19 PM | `58 / 9 / 49` | `1:25.035` | `1:23.269` | 15.5% |
+| Aug 16, 9:05 AM | `24 / 9 / 15` | `1:24.826` | **`1:23.002`** | 37.5% |
+
+Combined total: `153` laps, `36` valid, `117` invalid. Overall valid rate: 23.5%.
+
+The average improved by `2.366s` from the first session to the latest session. The best lap improved by `0.411s`. The most important late-session signal was not only the new PB, but the validity recovery: the final block had the highest valid rate despite being the shortest block.
+
+The best-to-average gap also reduced from `3.779s` in the first block to `1.824s` in the latest block. The track was being learned in two stages:
+
+1. The first session found isolated peak pace before the track was understood.
+2. The second and third sessions converted more of that peak pace into repeatable valid laps.
+
+### Aug 16 Recovery and Repeatability Detail
+
+The Aug 15 work was a heavy learning block: `129` laps across two sessions, including `27` valid and `102` invalid laps. I stopped because the session felt physically and mentally exhausted rather than continuing to force more laps.
+
+The Aug 16 return produced the PB on **lap 13**, not at the end of a long grind:
+
+| Lap | Time | Read |
+|---:|---:|---|
+| 6 | `1:24.815` | First settled pace after the reset |
+| 8 | `1:23.902` | First `1:23` lap |
+| 10 | `1:23.534` | Continued progression |
+| 13 | **`1:23.002`** | New PB |
+
+The lap-13 result is therefore consistent with a recovery effect: the previous day's work appears to have consolidated during the stop, and the next morning began with the track knowledge retained but less accumulated fatigue. This is a strong pattern, although one return is not enough to prove that rest alone caused the improvement.
+
+The PB also survived the later repeatability test. After the lap-13 PB, the session produced:
+
+- Lap 16: `1:23.103`
+- Lap 21: `1:23.266`
+- Lap 23: `1:23.051`
+
+Those three valid post-PB laps averaged approximately **`1:23.140`**, only `0.138s` slower than the PB. This changes the classification of `1:23.002`: it was not an isolated hero lap. The underlying operating window was already close to `1:23.1` after the PB was found.
+
+Two invalid laps are also informative:
+
+- Lap 20: `1:22.537`
+- Lap 22: `1:22.927`
+
+Both were faster than the official PB but were lost through excessive track cutting. The current ceiling is therefore probably below `1:23.0`, but the remaining time is being lost through control of the limit rather than lack of raw pace.
+
+Explicitly invalid laps were `2`, `5`, `17`, `20`, and `22`; the very short and slow entries are treated as out-lap, in-lap, or incomplete-lap artifacts rather than pace evidence.
+
+### Coach Dave Leaderboard Result
+
+Current Ferrari leaderboard snapshot:
+
+- Lap: **`1:23.002`**
+- Position: **P11/287**
+- Approximate raw standing: top `3.8%`
+- Gap to P10: `0.086s`
+- Gap to P5: `0.417s`
+- Gap to P1: `1.909s`
+- Username: `oldark.`
+
+The leaderboard is densely compressed near the front. The result is not merely a promising new-track lap; it is already an upper-front-pack result on a 287-entry board. A 105%-qualified percentile is not calculated here because the qualified-pool count was not included in the snapshot.
+
+### Sector Breakdown
+
+Own leaderboard lap sectors:
+
+- S1: `31.933`
+- S2: `32.618`
+- S3: `18.451`
+
+Approximate sector standing from the supplied percentile data:
+
+- S1: around top `9%`
+- S2: around top `2%`
+- S3: around top `4%`
+
+Sector 2 and Sector 3 are already front-pack strengths. Sector 1 is the only clear relative weakness.
+
+The current P10 lap is `31.731 / 32.628 / 18.557`. Compared with that lap:
+
+- S1: `+0.202s`
+- S2: `-0.010s`
+- S3: `-0.106s`
+
+This makes the next target unusually clear: recover roughly two tenths in Sector 1 without damaging the existing Sector 2 and Sector 3 performance. Matching the P10 Sector 1 while preserving the other two sectors would produce approximately **`1:22.800`**.
+
+No input or corner diagnosis is made from sector totals alone. Telemetry or a direct delta comparison would be required to identify whether the Sector 1 loss comes from braking reference, entry rotation, minimum speed, or exit commitment.
+
+### Learning Assessment
+
+Laguna Seca is a strong first-visit result. The early PB was available within the first three-session block, and the leaderboard position confirms that the underlying pace model transferred immediately to the track.
+
+The main limitation is no longer basic track discovery. It is hotlap extraction:
+
+- The objective pace is already top-4% level.
+- The latest average remains `1.824s` from the PB.
+- The valid rate is improving, and the post-PB `1:23.1` laps show that the pace is becoming resident, but the invalid faster laps show that the limit is not yet fully controlled.
+
+This matches the broader July-August pattern. Daytona required a long refinement block before the bus-stop technique stabilized, while Silverstone and Interlagos showed that months away from a circuit no longer erase the underlying pace. Laguna reaches the same conclusion with a particularly strong early leaderboard result.
+
+### What Changed in My Understanding
+
+1. First-visit learning speed is now a genuine strength, not just a feature of familiar Imola, Spa, or Sebring work.
+2. The Ferrari 296 remains a reliable cross-track benchmark: its native entry-rotation model transferred immediately to Laguna.
+3. Laguna Sector 2 and Sector 3 are already operating at a higher relative level than Sector 1.
+4. The next tenth is not a general lap problem. It is concentrated in Sector 1.
+5. A stop after a heavy practice block may have helped convert learning into performance; the next test should deliberately compare rested and fatigued returns.
+6. The `1:23.002` PB is supported by later `1:23.1` laps, but the invalid `1:22.537` and `1:22.927` laps show that limit management is now the immediate extraction problem.
+7. A hotlap PB at P11 is strong evidence of objective pace, but it is not yet evidence of race-ready Laguna performance.
+
+### Practical Rule Update
+
+- On a new track, establish the leaderboard ceiling first, then stop chasing the PB until the valid-lap rate begins to follow it.
+- For Laguna, protect Sector 2 and Sector 3 while specifically investigating Sector 1.
+- Treat the `1:22.800` estimate as a sector-preservation target, not a guaranteed lap prediction.
+
+### Next Analysis Step
+
+1. Run one or two controlled Laguna stints with a 15-minute rest between them and record median, standard deviation, and valid rate.
+2. Use telemetry or Delta+ to isolate the Sector 1 loss before changing setup or driving style.
+3. Repeat the post-rest return format once more to test whether the lap-13 breakthrough is reproducible.
+4. Validate the Laguna baseline in an offline race; hotlap pace alone is not yet the race metric.
