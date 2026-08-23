@@ -5391,3 +5391,130 @@ This matches the broader July-August pattern. Daytona required a long refinement
 2. Use telemetry or Delta+ to isolate the Sector 1 loss before changing setup or driving style.
 3. Repeat the post-rest return format once more to test whether the lap-13 breakthrough is reproducible.
 4. Validate the Laguna baseline in an offline race; hotlap pace alone is not yet the race metric.
+
+## 2026-08-22
+
+### Session Context
+
+- Track: Imola (Autodromo Enzo e Dino Ferrari)
+- Session window: August 20-22, 2026
+- Cars: Ferrari 296 GT3 2023 and Corvette Z06 GT3R 2023
+- Driver tag: `oldark.`
+- Session type: practice / leaderboard preparation
+- Goal: revisit Imola after the June break and rebuild track familiarity before the upcoming Mercedes-AMG Virtual Championship Division 2 races at Imola
+
+### Session Summary
+
+The revisit produced `143` total laps, `48` valid laps, and `95` invalid laps. Overall valid rate was only `33.6%`, so this was an exploratory hotlap block rather than a race-readiness test.
+
+| Car | Session laps (all / valid / invalid) | Average | Best |
+|---|---:|---:|---:|
+| Ferrari 296 GT3 | `50 / 17 / 33` | `1:45.724` | `1:43.900` |
+| Ferrari 296 GT3 | `7 / 3 / 4` | `1:45.149` | `1:44.343` |
+| Ferrari 296 GT3 | `10 / 4 / 6` | `1:44.084` | **`1:43.627`** |
+| Corvette Z06 GT3R | `6 / 1 / 5` | `1:44.770` | `1:44.605` |
+| Corvette Z06 GT3R | `33 / 8 / 25` | `1:46.009` | `1:44.034` |
+| Corvette Z06 GT3R | `18 / 6 / 12` | `1:46.345` | `1:43.844` |
+| Corvette Z06 GT3R | `19 / 9 / 10` | `1:45.525` | **`1:43.534`** |
+
+Weighted across valid laps:
+
+- Ferrari: `24` valid laps, average approximately `1:45.379`, valid rate `35.8%`
+- Corvette: `24` valid laps, average approximately `1:45.860`, valid rate `31.6%`
+
+The Ferrari was the stronger repeatable practice platform by approximately `0.481s` on average. The Corvette produced the faster single lap by `0.093s`, but with a lower valid rate and a wider best-to-average spread.
+
+### Reacquisition Read
+
+The circuit knowledge returned quickly in both cars.
+
+Ferrari progression:
+
+- First long session: `1:43.900`
+- Short reset session: `1:44.343`
+- Final session: **`1:43.627`**
+
+Corvette progression:
+
+- First short session: `1:44.605`
+- Longer session: `1:44.034`
+- Later session: `1:43.844`
+- August 22 return: **`1:43.534`**
+
+This is not a track-discovery problem anymore. The underlying Imola line and braking model survived the break. The work was mainly restoring commitment and extracting a clean flyer under low valid-lap conversion.
+
+### Coach Dave Leaderboard Results
+
+#### Ferrari 296 GT3
+
+- Best: **`1:43.627`**
+- Position: `P5/357`
+- Approximate standing: top `1.4%`
+- Gap to leaderboard best: `+1.844s`
+- Ferrari leaderboard best: `1:41.783`
+
+This is a major result. It improves on the stored May Imola Ferrari reference of `1:43.757` by `0.130s`, while moving from the previous `P17`-level result into the current top-five window.
+
+#### Corvette Z06 GT3R
+
+- Best: **`1:43.534`**
+- Position: `P12/237`
+- Approximate standing: top `5.1%`
+- Gap to leaderboard best: `+1.611s`
+- Corvette leaderboard best: `1:41.923`
+
+The Corvette result is also clearly competitive, but the Ferrari result is stronger relative to its larger and denser leaderboard population.
+
+### Sector Breakdown
+
+Own leaderboard sectors:
+
+- Ferrari: `21.456 / 33.748 / 48.423`
+- Corvette: `21.550 / 33.729 / 48.255`
+
+Compared with the respective leaderboard-best laps:
+
+| Car | S1 gap | S2 gap | S3 gap | Share of total gap from S3 |
+|---|---:|---:|---:|---:|
+| Ferrari | `+0.242s` | `+0.381s` | **`+1.221s`** | `66.2%` |
+| Corvette | `+0.249s` | `+0.286s` | **`+1.076s`** | `66.8%` |
+
+This repeats the existing Imola pattern: the first two sectors are already near front-pack quality, but the lap is not being fully cashed out in Sector 3. The same loss appearing in both cars makes this more likely to be a shared driving-line, commitment, or exit-timing issue than a single-car setup problem.
+
+No corner-level input diagnosis is made from sector totals alone. Telemetry or a direct delta comparison would be needed to separate braking release, minimum speed, line shape, and throttle timing.
+
+### AMG VC Preparation Read
+
+The revisit achieved its primary preparation goal: Imola rhythm and track knowledge are active again before the AMG VC races. However, the Ferrari and Corvette results should not be mistaken for AMG race pace. The AMG still requires its own fixed-setup reacquisition session.
+
+The stored fixed-setup AMG preparation reference is `1:44.248`. A faster open-setup AMG leaderboard result (`1:43.911`) already exists elsewhere in the journal, but it is not the correct direct target for the AMG VC races. The next fixed-setup block should use `1:44.248` as the first clean target, not immediately chase the Ferrari or Corvette times.
+
+Recommended AMG sequence:
+
+1. Re-enter on the fixed AMG VC setup with brake bias near the established `45%` hotlap region.
+2. Run a short no-reset block to restore prediction-triggered brake release without waiting for the absent rear-rotation cue.
+3. Use Sector 3 as the primary comparison sector, especially the Acque Minerali, Variante Alta, and Rivazza-to-finish sequence.
+4. Follow the hotlap block with a 15-20 lap race simulation to measure median, standard deviation, and valid rate.
+5. Treat `60%+` valid laps as the minimum useful conversion target for a focused race-preparation session.
+
+### What Changed in My Understanding
+
+1. The June-to-August break did not erase Imola pace; both cars returned to a top-percentile operating level.
+2. Ferrari remains the better current benchmark for repeatable Imola practice pace, while Corvette has a slightly higher extracted single-lap result in this revisit.
+3. The shared remaining leaderboard loss is overwhelmingly concentrated in Sector 3 rather than in initial braking or early-lap commitment.
+4. The current low valid rate means the revisit proves pace reacquisition, not yet race-ready consistency.
+5. AMG preparation should focus on converting existing track knowledge into clean fixed-setup laps rather than using Ferrari or Corvette PBs as direct AMG targets.
+6. The next useful gain is not a general Imola overhaul. It is a controlled Sector 3 cash-out while preserving the already strong S1 and S2 performance.
+
+### Practical Rule Update
+
+- After a long circuit break, judge reacquisition first by whether the previous competitive percentile returns, not by whether the first session is clean.
+- Once S1 and S2 are already near leaderboard level, stop moving the whole setup and isolate Sector 3 execution.
+- For AMG VC preparation, separate three targets: fixed-setup reacquisition, qualifying extraction, and repeatable race pace.
+- Do not use a hotlap PB as race evidence until it survives a clean offline race or a controlled multi-lap stint.
+
+### Next Analysis Step
+
+1. Run the Mercedes AMG GT3 Evo on the fixed AMG VC Imola setup and record the first valid lap, best lap, median, and valid rate.
+2. Compare AMG sectors directly against the Ferrari and Corvette revisit sectors, with special attention to Sector 3.
+3. Complete one controlled 15-20 lap AMG race-preparation stint before making further setup changes.
