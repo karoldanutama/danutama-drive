@@ -5518,3 +5518,110 @@ Recommended AMG sequence:
 1. Run the Mercedes AMG GT3 Evo on the fixed AMG VC Imola setup and record the first valid lap, best lap, median, and valid rate.
 2. Compare AMG sectors directly against the Ferrari and Corvette revisit sectors, with special attention to Sector 3.
 3. Complete one controlled 15-20 lap AMG race-preparation stint before making further setup changes.
+
+### Addendum: Daytona Boredom Session
+
+Immediately after the Imola revisit, I returned to Daytona simply because I was bored. This turned into a useful cross-check of the AMG after the earlier Imola work and a direct comparison against the Corvette on a track where the AMG is more cooperative.
+
+#### Session Context
+
+- Track: Daytona International Speedway Road Course
+- Date: August 22, 2026
+- Session type: practice / leaderboard preparation
+- Cars: Mercedes-AMG GT3 Evo 2025 and Corvette Z06GT3R 2023
+- Goal: unplanned return session; compare current AMG access cost and Daytona ceiling against the Corvette
+
+#### Session Summary
+
+| Car | Laps (all / valid / invalid) | Valid rate | Average | Best |
+|---|---:|---:|---:|---:|
+| Mercedes-AMG GT3 Evo | `33 / 17 / 16` | `51.5%` | `1:47.829` | **`1:46.519`** |
+| Corvette Z06GT3R | `37 / 20 / 17` | `54.1%` | `1:47.854` | **`1:46.157`** |
+
+The session averages were almost identical: AMG was only `0.025s` faster on the displayed average. The Corvette had the higher one-lap ceiling by `0.362s`, but its best-to-average spread was also wider:
+
+- AMG best-to-average gap: `1.310s`
+- Corvette best-to-average gap: `1.697s`
+
+This is practice data, not race median data, but the result is still useful: the AMG was not merely producing a lucky isolated lap. Its overall session pace was effectively equal to the Corvette's despite the lower peak.
+
+#### AMG Leaderboard Result
+
+- Best: **`1:46.519`**
+- Position: `P11/259`
+- Approximate standing: top `4.2%`
+- Gap to P10: `+0.047s`
+- Gap to P1: `+1.401s`
+- Sectors: `27.201 / 47.242 / 32.076`
+
+The current result improved the previous Daytona AMG best of `1:46.786` by `0.267s`. The old result was `P4/108`, but that board was much smaller; the current `P11/259` is the more credible competitive reference.
+
+#### AMG Sector Change vs Previous Daytona Result
+
+Previous AMG best sectors:
+
+- `27.157 / 47.120 / 32.509`
+
+Current AMG best sectors:
+
+- `27.201 / 47.242 / 32.076`
+
+Change:
+
+- S1: `+0.044s`
+- S2: `+0.122s`
+- S3: **`-0.433s`**
+- Overall: **`-0.267s`**
+
+The improvement came almost entirely from Sector 3. The earlier Daytona interpretation identified the bus stop and banking exit as the AMG weakness; this session shows that the weakness has been substantially reduced. Current AMG Sector 3 is approximately top `1-2.5%` on its board.
+
+The remaining AMG Daytona opportunity is now in S1 and S2, both approximately in the top `5-10%` range. This is a different problem from the current Imola pattern and reinforces that the AMG's platform cost is track-dependent.
+
+#### Corvette Leaderboard Result
+
+- Best: **`1:46.157`**
+- Position: `P8/306`
+- Approximate standing: top `2.6%`
+- Gap to P10: `-0.062s`
+- Gap to P1: `+1.235s`
+- Sectors: `27.182 / 46.945 / 32.030`
+
+The Corvette was `0.362s` faster overall. The difference was concentrated almost entirely in Sector 2:
+
+- S1: Corvette faster by `0.019s`
+- S2: Corvette faster by **`0.297s`**
+- S3: Corvette faster by `0.046s`
+
+Approximately `82%` of the Corvette's lap-time advantage came from Sector 2. The Corvette's stronger rank, P8 versus AMG P11, is therefore primarily a Sector 2 advantage rather than a full-lap superiority in every phase.
+
+#### Daytona Board Context
+
+The AMG result sits at approximately top `4.2%`, while the Corvette is approximately top `2.6%`. The difference is real but modest. The two boards also have different distributions, so raw position is not directly transferable between them.
+
+The broader Daytona comparison remains consistent with the earlier journal finding:
+
+- Porsche and Corvette have the higher one-lap ceiling.
+- Ferrari and AMG remain close behind on the current board snapshots.
+- Daytona allows the AMG to use its planted rear more effectively than Imola does.
+- The AMG is therefore not a universally poor platform; its difficulty is strongly circuit-dependent.
+
+#### What Changed in My Understanding
+
+1. The unplanned Daytona return produced a meaningful AMG improvement immediately after the Imola revisit.
+2. AMG Sector 3 is no longer the dominant Daytona limiter; the previous bus-stop and banking-exit loss was reduced by `0.433s`.
+3. The current AMG deficit to the Corvette is concentrated in Sector 2, not in the final sector.
+4. AMG practice average and Corvette practice average were effectively identical, despite a `0.362s` Corvette advantage in best lap.
+5. Daytona remains evidence that the AMG can provide accessible race-relevant pace when the circuit separates entry rotation from exit acceleration.
+6. The Imola AMG problem should not be generalized to every circuit. It is a track-platform interaction, not a fixed ceiling of the car.
+
+#### Practical Rule Update
+
+- For AMG development, track the sector where the car is losing time rather than carrying an Imola diagnosis to every circuit.
+- At Daytona, preserve the new Sector 3 technique and target S1/S2 instead of returning to bus-stop experimentation.
+- When AMG and Corvette averages are equal but the Corvette best is faster, classify the Corvette as the higher-ceiling platform and the AMG as the more contained current practice window.
+
+#### Next Analysis Step
+
+1. Use the AMG Daytona S3 technique as a transferable reference, but do not assume it solves Imola's entry-rotation problem.
+2. Compare AMG S1/S2 against the Corvette using a direct delta or telemetry before changing setup.
+3. Keep the Daytona result as evidence of track-dependent AMG fit, separate from the fixed-setup AMG VC Imola preparation target.
