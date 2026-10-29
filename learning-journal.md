@@ -5688,6 +5688,38 @@ The OOR corrected Pro results (Imola P6, Long Beach P6, Qatar P3) show competiti
 
 Interlagos provided a different test from hotlapping: sustaining repeatable pace while managing LMP2s and slower Academy LMGT3 cars.
 
+### SimGrid Evaluation — Reading the Rating Carefully
+
+My SimGrid Grid Rating (GR) increased from its initial 2,000 to approximately 2,294 after roughly 15 starts. The recorded results include seven top-five finishes and two podiums. This is a promising trajectory, but the sample remains too small to declare a settled skill rating.
+
+A separate manual review of the LMU Grid Rating leaderboard showed approximately 20,237 listed entries; my local scrape captured 17,763 drivers, not the complete population. My reported tied position around P2,246 is roughly top 11% of the displayed population. This is provisional: missing records and a large concentration of drivers at the default 2,000 rating make it a poor substitute for an active-driver pace percentile.
+
+My Interlagos P4 produced approximately +25 GR, illustrating that finishing position and rating gain are not interchangeable. GR evaluates results relative to competitors and expectations, rather than ranking fastest laps directly. I should not infer an exact future rating plateau from the current upward curve.
+
+League classification is a separate signal. OOR promoted me from Academy to Pro after three races, with Ben Vintiner personally involved, while ERD administrators independently pushed me toward Pro based on observed pace. These judgments support Pro-division fit in those communities, not professional esports status. My corrected OOR Pro results — Imola P6, Long Beach P6, Qatar P3 — provide a more useful benchmark than a global rating percentile alone.
+
+### Learning Process — From Hotlapping to Racing Humans
+
+My progression is best understood in four phases.
+
+**1. Technical foundation:** For approximately 1.5 years before racing people, I developed speed through hotlapping, setup experimentation, and studying vehicle response. Key strengths were trail-braking, deliberate entry rotation, sensing yaw through steering feedback, and settling the rear for corner exit. A continuing weakness is partial-throttle modulation in long, high-speed corners; lower rake has sometimes served as a stability compensation.
+
+**2. First human races (July 2026):** I started LMU daily races while preparing for the Mercedes-AMG Virtual Championship and won my first human race in a lower split. This was an adaptation milestone, not evidence of dominance in strong fields. Human opponents introduced skills that solo practice could not train: starts, overlap, defensive and overtaking decisions, and recovering from disrupted lines.
+
+**3. Calibration against stronger opponents:** Strong Academy qualifying and race results prompted OOR and ERD to recommend Pro placement independently. In Pro, competitive results without automatic wins are a better learning environment. SimGrid GR progression, field-adjusted pace, and on-track administrative assessments should be treated as complementary evidence, not as identical measurements.
+
+**4. Multiclass execution at Interlagos:** Encounters with seven LMP2s and slower Academy LMGT3 cars required me to execute non-ideal trajectories and choose where to lose time. My phrase "bring the pain forward" captures the proactive side. The Ferradura hesitation illustrates the remaining challenge: making my intention predictable to another driver.
+
+I now distinguish **pace** (can I run with the field?), **execution** (can I repeat it over a stint?), and **racecraft** (can I make safe, legible decisions around other humans?). Earlier technical practice strengthened the first two; the third is developing through competition.
+
+### Evaluation Plan
+
+1. Track GR across more races and compare active, established opponents rather than relying on default-rated leaderboard accounts.
+2. Compare race-average pace and lap-time variation with Pro peers under similar traffic and stint conditions.
+3. Review multiclass encounters from both perspectives where replay exists, particularly the Ferradura misunderstanding.
+4. Track whether traffic, worn tyres, or partial-throttle corners disproportionately affect my race pace.
+5. Treat sustained clean execution against strong opponents as more meaningful evidence than an individual GR gain or division label.
+
 ### What Changed in My Understanding
 
 1. **Traffic management is partly timing optimization.** Choosing *when* to sacrifice time can determine the total cost.
