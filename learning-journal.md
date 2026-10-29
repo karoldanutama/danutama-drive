@@ -5625,3 +5625,94 @@ The broader Daytona comparison remains consistent with the earlier journal findi
 1. Use the AMG Daytona S3 technique as a transferable reference, but do not assume it solves Imola's entry-rotation problem.
 2. Compare AMG S1/S2 against the Corvette using a direct delta or telemetry before changing setup.
 3. Keep the Daytona result as evidence of track-dependent AMG fit, separate from the fixed-setup AMG VC Imola preparation target.
+
+## 2026-10-29
+
+### Session Context
+
+- Track: Interlagos (Autódromo José Carlos Pace)
+- Simulator: Le Mans Ultimate
+- Car: McLaren 720S GT3 Evo
+- Event: OOR ELMS multiclass race
+- Traffic: seven LMP2 cars and LMGT3 Pro/Academy drivers
+- Pit sequence: laps 34–35
+- Goal: understand multiclass traffic decisions and how prior car-control skills transfer into racecraft
+
+### Race Pace and Consistency
+
+Across laps 2–33, the best was **1:35.041** (lap 6), the average approximately **1:35.69**, the standard deviation approximately **0.28s**, and the slowest **1:36.183**. The first-stint average gradually declined from roughly 1:35.42 to 1:35.86 across eight-lap windows.
+
+These laps were run in multiclass traffic. The data show repeatability but cannot isolate the effects of tyre evolution, fuel, overtakes, blue flags, and driver decisions. Laps 36–38 are post-pit and should not be treated as an uninterrupted continuation of stint one.
+
+### Multiclass Principle — Bring the Pain Forward
+
+My emerging racecraft principle is **"bring the pain forward."** If a faster-class pass will inevitably cost time, an early and deliberate compromise may be cheaper and safer than insisting on the optimal line until the cars converge at an awkward point.
+
+At Curva do Sol and Mergulho, the normal LMGT3 line can occupy most of the usable track while an LMP2 closes rapidly. Depending on the situation, I established an inside trajectory early, giving the prototype a clear outside option, then minimized the impact on exit speed.
+
+The objective is not to surrender every blue flag. It is to minimize the *whole encounter cost*: early concession, overlap disruption, exit-speed loss, effect on the next corner, and collision risk. The key constraint is that any alternative trajectory must be established early enough to be predictable. Remaining on the normal line is the default; sudden reactive movements are not an improvement.
+
+### Descida do Lago to Ferradura — Ambiguous Intentions
+
+One awkward interaction exposed the limit of being overly accommodating.
+
+1. After Descida do Lago, I remained on the right, leaving the left side free for an approaching LMP2.
+2. The LMP2 driver hesitated, apparently expecting me to return to the left for normal Ferradura entry.
+3. I interpreted the hesitation as room to move left.
+4. The prototype accelerated at roughly the same time.
+5. I lifted to resolve the ambiguity and let the prototype pass.
+
+We avoided contact, but both drivers were responding to predictions of the other's next move. **Making space is not the same as communicating which space is available.**
+
+Once I establish a safe, legible trajectory, I should avoid changing it simply because the approaching prototype hesitates. Similarly, lifting can help when there is a clear passing lane, but a sudden lift directly in front of faster traffic may cause another problem.
+
+### Ferradura — Car Control as a Safety Margin
+
+Ferradura is a long, laterally loaded right-hander. An LMP2 passing on either side can remove the ideal line.
+
+- **Prototype inside:** keep the apex open; work with a wider radius where safe, without assuming the prototype will leave a completely open exit.
+- **Prototype outside:** accept a tighter radius and adjust speed early enough to respect the reduced available grip.
+- **Both cases:** adapt steering, yaw, and throttle timing while the car is loaded.
+
+This experience revealed the value of approximately 1.5 years of prior car-control practice before my first human race in July 2026. Trail braking, sensing yaw through FFB, timing brake release, and keeping the rear planted from apex onward were developed before wheel-to-wheel racing. Those skills now help me execute lines I would not voluntarily choose on a clean hotlap.
+
+My subjective feeling is that without that foundation I might have spun. The counterfactual is unknowable, but the principle is clear: **car control does not merely increase outright pace; it expands the range of compromised trajectories I can drive safely.**
+
+My normal preference is to complete most rotation before the apex and accelerate with a stable rear. When traffic prevents that timing, I must retain control through an unfamiliar radius, longer lateral-load phase, or delayed throttle pickup.
+
+### Competitive Development Context
+
+I first raced humans in July 2026 while preparing for the Mercedes-AMG Virtual Championship. After consistently qualifying and winning in OOR ELMS Academy, Ben Vintiner moved me to Pro after three races. ERD organizers independently also pushed me toward Pro based on pace.
+
+The OOR corrected Pro results (Imola P6, Long Beach P6, Qatar P3) show competitiveness but not dominance. These promotions are evidence of recognized pace, not a claim that my racecraft is already fully developed.
+
+Interlagos provided a different test from hotlapping: sustaining repeatable pace while managing LMP2s and slower Academy LMGT3 cars.
+
+### What Changed in My Understanding
+
+1. **Traffic management is partly timing optimization.** Choosing *when* to sacrifice time can determine the total cost.
+2. **Predictability outranks courtesy.** A well-intentioned but unexpected line can confuse another driver.
+3. **Normal line by default, deliberate alternative when justified.** Never improvise a late swerve under a blue flag.
+4. **Car-control versatility is racecraft infrastructure.** A driver able to maintain control on multiple radii is less dependent on one ideal line.
+5. **Optimize a corner sequence, not an isolated apex.** Exit speed and the next corner often matter more than the immediate concession.
+6. **Technical skill precedes but does not replace racecraft experience.** Learning to communicate intentions through driving remains ongoing.
+
+### Practical Rule Update
+
+1. Identify where a faster prototype will catch me, not just whether it is approaching.
+2. Maintain a predictable normal line unless an early, clear alternative genuinely improves safety.
+3. Do not make a second line change merely because another driver hesitates.
+4. Leave room for inside or outside overlaps and adapt speed to the available corner radius.
+5. Avoid a sudden lift while a prototype is directly behind; resolve the pass only when positioning makes it safe.
+6. Use car-control skills to execute compromised trajectories rather than insisting on the ideal line.
+7. Judge traffic decisions by the complete encounter cost and risk.
+
+### Next Analysis Step
+
+1. Review the Ferradura incident from both onboard perspectives, if available.
+2. Compare clean-air and traffic-affected laps at Curva do Sol, Mergulho, and Ferradura.
+3. Test whether an early inside trajectory genuinely reduces total time lost.
+4. Develop throttle and yaw stability through long corners when forced off the preferred line.
+5. Benchmark sustained race pace and racecraft against established Pro drivers.
+
+**Core takeaway:** Bring the pain forward only when the earlier compromise is safe, predictable, and cheaper than a later disruption.
