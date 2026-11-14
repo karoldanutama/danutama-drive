@@ -5748,3 +5748,86 @@ I now distinguish **pace** (can I run with the field?), **execution** (can I rep
 5. Benchmark sustained race pace and racecraft against established Pro drivers.
 
 **Core takeaway:** Bring the pain forward only when the earlier compromise is safe, predictable, and cheaper than a later disruption.
+
+## 2026-11-14 — Corner Geometry, Wet-Weather Rotation, and Brake-Bias Interaction
+
+### Session Context
+
+- Simulator/car: Le Mans Ultimate, primarily Ferrari 296 GT3.
+- Circuits discussed: Paul Ricard (Bendor, La Tour, Beausset), Barcelona (T1, T3–T5), Interlagos (Senna S), wet Spa (La Source), and wet Imola.
+- Comparison driver: Jaden Lee Sunkerlall (ERD).
+- Method: replay observation, in-car live delta, direct practice with Jaden, and setup/input experiments. Most mechanisms below are **hypotheses**, not validated telemetry findings.
+
+### Circuit Adaptability and Live-Delta Learning
+
+I enjoy technically unusual circuits such as Paul Ricard, Fuji, and Qatar, even when others in my OOR community struggle there. My race results often remain around P3–P6 across tracks, while some faster rivals lose their usual advantage at Fuji/Qatar and regain it at familiar venues such as Imola, Spa, and Road Atlanta. This suggests adaptability and consistency, but does not establish a universal pace advantage.
+
+At Paul Ricard, my Ferrari 296 GT3 personal best was **2:05.2**, compared with Luke Whitehead's **2:03.0** reference (approximately 101.79% of reference time). I rely heavily on live delta at a common downstream point rather than detailed telemetry to test geometry.
+
+- **Bendor:** A sharply timed V-shaped line beats my U-shaped attempt; rotate early and slingshot out while respecting limits. I can feel when I have missed the usual rotation/grip window and know the lap is compromised even before checking delta.
+- **La Tour:** The opposite solution: hugging the inside with a rounded U-shaped trajectory works better than forcing a V.
+- **Beausset:** My intermittent throttle inputs during sustained steering are intentional yaw management. When the car rotates more than desired, I add throttle to calm rotation; this is a driver-observed response, not a claim that throttle always creates understeer.
+
+**Learning:** Choose geometry per corner and validate with delta. Distinguish recognizing the intended car state from proving that the intended trajectory is fastest.
+
+### My Dry-Weather Rotation Technique
+
+My dry approach is not straight-line braking followed by a single turn-in. I often **turn in early while still braking hard**, then increase steering progressively as I trail off the brakes. The steering peak can occur **late, close to the apex**, rather than during initial entry.
+
+- **Barcelona T1:** Very early initial steering input, then aggressive increase toward peak steering near the apex; many other drivers appear to reach peak steering earlier. The goal is to prepare the T1–T2–T3 sequence, not optimize T1 in isolation.
+- **Interlagos T1 / Senna S:** Extremely early turn-in visible in replay; smooth trail braking helps me hug the inside and position the car for the rightward T2 transition and earlier slingshot through T3.
+- My subjective **“click”** is a holistic recognition of the right rotation moment—FFB, visual heading, speed, and trajectory together. I cannot isolate one sensory channel. It should not be equated automatically with an instrumentally measured peak of front tyre grip.
+- My preference remains: use braking/steering to establish yaw before the apex, then have the car aligned and rear stable enough for early exit acceleration.
+
+**Working mechanism:** Brake release progressively frees longitudinal tyre demand for lateral force, while steering and vehicle balance are coordinated to shape yaw. Peak steering angle is not necessarily peak lateral grip or yaw rate. A late steering peak can help or hurt depending on front saturation and next-corner positioning.
+
+### Jaden Comparison: Dry vs Wet Barcelona
+
+With the **same Ferrari 296 GT3 and broadly comparable setup**, I am approximately **0.3 s/lap faster in dry Barcelona**, but Jaden is approximately **1.0 s/lap faster in wet Barcelona**—a roughly **1.3-second reversal** in relative pace.
+
+Jaden favors V-shaped geometry, relatively **frontward brake bias**, and a wet technique of **braking earlier in a predominantly straight line, reducing speed before asking for major rotation, pointing the car early, unwinding steering, and accelerating decisively once aligned**.
+
+My natural dry style favors overlapping trail braking and steering, and relatively **rearward brake bias** to preserve front-end turning authority. I can exploit the overlap in dry conditions, but the same timing does not necessarily transfer to lower grip.
+
+**Hypothesis, not proof:** My dry advantage may come from exploiting combined braking/cornering grip and preserving momentum through Barcelona's connected and sustained corners. Jaden's wet advantage may come from separating major longitudinal and lateral demands, avoiding excessive combined slip, and securing a straighter acceleration phase. Corner-by-corner traces are needed; do not assume he is slower specifically at T3/T4 or faster at T5 without evidence.
+
+### Wet-Weather Breakthrough and the Missing “Click”
+
+Previously I copied my dry sequence into rain: extend the braking distance, reduce peak brake pressure to avoid excessive ABS, continue trail braking, and look for the familiar front-end “click” that cues aggressive rotation. **The cue never appeared in the expected way**, so I failed to initiate my normal sharp rotation and unintentionally drifted toward U-shaped lines. This was **not primarily fear or inability to drive a V**.
+
+At **wet Spa La Source**, I accidentally drove a V-shaped trajectory and gained approximately **0.2 s on live delta**. The car felt perfectly controlled, yet I reverted to my habitual wet U-shaped approach.
+
+Practicing with Jaden at **wet Imola** gave an **immediate improvement**: brake predominantly straight, finish more deceleration before rotating, align the car earlier, then accelerate. I also changed Ferrari TC channels (longitudinal–lateral–power cut) from **8–10–8 to 6–8–6**. Jaden's argument was that excessively high TC can cut too much power; a straighter exit can permit less intervention. Since both driving method and TC settings changed, their individual contributions remain unisolated. Straight-line braking is a useful wet baseline, **not a prohibition on all trail braking in rain**.
+
+**Key insight:** The desired V-shaped geometry can remain valid while the control strategy needed to create it changes with grip. Do not simply scale dry braking pressure and distance and expect the same sensory rotation cue.
+
+### Brake Bias Experiment: Front Saturation
+
+Jaden prefers more frontward bias; I prefer more rearward bias. I tried moving my own brake bias forward while retaining my early steering input at high brake pressure. The result was **strong ABS activity and extreme understeer**, which I strongly dislike.
+
+Interpretation:
+- Forward bias increases the front tyres' braking share. Steering while still at peak brake demand can exceed their combined longitudinal/lateral capacity, resulting in front push and ABS intervention.
+- Rearward bias shifts some braking demand off the front tyres and can preserve front turning authority for my early turn-in, **at the cost of reduced rear braking stability margin**.
+- ABS intervention alone is not proof of poor pace; the combination with pronounced understeer is the meaningful observation.
+- This supports **technique–setup compatibility**, not a universal claim that rearward bias is faster or that Jaden's frontward bias is inferior.
+- Bias may be a consequence of our preferred control strategies as much as a cause of them.
+
+### Updated Working Model
+
+1. **Dry:** Early turn-in + smooth trail + rearward bias lets me use brake release and progressive steering to build rotation without waiting for braking to end.
+2. **Wet:** The familiar dry timing/feel becomes unreliable; predominantly straight deceleration followed by an earlier, cleaner rotation phase can be more effective.
+3. **Corner-dependent geometry:** Bendor favors my V, La Tour favors my U; avoid prescribing either shape universally.
+4. **Whole-sequence optimization:** Judge T1 by T2/T3 position and exit, not merely apex speed; similarly evaluate Bendor/La Tour at a consistent downstream delta point.
+5. **Observation vs inference:** My ABS/understeer experiment and the wet Imola improvement are observed; the exact explanation of Jaden's dry deficit is still unverified.
+
+### Next Tests
+
+1. Compare my and Jaden's **dry/wet Barcelona corner deltas**, especially T1–T3, T4, and T5, before attributing the 0.3s dry difference to a specific corner.
+2. Overlay steering angle, brake pressure, speed, yaw rate, ABS activity, and throttle to see whether my late steering peak produces useful rotation or front scrub.
+3. A/B small brake-bias changes while keeping line and inputs as constant as practical; assess T1–T3 downstream delta and front push, not ABS sound alone.
+4. In wet conditions, isolate **technique versus TC** changes (8–10–8 and 6–8–6) across comparable runs.
+5. Compare the accidental wet La Source V against the habitual U using repeated clean laps, rather than a single -0.2s delta.
+6. Continue training partial throttle as a deliberate yaw-management tool, especially in sustained corners, while checking that intervention does not mask a slower line.
+
+**Core takeaway:** I have a strong dry-weather control strategy built around early steering, trail-brake release, and rearward bias. Wet-weather progress came from separating *the rotation I want* from *the dry control sequence I habitually use to create it*.
+
