@@ -5831,3 +5831,30 @@ Interpretation:
 
 **Core takeaway:** I have a strong dry-weather control strategy built around early steering, trail-brake release, and rearward bias. Wet-weather progress came from separating *the rotation I want* from *the dry control sequence I habitually use to create it*.
 
+### Telemetry Addendum — Paul Ricard T1 and Barcelona T1 (2026-11-14)
+
+Two Coach Dave Delta screenshots supplied after the initial journal entry provide direct steering/brake-trace comparisons. These are **different circuits and comparison laps**, so they should not be treated as a controlled test of the same maneuver.
+
+#### Paul Ricard T1 — McLaren 720S GT3 Evo
+
+- My **blue** steering trace shows a gentler initial buildup and lower first peak than the **yellow** reference, with a modest secondary adjustment. The reference builds steering more abruptly, peaks higher, and shows a more pronounced later correction.
+- This supports my self-description of **“lazy steering”**: I dislike large steering inputs early and prefer to introduce small steering early, deferring a larger request until necessary. Early turn-in does **not** automatically mean early peak steering or early peak yaw.
+- The screenshot's coaching breakdown shows braking `-0.07s`, first apex `-0.18s`, second apex `+0.16s`, exit `+0.17s`. This suggests the initial advantage is not necessarily preserved through the direction change; these displayed phase figures should not be summed without confirming the tool's definitions.
+- Alternative explanations include speed, line, gear timing, and yaw response. The steering trace alone cannot prove less tyre scrub or superior rotation efficiency.
+
+#### Barcelona T1–T3 — Ferrari 296 GT3 vs William Marchesi (DC Racing Italy)
+
+- My steering input begins very gently and builds progressively. The screenshot does **not** establish a dramatically larger steering peak than Marchesi's; the key difference is the **timing and synchronization** of steering with braking.
+- At the displayed cursor, my brake pressure is approximately **83.84%**, versus Marchesi's **91.70%**. The overall trace shows my lower peak and longer brake application, whereas Marchesi reaches a higher peak and releases more abruptly.
+- Coach Dave's feedback says I trail braking closer to apex 1, potentially reducing rotation, and recommends releasing earlier. This is coaching interpretation, not a measured yaw-rate conclusion.
+- Reported comparisons: braking `-0.05s`, apex 1/right `-0.05s`, apex 2/left `+0.03s`, apex 3/right `+0.19s`. I appear to gain in braking/initial apex but lose through the later sequence. These are displayed phase deltas, not necessarily additive.
+- **Revised hypothesis:** My early, low-amplitude steering and rearward bias can be effective, but **prolonged trail braking may sometimes delay the directional transition**. The problem may not be lazy steering itself; it may be holding longitudinal demand too long while preparing the next corner.
+
+#### Practical Experiment and Interpretation Update
+
+1. Keep initial steering timing and brake bias approximately fixed; try a **slightly earlier brake release** at Barcelona T1. Compare the entire T1–T3 downstream delta, not T1 alone.
+2. Review speed, brake pressure, steering angle, yaw rate, ABS, and line position together. Steering angle alone cannot reveal peak tyre grip or yaw generation.
+3. Avoid generalizing from the faster reference to Jaden's driving: Marchesi is a **separate comparator**, and Jaden's dry/wet pace reversal remains a hypothesis requiring direct corner-level evidence.
+4. Record the difference between **driver preference** (lazy steering), **observed trace** (gentle early buildup), **vehicle mechanism** (combined tyre demand), and **lap-time outcome** (first-apex gain, later-sequence loss).
+
+**Updated takeaway:** My natural early turn-in may originate from avoiding abrupt initial steering, rather than deliberately demanding early yaw. That habit can be useful, but its interaction with prolonged trail braking can leave time on the table in rapid direction changes.
